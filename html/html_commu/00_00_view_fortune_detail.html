@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="robots" content="ALL">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="1 days">
+	<meta name="Subject" content="여보야">
+	<meta name="description" content="결혼, 재혼, 배우자를 찾는 스마트한 방법, 가입비 주선비 성혼비 무료, 여성결혼대상자 무료, 문의 1522-3379">
+	<meta name="keywords" content="결혼, 재혼, 결혼어플, 소개팅어플, 소개팅">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://image.yeoboya.com/imgs/new_wedding/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://image.yeoboya.com/imgs/new_wedding/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>운세서비스 상세결과보기</title>
+	<link rel="canonical" href="https://m.yeoboya.com">
+
+	<link rel="stylesheet" type="text/css" href="../../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/src/sass/common_community.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/src/__fortune.css">
+	../
+	<script src="../../vendors/polyfill.min.js"></script>
+	<script src="../../vendors/jquery.min.js"></script>
+	<script src="../../vendors/lodash.min.js"></script>
+	<script src="../../vendors/axios.min.js"></script>
+    <script src="../../vendors/moment.min.js"></script>
+    <script src="../../vendors/jquery-mobile.event.min.js"></script>
+	<script src="../../vendors/onLoad.bundle.js"></script>
+	<script src="../../js/lottie.min.js"></script>
+	<!-- chartjs -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="pc__bg">
+	<div class="pc__container">
+		<div class="top">
+			<header class="header">
+				<div class="header__btn_wrap">
+					<a class="header__btn pl8">
+						<span class="header__ico_back"></span>
+						<span class="blind">뒤로</span>
+					</a>
+				</div>
+			</header>
+		</div>
+		<main class="content">
+			<div class="fortune">
+				<div class="fortune__bg fortune__bg-detail"></div>
+				<div class="fortune__content">
+					<!-- 바이오 리듬 -->
+					<div class="fortune__score_wrap">
+						<div class="fortune__score_txt_wrap">
+							<div class="fortune__score_tit fortune__score_tit-bio">바이오 리듬</div>
+						</div>
+						<div class="fortune__graph_wrap">
+							<canvas class="fortune__graph" id="viewFortuneGraph" width="300" height="200"></canvas>
+							<div class="fortune__graph_txt_wrap">
+								<div class="fortune__graph_txt fortune__graph_txt-body">신체<span class="fortune__graph_txt_score">-52%</span></div>
+								<div class="fortune__graph_txt fortune__graph_txt-emotion">감성<span class="fortune__graph_txt_score">-70%</span></div>
+								<div class="fortune__graph_txt fortune__graph_txt-intell">지능<span class="fortune__graph_txt_score">+62%</span></div>
+							</div>
+						</div>
+						<div class="fortune__info_wrap mt20">
+							<div class="fortune__info_tit fortune__info_tit-body">
+								<span class="fortune__info_tit_tht">신체지수</span>
+							</div>
+							<div class="fortune__info_txt">
+								오늘은 비교적 신체리듬이 좋은 날입니다. 가벼운 죠깅이나 걷기 등의 운동은 신체리듬이 어느정도 활성화 될때는 좋습니다. 너무 무리한 운동은 오히려 피해야 합니다.
+							</div>
+						</div>
+						<div class="fortune__info_wrap">
+							<div class="fortune__info_tit fortune__info_tit-emotion">
+								<span class="fortune__info_tit_tht">감성지수</span>
+							</div>
+							<div class="fortune__info_txt">
+								오늘은 감성리듬이 매우 좋은 날입니다. 평소 개그가 있으신 분들은 오늘 많은 사람들에게 자신의 장기를 선물해 보세요. 더불어 지능리듬이 좋다면 모두 박장대소하며 당신의 인기가 하늘을 치솟을 것입니다.
+							</div>
+						</div>
+						<div class="fortune__info_wrap">
+							<div class="fortune__info_tit fortune__info_tit-intell">
+								<span class="fortune__info_tit_tht">지능지수</span>
+							</div>
+							<div class="fortune__info_txt">
+								오늘은 비교적 지능리듬이 저조한 날입니다. 아이디어가 필요한 일보다는 일반적인 업무가 좋으며, 이런날은 신체나 감성에 약간의 변화를 주어 지능리듬을 회복하는 것이 좋습니다.
+							</div>
+						</div>
+					</div>
+					<!-- 연애지수-->
+					<div class="fortune__score_wrap">
+						<div class="fortune__score_tit fortune__score_tit-love">연애지수</div>
+						<div class="fortune__love" id="fortuneLove">
+							<span class="fortune__score_txt">70%</span>
+						</div>
+						<div class="fortune__info_wrap mt12">
+							<div class="fortune__info_tit tac">
+								현재 운세는 상황이 막힌다거나 혹은 거부한다는 의미가 있어 모든 것이 이루어지지 않습니다.
+							</div>
+							<div class="fortune__info_txt mt20">
+								현재는 현상유지가 필요한 때입니다. 인간은 당연한 일상생활을 지속시키는데 만족하지 못하고 늘 마음속에서 무엇인가 좋은 수가 있지 않을까 하는 욕망을 가지기 쉬운 존재입니다. 그리고 평범한 행복을 잊어버리기 쉽습니다.
+							</div>
+						</div>
+					</div>
+					<!-- 연애지수 추천 -->
+					<div class="fortune__recommend">
+						<div class="fortune__score_txt_wrap">
+							<div class="fortune__ico fortune__ico-heart"></div>
+							<div class="fortune__score_tit fortune__score_tit-love fs16">운명의 상대를 만나보세요!</div>
+							<div class="fortune__ico fortune__ico-heart"></div>
+						</div>
+						<div class="fortune__recommend_photo_wrap">
+							<div class="fortune__recommend_photo">
+								<div class="photo_circle">
+									<div class="photo_circle__wrap">
+										<div class="photo_circle__img photo_circle__img-80 photo_circle__img-bd2_ff shadow1" style="background-image: url('https://newsimg.sedaily.com/2020/09/22/1Z7YDU7JN0_1.jpg');"></div>
+									</div>
+									<div class="photo_circle__dim hidden"></div>
+								</div>
+								<div class="fortune__recommend_info">
+									<div>일편단심봤다사랑</div>
+									<div>26세</div>
+								</div>
+							</div>
+							<div class="fortune__recommend_photo">
+								<div class="photo_circle">
+									<div class="photo_circle__wrap">
+										<div class="photo_circle__img photo_circle__img-80 photo_circle__img-bd2_ff shadow1" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/mobile/img/profile_spin_test_woman.jpg');"></div>
+									</div>
+									<!-- 맞선 미등록자 dim처리 -->
+									<div class="photo_circle__dim"></div>
+								</div>
+								<div class="fortune__recommend_info">
+									<div>꿈을그리는</div>
+									<div>34세</div>
+								</div>
+							</div>
+							<div class="fortune__recommend_photo">
+								<div class="photo_circle">
+									<div class="photo_circle__wrap">
+										<div class="photo_circle__img photo_circle__img-80 photo_circle__img-bd2_ff shadow1" style="background-image: url('https://cdn.gukjenews.com/news/photo/202005/2006480_2005601_5154.jpg');"></div>
+									</div>
+									<div class="photo_circle__dim hidden"></div>
+								</div>
+								<div class="fortune__recommend_info">
+									<div>딸기가좋아</div>
+									<div>30세</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 행운지수 -->
+					<div class="fortune__score_wrap">
+						<div class="fortune__score_tit fortune__score_tit-luck">행운지수</div>
+						<div class="fortune__luck" id="fortuneLuck">
+							<span class="fortune__score_txt">74%</span>
+						</div>
+						<div class="fortune__info_wrap">
+							<div class="fortune__info_tit tac">
+								오늘은 소원하는 일이 지금 당장 이루어집니다.
+							</div>
+							<div class="fortune__info_txt mt20">
+								오늘은 너무 조급해 하지 마십시오. 지금 조급해 한다고 될 문제가 아닙니다. 그 이유는 당신 혼자만의 역량으로는 실타래를 풀어갈 수 있는 역량이 안되기 때문입니다. 혼자서 일을 처리해 나가는 것보다는 귀인을 만나 소원을 성취하게 될 것입니다. 혼자서 일을 해결 하려는 마음을 버리고 주변에 도움을 청하시는 것이 빠른 성취를 불러오는 지름길이 될 것입니다. 그러나 분에 넘치는 소원은 바라지 않는 것이 좋습니다. 현 시점에서 큰 소원은 이루어지지 않으니 쓸데없이 경거망동 하지말고 차분히 기다리면 기쁜 소식이 곧 오게 될 것입니다. 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pb20 px15">
+					<a class="fortune__btn_default">
+						<span class="fortune__btn_default_txt">다른 운세 결과 보기</span>
+						<div class="icon__arrow"></div>
+					</a>
+				</div>
+			</div>
+		</main>
+		<div class="pop hidden">
+			<div class="pop__bg"></div>
+			<div class="pop__layer">
+				<div class="pop_alert">
+					<div class="pop_alert__container">
+						<div class="pop_alert__content">
+							<div class="pop_alert__tit mb12">여보야 맞선 서비스 회원만 이용 가능합니다.</div>
+							<div class="pop_alert__txt_box">맞선 서비스에 등록 하시겠습니까?</div>
+						</div>
+						<div class="pop_alert__btn_wrap">
+							<a class="fortune__btn_line fortune__btn_line-m mr8">
+								<span class="fortune__btn_line_txt">아니오</span>
+							</a>
+							<a class="fortune__btn_default fortune__btn_default-m">
+								<span class="fortune__btn_default_txt">네</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		// 바이오리듬 차트
+		const canvas = document.getElementById('viewFortuneGraph')
+        const ctx = canvas.getContext('2d');
+		// 면 채우기 그라디언트
+        const gradPhy = ctx.createLinearGradient(0, 0, 0, canvas.height / 2);
+        const gradEmo = ctx.createLinearGradient(0, 0, 0, canvas.height / 2);
+        const gradIntell= ctx.createLinearGradient(0, 0, 0, canvas.height / 2);
+
+        gradPhy.addColorStop(0, 'rgba(91,227,245,0.2)');
+        gradPhy.addColorStop(0.5, 'rgba(91,227,245,0.1)');
+        gradPhy.addColorStop(1, 'rgba(91,227,245,0)');
+
+        gradEmo.addColorStop(0, 'rgba(230,143,255,0.2)');
+        gradEmo.addColorStop(0.5, 'rgba(230,143,255,0.1)');
+        gradEmo.addColorStop(1, 'rgba(230,143,255,0)');
+
+        gradIntell.addColorStop(0, 'rgba(255,230,129,0.2)');
+        gradIntell.addColorStop(0.5, 'rgba(255,230,129,0.1)');
+        gradIntell.addColorStop(1, 'rgba(255,230,129,0)');
+		
+		// 선 채우기 그라디언트
+		const gradLinePhy = ctx.createLinearGradient(0, 0, canvas.width, 0);
+		const gradLineEmo = ctx.createLinearGradient(0, 0, canvas.width, 0);
+		const gradLineIntell = ctx.createLinearGradient(0, 0, canvas.width, 0);
+		
+		gradLinePhy.addColorStop(0, '#45FEC5');
+        gradLinePhy.addColorStop(1, '#5BE3F5');
+		
+		gradLineEmo.addColorStop(0, '#6192FF');
+        gradLineEmo.addColorStop(1, '#E68FFF');
+
+		gradLineIntell.addColorStop(0, '#FFE681');
+        gradLineIntell.addColorStop(1, '#FF9160');
+
+        let date = new Date();
+        const labels = [];
+        const today = date.getDate();
+        for (let i = today - 5; i < today + 4; i++) {
+            labels.push(i);
+        }
+		const totalDuration = 10000;
+		const delayBetweenPoints = 30;
+		const previousY = (ctx) => ctx.index === 0 ? ctx.chart.scales.y.getPixelForValue(100) : ctx.chart.getDatasetMeta(ctx.datasetIndex).data[ctx.index - 1].getProps(['y'], true).y;
+		const animation = {
+			x: {
+				type: 'number',
+				easing: 'easeIn',
+				duration: delayBetweenPoints,
+				from: NaN, 
+				delay(ctx) {
+				if (ctx.type !== 'data' || ctx.xStarted) {
+					return 0;
+				}
+				ctx.xStarted = true;
+				return ctx.index * delayBetweenPoints;
+				}
+			},
+			y: {
+				type: 'number',
+				easing: 'easeIn',
+				duration: delayBetweenPoints,
+				from: previousY,
+				delay(ctx) {
+				if (ctx.type !== 'data' || ctx.yStarted) {
+					return 0;
+				}
+				ctx.yStarted = true;
+				return ctx.index * delayBetweenPoints;
+				}
+			}
+		};
+        var myChart = new Chart(ctx, {
+			type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                        label: '# of Votes',
+                        data: [19, 31, 19, 31, 30, 43, 29, 23, 34],
+                        backgroundColor: gradEmo,
+                        borderColor: gradLineEmo,
+                        borderWidth: 1.5,
+                        tension: 0.4,
+                        fill: true,
+                        radius:0,
+                    },
+                    {
+                        label: '# of Votes',
+                        data: [19, 31, 32, 24, 28, 25, 20, 35, 42],
+                        backgroundColor: gradIntell,
+                        borderColor: gradLineIntell,
+                        borderWidth: 1.5,
+                        tension: 0.4,
+                        fill: true,
+                        radius:0,
+						z:1,
+                    },
+                    {
+                        label: '# of Votes',
+                        data: [19, 31, 13,25,42,33,16,27,39],
+                        backgroundColor: gradPhy,
+                        borderColor: gradLinePhy,
+                        borderWidth: 1.5,
+                        tension: 0.4,
+                        fill: true,
+                        radius:0,
+						z:2,
+                    }
+                ],
+
+            },
+            options: {
+				reponsive:true,
+				animation,
+                plugins: {
+					legend: {
+						display:false,
+                    },
+                },
+                scales: {
+					x: {
+						ticks:{
+							callback: function(val, index) {
+								return index === 0 || index === labels.length - 1 ?  '' : this.getLabelForValue(val);
+							},			
+							color: '#909090',
+                            font: {
+								family:"Noto Sans KR",
+								weight:"700",
+                                size: 14,
+                            },
+                        },
+                        grid: {
+                            display: false,
+                        }
+                    },
+                    y: {
+                        grid: {
+							display:false,
+                        },
+						ticks:{
+							display:false,		
+						}
+                    }
+                }
+            }
+        });
+    </script>
+	<script>
+		let fortuneLuck = lottie.loadAnimation({
+			container: document.getElementById('fortuneLuck'),
+			renderer: "svg",
+			loop: false,
+			autoplay: true,
+			path: "../../ani/ani_fortune_luck_middle.json",
+		});
+		let fortuneLove = lottie.loadAnimation({
+			container: document.getElementById('fortuneLove'),
+			renderer: "svg",
+			loop: false,
+			autoplay: true,
+			path: "../../ani/ani_fortune_love_70.json",
+		});
+	</script>
+	<script src="../../js/default.js"></script>
+	<script src="../../vendors/siteMap.bundle.js"></script>
+</body>
+</html>

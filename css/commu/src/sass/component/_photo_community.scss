@@ -1,0 +1,48 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                   Photo                    □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 공통 사진 영역
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.photo{
+	// border
+	&__inner{
+		background-color:$white;
+	}
+	&__inner-bg_no{
+		background-color:transparent;
+	}
+	/* 대표 사진 뱃지 */
+	&__bdg_represent{
+		@include position(absolute,$l:0,$t:0);
+		@include flex($jc:center,$ai:center);
+		width: 40px;
+		height: 20px;
+		background: linear-gradient(to bottom, #8A8EFB, #7074F0);
+		border-radius: 8px 0 8px 0;
+		&_txt{
+			color: #fff;
+			font-size: 12px;
+			font-weight: 700;
+		}
+	}
+
+	/* 거래완료 dim */
+	&__bdg_done{
+		@include position(absolute,$l:1px,$b:1px);
+		@include flex($jc:center,$ai:center);
+		width:calc(100% - 2px);
+		height:28px;
+		background: rgba(0, 0, 0, 0.5);
+		border-radius:0 0 4px 4px;
+		&_txt{
+			color:#fff;
+			font-size: 13px;
+		}
+	}
+}

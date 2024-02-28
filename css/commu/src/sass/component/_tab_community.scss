@@ -1,0 +1,21 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                   tab                      □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 탭 영역
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.tab{
+    &__badge_new_n{
+        @include position(absolute,null,-2px,-11px);
+        width:15px;
+        height:15px;
+        border-radius: 50%;
+        background:$new_badge_color url("#{$url_marry}/common/ico_new_n.png") no-repeat center;
+        background-size:15px;
+    }
+}

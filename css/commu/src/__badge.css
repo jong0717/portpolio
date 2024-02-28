@@ -1,0 +1,12 @@
+@charset "utf-8";/*---------------------------------------------
+파일명 : __badge
+설　명 : 뱃지
+작성순서 : 1. 레이아웃 2.크기/간격 3.박스모양 4.폰트 5.기타
+position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.badge { display: inline-flex; flex:0 0 auto; } 
+
+/* 기본뱃지 */
+.badge__basic { display: inline-flex; justify-content: center; align-items: center; min-width: 26px; height: 22px; padding: 0 8px; border: 1px solid; border-color: transparent; border-radius: 4px; box-sizing: border-box; font-size: 12px; font-weight: 700;} 
+.badge__basic-bdgreen { border-color: #18CC95; color: #18CC95;}
+.badge__basic-bdgray { border-color: #909090; color: #909090;}

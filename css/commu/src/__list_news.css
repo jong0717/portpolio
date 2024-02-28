@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __list_news
+	설　명 : 알림 / 내소식
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.list_news{position: relative;}
+.list_news__li{margin-top: 8px;}
+.list_news__date{display: flex; align-items: center;}
+.list_news__date_box{flex: none; position: relative; padding: 3px 10px 4px; border-radius: 13px; background-color: #F1F1F1; font-size: 12px; color: #707070;}
+.list_news__date::after, .list_news__date::before{content: ""; width: 100%; height: 2px; background-color: #F1F1F1;}
+.list_new__box{display: flex; align-items: center; padding: 12px 20px 12px 15px; border-bottom: 1px solid #EEEEEE; cursor: pointer;}
+.list_new__box:last-child{border-bottom: none;}
+.list_news__icon{flex: none; width: 38px; height: 38px; margin-right: 12px; border-radius: 7px; border: 1px solid #B8B8B8; box-sizing: border-box; background-position: center; background-repeat: no-repeat; background-size: 38px auto;}
+.list_news__tit_wrap{display: flex; align-items: center;}
+.list_news__tit{font-weight: 700; color: #202020;}
+/* .list_news__tit_service{margin-right: 2px;}
+.list_news__tit_service-marry{color: #3654AE;}
+.list_news__tit_service-noble{color: #C25A00;}
+.list_news__tit_service-commu{color: #585DEF;}
+.list_news__tit_service-life{color: #585DEF;} */
+.list_news__bdg_new{flex: none; margin: 3px; width: 14px; height: 14px; margin-left: 4px; border-radius: 50%; background: #ff5656 url("https://image.yeoboya.com/imgs/new_wedding/common/ico_new_n_s.png") no-repeat center; background-size: 14px 14px;
+}
+.list_news__txt{font-size: 13px;}
+/* .list_news__sub-red{color: #EA3C3C;}
+.list_news__sub-man{color: #0077FF;}
+.list_news__sub-woman{color: #FF5757;} */
+.list_news__time{margin-top: 4px; padding-left: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 13' xml:space='preserve'%3e%3cpath fill='%23909090' d='M6.5.2c3.5 0 6.2 2.8 6.2 6.2s-2.8 6.2-6.2 6.2S.2 10 .2 6.5 3 .2 6.5.2zm0 11c2.6 0 4.8-2.1 4.8-4.8S9.1 1.8 6.5 1.8 1.8 3.9 1.8 6.5s2.1 4.7 4.7 4.7z'/%3e%3cpath fill='%23909090' d='M9.4 8.8c-.1 0-.3 0-.4-.1L6.3 7.2c-.2-.2-.4-.4-.4-.7v-3c0-.4.3-.8.8-.8s.8.3.8.8v2.6l2.4 1.3c.4.2.5.7.3 1-.3.3-.5.4-.8.4z'/%3e%3c/svg%3e") left center no-repeat; background-size: 13px 13px; font-size: 12px; color: #909090;}

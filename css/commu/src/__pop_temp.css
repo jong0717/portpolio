@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_temp.css
+	설　명 : 커뮤니티 등록시 안내 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_temp{position: relative; width: 100%; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 1px 4px rgb(0 0 0 / 32%)}
+.pop_temp__container{width: 100%; padding: 24px 15px 20px; box-sizing: border-box;}
+.pop_temp__content{width: 100%;}
+.pop_temp__tit{margin-bottom: 24px; width: 100%; text-align: center; line-height: 21px; font-weight: 700; color: #202020;}
+.pop_temp__progress{height: 10px; background-image: linear-gradient(to right, #92b5eb, #3465ae); border-radius: 8px; overflow: hidden;}
+.pop_temp__progress_bar{position: relative;width: 100%;height: 100%;margin-left: auto; background-color: #F1F1F1;transition: transform 0.5s ease-out; }
+.pop_temp__txt_box{width: 100%; margin-bottom: 16px; text-align: center; font-size: 14px; color: #202020; word-break: break-all;}
+/* .pop_temp__ */
+.pop_temp__index{width: 23px; height: 23px; margin: 0 auto 6px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/img/img_talk_balloon.png") no-repeat center; background-size: 100% auto; line-height: 23px; font-size: 12px; color: #fff; }
+.pop_temp__subtit{font-weight: 700;}
+.pop_temp__txt{margin-top: 6px; font-size: 12px; color: #707070;}
+.pop_temp__btn_wrap{display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%; margin: 32px auto 0; box-sizing: border-box;}
+/* .pop_temp__circle_half{fill:none;stroke-width:12;stroke-linecap:round;stroke: #f8f8f8;} */
+
+.pop_temp__chart_wrap-navy .pop_temp__chart_stop_start{}
+.pop_temp__chart_wrap-navy .pop_temp__chart_stop_end{}
+/* .pop_temp__chart_wrap-navy .pop_temp__chart{stroke-dasharray: 48;} */
+.pop_temp__chart{stroke-dashoffset: 200;}
+/* .pop_temp__chart{}
+.pop_temp__chart_stop_start{}
+.pop_temp__chart_stop_end{} */

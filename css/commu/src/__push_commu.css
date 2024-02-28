@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __push_commu
+	설　명 : 포탈 푸시 헤드업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+@keyframes commuPush {
+    0% {top:-60%;}
+    10%{top:-40%;}
+    30% {top:6%;}
+    60% {top:6%;}
+    70% {top:6%;}
+    80% {top:6%;}
+    100% {top:-60%;}
+}
+
+.push_commu{position:fixed; width: 330px; top:0; left: 50%; transform: translateX(-50%); z-index: 5000; padding: 12px 16px; border: 1px solid #585DEF; border-radius: 8px; background: #F3F4FF; box-sizing: border-box; box-shadow: 0 3px 8px rgba(0, 0, 0, .16); animation: commuPush 6s ease-in-out forwards;}
+.push_commu__tit_wrap{display: flex; }
+.push_commu__tit_img{flex: none; width: 21px; height: 21px; margin-right: 4px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_push_msg.png") no-repeat center; background-size: 21px 21px;}
+.push_commu__tit{color: #202020; font-weight: 700;}
+.push_commu__txt{font-size: 14px;}

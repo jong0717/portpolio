@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __tab_switch
+	설　명 : 
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.tab_switch {flex:0 0 auto; cursor:pointer;}
+.tab_switch__track {position:relative; display:flex; align-items: center; justify-content:space-between; width:164px; height:36px; border-radius: 18px; background:#F5F5F5; border:1px solid #8A8EFB; box-sizing: border-box; transition:0.3s cubic-bezier(.5,0,.5,1);}
+.tab_switch__track_txt {width:50%; text-align: center; color:#8A8EFB;}
+
+.tab_switch__handle {position:absolute; top:0; left:0; width:82px; height:34px; line-height:34px; text-align: center; border-radius: 18px; background:linear-gradient(to right, #6F73F0, #8A8EFB); box-shadow:0 1px 5px rgba(0, 0, 0, 0.24);  transition:0.3s cubic-bezier(.5,0,.5,1);}
+.tab_switch__handle::before {content:"팝니다"; position: absolute; left: 50%; transform: translateX(-50%); color:#fff; font-weight: 700; transition:0.3s cubic-bezier(.5,0,.5,1); opacity:1;}
+.tab_switch__handle::after {content:"삽니다"; position: absolute; left: 50%; transform: translateX(-50%); color:#fff; font-weight: 700; transition:0.3s cubic-bezier(.5,0,.5,1); opacity:0;}
+.tab_switch.active .tab_switch__handle::before {opacity:0;}
+.tab_switch.active .tab_switch__handle::after {opacity:1;}
+
+.tab_switch__handle_txt {color:#fff; font-weight: 700;}
+.tab_switch.active .tab_switch__handle {transform: translate(82px);}
+
+

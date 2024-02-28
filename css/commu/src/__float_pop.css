@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __float_pop
+	설　명 : 플로팅 버튼 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.float_pop{position:absolute; z-index: 1; top:50%; right:0; opacity: 0;}
+.float_pop__bg{position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.8);}
+.float_pop__container{position:absolute; right:0; bottom:0;}
+.float_pop__list{position:absolute; right:0; bottom:0; margin-bottom:-22px; transition: 0.25s ease-out; transform: translateY(0);}
+.float_pop__btn{display:flex; align-items: center; justify-content: flex-end;}
+.float_pop__btn_txt{margin-right:15px; color:#fff; font-size:15px; font-weight:700; white-space: nowrap; opacity: 0; transition:0.2s opacity ease-in-out; transition-delay:0.2s;}
+/* .float_pop__btn_icon{flex:0 0 auto; display:flex; width:44px; height:44px; margin-right:3px; border-radius: 50%; background:#fff; box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);} */
+.float_pop__btn_icon{flex:0 0 auto; display:flex; width:40px; height:40px; margin-right: 5px; border-radius: 50%; background-color: #FFF; background-position: center; background-repeat: no-repeat; background-size: 40px 40px; box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);}
+.float_pop__btn_evnt{position:relative; flex:0 0 auto; display:flex; width:60px; height:60px; left: 5px;}
+
+/* 활성화 */
+.float_pop.active{opacity: 1;}
+.float_pop.active .float_pop__list-align_01{transform: translateY(-58px);}
+.float_pop.active .float_pop__list-align_02{transform: translateY(-110px);} /* 52px씩 증가 */
+.float_pop.active .float_pop__list-align_03{transform: translateY(-162px);}
+.float_pop.active .float_pop__list-align_04{transform: translateY(-214px);}
+.float_pop.active .float_pop__list-align_05{transform: translateY(-266px);}
+.float_pop.active .float_pop__list-align_06{transform: translateY(-318px);}
+.float_pop.active .float_pop__list-align_07{transform: translateY(-370px);}
+.float_pop.active .float_pop__list-align_08{transform: translateY(-422px);}
+.float_pop.active .float_pop__list-align_09{transform: translateY(-474px);}
+.float_pop.active .float_pop__btn_txt{opacity: 1;}
+
+/* 아이콘 */
+.float_pop__icon_chat{width:100%; height:100%; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_float_chat.png") no-repeat center; background-size: 28px 28px;}
+.float_pop__icon_post{width:100%; height:100%; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_float_post.png") no-repeat center; background-size: 28px 28px;}
+
+/* 플로팅 아이콘 */
+.float_pop__btn_icon-mypage{background-image: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_float_mypage.png");}
+.float_pop__btn_icon-post{background-image: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_float_postreg.png");}

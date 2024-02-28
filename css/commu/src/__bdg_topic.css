@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __bdg_topic
+	설　명 : 토픽 뱃지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.bdg_topic{display: inline-flex; justify-content: center; align-items: center; height: 25px; padding: 0 8px; border-radius: 14px; background-color: #ECF3FE; font-size: 12px; font-weight: 400; color: #253066;}
+.bdg_topic-s{height: 20px; padding: 0 6px; border-radius: 10px; font-size: 11px; font-weight: 500;}

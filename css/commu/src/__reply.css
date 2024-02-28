@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __reply
+	설　명 : 댓글
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+
+.reply{position: relative; border-bottom: 8px solid #F1F1F1;}
+.reply__container{position: relative;}
+
+.reply__box_outer{position: relative;}
+.reply__box_outer.disabled{background-color: #FAFAFA;}
+.reply__box{position: relative; margin: 0 15px; padding: 12px 0;}
+.reply__top{display: flex; align-items: flex-start; width: 100%;}
+.reply__prf_info{margin-left: 6px;}
+.reply__prf_name_wrap{display: flex; align-items: center;}
+.reply__prf_name{font-size: 14px; color: #202020}
+.reply__date{font-size: 13px; color: #909090;}
+.reply__prf_bdg_status{height: 20px; margin-left: 4px; padding: 0 5px; border-radius: 14px; border: 1px solid #A4A4A4; background-color: #FFF; font-size: 11px; color: #909090; line-height: 18px; box-sizing: border-box;}
+.reply__btn_more{width: 28px; height: 28px; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56' xml:space='preserve'%3e%3ccircle fill='%23909090' cx='28' cy='28' r='3'/%3e%3ccircle fill='%23909090' cx='28' cy='40' r='3'/%3e%3ccircle fill='%23909090' cx='28' cy='16' r='3'/%3e%3c/svg%3e") center no-repeat; background-size: 28px 28px;}
+
+.reply__content{margin-left: 8px; padding-left: 36px;}
+.reply__txt_wrap{position: relative;}
+.reply__txt{line-height: 22px; font-size: 14px; color: #202020; word-break: break-all; white-space: pre-wrap;}
+.reply__txt_anchor_name{display: inline-block; margin-right: 5px; color: #7496FF;}
+.reply__txt_more{margin-top: 2px; font-size: 14px; color: #909090;}
+.reply__txt_bot{display: flex; align-items: center; width: 100%; margin-top: 12px;}
+.reply__btn_write{padding-left: 24px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_write_50.png") left center no-repeat; background-size: 24px 24px; font-size: 12px; color: #505050; line-height: 24px;}
+.reply__btn_like{margin-left: 8px; padding-left: 24px; padding-right: 8px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' xml:space='preserve'%3e%3cpath fill='%23909090' d='M34.1 18c-1.3-1.3-3-2-4.8-2-2.1 0-4 1-5.3 2.7-1.2-1.7-3.2-2.7-5.3-2.7-1.8 0-3.6.7-4.8 2-1.2 1.3-1.9 3-1.9 4.8.1 2.1.9 4 2.4 5.5 1.8 1.9 3.8 3.6 5.9 5.2.9.7 1.8 1.4 2.8 2.2.5.4 1.3.4 1.9 0 1-.8 1.9-1.5 2.8-2.3 2.1-1.6 4.1-3.3 5.9-5.2 1.5-1.5 2.3-3.4 2.4-5.5-.1-1.7-.8-3.4-2-4.7m-1.9 8.9c-1.8 1.8-3.7 3.5-5.7 5-.8.6-1.6 1.3-2.5 2-.8-.6-1.5-1.2-2.2-1.8l-.3-.2c-2-1.5-3.9-3.2-5.7-5-1.1-1.1-1.7-2.5-1.8-4.1 0-1.2.5-2.4 1.3-3.3.9-.9 2.1-1.4 3.4-1.4h.1c1.4 0 2.8.7 3.6 1.9l.6.9c.4.6 1.2.7 1.7.3l.3-.3.6-.9c.8-1.2 2.2-1.9 3.7-1.9h.1c1.3 0 2.5.5 3.3 1.4.9.9 1.3 2.1 1.3 3.3 0 1.5-.7 3-1.8 4.1'/%3e%3c/svg%3e") left center no-repeat; background-size: 24px 24px; font-size: 12px; color: #909090; line-height: 24px;}
+.reply__btn_like.active{background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' xml:space='preserve'%3e%3cpath fill='%23FF6E6E' d='M34.1 18c-1.3-1.3-3-2-4.8-2-2.1 0-4 1-5.3 2.7-1.2-1.7-3.2-2.7-5.3-2.7-1.8 0-3.6.7-4.8 2-1.2 1.3-1.9 3-1.9 4.8.1 2.1.9 4 2.4 5.5 1.8 1.9 3.8 3.6 5.9 5.2.9.7 1.8 1.4 2.8 2.2.5.4 1.3.4 1.9 0 1-.8 1.9-1.5 2.8-2.3 2.1-1.6 4.1-3.3 5.9-5.2 1.5-1.5 2.3-3.4 2.4-5.5-.1-1.7-.8-3.4-2-4.7'/%3e%3c/svg%3e") left center no-repeat;}
+.reply__btn_reply_more{position: relative; display: flex; align-items: center; margin-left: auto; font-size: 12px; color: #505050; line-height: 24px;}
+.reply__btn_reply_more_ico{width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3e%3cpath fill='none' d='M0 0h32v32H0z'/%3e%3cpath fill='%23505050' d='M16 19c.2 0 .4-.1.5-.2l8-6.4c.3-.3.4-.8.1-1.1-.3-.3-.8-.4-1.1-.1l-7.5 6-7.5-6c-.3-.3-.8-.2-1.1.1-.3.3-.2.8.1 1.1l8 6.4c.1.1.3.2.5.2z'/%3e%3c/svg%3e") center no-repeat; background-size: 100%;}
+.reply__btn_reply_more-hidden .reply__btn_reply_more_ico{transform: rotate(180deg);}
+
+
+.reply__container-nested .reply__box{padding-left: 30px; border-top: 1px solid #F1F1F1;}
+.reply__container-nested .reply__box::before{content: ""; position: absolute; top: 24px; left: 8px; width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3e%3cpath fill='none' stroke='%23909090' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M7 7v18h18'/%3e%3c/svg%3e") center no-repeat; background-size: 16px 16px;}
+.reply__container-nested .reply__box-input{padding-top: 0; border-top: none; margin-top: -4px;}
+.reply__container-nested .reply__box-input::before{top: 12px;}
+
+
+/* 차단, 삭제 댓글 */
+.reply__txt_block{padding-left: 20px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3e%3cpath fill='%23202020' d='M16 30C8.3 30 2 23.7 2 16S8.3 2 16 2s14 6.3 14 14-6.3 14-14 14m0-26C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4'/%3e%3cpath fill='%23202020' d='M16 8.6c.9 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6M16 13.6c.8 0 1.4.6 1.4 1.4v7.7c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4V15c0-.8.6-1.4 1.4-1.4'/%3e%3c/svg%3e") left center no-repeat; background-size: 16px 16px; font-size: 14px;}
+.reply__txt_block_sub{font-size: 12px; color: #505050; line-height: 20px;}

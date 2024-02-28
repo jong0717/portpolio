@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __list_grid
+	설　명 : 그리드 뷰 리스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.list_grid{width:100%; box-sizing: border-box;}
+.list_grid__container{display: grid;}
+.list_grid__container-col_2{grid-template-columns: repeat(2, 1fr); column-gap: 8px; row-gap: 8px;}
+.list_grid__container-col_3{grid-template-columns: repeat(3, 1fr); column-gap: 6px; row-gap: 6px;}
+.list_grid__container-col_4{grid-template-columns: repeat(4, 1fr); column-gap: 6px; row-gap: 6px;}
+/* 리스트 */
+.list_grid__list{width:100%;}
+

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __view_market
+	설　명 : 중고거래 상세페이지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.view_market{position: relative;}
+.view_market__tit_wrap{position: relative; margin:0 15px;}
+.view_market__topic_wrap{margin-bottom: 8px;}
+.view_market__tit{margin-bottom: 4px; font-size: 18px; font-weight: 700; line-height: 25px; color: #202020; word-break: break-all;}
+
+.view_market__meta_wrap{margin-bottom: 4px; font-size: 12px; color: #909090;}
+.view_market__meta_date{margin-right: 8px;}
+.view_market__meta_views{padding-left: 18px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' xml:space='preserve'%3e%3cpath fill='%23909090' d='M14.94 8.25C14.85 8.07 12.69 4 9 4c-1.75.03-3.4.82-4.53 2.16-.58.63-1.06 1.35-1.43 2.13-.06.14-.06.3 0 .43.37.78.85 1.5 1.43 2.13A6.055 6.055 0 0 0 9 13c3.69 0 5.85-4.07 5.94-4.25a.55.55 0 0 0 0-.5'/%3e%3cpath fill='white' d='M9 11.26c-1.52 0-2.76-1.23-2.77-2.75s1.23-2.76 2.75-2.77 2.76 1.23 2.77 2.75v.01c0 1.52-1.23 2.75-2.75 2.76m0-4.48c-.95 0-1.72.76-1.72 1.71s.76 1.72 1.71 1.72 1.72-.76 1.72-1.71v-.01c0-.94-.76-1.71-1.71-1.71'/%3e%3c/svg%3e") left center no-repeat; background-size: 18px 18px;}
+.view_market__meta_like{padding-left: 18px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' xml:space='preserve'%3e%3cpath fill='%23909090' d='M14.05 5a3.339 3.339 0 0 0-2.42-1C10.59 4 9.61 4.5 9 5.35A3.237 3.237 0 0 0 6.37 4c-.91-.01-1.79.35-2.42 1-.62.64-.96 1.5-.95 2.38.03 1.03.46 2.01 1.19 2.73.91.94 1.9 1.81 2.95 2.59.44.35.9.72 1.39 1.12.27.22.66.22.94 0 .49-.4.95-.77 1.4-1.13 1.05-.78 2.04-1.65 2.95-2.59.73-.73 1.15-1.7 1.18-2.73.01-.87-.33-1.73-.95-2.37m-.95 4.46c-.88.91-1.84 1.75-2.86 2.51-.4.32-.81.65-1.24 1-.39-.32-.76-.61-1.12-.9l-.15-.11c-1.01-.76-1.96-1.59-2.84-2.5-.54-.55-.86-1.28-.89-2.05-.01-.62.23-1.22.66-1.67.44-.45 1.05-.7 1.68-.7h.03c.72 0 1.39.35 1.81.93l.31.43c.2.28.59.34.87.14.05-.04.1-.09.14-.14l.31-.43c.42-.59 1.1-.93 1.83-.93h.03c.63 0 1.23.25 1.67.7.42.44.66 1.03.66 1.65-.02.78-.35 1.52-.9 2.07'/%3e%3c/svg%3e") left center no-repeat; background-size: 18px 18px;}
+.view_market__meta_like.active{padding-left: 18px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' xml:space='preserve'%3e%3cpath fill='%23FB9494' d='M14.05 5a3.339 3.339 0 0 0-2.42-1C10.59 4 9.61 4.5 9 5.35A3.237 3.237 0 0 0 6.37 4c-.91-.01-1.79.35-2.42 1-.62.64-.96 1.5-.95 2.38.03 1.03.46 2.01 1.19 2.73.91.94 1.9 1.81 2.95 2.59.44.35.9.72 1.39 1.12.27.22.66.22.94 0 .49-.4.95-.77 1.4-1.13 1.05-.78 2.04-1.65 2.95-2.59.73-.73 1.15-1.7 1.18-2.73.01-.87-.33-1.73-.95-2.37m-.95 4.46c-.88.91-1.84 1.75-2.86 2.51-.4.32-.81.65-1.24 1-.39-.32-.76-.61-1.12-.9l-.15-.11c-1.01-.76-1.96-1.59-2.84-2.5-.54-.55-.86-1.28-.89-2.05-.01-.62.23-1.22.66-1.67.44-.45 1.05-.7 1.68-.7h.03c.72 0 1.39.35 1.81.93l.31.43c.2.28.59.34.87.14.05-.04.1-.09.14-.14l.31-.43c.42-.59 1.1-.93 1.83-.93h.03c.63 0 1.23.25 1.67.7.42.44.66 1.03.66 1.65-.02.78-.35 1.52-.9 2.07'/%3e%3c/svg%3e") left center no-repeat; background-size: 18px 18px;}
+.view_market__prf_wrap{display: flex; align-items: center; padding: 6px 0 5px ;}
+.view_market__prf_ico{width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16.002'%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath data-name='%ec%82%ac%ea%b0%81%ed%98%95 51639' transform='translate(2020 91)' fill='white' d='M0 0h16v16.002H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg data-name='%eb%a7%88%ec%8a%a4%ed%81%ac %ea%b7%b8%eb%a3%b9 41084' transform='translate(-2020 -91)' clip-path='url(%23a)'%3e%3cg data-name='%ea%b7%b8%eb%a3%b9 93341' transform='translate(2021.926 93.748)' fill='%23b8b8b8'%3e%3ccircle data-name='%ed%83%80%ec%9b%90 148' cx='3.054' cy='3.054' r='3.054' transform='translate(3.02)'/%3e%3cpath data-name='%ed%8c%a8%ec%8a%a4 351' d='M.48 11.932c.353-3.508 2.739-6.364 5.6-6.364 2.9 0 5.285 2.786 5.587 6.364'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 100% auto;}
+.view_market__prf_name{font-size: 13px; color: #909090;}
+.view_market__content{margin: 16px 15px 12px;}
+.view_market__photo_wrap{margin-bottom: 16px;}
+.view_market__txt{font-size: 14px; color: #202020; line-height: 21px; word-break: break-all; white-space: pre-wrap;}
+
+/* 찜, 좋아요 */
+.view_market__icon_heart{width: 28px; height: 28px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'%3e%3cpath fill='none' stroke='%23909090' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' d='M27.2 46.7C14.7 36 6 30.4 6 21.4 6 14.6 10.9 9 17.7 9c4.7 0 8.2 2.8 10.3 6.8 2.1-4 5.6-6.8 10.3-6.8C45.1 9 50 14.6 50 21.4c0 9-8.7 14.6-21.2 25.3-.4.4-1.2.4-1.6 0z'/%3e%3c/svg%3e") center no-repeat; background-size: 28px 28px; }
+.view_market__icon_heart.active{width: 28px; height: 28px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'%3e%3cpath fill='%23FF6E6E' stroke='%23FF6E6E' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' d='M27.2 46.7C14.7 36 6 30.4 6 21.4 6 14.6 10.9 9 17.7 9c4.7 0 8.2 2.8 10.3 6.8 2.1-4 5.6-6.8 10.3-6.8C45.1 9 50 14.6 50 21.4c0 9-8.7 14.6-21.2 25.3-.4.4-1.2.4-1.6 0z'/%3e%3c/svg%3e") center no-repeat; background-size: 28px 28px;}
+.view_market__icon_heart_ani{position: absolute; top:-8px; left:-8px; width: 60px; height: 60px;}
+
+.view_market__spot_gray{padding-left:18px; margin-left:auto; background:url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_view_spot_gray.png") left center no-repeat; background-size: 16px 16px; font-size:12px;}
+.view_market__spot_green{padding-left:18px; margin-left:auto; background:url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_view_spot_green.png") left center no-repeat; background-size: 16px 16px; font-size:12px;}

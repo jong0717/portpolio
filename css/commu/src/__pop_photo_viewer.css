@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_photo_viewer
+	설　명 : 공통 포토 뷰어
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+body .pop_photo_viewer{position:absolute; top:0; left:0; width:100%; height:100%;}
+body .pop_photo_viewer__bg{position: absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,1);}
+body .pop_photo_viewer__inner{position: absolute; top:0; left:0; width:100%; height:100%;}
+body .pop_photo_viewer__cnt_wrap{position:absolute; top:10px; left:50%; transform: translateX(-50%);}
+body .pop_photo_viewer__cnt_num{color:#fff; font-size:16px; font-weight:400; letter-spacing: 0;}
+body .pop_photo_viewer__btn_cls{position:absolute; top:0; right:0; display:flex; justify-content: center; align-items: center; width:44px; height:44px;}
+body .pop_photo_viewer__container{position:absolute; top:0; left:0; width:100%; height:calc(100vh - 90px); margin-top:45px; overflow:hidden;}
+body .pop_photo_viewer__wrapper{display:flex; align-items: center; width:100%; height:100%;}
+body .pop_photo_viewer__slide{flex: 0 0 auto; width:100%; height:100%; display:flex; align-items: center;}
+body .pop_photo_viewer__img{width:100%; max-height: 100%; object-fit: contain;}
+body .pop_photo_viewer__btn_next{position:absolute; top:50%; right:0; z-index: 2; width:40px; height:40px; background:rgba(0,0,0,.4) url("https://image.yeoboya.com/imgs/new_wedding_portal/common/ico_arrow.png") no-repeat right top; background-size:auto 100%;}
+body .pop_photo_viewer__btn_prev{position:absolute; top:50%; left:0; z-index: 2; width:40px; height:40px; background:rgba(0,0,0,.4) url("https://image.yeoboya.com/imgs/new_wedding_portal/common/ico_arrow.png") no-repeat left top; background-size:auto 100%;}
+body .pop_photo_viewer__zoom_container{display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; text-align: center;}
+body .pop_photo_viewer__btn_wrap{position:fixed; left:50%; bottom:20px; display:flex; max-width: 100%; transform: translateX(-50%);}
+body .pop_photo_viewer__btn{display:flex; flex-direction: column; justify-content: center; align-items: center; width:70px; height:70px; border-radius: 8px; background-color:rgba(0,0,0,.32);}
+body .pop_photo_viewer__ico_del{width:40px; height:40px; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' xml:space='preserve'%3e%3cg fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10'%3e%3cpath d='M13.78 25.47h52.44M46.05 32.65v24.98M33.95 32.65v24.98M19.91 25.6h40.18v37.17c0 2.21-1.79 4-4 4H23.91c-2.21 0-4-1.79-4-4V25.6h0zM30.08 25.47v-3.69a4.605 4.605 0 0 1 4.68-4.54h10.49c2.55-.04 4.64 2 4.68 4.54v3.69'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:40px 40px;}
+body .pop_photo_viewer__ico_rotate{width:40px; height:40px; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' xml:space='preserve'%3e%3cg fill='white'%3e%3cpath d='M73.87 29.56c-.43-.6-1.15-.92-1.88-.83l-2.75.35c-3.06-7.76-8.93-13.9-16.56-17.31-7.74-3.46-16.37-3.7-24.29-.67a31.72 31.72 0 0 0-16.84 15.02 2.002 2.002 0 0 0 3.55 1.85 27.66 27.66 0 0 1 14.72-13.12c6.92-2.65 14.46-2.44 21.23.59 6.36 2.84 11.31 7.85 14.08 14.18l-2.14.27c-.75.09-1.38.6-1.63 1.31s-.09 1.5.43 2.05l5.49 5.83c.38.4.91.63 1.46.63.1 0 .19-.01.29-.02.65-.09 1.2-.5 1.5-1.08l3.5-6.97c.33-.69.27-1.48-.16-2.08zM67.59 51.19c-.98-.51-2.19-.13-2.7.85a27.66 27.66 0 0 1-14.72 13.12c-13.86 5.3-29.39-1.3-35.3-14.74l2.37-.3c.75-.09 1.38-.6 1.63-1.31s.09-1.5-.43-2.05l-5.49-5.83c-.45-.47-1.09-.7-1.74-.61-.65.09-1.2.5-1.5 1.08L6.2 48.37c-.33.66-.27 1.45.15 2.05.38.53.99.85 1.63.85.08 0 .17 0 .25-.02l2.52-.32C15.7 63.37 27.65 71 40.31 71c3.76 0 7.58-.67 11.3-2.09a31.72 31.72 0 0 0 16.84-15.02c.5-.98.12-2.19-.86-2.7z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:40px 40px;}
+body .pop_photo_viewer__download{position: absolute; left: 50%; bottom: 20px; width: 70px; height: 70px; background: rgba(0, 0, 0, .16); border-radius: 8px; transform: translateX(-50%); cursor: pointer;}
+.pop_hoto_viewer__download_icon{width: 40px; height: 40px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3e%3cpath fill='white' d='M60.3 65H20.9c-5.7 0-10.3-4.6-10.3-10.3v-6.1c0-1.1.9-2 2-2s2 .9 2 2v6.1c0 3.5 2.8 6.3 6.3 6.3h39.4c1.7 0 3.2-.7 4.4-1.8s1.8-2.8 1.8-4.4v-6.1c0-1.1.9-2 2-2s2 .9 2 2v6.1C70.6 60.4 66 65 60.3 65z'/%3e%3cpath fill='white' d='M40.6 52.7c-.5 0-1-.2-1.4-.6l-14-13.5c-.8-.8-.8-2-.1-2.8.8-.8 2-.8 2.8-.1L40.6 48l12.7-12.2c.8-.8 2.1-.7 2.8.1s.7 2.1-.1 2.8L42 52.2c-.4.3-.9.5-1.4.5z'/%3e%3cpath fill='white' d='M40.6 52.7c-1.1 0-2-.9-2-2V14.4c0-1.1.9-2 2-2s2 .9 2 2v36.3c0 1.1-.9 2-2 2z'/%3e%3c/svg%3e") center no-repeat; background-size: 40px 40px;}
+body .pop_photo_viewer__download_txt{text-align: center; color: #FFF; font-size: 12px;}

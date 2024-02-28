@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __bnr_notice
+	설　명 : 공지사항 배너
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.bnr_notice{position: relative;}
+.bnr_notice__box{display: flex; align-items: center; width: 100%; box-sizing: border-box;}
+.bnr_notice__box-border{height: 44px; padding: 0 8px; border-radius: 8px; border: 1px solid #E1E1E1; background-color: #FFF;}
+.bnr_notice__box-full{height: 50px; padding: 0 15px; background-color: #F5F5F5;}
+.bnr_notice__icon_speaker{margin-right: 4px; width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_notice.png") center no-repeat; background-size: 20px 20px;}
+.bnr_notice__content{font-size: 14px; color: #202020;}
+.bnr_notice__btn_go{margin-left: auto; height: 24px;}

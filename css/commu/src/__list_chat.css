@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __list_chat
+	설　명 : 메시지 리스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.list_chat{position:relative; padding:15px; background-color:#fff; border-bottom: 1px solid #f1f1f1; overflow:hidden; box-sizing: border-box;}
+.list_chat.selected{background: #f5f5f5; border-bottom: 1px solid #e1e1e1;}
+.list_chat__box{display: flex; align-items: center;}
+.list_chat__content{width:100%; overflow:hidden; padding-left:6px;}
+.list_chat__prf{display: flex; align-items: center;}
+.list_chat__prf_name {font-weight: 700;}
+.list_chat__prf_area{flex: none; margin-left:4px; font-size: 13px;}
+.list_chat__txt_wrap{display: flex; align-items:flex-start;}
+.list_chat__txt {margin-left:2px; font-size:13px; color:#202020;}
+.list_chat__state{display: flex; flex-flow: column; align-self: flex-start; flex: none; align-items: flex-end; min-width: 44px; padding-left: 16px; margin-left:auto;}
+.list_chat__time {margin-top:4px; font-size: 12px;}
+.list_chat__msg_count{overflow: hidden; min-width: 18px; min-height: 18px; line-height: 18px; padding: 0 4px; margin-top:10px; border-radius: 9px; box-sizing: border-box; background: #FF5656; text-align: center; font-size: 11px; color:#fff; }
+
+/*아이콘*/
+.list_chat__ico_send{flex: none; width: 16px; height: 19px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3e%3cpath fill='%23EC662A' d='M17.21 21.95c-.62.64-.59 1.66.05 2.28l.06.06c.71.61 1.77.57 2.42-.11l6.81-7.2c.6-.62.6-1.6 0-2.23l-6.81-7.2c-.65-.67-1.71-.72-2.42-.11-.67.58-.75 1.6-.17 2.28l.06.06 4.2 4.44H6.71c-.91-.04-1.69.67-1.72 1.58-.04.91.67 1.69 1.58 1.72H21.4l-4.19 4.43z'/%3e%3c/svg%3e") no-repeat center; background-size: 16px 16px;}
+.list_chat__ico_receive{flex: none; width: 16px; height: 19px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3e%3cpath fill='%2363BFA8' d='M14.79 21.95c.62.64.59 1.66-.05 2.28l-.06.06c-.71.61-1.77.57-2.42-.11l-6.81-7.2c-.6-.62-.6-1.6 0-2.23l6.81-7.2c.65-.67 1.71-.72 2.42-.11.67.58.75 1.6.17 2.28l-.06.06-4.2 4.44h14.7c.91-.04 1.68.67 1.72 1.58.04.91-.67 1.69-1.58 1.72H10.6l4.19 4.43z'/%3e%3c/svg%3e") no-repeat center; background-size: 16px 16px;}

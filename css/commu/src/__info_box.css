@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/*---------------------------------------------
+	파일명 : __info_box
+	설　명 : infomation
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.info_box {width:100%; padding:8px 15px; box-sizing: border-box; background-color:#f5f5f5;}
+.info_box__exp_txt{font-size: 14px; line-height: 20px; color: #202020;}

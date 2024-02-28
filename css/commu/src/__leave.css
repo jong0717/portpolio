@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __leave
+	설　명 : 프로필 삭제 / 탈퇴 페이지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+@keyframes blink {
+0% {
+    opacity:1;
+}
+50% {
+    opacity:0.4;
+}
+100% {
+    opacity:1;
+}
+}
+
+/* 성혼 상대 선택 */
+.leave__profile_txt{display:inline-block; color:#fff; font-size: 13px;}
+.leave__txtbox{position: relative; width:90%; height: 160px; margin:0 auto 60px;}
+.leave__txtbox textarea{width:100%; height:100%; padding:16px; box-sizing:border-box; border:none; border-radius:5px; font-size: 15px; color:#121212; text-align:center;  background-color:#fff; outline-style:none; resize:none;}
+.leave__txtbox textarea::placeholder {background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/leave/ico_leave_pen.png"); background-repeat:no-repeat; background-position:6px 4px; background-size:15px; text-indent:23px; color:#666;}
+.leave__txtbox textarea:focus::placeholder {color:transparent; border:none; outline-style:none; background:none;}
+.leave__txtbox textarea:focus::-webkit-input-placeholder {color:transparent; border:none; outline-style:none; background:none;}
+.leave__txtbox textarea:focus::-moz-placeholder {color:transparent; border:none; outline-style:none; background:none;}
+.leave__placeholder{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff;}
+.leave__placeholder:focus{display: none;}
+.leave__btn_wrap{width:100%; margin:-24px auto 0; text-align:center; display:flex; align-items: center; justify-content: center; position:absolute; left:50%; bottom: 0; transform:translate(-50%);}
+.leave__wrap {position:relative; display: flex; align-items: center; width: 100%; min-height: 100vh; background-color:#A6D1D4; text-align: center; overflow: hidden;}
+.leave__wrap::before {content:''; position: absolute; top: 0; left: 0; width: 100%; height: 64px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/leave/leave_wedding_lacetp.png") no-repeat center 0; background-size:auto 64px; overflow:hidden;}
+.leave__wrap::after {content:''; position: absolute; bottom: 0; left: 0; width: 100%; height: 64px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/leave/leave_wedding_lacebt.png") no-repeat center top; background-size:auto 64px; overflow:hidden;}
+.leave__inner{position: relative; width: 100%; min-height: 480px; overflow: auto;}
+.leave__title {color:#fff; font-size: 16px; margin-top:20px;}
+.leave__title_txt-accent{color:#0A6D74;}
+.leave__profile_wrap {display:flex; justify-content:center; align-items:center; margin:34px 0 8px;}
+.leave__prf_name_my {margin-top: 4px; color:#0D777E}
+.leave__prf_name_other {margin-top: 4px; color:#E15777; -webkit-animation: blink infinite 1.2s both; animation: blink infinite 1.2s both;}
+.leave__prf_name_other_slct {color:#E15777;}
+.leave__prf_name_other_slct_none {color:#68ADB1;}
+.leave__ico_heart {width:34px; height:29px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/leave/ico_wedding_heart.png") no-repeat center center; background-size:100%;}
+.leave__btn {min-width:100px; width:24%; height:40px; line-height:40px; border-radius:40px; color:#fff; font-size:15px; box-sizing:border-box;}
+.leave__btn-left {background:#98C9CD; border:2px solid #fff; line-height:38px;}
+.leave__btn-right{background:#61A9AE; margin-left:5%;}
+.leave__list_thumnail img {width:100%; height:100%; border-radius:50%; object-fit: cover;}
+.leave__list_content {padding-right:5px; overflow: hidden; text-align:left;}
+.leave__list_prf_wrap{display: flex; align-items: center;}
+.leave__badge_new {background:#F67B8C;}
+.leave__badge_new,
+.leave__badge_re {width:32px; height:17px; line-height:17px; margin-right:1px;border-radius:4px; font-size:0.86rem;}
+.leave__thum {width: 70px; height: 70px; border-radius:50%; border:2px solid #fff; box-sizing:border-box; box-shadow: 1px 1px 4px rgba(0,0,0,0.2);}
+.leave__thum img {width:100%; height:100%; border-radius:50%; object-fit:cover;}
+.leave__profile {min-width:110px; min-height:89px; text-align:center; display:flex; flex-direction: column; align-items: center; justify-content:space-between; font-size:1rem; font-weight:600;}
+.leave__profile-partner{cursor: pointer;}
+/* 탈퇴하기 form */
+.leave__form{position: relative;}
+.leave__form_awards{width: 320px;}
+.leave__form_awards_sub{display: flex; justify-content: center;}
+.leave__form_txt_emp{background:  linear-gradient(rgba(125, 157, 255, .4) 100%, #ffffff 0%) center bottom no-repeat; background-size: 100% 8px;}
+.leave__form_txt_box{width: 150px; padding: 3px 0; border: 1px solid #3654AE; border-radius: 13px; color: #3654AE; text-align: center;}
+.leave__form_img_wrap{position: relative; width: 100%; padding-bottom: 40.56%;}
+.leave__form_img_wrap_2{position: relative; width: 100%; padding-bottom: 58.33%;}
+.leave__form_img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/img/img_yby_support_event.png") center no-repeat; background-size: 100%;}
+.leave__form_img_2{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/img/img_yby_store_support.png") center no-repeat; background-size: 100%;}
+.leave__form_couple_container{position: relative; display: flex; justify-content: center; align-items: center; height: 70px; padding: 10px 8px; margin-bottom: 8px; border: 1px solid #DFDFDF; border-radius: 5px; box-sizing: border-box;}
+.leave__form_couple_wrap{display: flex; align-items: center; width: 100%;}
+.leave__form_couple_btn{position: relative; display: flex; align-items: center; flex: none; height: 100%; cursor: pointer; border-left: 1px solid #F1F1F1;}
+.leave__form_btn_line{width: 1px; height: 100%; background: #F1F1F1; }
+.leave__form_couple_btn_txt{margin-left: 8px; padding: 0 8px; font-size: 13px; color: #0D777E;}
+.leave__form_couple_ico_heart{width: 17px; height: 14px; margin: 0 2px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_heart_couple.png") center no-repeat; background-size: 17px 14px;}
+.leave__form_prf{display: flex; align-items: center;}
+.leave__form_prf_name{margin-left: 5px; font-size: 14px; color: #101010;}

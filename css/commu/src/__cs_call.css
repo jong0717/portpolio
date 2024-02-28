@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __cs_call
+	설　명 : 고객센터 전화번호
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.cs_call{border-top:1px solid #B8B8B8; border-bottom:1px solid #B8B8B8; box-sizing: border-box;}
+.cs_call__box{display:flex; align-items: center; height:50px;}
+.cs_call__box-bd_bot{border-bottom:1px solid #F1F1F1;}
+.cs_call__tit{min-width: 90px; margin-left: 10px; text-align: center; margin: 0 2%;}
+.cs_call__content{display: flex; flex-direction: column; min-width: 164px; margin: 0 0 0 2%;}
+.cs_call__number{display:flex; align-items: center;}
+.cs_call__btn_wrap{display: flex; margin-top: 10px;}
+.cs_call__btn_call_wrap{width: 50px; padding: 10px 2%; cursor: pointer;}
+.cs_call__btn_call{width: 30px; height: 30px; border-radius: 15px; background: #FFFFFF; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18'%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath data-name='%ec%82%ac%ea%b0%81%ed%98%95 59826' transform='translate(310 408)' fill='white' d='M0 0h18v18H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg data-name='%eb%a7%88%ec%8a%a4%ed%81%ac %ea%b7%b8%eb%a3%b9 1' transform='translate(-310 -408)' clip-path='url(%23a)'%3e%3cpath data-name='%ed%8c%a8%ec%8a%a4 454312' d='M326.369 421.657a79.652 79.652 0 0 0-2.83-2.032c-.707-.489-.881-.449-1.5.2a1.821 1.821 0 0 1-2.564.321 12.4 12.4 0 0 1-3.226-3.5 1.5 1.5 0 0 1 .141-2.323 1.066 1.066 0 0 0 .136-1.512c-.762-1.073-1.499-2.169-2.278-3.231a1.134 1.134 0 0 0-1.76-.28 3.375 3.375 0 0 0-1.482 2.736 8.614 8.614 0 0 0 .811 3.764 16.647 16.647 0 0 0 7.857 8.26 9.01 9.01 0 0 0 2.759.884 4.533 4.533 0 0 0 3.982-1.287c.784-.723.792-1.363-.045-2' fill='%23585DEF'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 18px;}
+.cs_call__upd{display: flex; flex-direction: column; align-items: center; padding: 7px 0;}
+.cs_call__upd_wrap{display: flex; align-items: center;}
+.cs_call__upd_vs{font-size: 12px; color: #707070;}
+.cs_call__upd_state{font-size: 12px; font-weight: 700;}
+.cs_call__upd_state-un{color: #1FC200;}
+.cs_call__upd_state-n{color: #FF9924;}
+.cs_call__upd_btn{width: 80px; height: 30px; border-radius: 4px; background: #FF9924; font-size: 12px; font-weight: 700; color: #FFFFFF; margin-left: 12px; text-align: center; line-height: 30px; cursor: pointer;}

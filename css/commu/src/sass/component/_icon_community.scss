@@ -1,0 +1,252 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*                                         □*/
+/*□                  Icon_marry                □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 아이콘
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+@each $icon-name, $icon-color  in $icon-colors {
+	// 좌, 우 화살표
+	$svg-arrow-horizon : "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 32' xml:space='preserve'%3e%3cpath fill='%23" + $icon-color + "' d='M14.4 32c-.5 0-.9-.2-1.3-.5L.4 16.9c-.5-.5-.5-1.3 0-1.8L13.2.5c.6-.6 1.5-.7 2.2-.2.6.4.8 1.3.4 1.9 0 .1-.1.1-.1.1L3.6 16l12 13.6c.5.6.5 1.4-.1 1.9l-.1.1c-.3.3-.6.4-1 .4'/%3e%3c/svg%3e";
+	// 상, 하 화살표
+	$svg-arrow-vertical : "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 16' xml:space='preserve'%3e%3cpath fill='%23" + $icon-color + "' d='M32 14.4c0 .4-.1.7-.3 1-.4.6-1.3.8-1.9.4-.1 0-.1-.1-.1-.1L16 3.6l-13.6 12c-.6.5-1.4.5-1.9-.1l-.1-.1c-.5-.7-.4-1.7.2-2.2L15.1.4c.5-.5 1.3-.5 1.8 0l14.5 12.8c.4.3.6.7.6 1.2'/%3e%3c/svg%3e";
+	// X 아이콘
+	$svg-close : "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28' xml:space='preserve'%3e%3cpath fill='%23" + $icon-color + "' d='M16.1 14 27.6 2.5c.6-.6.6-1.5 0-2.1-.6-.6-1.5-.6-2 0L14 11.9 2.5.4C1.9-.2 1-.2.5.4c-.6.6-.6 1.5 0 2.1L11.9 14 .4 25.5c-.6.6-.6 1.5 0 2.1.6.6 1.5.6 2 0L14 16.1l11.5 11.5c.6.6 1.5.6 2 0 .6-.6.6-1.5 0-2.1L16.1 14z'/%3e%3c/svg%3e";
+
+	.icon__arrow_left_{
+		&#{$icon-name} {
+			&_l{
+				flex: none;
+				display: inline-block;
+				width: 8px;
+				height: 16px;
+				padding-right: 12px;
+				padding-left: 12px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				background: url($svg-arrow-horizon) center no-repeat;
+				background-size: 8px 16px;
+			}
+			&_m{
+				flex: none;
+				display: inline-block;
+				width: 6px;
+				height: 12px;
+				padding-right: 9px;
+				padding-left: 9px;
+				padding-top: 6px;
+				padding-bottom: 6px;
+				background: url($svg-arrow-horizon) center no-repeat;
+				background-size: 6px 12px;
+			}
+			&_s{
+				flex: none;
+				display: inline-block;
+				width: 5px;
+				height: 10px;
+				padding-right: 7px;
+				padding-left: 7px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background: url($svg-arrow-horizon) center no-repeat;
+				background-size: 5px 10px;
+			}
+		}
+	}
+
+	// 오른쪽 화살표 아이콘
+	.icon__arrow_right_{
+		&#{$icon-name} {
+			&_l{
+				flex: none;
+				display: inline-block;
+				width: 8px;
+				height: 16px;
+				padding-right: 12px;
+				padding-left: 12px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				background: url($svg-arrow-horizon) center no-repeat;
+				background-size: 8px 16px;
+				transform: rotate(180deg);
+			}
+			&_m{
+				flex: none;
+				display: inline-block;
+				width: 6px;
+				height: 12px;
+				padding-right: 9px;
+				padding-left: 9px;
+				padding-top: 6px;
+				padding-bottom: 6px;
+				background: url($svg-arrow-horizon) center no-repeat;
+				background-size: 6px 12px;
+				transform: rotate(180deg);
+			}
+			&_s{
+				flex: none;
+				display: inline-block;
+				width: 5px;
+				height: 10px;
+				padding-right: 7px;
+				padding-left: 7px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background: url($svg-arrow-horizon) center no-repeat;
+				background-size: 5px 10px;
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	// 위쪽 화살표 아이콘
+	.icon__arrow_up_{
+		&#{$icon-name} {
+			&_l{
+				flex: none;
+				display: inline-block;
+				width: 16px;
+				height: 8px;
+				padding-right: 8px;
+				padding-left: 8px;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				background: url($svg-arrow-vertical) center no-repeat;
+				background-size: 16px 8px;
+			}
+			&_m{
+				flex: none;
+				display: inline-block;
+				width: 12px;
+				height: 6px;
+				padding-right: 6px;
+				padding-left: 6px;
+				padding-top: 9px;
+				padding-bottom: 9px;
+				background: url($svg-arrow-vertical) center no-repeat;
+				background-size: 12px 6px;
+			}
+			&_s{
+				flex: none;
+				display: inline-block;
+				width: 10px;
+				height: 5px;
+				padding-right: 5px;
+				padding-left: 5px;
+				padding-top: 7px;
+				padding-bottom: 7px;
+				background: url($svg-arrow-vertical) center no-repeat;
+				background-size: 10px 5px;
+			}
+		}
+	}
+	// 아래쪽 화살표 아이콘
+	.icon__arrow_down_{
+		&#{$icon-name} {
+			&_l{
+				flex: none;
+				display: inline-block;
+				width: 16px;
+				height: 8px;
+				padding-right: 8px;
+				padding-left: 8px;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				background: url($svg-arrow-vertical) center no-repeat;
+				background-size: 16px 8px;
+				transform: rotate(180deg);
+			}
+			&_m{
+				flex: none;
+				display: inline-block;
+				width: 12px;
+				height: 6px;
+				padding-right: 6px;
+				padding-left: 6px;
+				padding-top: 9px;
+				padding-bottom: 9px;
+				background: url($svg-arrow-vertical) center no-repeat;
+				background-size: 12px 6px;
+				transform: rotate(180deg);
+			}
+			&_s{
+				flex: none;
+				display: inline-block;
+				width: 10px;
+				height: 5px;
+				padding-right: 5px;
+				padding-left: 5px;
+				padding-top: 7px;
+				padding-bottom: 7px;
+				background: url($svg-arrow-vertical) center no-repeat;
+				background-size: 10px 5px;
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	// X 아이콘
+	.icon__close_{
+		&#{$icon-name}{
+			&_l{
+				flex: none;
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				padding-right: 9px;
+				padding-left: 9px;
+				padding-top: 9px;
+				padding-bottom: 9px;
+				background: url($svg-close) center no-repeat;
+				background-size: 14px 14px;
+			}
+			&_s{
+				flex: none;
+				display: inline-block;
+				width: 9px;
+				height: 9px;
+				padding-right: 5px;
+				padding-left: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background: url($svg-close) center no-repeat;
+				background-size: 9px 9px;
+			}
+		}
+	}
+
+};
+
+
+.icon__arrow_right{width:28px; height:28px;  background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'%3e%3cpath fill='%23BCBBBB' d='M21.5 45c-.3 0-.7-.1-.9-.3-.6-.5-.8-1.5-.2-2.1l11.3-14.1-11.4-14.1c-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2l12 15c.4.5.4 1.3 0 1.9l-12 15c-.2.4-.7.6-1.1.6z'/%3e%3c/svg%3e") no-repeat center; background-size:28px;}
+.icon__arrow_left{width:28px; height:28px;  background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'%3e%3cpath fill='%23BCBBBB' d='M34.5 45c-.4 0-.9-.2-1.2-.6l-12-15c-.4-.5-.4-1.3 0-1.9l12-15c.5-.6 1.5-.8 2.1-.2.6.5.8 1.5.2 2.1L24.4 28.5l11.3 14.1c.5.6.4 1.6-.2 2.1-.3.2-.7.3-1 .3z'/%3e%3c/svg%3e") no-repeat center; background-size:28px;}
+.icon__arrow-dark{width:22px; height:22px;  background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3e%3cpath fill='none' stroke='%23505050' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M16.96 9.97l9.31 11.64-9.31 11.64'/%3e%3c/svg%3e") no-repeat center; background-size:22px;}
+.icon__arrow_down_thick-white {width: 24px; height: 24px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M33.04 18.79L22.4 28.1l-10.64-9.31'/%3e%3c/svg%3e") no-repeat center; background-size: 16px;}
+
+.icon__question_cp50{width:15px; height:15px; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cg fill='%23585DEF'%3e%3cpath d='M15 30C6.73 30 0 23.27 0 15S6.73 0 15 0s15 6.73 15 15-6.73 15-15 15zm0-28C7.83 2 2 7.83 2 15s5.83 13 13 13 13-5.83 13-13S22.17 2 15 2z'/%3e%3cpath d='M17.22 11.33c0-1.21-.77-2.13-2.16-2.13-1.03 0-1.94.53-2.66 1.34l-1.43-1.3c1.08-1.23 2.55-2.11 4.38-2.11 2.55 0 4.33 1.45 4.33 4.03 0 3.21-3.92 4.4-3.54 7.68h-2.22c-.53-3.71 3.3-5.12 3.3-7.51zm-3.85 11.2c0-1.03.73-1.8 1.69-1.8.95 0 1.69.77 1.69 1.8s-.75 1.76-1.69 1.76c-.97 0-1.69-.73-1.69-1.76z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:100%;}
+
+/* 검색 */
+.icon__srch{flex:0 0 auto; width:100%; height:100%; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 90'%3e%3cg fill='%23585DEF'%3e%3cpath d='M42.32 30c-3.56 0-6.91 1.39-9.43 3.91a13.25 13.25 0 00-3.9 9.44c0 3.57 1.4 6.94 3.93 9.47a13.3 13.3 0 009.46 3.93h.02c3.56 0 6.91-1.39 9.43-3.91a13.25 13.25 0 003.9-9.44c0-3.57-1.4-6.94-3.93-9.47A13.283 13.283 0 0042.34 30h-.02m0-3h.02c9.04.01 16.38 7.35 16.39 16.4.01 9.04-7.31 16.36-16.35 16.35-9.04-.01-16.38-7.35-16.39-16.4 0-9.03 7.3-16.35 16.33-16.35z'/%3e%3cpath d='M63.05 65.55c-.38 0-.77-.15-1.06-.44l-10-10c-.59-.59-.59-1.54 0-2.12s1.54-.59 2.12 0l10 10c.59.59.59 1.54 0 2.12-.29.29-.68.44-1.06.44z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:45px 45px;}
+
+/* 사진편집 - 뒤로가기 버튼*/
+.icon__arrow_back {width:100%; height:100%; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3e%3cg fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M26 47L14 32l12-15' stroke-miterlimit='10'/%3e%3cpath d='M52 31.8H16.44'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:32px;}
+
+/* 신고하기 */
+.icon__report{width:24px; height:24px; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3e%3cg fill='none' stroke='%23505050' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10'%3e%3cpath d='M11.13 36.72h25.75c1.1 0 2 .9 2 2V42h0H9.13h0v-3.28c0-1.11.89-2 2-2zM24 6v3.52M38.87 11.68l-2.49 2.49M42 25.41h-3.52M9.13 11.68l2.49 2.49M6 25.41h3.52M24 13.83h0c5.38 0 9.75 4.36 9.75 9.75v13.14h0-19.5 0V23.58c0-5.39 4.37-9.75 9.75-9.75z'/%3e%3c/g%3e%3cpath fill='%23505050' d='M25.502 31.975c.01.82-.64 1.49-1.45 1.51h-.04c-.83.01-1.52-.66-1.53-1.49s.66-1.52 1.49-1.53 1.52.66 1.53 1.49v.02zm-.53-3.3c0 .09-.07.17-.16.18h-1.6c-.1 0-.19-.07-.2-.18l-.41-9.53c-.01-.09.06-.17.15-.18h2.46c.09.01.17.08.18.18l-.42 9.53z'/%3e%3c/svg%3e") no-repeat center; background-size:24px 24px;}
+
+/* 차단하기 */
+.icon__block{width: 24px; height: 24px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' xml:space='preserve'%3e%3cpath fill='none' stroke='%23505050' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M9.7 24c0 7.9 6.4 14.3 14.3 14.3S38.3 31.9 38.3 24 31.9 9.7 24 9.7 9.7 16.1 9.7 24zM32.9 13.9 15.1 34.1'/%3e%3c/svg%3e") center no-repeat; background-size: 24px 24px;}
+
+/* photo_zoom */
+.icon__photo_zoom{width:32px; height:32px; background:url("https://image.yeoboya.com/imgs/new_wedding_portal/common/ico_photo_zoom.png") center no-repeat; background-size:32px 32px;}
+
+
+.icon__set_alarm{width:32px; height:32px; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_set_alarm.png") no-repeat center; background-size:100% 100%;}
+.icon__my_call{width:32px; height:32px; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_my_call.png") no-repeat center; background-size: 32px 32px;}
+.icon__notice{width:32px; height:32px; background:url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_notice_black.png") no-repeat center; background-size: 32px 32px;}
+.icon__qna{width:32px; height:32px; background:url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_qna.png") no-repeat center; background-size: 32px 32px;}
+.icon__info_del{width: 32px; height: 32px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_delete.png") no-repeat center; background-size: 32px 32px;}

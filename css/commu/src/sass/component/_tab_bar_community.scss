@@ -1,0 +1,39 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                   Tab bar                  □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 하단 네비게이션 탭바
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.tab_bar{
+    &__ico{
+        &-commu{
+            background-position:0 0;
+            .tab_bar__btn-active &{
+                background-position:-32px 0;
+            }
+        }
+        &-serch{
+            background-position:0 -32px;
+            .tab_bar__btn-active &{
+                background-position:-32px -32px;
+            }
+        }
+        &-my_article{
+            background-position: 0 -64px;
+            .tab_bar__btn-active &{
+                background-position:-32px -64px;
+            }
+        }
+        &-my{
+            background-position: 0 -96px;
+            .tab_bar__btn-active &{
+                background-position:-32px -96px;
+            }
+        }
+    }
+}

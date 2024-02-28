@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __tab_filter
+	설　명 : 
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.tab_filter{position: relative; overflow: hidden; }
+.tab_filter__container{display:flex; align-items: center;  height: 70px; padding: 0 15px; border-bottom: 1px solid #e1e1e1; background-color: #fff; box-sizing: border-box;}
+.tab_filter__container.fixed{margin-bottom: 5px; border-bottom: none; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);}

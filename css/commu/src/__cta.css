@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __cta
+	설　명 : cta(call to action): 클릭 유도 버튼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/* 하단 버튼 컨테이너 */
+.cta{position: relative;}
+.cta__container{display: flex; align-items: center; width: 100%; min-height: 68px; background-color: #fff; border-radius: 8px 8px 0 0; box-shadow: 0 -1px 4px rgba(0, 0, 0, .20);}
+.cta__wrap{display: flex; align-items: center; width: 100%;}
+.cta__btn{position: relative; flex: none; cursor: pointer; min-width: 44px; margin: auto 8px;}
+.cta__btn::after{content: ""; position: absolute; top: 50%; right: -8px; width: 1px; height: 30px; background-color: #D4D4D4; transform: translateY(-50%);}
+.cta__btn:last-child::after{display: none;}
+
+.cta__icon{flex: none;}
+.cta__wish_num{font-size: 11px; line-height: 11px; text-align: center; color: #202020;}
+.cta__btn_wrap{display: flex; align-items: center; flex: none;}
+.cta__btn-disabled{cursor: auto;}
+.cta__price {flex:0 0 auto; font-weight: 700; color:#202020; margin-right:16px;}
+
+/* 찜하기, 단골등록 팝 */
+.cta__pop_wish{display: flex; justify-content: center;}
+.cta__pop_wish_img{width: 90px; height: 90px; padding: 10px; animation: popWishAni 1.2s ease-in-out; animation-fill-mode: forwards;}
+
+@keyframes popWishAni {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+

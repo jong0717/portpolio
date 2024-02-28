@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __list_empty
+	설　명 : 리스트 없을 경우 공통 사용 양식
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.list_empty{display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;}
+.list_empty__container{width:100%; padding:50px 15px; margin-top:-20px; box-sizing: border-box;}
+.list_empty__container-mg0{margin-top:0;}
+
+.list_empty__img_wrap{display:flex; justify-content: center;}
+.list_empty__img_list{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_no_lists.png") no-repeat center; background-size: 100% 100%;}
+.list_empty__img_news{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_no_news.png") no-repeat center; background-size: 100% 100%;}
+.list_empty__img_message{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_no_message.png") no-repeat center; background-size: 100% 100%;}
+.list_empty__img_member{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_no_member.png") no-repeat center; background-size: 100% 100%;}
+.list_empty__img_interest{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_no_interest.png") no-repeat center; background-size: 100% 100%;}
+.list_empty__img_notice{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_no_notice.png") no-repeat center; background-size: 100% 100%;}
+.list_empty__img_search{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_no_search.png") no-repeat center; background-size: 100% 100%;}
+.list_empty__img_number{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_noble/common/ico_no_number.png") no-repeat center; background-size: 100% 100%;}
+.list_empty__img_reply{width:50px; height:50px; border-radius: 50%; background:url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_no_reply.png") no-repeat center; background-size: 100% 100%;}
+
+.list_empty__tit{display:flex; justify-content: center; align-items: center; padding:12px 0 4px;}
+.list_empty__tit_txt{color:#909090; font-size:16px; text-align: center;}
+.list_empty__tit_txt-accent{color:#505050;}
+.list_empty__txt{text-align: center; font-size:14px;}
+.list_empty__btn_wrap{width: 230px; margin: 16px auto;}

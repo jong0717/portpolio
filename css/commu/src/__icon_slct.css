@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __icon_slct
+	설　명 : 아이콘이 들어가 있는 선택 폼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/* 회원가입 성별 선택 */
+.icon_slct {width: 100%;}
+.icon_slct__container {display: flex; flex-wrap: wrap; width: 100%;}
+.icon_slct__container-center {justify-content: center;}
+.icon_slct__col {display: flex; align-items: center; justify-content: center; flex-direction: column; cursor: pointer;}
+.icon_slct__col:first-child {margin-right: 9px;}
+.icon_slct__gender {display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; border: 1px solid #707070; background: #fff;}
+[data-state="error"] .icon_slct__gender {border-color: #FF5151;}
+[data-state="error"] .icon_slct__item_txt {color: #FF5151;}
+.icon_slct__gender.male {background: url("https://image.yeoboya.com/imgs/new_wedding/common/icon__gender-male.png") center no-repeat; background-size: 32px 32px;}
+.icon_slct__gender.female {background: url("https://image.yeoboya.com/imgs/new_wedding/common/icon__gender-female.png") center no-repeat; background-size: 32px 32px;}
+.icon_slct__col.active .icon_slct__gender.male {border-color: #9EC2FF; background: url("https://image.yeoboya.com/imgs/new_wedding/common/icon__gender-male-active.png") #E1ECFF center no-repeat; background-size: 32px 32px;}
+.icon_slct__col.active .icon_slct__gender.female {border-color: #FFBFBF; background: url("https://image.yeoboya.com/imgs/new_wedding/common/icon__gender-female-active.png") #FFE5E5 center no-repeat; background-size: 32px 32px;}
+.icon_slct__item_txt {font-size: 14px; font-weight: 500; color: #707070;}
+.icon_slct__col.active .icon_slct__item_txt {font-size: 14px; font-weight: 500; color: #202020;}

@@ -1,0 +1,31 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□             Layout_noblesse                □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+
+// .content-bluegray{
+//     background-color: #F4F7F9;
+// }
+
+/* CONTENT - 내용 */
+.content{
+    min-height:calc(var(--vh, 1vh) * 100);
+}
+.pop{
+    &-pc{
+        @include break_point("pc"){
+            left:0;
+            width:100%;
+            margin-left:0;
+        }
+    }
+    &__full_layer{
+        height:calc(var(--vh, 1vh) * 100);
+    }
+}
+
+/* FLOAT - 플로팅 */
+.float{
+    @include position(fixed,300,$b:32px,$r:30px);
+}

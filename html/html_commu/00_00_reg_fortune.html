@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="robots" content="ALL">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="1 days">
+	<meta name="Subject" content="여보야">
+	<meta name="description" content="결혼, 재혼, 배우자를 찾는 스마트한 방법, 가입비 주선비 성혼비 무료, 여성결혼대상자 무료, 문의 1522-3379">
+	<meta name="keywords" content="결혼, 재혼, 결혼어플, 소개팅어플, 소개팅">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://image.yeoboya.com/imgs/new_wedding/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://image.yeoboya.com/imgs/new_wedding/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>운세서비스 등록</title>
+	<link rel="canonical" href="https://m.yeoboya.com">
+
+	<link rel="stylesheet" type="text/css" href="../../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/src/sass/common_community.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/src/__radio.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/mobiscroll.jquery.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/mbsc_custom.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/src/__fortune.css">
+
+	<script src="../../vendors/polyfill.min.js"></script>
+	<script src="../../vendors/jquery.min.js"></script>
+	<script src="../../vendors/lodash.min.js"></script>
+	<script src="../../vendors/axios.min.js"></script>
+    <script src="../../vendors/moment.min.js"></script>
+    <script src="../../vendors/jquery-mobile.event.min.js"></script>
+	<script src="../../vendors/onLoad.bundle.js"></script>
+	<script src="../../js/mobiscroll.jquery.min.js"></script>
+</head>
+<body class="pc__bg">
+	<div class="pc__container">
+		<div class="top">
+			<header class="header header-no_bg">
+				<div class="header__btn_wrap">
+					<a class="header__btn pl8">
+						<span class="header__ico_back"></span>
+						<span class="blind">뒤로</span>
+					</a>
+				</div>
+				<h1 class="header__tit header__tit-center header__tit-abs"><span class="header__tit_txt">오늘의 운세</span></h1>
+			</header>
+		</div>
+		<main class="content pt0">
+			<div class="fortune">
+				<div class="fortune__bg fortune__bg-reg"></div>
+				<form class="content__vt_container">
+					<fieldset class="px15">
+						<div class="fortune__input" data-state="default">
+							<label class="fortune__input_lb" for="">
+								<span class="fortune__input__lb_txt">성별</span>
+							</label>
+							<div class="fortune__input_multi_wrap">
+								<div class="fortune__radio_box mr8">
+									<input class="fortune__radio_input" type="radio" name="genderType">
+									<label class="fortune__radio_lb fortune__radio_lb-left">
+										<div class="fortune__radio_btn_wrap">
+											<span>남성</span>
+										</div>
+									</label>
+								</div>
+								<div class="fortune__radio_box">
+									<input class="fortune__radio_input" type="radio" name="genderType">
+									<label class="fortune__radio_lb fortune__radio_lb-left">
+										<div class="fortune__radio_btn_wrap">
+											<span>여성</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="fortune__input">
+							<label class="fortune__input_lb" for="">
+								<span class="fortune__input__lb_txt">생년월일</span>
+							</label>
+							<div class="fortune__input_multi_wrap">
+								<div class="fortune__input_wrap" data-state="filled" style="width: 60%;">
+									<a class="fortune__input_slct fortune__input_slct-opts">
+										<span class="fortune__input_placeholder">양/음력</span>
+									</a>
+								</div>
+								<div class="fortune__input_wrap ml10" data-state="default">
+									<a class="fortune__input_slct fortune__input_slct-opts">
+										<span class="fortune__input_placeholder">생년월일</span>
+									</a>
+								</div>
+							</div>
+							<div class="fortune__input_wrap" data-state="default">
+								<a class="fortune__input_slct fortune__input_slct-opts">
+									<span class="fortune__input_placeholder">태어난 시간</span>
+								</a>
+							</div>
+						</div>
+						<div class="fortune__checkbox_wrap py10">
+							<label class="fortune__checkbox_lb">
+								<input type="checkbox" class="blind" id="">
+								<span class="fortune__checkbox_btn"></span>
+								<span class="fortune__checkbox_txt">입력한 정보 저장하기</span>
+							</label>
+						</div>
+					</fieldset>
+					<div class="mx15 mta mb20 pt24">
+						<a class="fortune__btn_default">
+							<span class="fortune__btn_default_txt">운세 확인하기</span>
+							<div class="icon__arrow"></div>
+						</a>
+					</div>
+				</form>
+			</div>
+		</main>
+		<div class="pop hidden">
+			<div class="pop__bg"></div>
+			<div class="pop__layer">
+				<div class="pop_alert">
+					<div class="pop_alert__container">
+						<div class="pop_alert__content">
+							<div class="pop_alert__tit mb12">로그인이 필요한 서비스입니다.</div>
+							<div class="pop_alert__txt_box">로그인 페이지로 이동하시겠습니까?</div>
+						</div>
+						<div class="pop_alert__btn_wrap">
+							<a class="fortune__btn_line fortune__btn_line-m mr8">
+								<span class="fortune__btn_line_txt">아니오</span>
+							</a>
+							<a class="fortune__btn_default fortune__btn_default-m">
+								<span class="fortune__btn_default_txt">네</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bot_pop hidden">
+            <div class="bot_pop__bg"></div>
+            <div class="bot_pop__layer bot_pop__layer-slide_up">
+                <div class="pop_slct">
+                    <div class="pop_slct__top">
+                        <div class="pop_slct__tit pop_slct__tit-center">
+                            <span class="pop_slct__tit_txt">시간 선택</span>
+                        </div>
+                        <a class="pop_slct__btn_cls">
+                            <span class="pop_slct__ico_cls"></span>
+                            <span class="blind">닫기</span>
+                        </a>
+                    </div>
+                    <div class="pop_slct__content">
+                        <div class="mbsc_options">
+                            <div id="lunar"></div>
+                        </div>
+                    </div>
+                    <div class="pop_slct__btn_wrap">
+                        <a class="fortune__btn_default">
+							<span class="fortune__btn_default_txt">선택완료</span>
+						</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="bot_pop hiddn">
+            <div class="bot_pop__bg"></div>
+            <div class="bot_pop__layer bot_pop__layer-slide_up">
+                <div class="pop_slct">
+                    <div class="pop_slct__top">
+                        <div class="pop_slct__tit pop_slct__tit-center">
+                            <span class="pop_slct__tit_txt">태어난 시간</span>
+                        </div>
+                        <a class="pop_slct__btn_cls">
+                            <span class="pop_slct__ico_cls"></span>
+                            <span class="blind">닫기</span>
+                        </a>
+                    </div>
+                    <div class="pop_slct__content">
+                        <div class="mbsc_options">
+                            <div id="time"></div>
+                        </div>
+                    </div>
+                    <div class="pop_slct__btn_wrap">
+                        <a class="fortune__btn_default">
+							<span class="fortune__btn_default_txt">선택완료</span>
+						</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="bot_pop hidden">
+			<div class="bot_pop__bg"></div>
+			<div class="bot_pop__layer bot_pop__layer-slide_up">
+				<div class="pop_slct">
+					<div class="pop_slct__top">
+						<div class="pop_slct__tit">
+							<span class="pop_slct__tit_txt">생년월일</span>
+						</div>
+						<a class="pop_slct__btn_cls">
+							<span class="pop_slct__ico_cls"></span>
+							<span class="blind">닫기</span>
+						</a>
+					</div>
+					<div class="pop_slct__content">
+						<div class="mbsc_date">
+							<input id="date" hidden>
+						</div>
+					</div>
+					<div class="pop_slct__btn_wrap">
+						<a class="fortune__btn_default">
+							<span class="fortune__btn_default_txt">선택완료</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	</div>
+	<script>
+		$(document).on('ready', function() {
+			let pageH = $(document).height() - ($('.fortune__bg').outerHeight());
+			$('.content__vt_container').css({'min-height': `${pageH + 'px'}`})
+		})
+		mobiscroll.customTheme('fortune_w', 'ios');
+		var wheel = [
+                [{
+                    circular: false,
+                    data: ['양력', '음력(윤달)', '음력(평달)']
+                }],
+            ];
+		var wheel_2 = [[{
+					circular: false,
+                    data: ['시간모름', '子(자시) 23:30 ~ 01:29', '丑(축시) 01:30 ~ 03:29', '寅(인시) 03:30 ~ 05:29', '卯(묘시) 05:30 ~ 07:29', '辰(진시) 07:30 ~ 09:29', '巳(사시) 09:30 ~ 11:29', '午(오시) 11:30 ~ 13:29', '未(미시) 13:30 ~ 15:29', '申(신시) 15:30 ~ 17:29', '酉(유시) 17:30 ~ 19:29', '戌(술시) 19:30 ~ 21:29', '亥(해시) 21:30 ~ 23:29']
+				}]]
+        $('#lunar').mobiscroll().scroller({
+            display: 'inline',
+            theme:'fortune_w',
+            wheels: wheel,
+            minWidth:100,
+            height:60,
+            circular:false
+        });
+        $('#time').mobiscroll().scroller({
+            display: 'inline',
+            theme:'fortune_w',
+            wheels: wheel_2,
+            minWidth:100,
+            height:60,
+        });
+
+		$("#date").mobiscroll().date({
+			display:'inline',
+			theme:'fortune_w',
+			controls: ['date'],
+			dateFormat: 'yy mm:dd',
+			defaultValue : new Date(1999, 11, 31),
+			minWidth:100,
+			height:60,
+			lang:'ko'
+		});
+	</script>
+	<script src="../../js/default.js"></script>
+	<script src="../../vendors/siteMap.bundle.js"></script>
+</body>
+</html>

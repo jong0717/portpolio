@@ -1,0 +1,88 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□               Common noblesse               □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+
+@charset "utf-8";
+
+/*----------------------------------------------*/
+// Base
+/*----------------------------------------------*/
+
+// Color
+@import "../../../../common/sass/base/colors";
+@import "./base/_colors_community";
+
+// 공통 변수
+@import "../../../../common/sass/base/variables";
+@import "./base/_variables_community";
+
+// Mixin
+@import "../../../../common/sass/base/mixin";
+
+// Animation keyframe
+@import "../../../../common/sass/base/animation";
+
+// Elevation
+@import "../../../../common/sass/base/elevation";
+
+// 기본 공통 클래스 설정 (reset css 포함)
+@import "../../../../common/sass/base/default";
+@import "./base/_default_community";
+
+// Typography
+@import "../../../../common/sass/base/typo";
+@import "./base/_typo_community";
+
+// 레이아웃
+@import "../../../../common/sass/base/layout";
+@import "./base/_layout_community";
+
+
+/*----------------------------------------------*/
+// Components
+/*----------------------------------------------*/
+
+//Photo
+@import "../../../../common/sass/component/photo";
+@import "./component/_photo_community";
+
+//Photo Circle
+@import "../../../../common/sass/component/photo_circle";
+@import "./component/_photo_circle_community";
+
+//Button
+@import "../../../../common/sass/component/btn";
+@import "./component/_btn_community";
+
+//Icon
+@import "../../../../common/sass/component/icon";
+@import "./component/_icon_community";
+
+//Header
+@import "../../../../common/sass/component/header";
+@import "./component/_header_community";
+
+//Input outer
+@import "../../../../common/sass/component/input_outer";
+
+//Input
+@import "../../../../common/sass/component/input";
+
+//Tab
+@import "../../../../common/sass/component/tab";
+@import "./component/_tab_community.scss";
+
+//Tab bar
+@import "../../../../common/sass/component/tab_bar";
+@import "./component/_tab_bar_community.scss";
+
+//Pop alert
+@import "../../../../common/sass/component/pop_alert";
+
+//Pop slct
+@import "../../../../common/sass/component/pop_slct";
+
+//Banner
+@import "../../../../common/sass/component/banner";

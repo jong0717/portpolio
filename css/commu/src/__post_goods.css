@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __post_goods_goods
+	설　명 : 포스트 굿즈 (카드 형태, 리스트 형태 모두 포함)
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.post_goods{position: relative; background-color: #FFF;}
+.post_goods.disabled{background-color: #FAFAFA;}
+.post_goods__link{position: absolute; top:0; left: 0; z-index: 1; width: 100%; height: 100%;}
+.post_goods__box{position: relative; overflow: hidden;}
+
+.post_goods__content_wrap {display: flex; padding:12px 0 8px;}
+.post_goods.disabled .post_goods__content_wrap {opacity: 50%;}
+.post_goods__photo_wrap{flex: none; width: 110px; height: 110px;}
+.post_goods__content {width:100%;}
+.post_goods__topic_wrap{display: flex; align-items: center; width: 100%;}
+.post_goods__txt_wrap{width: 100%; padding-top:8px;}
+
+.post_goods__date{margin-left: auto; font-size: 12px; color: #505050;}
+.post_goods__tit{margin-bottom: 4px; font-size: 14px; color: #202020; line-height: 20px;}
+.post_goods__main_txt{font-size: 13px; line-height: 18px;}
+.post_goods__prf{display: flex; align-items: center; margin-left:auto;}
+.post_goods__prf_ico{width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16.002'%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath data-name='%ec%82%ac%ea%b0%81%ed%98%95 51639' transform='translate(2020 91)' fill='white' d='M0 0h16v16.002H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg data-name='%eb%a7%88%ec%8a%a4%ed%81%ac %ea%b7%b8%eb%a3%b9 41084' transform='translate(-2020 -91)' clip-path='url(%23a)'%3e%3cg data-name='%ea%b7%b8%eb%a3%b9 93341' transform='translate(2021.926 93.748)' fill='%23b8b8b8'%3e%3ccircle data-name='%ed%83%80%ec%9b%90 148' cx='3.054' cy='3.054' r='3.054' transform='translate(3.02)'/%3e%3cpath data-name='%ed%8c%a8%ec%8a%a4 351' d='M.48 11.932c.353-3.508 2.739-6.364 5.6-6.364 2.9 0 5.285 2.786 5.587 6.364'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 100% auto;}
+.post_goods__prf_name{margin-right: 4px; font-size: 13px;}
+.post_goods__prf_name-prv{margin-right: 0; color: #909090;}
+.post_goods__price{font-size:15px; font-weight: 700; color:#202020; margin-top:4px;}
+
+.post_goods__spot {padding-left:12px; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' xml:space='preserve'%3e%3cpath fill='%23A4A4A4' d='M12 0a8.18 8.18 0 0 0-8 8.34C4 14.12 12.01 24 12.01 24S20 13.84 20 8.34A8.18 8.18 0 0 0 12 0zm2.41 10.79a3.318 3.318 0 0 1-4.69.13c-.05-.04-.09-.09-.13-.13a3.67 3.67 0 0 1 0-5.03 3.318 3.318 0 0 1 4.69-.14c.05.05.1.09.14.14 1.32 1.4 1.32 3.61-.01 5.03z'/%3e%3c/svg%3e") left center no-repeat;  background-size:12px 12px; font-size:12px; color:#A4A4A4;}
+.post_goods__bot{margin: 0 12px;}
+.post_goods__bot_box{display: flex; align-items: center; width: 100%; padding: 8px 0 12px;}
+.post_goods__meta{display: flex; align-items: center;}
+.post_goods__meta_tit{flex: none;}
+.post_goods__icon_heart{width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_heart_mini.png") center no-repeat; background-size: 20px 20px;}
+.post_goods__icon_reply{width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_reply_mini.png") center no-repeat; background-size: 20px 20px;}
+.post_goods__icon_views{width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_views_mini.png") center no-repeat; background-size: 20px 20px;}
+.post_goods__meta_txt{margin: 0 8px 0 2px; font-size: 12px; color: #505050;}
+
+.post_goods__meta_info_del{padding-left: 20px; font-size: 14px; color: #202020; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3e%3cpath fill='%23202020' d='M16 30C8.3 30 2 23.7 2 16S8.3 2 16 2s14 6.3 14 14-6.3 14-14 14m0-26C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4'/%3e%3cpath fill='%23202020' d='M16 8.6c.9 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6M16 13.6c.8 0 1.4.6 1.4 1.4v7.7c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4V15c0-.8.6-1.4 1.4-1.4'/%3e%3c/svg%3e") left center no-repeat; background-size: 16px 16px;}
+.post_goods__meta_info_del_btn{z-index: 2; height: 31px; margin-left: auto; padding: 0 12px; border-radius: 4px; border: 1px solid #909090; background-color: #FFF; box-sizing: border-box; font-size: 13px; line-height: 29px;}
+.post_goods__meta_info_done_btn{z-index: 2; height: 31px; margin-left: auto; padding: 0 12px; border-radius: 4px; border: 1px solid #585DEF; background-color: #FFF; box-sizing: border-box; font-size: 13px; line-height: 29px; color:#585DEF;}
+
+
+
+
+
+
+

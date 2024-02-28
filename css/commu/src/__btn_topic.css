@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __btn_topic
+	설　명 : 토픽 버튼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.btn_topic{display: inline-flex; justify-content: center; flex: none; min-width: 36px; padding: 7px 12px; border-radius: 25px; border-width: 1px; border-style: solid; color: #202020; cursor: pointer;}
+/* .btn_topic__txt{min-width: 36px;} */
+.btn_topic__new_badge{width: 15px; height: 15px; margin-left: 1px; box-sizing: border-box; border-radius: 50%; background: #ff5656 url("https://image.yeoboya.com/imgs/new_wedding/common/ico_new_full.png") no-repeat center; background-size: 15px 15px;}
+/* 기본 - #6F73F0 (primary-400) */
+.btn_topic-default_pc40{border-color: #E1E1E1; background-color: #fff; color:#6F73F0;}
+.btn_topic-default_pc40:active{background-color: #DEDFFF;}
+.btn_topic-default_pc40.active{background-color: #6F73F0; color: #FFF; border: 1px solid transparent;}
+.btn_topic-default_pc40.active:active{background-color: #4E58E3;}
+
+/* 기본 - #FFF */
+/* .btn_topic-default_ff{border-color: #E1E1E1; background-color: #FFF;}
+.btn_topic-default_ff:active{background-color: #DEDFFF;}
+.btn_topic-default_ff.active{background-color: #6F73F0; color: #FFF; border: 1px solid transparent;}
+.btn_topic-default_ff.active:active{background-color: #4E58E3;} */
+
+/* 기본 - #F1F1F1 */
+.btn_topic-default_f1{border-color: #E1E1E1; background-color: #F1F1F1;}
+.btn_topic-default_f1:active{background-color: #E8E8E8;}
+.btn_topic-default_f1.active{background-color: #6F73F0; color: #FFF; border: 1px solid transparent;}
+.btn_topic-default_f1.active:active{background-color: #4E58E3;}
+
+/* 비활성화 */
+.btn_topic-disabled{border-color: #909090; background-color: #F1F1F1; color: #909090; cursor: default;}
+
+@media (min-width: 460px) {
+	.btn_topic-default_pc40:hover{background-color: #EFF0FF;}
+	.btn_topic-default_pc40:active{background-color: #DEDFFF;}
+	.btn_topic-default_pc40.active:hover{background-color: #8A8EFB;}
+	.btn_topic-default_pc40.active:active{background-color: #4E58E3;}
+/* 
+	.btn_topic-default_ff:hover{background-color: #EFF0FF;}
+	.btn_topic-default_ff:active{background-color: #DEDFFF;}
+	.btn_topic-default_ff.active:hover{background-color: #8A8EFB;}
+	.btn_topic-default_ff.active:active{background-color: #4E58E3;} */
+
+	.btn_topic-default_f1:hover{background-color: #E8E8E8;}
+	.btn_topic-default_f1:active{background-color: #D8D8D8;}
+	.btn_topic-default_f1.active:hover{background-color: #8A8EFB;}
+	.btn_topic-default_f1.active:active{background-color: #4E58E3;}
+}

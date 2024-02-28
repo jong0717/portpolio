@@ -1,0 +1,130 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□              Header_Noblesse               □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 노블레스 공통 헤더
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.header{
+	&-bd_none{
+		border-bottom:none;
+	}
+	&-community{
+		background-color:$white !important;
+		border-bottom:1px solid $gray-f1;
+		box-sizing: border-box;
+		& .header__tit_txt{
+			color:$header_tit_txt_color;
+			&_ico{
+				&_gift{
+					width:20px;
+					height:20px;
+					background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' xml:space='preserve'%3e%3cg stroke='%231E1F1F' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath fill='none' d='M8.5 12.5h23c.54 0 .98.44.98.98 0 0 0 0 0 0v20.58c0 .54-.44.98-.98.98h0-23c-.54 0-.98-.44-.98-.98 0 0 0 0 0 0V13.48c0-.54.44-.98.98-.98z'/%3e%3cpath fill='white' d='M6.68 12.2h26.65c.54 0 .98.44.98.98v4.42c0 .54-.44.98-.98.98h0H6.68c-.54 0-.98-.44-.98-.98v-4.42c-.01-.54.43-.98.98-.98z'/%3e%3cpath fill='none' d='M30.3 8.33a3.64 3.64 0 0 1-3.64 3.64s0 0 0 0h-6.7c1.27-2.23 2.73-4.34 4.38-6.3 1.86-2.21 5.96-.72 5.96 2.66z'/%3e%3cpath fill='none' d='M9.7 8.33a3.64 3.64 0 0 0 3.64 3.64h6.7a42.189 42.189 0 0 0-4.38-6.3C13.8 3.46 9.7 4.95 9.7 8.33z'/%3e%3cpath fill='white' d='M17.43 12.21h5.15v23.17h-5.15z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center;
+					background-size:20px 20px;
+				}
+			}
+		}
+		& .header__btn{
+			&_txt{
+				color:$primary-500;
+			}
+		}
+		// 아이콘
+		& .header__ico{
+			&_back{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3e%3cpath fill='%23505050' d='M38 49c-.59 0-1.17-.26-1.56-.75l-12-15c-.58-.73-.58-1.77 0-2.5l12-15a2 2 0 012.81-.31 2 2 0 01.31 2.81L28.56 32l11 13.75A2 2 0 0138 49z'/%3e%3c/svg%3e") no-repeat center;
+				background-size:32px 32px;
+			}
+			&_home{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3e%3cpath fill='%23505050' d='M39.3 51.5a4.112 4.112 0 01-4.08-4.15v-7.92a.48.48 0 00-.47-.49h-5.51c-.26.01-.46.22-.46.48v7.95a4.12 4.12 0 01-4.07 4.14h-5.13a4.112 4.112 0 01-4.08-4.15V33.5h-1.66a3.352 3.352 0 01-3.1-2.64 3.96 3.96 0 011.32-4.48l17.72-13.2c1.32-.89 3.04-.91 4.38-.05L52 26.41a3.984 3.984 0 011.27 4.45 3.343 3.343 0 01-3.1 2.63H48.5v13.87a4.12 4.12 0 01-4.07 4.14H39.3zm-4.54-15.56c1.92.01 3.46 1.58 3.45 3.5v7.92c-.01.62.48 1.13 1.1 1.14h5.11c.61-.01 1.09-.51 1.09-1.12V30.5h4.66c.2-.28.31-.62.31-.96a.97.97 0 00-.15-.64l-.08-.05-17.81-13.26a.943.943 0 00-.96.05l-17.72 13.2c-.19.18-.27.44-.23.69-.01.36.11.71.36.97l4.61-.01v16.86c-.01.62.48 1.13 1.1 1.14h5.11c.61-.01 1.1-.51 1.09-1.12v-7.95a3.463 3.463 0 013.44-3.49h5.52z'/%3e%3c/svg%3e") no-repeat center;
+				background-size:32px 32px;
+			}
+			&_cls{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' xml:space='preserve'%3e%3cpath fill='none' stroke='%23505050' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' d='M46 18.2 18 45.8M46 45.8 18 18.2'/%3e%3c/svg%3e")  no-repeat center;
+				background-size:32px 32px;
+			}
+			&_share{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3e%3cg fill='none' stroke='%23505050' stroke-width='3'%3e%3ccircle cx='9.5' cy='19.9' r='6'/%3e%3ccircle cx='29.9' cy='8.5' r='6'/%3e%3cpath stroke-linecap='round' d='M15 15.96l9.06-5'/%3e%3ccircle cx='29.9' cy='31.3' r='6'/%3e%3cpath stroke-linecap='round' d='M15 24.62l9.06 5'/%3e%3c/g%3e%3c/svg%3e") no-repeat center;
+				background-size:20px 20px;
+			}
+			&_srch{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' xml:space='preserve'%3e%3cpath fill='%23505050' d='M28.57 40.99c2.78 0 5.51-.93 7.69-2.61l1.17-.9.93-1.15c1.93-2.38 2.91-5.39 2.76-8.46-.16-3.1-1.46-6.01-3.66-8.2A12.486 12.486 0 0 0 28.57 16c-3.36 0-6.52 1.3-8.89 3.67C17.31 22.03 16 25.16 16 28.5s1.31 6.47 3.68 8.83c2.37 2.36 5.53 3.66 8.89 3.66M49.28 51c-.53 0-1.08-.22-1.51-.64l-9.68-9.6c-6.11 4.71-14.93 4.28-20.53-1.3-6.08-6.05-6.08-15.86 0-21.92 6.08-6.05 15.94-6.05 22.02 0 5.68 5.66 6.05 14.6 1.11 20.68l9.66 9.58c.8.79.87 2.01.15 2.71-.32.33-.76.49-1.22.49z'/%3e%3c/svg%3e") no-repeat center;
+				background-size:32px 32px;
+			}
+			&_more{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' xml:space='preserve'%3e%3cg fill='%23505050'%3e%3ccircle cx='32' cy='32' r='3'/%3e%3ccircle cx='32' cy='44' r='3'/%3e%3ccircle cx='32' cy='20' r='3'/%3e%3c/g%3e%3c/svg%3e") no-repeat center;
+				background-size:32px 32px;
+			}
+			&_mypost{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' xml:space='preserve'%3e%3cg fill='%23505050'%3e%3cpath d='M53.96 33.08c-.01-.02-.01-.05-.02-.07-.03-.11-.07-.22-.13-.32l-.03-.06c-.07-.11-.15-.21-.24-.3-.01-.01-.01-.02-.02-.03l-5.09-4.65c-.55-.5-1.25-.79-1.99-.83V15.23A3.147 3.147 0 0 0 43.39 12H20.62c-1.73.05-3.1 1.5-3.05 3.23v11.6c-.74.04-1.45.33-1.99.83l-5.09 4.64c-.01.01-.01.02-.02.03-.09.09-.17.19-.24.3l-.03.06c-.05.1-.1.21-.13.32-.01.02-.01.04-.02.07-.03.11-.05.22-.05.34v15.14c-.04 1.85 1.42 3.4 3.28 3.44h37.45a3.375 3.375 0 0 0 3.28-3.44V33.42c-.01-.12-.02-.23-.05-.34m-7.37-3.19 2.25 2.05h-2.4V29.8c.05.02.11.05.15.09M20.62 14.95h22.76c.14.01.25.14.24.28v16.71H39.2c-.69.01-1.28.52-1.38 1.21a6.012 6.012 0 0 1-5.83 5.1 6.029 6.029 0 0 1-5.83-5.1 1.43 1.43 0 0 0-1.35-1.2v-.01h-4.45v-16.7c.01-.15.12-.28.26-.29m-3.21 14.94c.04-.04.1-.07.15-.09v2.14h-2.4l2.25-2.05zm33.78 18.67c.01.26-.2.48-.47.49H13.28a.494.494 0 0 1-.47-.49V34.89h10.9A8.78 8.78 0 0 0 32 41.2a8.77 8.77 0 0 0 8.29-6.3h10.9v13.66z'/%3e%3cpath d='M25.08 21.95h13.85a1.475 1.475 0 0 0 0-2.95H25.08c-.82.04-1.45.73-1.41 1.54.03.77.64 1.38 1.41 1.41M25.08 29.43h13.85a1.475 1.475 0 0 0 0-2.95H25.08a1.475 1.475 0 0 0 0 2.95'/%3e%3c/g%3e%3c/svg%3e") no-repeat center;
+				background-size:32px 32px;
+			}
+			&_mypage{
+				width:100%;
+				height:100%;
+				background:url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_commu_info.png") no-repeat center;
+				background-size:45px 45px;
+			}
+			&_set_alarm{
+				width:100%;
+				height:100%;
+				background:url("#{$url_member}/ico/ico_header_set_alarm.png") no-repeat center;
+				background-size: 45px;
+			}
+			&_alarm{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3e%3cpath fill='%23505050' d='M50.5 42.45c.1-2.4-1.73-4.45-4.11-4.66v-8.75c-.04-6.23-4.08-11.51-9.66-13.43l-.01-.39a4.734 4.734 0 00-1.44-3.32 4.712 4.712 0 00-3.37-1.33c-2.56.05-4.6 2.09-4.65 4.65l-.01.39c-2 .69-3.85 1.81-5.4 3.34a14.257 14.257 0 00-4.26 10.1v8.74c-2.37.21-4.2 2.25-4.1 4.59v2.79c0 .83.67 1.5 1.5 1.5h9.11c.58 3.82 3.81 6.7 7.79 6.75h.1c3.97 0 7.29-2.93 7.89-6.75H49c.83 0 1.5-.67 1.5-1.5v-2.72zM31.97 13.57c.43-.04.9.16 1.23.49.25.24.41.53.48.86-.52-.06-1.05-.09-1.59-.09h-.18c-.54 0-1.07.04-1.6.1.18-.78.85-1.35 1.66-1.36zm-8 7.51c2.13-2.11 4.95-3.26 7.97-3.26h.14c6.21 0 11.27 5.03 11.31 11.23v8.71H20.6v-8.7c.02-3.02 1.22-5.85 3.37-7.98zM32 50.43h-.06a4.953 4.953 0 01-4.76-3.75h9.65c-.56 2.15-2.51 3.75-4.83 3.75zm15.5-6.75h-31v-1.35c-.03-.82.61-1.52 1.36-1.56H46.1c.81.05 1.43.75 1.4 1.62v1.29z'/%3e%3c/svg%3e") no-repeat center;
+				background-size:32px 32px;
+				&-active{
+					height: 43px;
+					background: url("https://image.yeoboya.com/imgs/new_wedding_recruit/common/ani_bell_notice_01.gif") no-repeat center;
+					background-size: 45px 45px;
+				}
+			}
+
+		}
+	}
+
+	&-no_bg{
+		background-color:transparent !important;
+		& .header__ico {
+			&_cls{
+				width:100%;
+				height:100%;
+				background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' xml:space='preserve'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' d='M46 18.2 18 45.8M46 45.8 18 18.2'/%3e%3c/svg%3e")  no-repeat center;
+				background-size:32px 32px;
+			}
+		}
+	}
+
+
+	& .header__tit{
+		&-abs{
+			@include position(absolute,1,0,null,null,50%);
+			transform: translateX(-50%);
+			height:100%;
+		}
+	}
+	&__badge_new-mypage{
+		top: 10px;
+		right: 6px;
+	}
+}

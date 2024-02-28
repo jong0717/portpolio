@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_certifi
+	설　명 : 본인인증 불일치 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_certifi{display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%;}
+.pop_certifi__top{width:100%; overflow: hidden;}
+.pop_certifi__top_tit{font-size: 16px; color:#fff; text-align: center;}
+.pop_certifi__top_nickname{font-weight:700;}
+.pop_certifi__top_txt{color:#F1D41A;}
+.pop_certifi__phone_num_box{width:240px; height:40px; margin:0 auto; border-radius: 8px; border:1px solid #fff; line-height:38px; text-align: center; color:#fff; box-sizing: border-box;}
+.pop_certifi__container{width:100%; border-radius:8px; background-color:#fff; box-shadow: 0 1px 4px rgba(0,0,0,.32);}
+.pop_certifi__info{display:flex; align-items: center; justify-content:center; margin-top:12px;}
+.pop_certifi__info_tit{padding-top: 24px; text-align: center; color:#202020;}
+.pop_certifi__info_tit_txt{color:var(--primary-500);}
+.pop_certifi__info_box{position:relative; display:flex; flex-direction:column; justify-content:center;}
+.pop_certifi__info_box-ex{padding-right:36px; margin-right:20px;}
+.pop_certifi__info_box-ex .pop_certifi__info_li::after {content:"〉"; position:absolute; right:0;}
+.pop_certifi__info_box-new .pop_certifi__info_li {color:var(--primary-500);}
+.pop_certifi__info_li {color:#202020;}
+
+.pop_certifi__bot {padding:0 15px 28px; text-align: center;}
+.pop_certifi__bot_txt {font-size:14px; color:#202020;}
+.pop_certifi__bot_subtxt {margin-top: 6px; font-size:13px; color:var(--primary-300);}

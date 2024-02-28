@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="robots" content="ALL">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="1 days">
+	<meta name="Subject" content="여보야">
+	<meta name="description" content="결혼, 재혼, 배우자를 찾는 스마트한 방법, 가입비 주선비 성혼비 무료, 여성결혼대상자 무료, 문의 1522-3379">
+	<meta name="keywords" content="결혼, 재혼, 결혼어플, 소개팅어플, 소개팅">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://image.yeoboya.com/imgs/new_wedding/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://image.yeoboya.com/imgs/new_wedding/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>운세서비스 결과보기</title>
+	<link rel="canonical" href="https://m.yeoboya.com">
+
+	<link rel="stylesheet" type="text/css" href="../css/marry/font.css">
+	<link rel="stylesheet" type="text/css" href="../css/marry/community/src/sass/common_community.css">
+	<link rel="stylesheet" type="text/css" href="../css/marry/community/src/__fortune.css">
+	<link rel="stylesheet" type="text/css" href="../css/marry/community/src/__float_btn.css">
+	<script src="../vendors/polyfill.min.js"></script>
+	<script src="../vendors/jquery.min.js"></script>
+	<script src="../vendors/lodash.min.js"></script>
+	<script src="../vendors/axios.min.js"></script>
+    <script src="../vendors/moment.min.js"></script>
+    <script src="../vendors/jquery-mobile.event.min.js"></script>
+	<script src="../vendors/onLoad.bundle.js"></script>
+	<script src="../js/lottie.min.js"></script>
+	<!-- chartjs -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="pc__bg">
+	<div class="pc__container">
+		<div class="top">
+			<header class="header header-no_bg">
+				<div class="header__btn_wrap">
+					<a class="header__btn pl8">
+						<span class="header__ico_back"></span>
+						<span class="blind">뒤로</span>
+					</a>
+				</div>
+				<h1 class="header__tit header__tit-center header__tit-abs"><span class="header__tit_txt">운세서비스</span></h1>
+				<div class="header__btn_wrap mla">
+					<a class="header__btn pr8">
+						<span class="header__ico_cls"></span>
+						<span class="blind">닫기</span>
+					</a>
+				</div>
+			</header>
+		</div>
+		<main class="content">
+			<div class="fortune">
+				<div class="fortune__bg fortune__bg-view"></div>
+				<div class="fortune__content pb32">
+					<div class="fortune__tit_img fortune__tit_img-max_wid_m"></div>
+					<div class="fortune__sub_txt fs18">2022년 10월 7일</div>
+					<div class="fortune__total_score_wrap">
+						<div class="fortune__total_score">종합지수
+							<span class="fortune__total_score_num">-9</span>점
+						</div>
+						<div class="fortune__total_graph">
+							<div class="fortune__total_graph_fill">
+								<span class="fortune__total_graph_circle"></span>
+							</div>
+						</div>
+					</div>
+					<div class="fortune__score_wrap">
+						<div class="fortune__score_tit fortune__score_tit-bio">바이오 리듬</div>
+						<div class="fortune__graph_wrap">
+							<canvas class="fortune__graph" id="viewFortuneGraph" width="300" height="200"></canvas>
+							<div class="fortune__graph_txt_wrap">
+								<div class="fortune__graph_txt fortune__graph_txt-body">신체<span class="fortune__graph_txt_score">-52%</span></div>
+								<div class="fortune__graph_txt fortune__graph_txt-emotion">감성<span class="fortune__graph_txt_score">-52%</span></div>
+								<div class="fortune__graph_txt fortune__graph_txt-intell">지능<span class="fortune__graph_txt_score">-52%</span></div>
+							</div>
+						</div>
+						<div class="fortune__btn_wrap">
+							<a class="fortune__btn_default fortune__btn_default-m fortune__btn_default-fortune">
+								<span class="fortune__btn_default_txt">상세보기</span>
+								<div class="icon__arrow"></div>
+							</a>
+						</div>
+					</div>
+					<div class="fortune__score_wrap">
+						<div class="fortune__score_tit fortune__score_tit-love">연애지수</div>
+						<div class="fortune__love" id="fortuneLove">
+							<span class="fortune__score_txt">70%</span>
+						</div>
+						<div class="fortune__btn_wrap">
+							<a class="fortune__btn_default fortune__btn_default-m fortune__btn_default-fortune">
+								<span class="fortune__btn_default_txt">상세보기</span>
+								<div class="icon__arrow"></div>
+							</a>
+						</div>
+					</div>
+					<div class="fortune__score_wrap">
+						<div class="fortune__score_tit fortune__score_tit-luck">행운지수</div>
+						<div class="fortune__luck" id="fortuneLuck">
+							<span class="fortune__score_txt">74%</span>
+						</div>
+						<div class="fortune__btn_wrap">
+							<a class="fortune__btn_default fortune__btn_default-m">
+								<span class="fortune__btn_default_txt">상세보기</span>
+								<div class="icon__arrow"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="float" data-type="fortune">
+            <div class="float_btn">
+                <div class="float_btn__wrap">
+                    <a class="float_btn__btn_up"></a>
+                </div>
+            </div>
+        </div>
+	</div>
+	<script>
+		// 바이오리듬 차트
+		const canvas = document.getElementById('viewFortuneGraph')
+        const ctx = canvas.getContext('2d');
+		// 면 채우기 그라디언트
+        const gradPhy = ctx.createLinearGradient(0, 0, 0, canvas.height / 2);
+        const gradEmo = ctx.createLinearGradient(0, 0, 0, canvas.height / 2);
+        const gradIntell= ctx.createLinearGradient(0, 0, 0, canvas.height / 2);
+
+        gradPhy.addColorStop(0, 'rgba(91,227,245,0.2)');
+        gradPhy.addColorStop(0.5, 'rgba(91,227,245,0.1)');
+        gradPhy.addColorStop(1, 'rgba(91,227,245,0)');
+
+        gradEmo.addColorStop(0, 'rgba(230,143,255,0.2)');
+        gradEmo.addColorStop(0.5, 'rgba(230,143,255,0.1)');
+        gradEmo.addColorStop(1, 'rgba(230,143,255,0)');
+
+        gradIntell.addColorStop(0, 'rgba(255,230,129,0.2)');
+        gradIntell.addColorStop(0.5, 'rgba(255,230,129,0.1)');
+        gradIntell.addColorStop(1, 'rgba(255,230,129,0)');
+		
+		// 선 채우기 그라디언트
+		const gradLinePhy = ctx.createLinearGradient(0, 0, canvas.width, 0);
+		const gradLineEmo = ctx.createLinearGradient(0, 0, canvas.width, 0);
+		const gradLineIntell = ctx.createLinearGradient(0, 0, canvas.width, 0);
+		
+		gradLinePhy.addColorStop(0, '#45FEC5');
+        gradLinePhy.addColorStop(1, '#5BE3F5');
+		
+		gradLineEmo.addColorStop(0, '#6192FF');
+        gradLineEmo.addColorStop(1, '#E68FFF');
+
+		gradLineIntell.addColorStop(0, '#FFE681');
+        gradLineIntell.addColorStop(1, '#FF9160');
+
+        let date = new Date();
+        const labels = [];
+        const today = date.getDate();
+        for (let i = today - 5; i < today + 4; i++) {
+            labels.push(i);
+        }
+		const totalDuration = 10000;
+		const delayBetweenPoints = 30;
+		const previousY = (ctx) => ctx.index === 0 ? ctx.chart.scales.y.getPixelForValue(100) : ctx.chart.getDatasetMeta(ctx.datasetIndex).data[ctx.index - 1].getProps(['y'], true).y;
+		const animation = {
+			x: {
+				type: 'number',
+				easing: 'easeIn',
+				duration: delayBetweenPoints,
+				from: NaN,
+				delay(ctx) {
+				if (ctx.type !== 'data' || ctx.xStarted) {
+					return 0;
+				}
+				ctx.xStarted = true;
+				return ctx.index * delayBetweenPoints;
+				}
+			},
+			y: {
+				type: 'number',
+				easing: 'easeIn',
+				duration: delayBetweenPoints,
+				from: previousY,
+				delay(ctx) {
+				if (ctx.type !== 'data' || ctx.yStarted) {
+					return 0;
+				}
+				ctx.yStarted = true;
+				return ctx.index * delayBetweenPoints;
+				}
+			}
+		};
+        var myChart = new Chart(ctx, {
+			type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                        label: '# of Votes',
+                        data: [19, 31, 19, 31, 30, 43, 29, 23, 34],
+                        backgroundColor: gradEmo,
+                        borderColor: gradLineEmo,
+                        borderWidth: 1.5,
+                        tension: 0.4,
+                        fill: true,
+                        radius:0,
+						// type:'line',
+                    },
+                    {
+                        label: '# of Votes',
+                        data: [19, 31, 32, 24, 28, 25, 20, 35, 42],
+                        backgroundColor: gradIntell,
+                        borderColor: gradLineIntell,
+                        borderWidth: 1.5,
+                        tension: 0.4,
+                        fill: true,
+                        radius:0,
+						z:1,
+						// type:'line',
+                    },
+                    {
+                        label: '# of Votes',
+                        data: [19, 31, 13,25,42,33,16,27,39],
+                        backgroundColor: gradPhy,
+                        borderColor: gradLinePhy,
+                        borderWidth: 1.5,
+                        tension: 0.4,
+                        fill: true,
+                        radius:0,
+						z:2,
+						// type:'line',
+                    }
+                ],
+
+            },
+            options: {
+				animation,
+                plugins: {
+					legend: {
+						display:false,
+                    },
+                },
+                scales: {
+					x: {
+						ticks:{
+							callback: function(val, index) {
+								return index === 0 || index === labels.length - 1 ?  '' : this.getLabelForValue(val);
+							},			
+							color: '#909090',
+                            font: {
+								family:"Noto Sans KR",
+								weight:"700",
+                                size: 14,
+                            },
+                        },
+                        grid: {
+                            display: false,
+                        }
+                    },
+                    y: {
+                        grid: {
+							display:false,
+                        },
+						ticks:{
+							display:false,		
+						}
+                    }
+                }
+            }
+        });
+    </script>
+	<script>
+		const totalScore = +($('.fortune__total_score_num')[0].innerText)
+		// let ratioClass = $('.fortune__total_score_num')
+		// 	let ratio = +ratioClass[0].innerText
+		
+		if(totalScore > 0) {
+			$('.fortune__total_graph_fill').addClass('fortune__total_graph_fill-right')
+			$('.fortune__total_graph_fill-right').animate({
+				'opacity' : 1,
+				'right': (100 - totalScore) / 2 + '%'}, 
+				1200,'linear');
+		} else if(totalScore === 0) {
+			$('.fortune__total_graph_fill').addClass('fortune__total_graph_fill-zero')
+		}
+		else {
+			$('.fortune__total_graph_fill').addClass('fortune__total_graph_fill-left')
+			if (Math.abs(totalScore) < 10) {
+				$('.fortune__total_graph_fill-left').animate({
+					'opacity' : 1,
+					}, 
+					1200,'linear')
+				}
+			else {
+				$('.fortune__total_graph_fill-left').animate({
+					'opacity' : 1,
+					'left': (100 - Math.abs(totalScore)) / 2 + '%'}, 
+					1200,'linear')
+			}
+		}
+		let fortuneLuck = lottie.loadAnimation({
+			container: document.getElementById('fortuneLuck'),
+			renderer: "svg",
+			loop: false,
+			autoplay: true,
+			path: "../ani/ani_fortune_luck_high.json",
+		});
+		let fortuneLove = lottie.loadAnimation({
+			container: document.getElementById('fortuneLove'),
+			renderer: "svg",
+			loop: false,
+			autoplay: true,
+			path: "../ani/ani_fortune_love_50.json",
+		});
+		// $(document).ready(function(){
+		// 	let ratioClass = $('.fortune__total_score_num')
+		// 	let ratio = +ratioClass[0].innerText
+		// 	$('.fortune__total_graph_fill').css({'left': ratio + '%'})
+		// 	console.log(ratioClass)
+		// 	console.log(ratio)
+            
+		// })		
+	</script>
+	<script src="../js/default.js"></script>
+	<script src="../vendors/siteMap.bundle.js"></script>
+</body>
+</html>

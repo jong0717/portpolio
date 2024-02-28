@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_pay
+	설　명 : 내 코인
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.my_pay{position: relative; border-radius: 8px; background: linear-gradient(135deg, #8A8EFB, #585DEF); box-shadow: 0 1px 4px rgba(0, 0, 0, .2);}
+.my_pay__content{display: flex; align-items: center;}
+.my_pay__txt{color: #fff;}
+.my_pay__amount_wrap{display: flex; align-items: center;}
+.my_pay__amount{margin-left: 4px; font-size: 18px; font-weight: 700; color: #fff;}
+.my_pay__btn_round{position: relative; display: flex; align-items: center; justify-content: center; width: 90px; height: 34px; margin-left: auto; border: 1px solid #fff; border-radius: 17px; background: #8A8EFB; box-sizing: border-box; overflow: hidden; cursor: pointer;}
+.my_pay__btn_round_txt{font-size: 14px; font-weight: 700; color: #fff;}
+.my_pay__btn_round::after{content: ""; position: absolute; top: 0; left: 0; width: 90px; height: 34px; background: linear-gradient(290deg,rgba(201,203,255,0) 10%,rgba(201,203,255,.8) 50%,rgba(201,203,255,0) 90%); animation: btnEmpAni 1s infinite ease-out;}
+@keyframes btnEmpAni {
+	0%{transform: translateX(-100px);}
+	100%{transform: translateX(100px);}
+}
+
+
+.my_pay__ico_wrap{flex: none;}
+.my_pay__ico_coin{width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding_life/ico/ico_coin.png") no-repeat center; background-size: 100% 100%;}

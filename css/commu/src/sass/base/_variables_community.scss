@@ -1,0 +1,61 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□            Variables Community             □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+
+//------------------------------------------------
+// typography
+//------------------------------------------------
+$font-color: map-merge((
+	"man":      $man,
+    "woman":    $woman
+), $font-color);
+
+//------------------------------------------------
+// Component Variables
+//------------------------------------------------
+
+/*----- BUTTON -----*/
+// outline
+$btn_outline_bg_active:                  lighten($primary-500,33%);
+$btn_outline_bg_hover:                   lighten($primary-500,51%);
+
+/*----- PHOTO -----*/
+// size
+$photo_sizes:                            join($photo_sizes, (80));
+$photo_circle_sizes:                     (24, 32, 34, 40, 45, 50, 55, 60, 80);
+
+// tab_bar
+$tab_bar_logo_border : #DEDFFF;
+$tab_bar_logo_bg : #585DEF;
+$tab_bar_btn_ico : url("#{$url_marry}/common/ico_tab_bar_btn_commu.png");
+$tab_bar_txt_color : #4E58E3;
+
+/*----- INPUT -----*/
+// label
+$input_lb_margin_bottom:                 8px;
+// btn
+$input_btn_enter_border_color: 			 $primary-500;
+$input_btn_enter_txt_color: 			 $white;
+$input_btn_enter_bg_color: 				 $primary-500;
+$input_btn_enter_border_color_disabled:  $gray-d4;
+$input_btn_enter_txt_color_disabled:	 $white;
+$input_btn_enter_bg_color_disabled:		 $gray-d4;
+$input_btn_enter_border_color_confirmed: $positive;
+$input_btn_enter_txt_color_confirmed: 	 $positive;
+$input_btn_enter_bg_color_confirmed:	 $white;
+// icon
+$input__pw_safety-1_color:                       str-slice(#{$success}, 2, 7);
+$input__pw_safety-2_color:                       str-slice(#{$positive}, 2, 7);
+$input__pw_safety-3_color:                       str-slice(#{$warning}, 2, 7);
+$input__pw_safety-4_color:                       str-slice(#{$error}, 2, 7);
+
+/*----- ICON -----*/
+$icon-colors: ();
+$icon-colors: map-merge((
+	"default":    "202020",
+	"disabled":   "B8B8B8",
+	"primary":    "C79971",
+	"white":      "FFFFFF",
+), $icon-colors);

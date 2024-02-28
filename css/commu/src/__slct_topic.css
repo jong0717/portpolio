@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __slct_topic
+	설　명 : 토픽 선택 버튼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+
+.slct_topic{display: inline-block; flex: none; padding: 7px 7px 7px 11px; border-radius: 19px; border: 1px solid #707070; background-color: #FFF; cursor: pointer;}
+.slct_topic.active{border: 1px solid #585DEF;}
+/* .slct_topic.error {border: 1px solid #FF1919;} */
+.slct_topic__txt{padding-right: 20px; background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' xml:space='preserve'%3e%3cpath fill='%23909090' d='m20 25-8-10h16l-8 10z'/%3e%3c/svg%3e"); background-position: right center; background-repeat: no-repeat; background-size: 20px 20px; color: #707070;}
+
+.slct_topic.active .slct_topic__txt{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' xml:space='preserve'%3e%3cpath fill='%23585DEF' d='m20 25-8-10h16l-8 10z'/%3e%3c/svg%3e"); color: #585DEF;}

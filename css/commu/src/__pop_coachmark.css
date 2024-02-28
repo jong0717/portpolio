@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_coachmark
+	설　명 : 코치마크 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pop_coachmark{position: relative; width: 100%; height: 100vh;}
+.pop_coachmark__ani01{position: absolute; top: 54px; left: 50%; width: 312px; height: 97px; background: url("https://image.yeoboya.com/imgs/new_wedding/img/img_pop_coachmark_01.png") no-repeat center; background-size: 100%; opacity: 0; transition:all .4s ease-in; transform: translateX(-50%);}
+.pop_coachmark__ani02{position: absolute;bottom: 31px; right: 29px; width: 255px; height: 50px; background: url("https://image.yeoboya.com/imgs/new_wedding/img/img_pop_coachmark_02.png") no-repeat center; background-size: 100%; opacity: 0; transition:all .6s ease-in .5s;}
+.pop_coachmark__ani03{position: absolute; top: 342px; left: 22px; width: 252px; height: 68px; background: url("https://image.yeoboya.com/imgs/new_wedding/img/img_pop_coachmark_03.png") no-repeat center; background-size: 100%; opacity: 0; transition:all .8s ease-in 1.3s; transform: translateY(-50%);}
+.pop_coachmark__ani01.on, .pop_coachmark__ani02.on, .pop_coachmark__ani03.on{opacity: 1; transition: all .4s ease-in;}
+
+.pop_coachmark__btn_cls{position: absolute; top: 0; right: 8px; width: 45px; height: 45px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 45 45'%3e%3cpath fill='white' d='m23.5 22.6 6.6-6.6c.3-.3.3-.9 0-1.2-.3-.3-.8-.3-1.2 0l-6.6 6.6-6.6-6.6c-.3-.3-.8-.3-1.2 0-.3.3-.3.9 0 1.2l6.6 6.6-6.6 6.6c-.3.3-.3.9 0 1.2.3.3.8.3 1.2 0l6.6-6.6 6.6 6.6c.3.3.8.3 1.2 0 .3-.3.3-.9 0-1.2l-6.6-6.6z'/%3e%3c/svg%3e") center no-repeat; background-size: 45px; cursor: pointer;}

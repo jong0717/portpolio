@@ -1,0 +1,56 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                Button_noblesse                □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+
+.btn{
+    // 버튼 - default
+    &__btn_default{
+		&-s{
+			height:$btn_height_small;
+			border-radius: 4px;
+
+		}
+        &-width_s{
+			width: 71px;
+		}
+		&_txt{
+            .btn__btn_default-s &{
+                font-size:13px;
+            }
+        }
+    }
+    &__btn_line{
+		&-s{
+			height:$btn_height_small;
+			border-radius: 4px;
+		}
+        &_bg{
+            background-color:$primary-100;
+        }
+        &_ico-confirmed{
+            width:20px;
+            height:20px;
+            background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cg fill='none'%3e%3cg%3e%3ccircle cx='16' cy='16' r='16'/%3e%3ccircle stroke='%23585DEF' stroke-width='2' cx='16' cy='16' r='15'/%3e%3c/g%3e%3cpath stroke='%23585DEF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M8.65 16.35l5.06 4.52 8.96-9.78'/%3e%3c/g%3e%3c/svg%3e") no-repeat right 0 center;
+            background-size:20px 20px;
+        }
+    }
+	&__btn_bot{
+		box-shadow: 0 -1px 4px rgba(0,0,0,.16);
+	}
+    &__ico_next_right-slim{position:absolute; top:50%; right: 0; width:44px; height:44px; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3e%3cpath fill='none' stroke='%23414CE1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M27.9 21.8L36.1 32 28 42.2'/%3e%3c/svg%3e") no-repeat center; background-size: 100% 100%; transform: translateY(-50%);
+    }
+    &__icon_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon_myspot{
+        width:24px;
+        height:24px;
+        background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' xml:space='preserve'%3e%3cg fill='%23585DEF'%3e%3cpath d='M24 17.29c-3.71 0-6.71 3.01-6.71 6.71 0 3.71 3.01 6.72 6.71 6.72 3.71 0 6.72-3.01 6.72-6.72A6.72 6.72 0 0 0 24 17.29zM27.94 24c0 2.18-1.77 3.94-3.94 3.94-2.18 0-3.94-1.77-3.94-3.94 0-2.18 1.77-3.94 3.94-3.94 2.18 0 3.94 1.76 3.94 3.94z'/%3e%3cpath d='M44.62 22.61s-.01 0 0 0h-4.38c-.68-7.9-6.95-14.17-14.85-14.85V3.39C25.39 2.62 24.77 2 24 2c-.77 0-1.39.62-1.39 1.39v4.38c-7.9.68-14.17 6.95-14.85 14.85H3.39C2.62 22.61 2 23.23 2 24s.62 1.39 1.39 1.39h4.38c.68 7.9 6.95 14.17 14.85 14.85v4.38c0 .77.62 1.39 1.39 1.39.77 0 1.39-.62 1.39-1.39v-4.38c7.9-.68 14.17-6.95 14.85-14.85h4.38c.77 0 1.39-.62 1.39-1.39-.02-.76-.64-1.39-1.4-1.39zM37.54 24c-.01 7.47-6.07 13.53-13.54 13.53-7.48 0-13.53-6.06-13.53-13.53 0-7.48 6.06-13.54 13.53-13.54 7.48 0 13.54 6.06 13.54 13.54z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center;
+        background-size:24px 24px;
+    }
+
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __srch
+	설　명 : 메인 검색창
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.srch{position: relative; margin-top: 16px; padding: 0 15px;}
+.srch__wrap{display: flex; align-items: center; width: 100%; height: 36px; padding: 8px 12px; border: 1px solid var(--primary-500); border-radius: 40px; box-sizing: border-box; cursor: pointer;}
+.srch__txt{width: 100%; font-size: 14px; line-height: 20px;}
+.srch__ico{width: 34px; height: 100%; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' id='%eb%a0%88%ec%9d%b4%ec%96%b4_1' x='0' y='0' style='enable-background:new 0 0 34 34' version='1.1' viewBox='0 0 34 34'%3e%3cstyle%3e.st1%7bfill:%23585def%7d%3c/style%3e%3cg id='%ea%b7%b8%eb%a3%b9_73' transform='translate(17.403 6.899)'%3e%3cg id='%ed%8c%a8%ec%8a%a4_7'%3e%3cpath d='M-1.14.55C3.21.54 6.75 4.07 6.75 8.42c.01 4.35-3.52 7.89-7.87 7.89-4.35.01-7.89-3.52-7.89-7.87v-.02C-9 4.08-5.48.57-1.14.55z' style='fill:none'/%3e%3cpath d='M-1.15 2.55c-1.57 0-3.04.61-4.15 1.72a5.773 5.773 0 0 0-1.71 4.15c0 3.25 2.65 5.89 5.9 5.9h.01c1.57 0 3.04-.61 4.15-1.72a5.773 5.773 0 0 0 1.71-4.15C4.75 5.2 2.1 2.56-1.15 2.55m0-2h.01c4.35.01 7.89 3.54 7.89 7.89a7.853 7.853 0 0 1-7.87 7.87c-4.35-.01-7.89-3.54-7.89-7.89A7.85 7.85 0 0 1-1.15.55z' class='st1'/%3e%3c/g%3e%3cpath id='%ec%82%ac%ea%b0%81%ed%98%95_27' d='M3.59 13.15a1.11 1.11 0 0 1 1.58 0l4.8 4.8c.44.44.44 1.14 0 1.58-.44.44-1.14.44-1.58 0l-4.8-4.8a1.11 1.11 0 0 1 0-1.58z' class='st1'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 100% auto;}

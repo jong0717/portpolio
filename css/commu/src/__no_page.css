@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __no_page
+	설　명 : 404 not found 에러 페이지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.no_page{display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;}
+.no_page__icon{width: 60px; height: 60px; margin-bottom: 28px; background: url("https://image.yeoboya.com/imgs/new_wedding_portal/common/ico_not_found.png") center no-repeat; background-size: 100% 100%;}
+.no_page__txt_wrap{margin-bottom: 28px; text-align: center;}
+.no_page__btn_wrap{display: flex; justify-content: center;}
+.no_page__btn{width: 120px;}
