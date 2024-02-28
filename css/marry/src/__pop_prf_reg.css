@@ -1,0 +1,20 @@
+@charset "utf-8";/*---------------------------------------------
+파일명 : __pop_prf_reg
+설　명 : 
+작성순서 : 1. 레이아웃 2.크기/간격 3.박스모양 4.폰트 5.기타
+position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pop_prf_reg{position: relative; width: 100%; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 1px 4px rgb(0 0 0 / 32%);
+}
+.pop_prf_reg__container{width: 100%;padding: 32px 15px 20px;box-sizing: border-box;
+}
+.pop_prf_reg__content{width: 100%;}
+.pop_prf_reg__tit{width: 100%; margin-bottom: 12px; text-align: center; line-height: 21px; color: #202020;}
+.pop_prf_reg__img_box{position: relative; font-size: 0;}
+.pop_prf_reg__img{width: 100%;}
+.pop_prf_reg__info_txt{margin-top: 4px; text-align: right; font-size: 11px; color: #909090;}
+.pop_prf_reg__txt_box{margin-top: 12px; width: 100%; text-align: center; font-size: 14px; color: #202020; word-break: break-all}
+.pop_prf_reg__btn_wrap{display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%; margin: 16px auto 0; box-sizing: border-box;
+}
+.pop_prf_reg__btn_cls{position: absolute; z-index: 1; top: 0; right: 0; display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: nowrap; width: 44px; height: 44px;}
+.pop_prf_reg__ico_cls{width: 100%; height: 100%; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cg fill='none' stroke='%23202020' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M28.001 4.153l-24 23.7M28.001 27.853l-24-23.7'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 16px 16px;}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*---------------------------------------------
+파일명 : __verify
+설　명 : 증명서 관련
+작성순서 : 1. 레이아웃 2.크기/간격 3.박스모양 4.폰트 5.기타
+position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.verify{position: relative; width: 100%;}
+.verify__container{width: 100%; padding-bottom: 100px;}
+.verify__top{width: 100%; padding: 15px 15px 28px; box-sizing: border-box; background: #F9FAFC;}
+.verify__tit{font-size: 18px; font-weight: 700; color: #202020;}
+.verify__slct{position: relative; width: 100%; padding-bottom: 20px; margin: 8px 0 15px; border-bottom: 1px solid #DFDFDF; box-sizing: border-box;}
+.verify__slct_content{display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; width: 100%;}
+.verify__slct_opt{display: flex; justify-content: center; align-items: center; flex: none; height: 36px; padding: 0 5px; border: 1px solid #707070; border-radius: 8px; box-sizing: border-box; background: #FFF;}
+.verify__slct_opt.selected{border: none; background: #3654AE; color: #FFF;}
+.verify__info{margin-top: 8px; font-size: 14px;}
+.verify__notice{width: 100%; padding: 7px; margin-top: 15px; border: 1px solid #C2D1FF; border-radius: 8px; background: #EFF3FF; box-sizing: border-box; font-size: 14px; color: #202020; text-align: center;}
+.verify__notice_strong{font-weight: 700; color: var(--primary-400);}
+.verify__btn_wrap{display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px 16px; margin-top: 15px;}
+.verify__btn{display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 10px 6px; border-radius: 12px; background: #FFF; box-shadow: 0 1px 4px rgba(0, 0, 0, .12);}
+.verify__btn.active{padding: 8px 4px; border: 2px solid var(--primary-400);}
+.verify__btn_img{width: 28px; height: 28px; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.verify__btn_txt{font-size: 13px; color: #202020; text-align: center;}
+.verify__content{padding: 16px 15px 24px;}
+.verify__bot{display: flex; flex-direction: column; gap: 8px; padding: 16px 15px 0;}
+.verify__checkbox{display: flex; align-items: center; padding: 4px 0 5px;}
+.verify__checkbox_btn{display: flex; margin-left: auto; font-size: 12px; color: #707070;}
+.verify__checkbox_btn::after{content: ""; width: 10px; height: 16px; margin: 1px 0 0 2px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 10 16'%3e%3cpath fill='none' stroke='%23707070' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M2.8 3.5 7.2 8l-4.4 4.5'/%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+.verify__wait{display: flex; width: 100%; height: calc(100vh - 45px);}
+.verify__wait_container{position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; padding-bottom: 80px;}
+.verify__wait_img{width: 130px; height: 110px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/img/img_reg_marriage_wait.png"); background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.verify__wait_img-amount{background-image: url("https://image.yeoboya.com/imgs/new_wedding/img/img_verify_amount_wait.png")}
+.verify__wait_txt{margin-top: 16px; font-size: 18px; color: #202020; text-align: center;}
+.verify__wait_box{display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 300px; padding: 15px 20px; margin-top: 10px; border-radius: 8px; box-sizing: border-box; background: #FAFAFA;}
+.verify__wait_detail{display: flex; align-items: center;}
+.verify__wait_detail::before{content: ""; width: 15px; height: 15px; margin-right: 8px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 15 15'%3e%3cpath fill='%234169E1' d='M7.5 15c4.1 0 7.5-3.4 7.5-7.5S11.6 0 7.5 0 0 3.4 0 7.5c0 2 .8 3.9 2.2 5.3C3.6 14.2 5.5 15 7.5 15zM3.6 7.7c.3-.3.7-.3 1 0l1.6 1.6 3.9-3.9c.3-.2.7-.2 1 .1.2.3.2.6 0 .9l-4.4 4.4c-.3.3-.7.3-1 0l-2-2c-.4-.4-.4-.8-.1-1.1z'/%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+.verify__wait_btn_warp{width: 100%; max-width: 330px; margin-top: 28px;}
+.verify__wait_info{position: absolute; bottom: 30px; width: 100%; font-size: 12px; text-align: center;}
+.verify__wait_strong{position: relative; font-size: 13px; font-weight: 700; color: #202020; z-index: 1;}
+.verify__wait_strong::after{content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 8px; padding: 0 1px; background: #CCD9FF; z-index: -1;}

@@ -1,0 +1,80 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __ai_explain
+	설　명 : ai 상세설명
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.ai_explain__tab{position: relative;}
+.ai_explain__img{display: block; width: 100%;}
+.ai_explain__img-330{max-width: 330px;}
+.ai_explain__img-br8{border-radius: 8px;}
+.ai_explain__bg{position: relative; z-index: 0;}
+.ai_explain__bg-tab01{background: #F2FCFF;}
+.ai_explain__bg-tab02{background: linear-gradient(to bottom, #F2F6FF, #CCDCFF);}
+.ai_explain__bg-tab02_white{position: relative; background: rgba(255, 255, 255, .8);}
+.at_explain_txt-point{color: #3654AE;}
+.ai_explain__bg_img{position: absolute; top: 0; right: 20px; width: 41px; height: 100px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/bg_tab01_1.png") no-repeat center; background-size: 41px 100px;}
+.ai_explain_bg_img_cube_01{position: absolute; top:0; right: 0; width: 288px; height: 288px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/bg_tab02_1.png") no-repeat center; background-size: 288px 288px; z-index: -1;}
+.ai_explain_bg_img_cube_02{position: absolute; top:600px; left: 0; width: 197px; height: 197px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/bg_tab02_2.png") no-repeat center; background-size: 197px 197px; z-index: -1;}
+.ai_explain_bg_img_cube_03{position: absolute; top:400px; right: 0; width: 180px; height: 180px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/bg_tab02_3.png") no-repeat center; background-size: 288px 288px; z-index: -1;}
+.ai_explain_bg_img_cube_04{position: absolute; bottom:300px; left: 0; width: 288px; height: 288px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/bg_tab02_4.png") no-repeat center; background-size: 288px 288px; z-index: -1;}
+.ai_explain_img_wrap{display: flex; align-items: center;}
+.ai_explain__logo{width: 111px; height: 29px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_logo.png") no-repeat center; background-size: 111px 29px;}
+.ai_explain__bot_bg{background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/bg_tab01_2.png") no-repeat center; background-size: cover;}
+
+.ai_explain__anibox{box-sizing: border-box; opacity: 0;}
+.ai_explain__anibox-active{opacity: 1; transition-duration: 1000ms;}
+.ai_explain__anibox-01{width: 100%; border-radius: 8px; box-shadow:0 0 5px rgba(0, 0, 0, .16); background: #F6F8FF;}
+.ai_explain__anibox-02{width: 83%; border-radius: 8px 0 0 0; background: #D1DCFF;}
+.ai_explain__anibox-03{width: 78%; border-radius: 8px 0 8px 0; background: #ABC0FF;}
+
+.ai_explain__ani_wrap{display: flex; align-items: center;}
+.ai_explain__ani_txt{width: 100%;}
+.ai_explain__ani_img{flex: none; width: 50px; height: 50px;}
+.ai_explain__ani_img-ai{background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/ico_tab01_1.png") no-repeat center; background-size: 50px 50px;}
+.ai_explain__ani_img-ml{background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/ico_tab01_2.png") no-repeat center; background-size: 50px 50px;}
+.ai_explain__ani_img-dl{align-self: flex-end; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/ico_tab01_3.png") no-repeat center; background-size: 50px 50px;}
+
+.ai_explain__lt_box{position: relative; width: 100%;}
+.ai_explain__lt_box-main{padding-bottom: 105.5555%;}
+.ai_explain__lt_box-main-tab01{ background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab01_1_t01.png") no-repeat center; background-size: cover;}
+.ai_explain__lt_box-tab01_sub{padding-bottom: 57.5757%; border-radius: 8px; overflow: hidden; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab01_2.png") no-repeat center; background-size: cover;}
+.ai_explain__lt_play_box{position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+.ai_explain__lt_play_box-op{animation: lt_op 5s 1;}
+.ai_explain_mark{display: flex; align-items: center; justify-content: center; border-top: 1px solid #3654AE; border-bottom: 1px solid #3654AE; background-color: #fff;}
+.ai_explain__img_ani{transition-duration: 500ms; opacity: 0; transform: translateX(-50px);}
+.ai_explain__img_ani-active{transform: translateX(0); opacity: 1;}
+/* #9268 */
+.ai_explain__recommend{position: relative; width: 100%;}
+.ai_explain__recommend_container{display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex-wrap: nowrap; width: 100%; height: 100%; background-color: #F4F7F9;}
+.ai_explain__recommend_top{position: relative; padding: 24px 0 0 24px;}
+.ai_explain__recommend_bg{position: absolute; top: 13px; right: 0; width: 170px; height: 170px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_ai_recommend.png") no-repeat center; background-size: 100% auto;}
+.ai_explain__recommend_tit{font-size: 20px; font-weight: 700; color: #202020;}
+.ai_explain__recommend_sub_txt{margin-top: 8px; line-height: 22px; font-size: 14px; font-weight: 400; }
+.ai_explain__recommend_btn_wrap{padding: 0 10px; margin-top: 40px;}
+.ai_explain__recommend_btn{position: relative; display: flex; align-items: center; width: 100%; min-height: 56px; padding: 8px 12px 8px 10px; margin-bottom: 8px; border: 1px solid #E1E1E1; border-radius: 6px; background-color: #fff; box-sizing: border-box; box-shadow: 0 1px 4px rgba(0,0,0,.2); cursor: pointer;}
+.ai_explain__recommend_btn_txt{margin-left: 4px;}
+.ai_explain__recommend_txt_tit{font-size: 14px; color: #202020;}
+.ai_explain__recommend_txt_time{font-size: 12px; color: #ff6e6e;}
+.ai_explain__recommend_btn_more{width: 44px; height: 26px; margin-left: auto; border-radius: 3px; background-color: #EFF3FF; text-align: center; line-height: 26px; font-size: 13px; font-weight: 700; color: #3654AE;}
+.ai_explain__recommend_btn_more-active{width: 68px; background-color: #fff1f1; color: #ff6e6e;}
+.ai_explain__recommend_hr{height: 1px; margin: 12px 0; background-color: #d4d4d4;}
+.ai_explain__recommend_btn_ico{flex: 0 0 auto; width: 40px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/ico_ai_recommend_fix.png"); background-repeat: no-repeat; background-size: 320px 40px;}
+.ai_explain__recommend_btn_ico-man{background-position: 0 0;}
+.ai_explain__recommend_btn_ico-woman{background-position: -40px 0;}
+.ai_explain__recommend_btn_ico-soon{background-position: -80px 0;}
+.ai_explain__recommend_btn_ico-mate{background-position: -120px 0;}
+.ai_explain__recommend_btn_ico-money{background-position: -160px 0;}
+.ai_explain__recommend_btn_ico-msg{background-position: -200px 0;}
+.ai_explain__recommend_btn_ico-play{background-position: -240px 0;}
+.ai_explain__recommend_btn_ico-marry{background-position: -280px 0;}
+.ai_explain__recommend_info_wrap{display: flex; justify-content: flex-end; padding: 8px 10px 16px; margin-top: auto;}
+.ai_explain__recommend_info{display:inline-flex; justify-content: center;align-items: center; height: 33px; padding:2px 8px; border-radius: 4px;box-sizing: border-box; background-color: #E3E9FF; font-size: 14px; color: #3654AE; cursor: pointer;}
+
+
+@keyframes lt_op {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}

@@ -1,0 +1,20 @@
+@charset "utf-8";/*---------------------------------------------
+파일명 : __pop_m_certifi
+설　명 : 프로필 추가등록 팝업
+작성순서 : 1. 레이아웃 2.크기/간격 3.박스모양 4.폰트 5.기타
+position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pop_m_certifi{position: relative;width: 100%;border-radius: 8px;background-color: #fff;overflow: hidden;box-shadow: 0 1px 4px rgba(0,0,0,.32)}
+.pop_m_certifi__container{width: 100%;padding: 40px 15px 20px;box-sizing: border-box;}
+.pop_m_certifi__content{width: 100%;}
+.pop_m_certifi__tit{width: 100%; line-height: 21px; text-align: center; color: #200220;}
+.pop_m_certifi__txt_box{width: 100%;text-align: center;font-size: 14px;color: #202020;word-break: break-all}
+.pop_m_certifi__btn_wrap{display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: nowrap;width: 100%;margin: 24px auto 0;box-sizing: border-box;}
+.pop_m_certifi__btn{position: relative;display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: nowrap;width: 100%;height: 44px;border-radius: 8px;background-color: #7496FF;box-sizing: border-box; cursor: pointer;}
+.pop_m_certifi__btn:hover{background-color: #5B83FF;}
+.pop_m_certifi__btn_txt{color: #fff; white-space: nowrap;}
+.pop_m_certifi__img_wrap{position: relative;margin: 15px 15px 0; font-size: 0;}
+.pop_m_certifi__img{width: 100%;}
+.pop_m_certifi__img_btn_wrap{position: absolute;z-index: 1;bottom: 0;width: 100%;padding: 0 12px; margin-bottom: 10px; box-sizing: border-box; font-size: 15px;}
+.pop_m_certifi__btn_cls{position: absolute;z-index: 1;top: 0;right: 0;display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: nowrap;width: 44px;height: 44px;}
+.pop_m_certifi__ico_cls{width: 100%;height: 100%;background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cg fill='none' stroke='%23202020' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M28.001 4.153l-24 23.7M28.001 27.853l-24-23.7'/%3e%3c/g%3e%3c/svg%3e");background-repeat: no-repeat;background-position: center;background-size: 16px 16px;}

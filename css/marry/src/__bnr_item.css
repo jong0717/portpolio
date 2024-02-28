@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __bnr_item
+	설　명 : 아이템 배너
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.bnr_item{position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 52px; padding: 0 8px 0 24.16%; box-sizing: border-box; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/bg_item_sale_bnr_msg.png") no-repeat center; background-size: cover;}
+.bnr_item__img{position: absolute; left: 0; width: 81px; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/img_item_sale_bnr_msg.png") no-repeat left; background-size: 100%;}
+.bnr_item__txt{font-weight: 700; color: #ffffff;}
+.bnr_item__ani{flex: none; width: 36px; height: 36px; margin-left: auto; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/ani__idealtype_arrow_right.gif") no-repeat center; background-size: 100%;}

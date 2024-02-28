@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __input_slct
+	설　명 : 선택 폼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.input_slct{width:100%;}
+.input_slct__container{display: flex; flex-wrap: wrap; width:100%;}
+.input_slct__container-even{flex-wrap: nowrap;}
+.input_slct__container-between{justify-content: space-between;}
+.input_slct__container-center{justify-content: center;}
+.input_slct__item{flex:0 0 auto; display: flex; align-items: center; justify-content: center; min-width:72px; height:36px; padding:0 12px; margin:0 8px 8px 0; border:1px solid #909090; border-radius: 8px; box-sizing: border-box; cursor: pointer;}
+.input_slct__container-even .input_slct__item{flex: 0 1 auto; width: 100%; margin: 0;}
+.input_slct__item_txt{color:#909090; font-size:14px; font-weight:400;}
+.input_slct__item-selected{border-color:#FF5656;}
+.input_slct__item-selected_black{border-color:#202020;}
+.input_slct__container .selected-gender .input_slct__item_txt{color: #202020;}
+
+.input_slct__item-selected .input_slct__item_txt{color:#FF5656;}
+.input_slct__item-selected_black .input_slct__item_txt{color:#202020;}
+
+.input_slct__item-disabled{border-color:#D4D4D4;}
+.input_slct__item-disabled .input_slct__item_txt{color:#D4D4D4;}
+.input_slct__item-ctgly{width: 22%;}
+.input_slct__item-quarter{width: 24%;}
+
+
+.input_slct__group {display: flex; align-items: center; justify-content: center; flex-direction: column; cursor: pointer;}
+.input_slct__group:first-child {margin-right: 52px;}
+.input_slct__gender {display: flex; align-items: center; justify-content: center; width: 63px; height: 63px; border-radius: 50%; border: 1px solid #909090; background: #fff;}

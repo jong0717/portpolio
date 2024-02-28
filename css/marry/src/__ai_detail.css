@@ -1,0 +1,249 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __ai_detail
+	설　명 : AI 분석 리포트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.ai_detail{background-color: #F4F7F9;}
+.ai_detail__wrap{position: relative;}
+.ai_detail__top{display: flex; align-items: flex-start; padding: 12px 15px 8px;}
+.ai_detail__top_tit_nick{line-height: 19px; font-size: 16px; font-weight: 700; color: #020030;}
+.ai_detail__top_tit_txt{display: flex; align-items: center; line-height: 36px; font-size: 24px; font-weight: 700; color: #253AA7;}
+.ai_detail__top_tit_txt_img{position: relative; top: 1px; width: 36px; height: 36px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_tit.png") no-repeat center; background-size: 100%;}
+.ai_detail__top_share{position: relative; display: flex; justify-content: center; width: 70px; padding-bottom: 10px; margin-left: auto;}
+.ai_detail__top_share_photo{position: relative; width: 48px; height: 48px; box-sizing: border-box; border-radius: 50px; border: 1px solid #455CD1; overflow: hidden;}
+.ai_detail__top_share_photo_img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+.ai_detail__top_share_btn{position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; width: 70px; height: 22px; box-sizing: border-box; border: 1px solid #455CD1; border-radius: 12px; background-color: #FFFFFF; font-size: 12px; color: #3238BB;}
+.ai_detail__top_share_btn_ico{margin-left: 2px; width: 12px; height: 12px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' id='%eb%a0%88%ec%9d%b4%ec%96%b4_1' x='0' y='0' style='enable-background:new 0 0 9 10' version='1.1' viewBox='0 0 9 10'%3e%3cstyle%3e.st0%7bfill:%233238bb%7d%3c/style%3e%3cellipse id='%ed%83%80%ec%9b%90_11798' cx='7.4' cy='1.7' class='st0' rx='1.6' ry='1.7'/%3e%3cellipse id='%ed%83%80%ec%9b%90_11799' cx='1.6' cy='5' class='st0' rx='1.6' ry='1.7'/%3e%3cellipse id='%ed%83%80%ec%9b%90_11800' cx='7.4' cy='8.3' class='st0' rx='1.6' ry='1.7'/%3e%3cpath id='%ed%8c%a8%ec%8a%a4_486994' d='M7.4 8.8c-.1 0-.1 0-.2-.1L1.8 5.2l5.4-3.8c.2-.1.4-.1.5.1.2.1.1.4-.1.5L3.2 5.1 7.6 8c.2.1.2.4.1.6 0 .1-.2.2-.3.2z' class='st0'/%3e%3c/svg%3e") no-repeat center; background-size: 9px 10px;}
+
+.ai_detail__graph{position: relative; margin: 8px 15px 0;}
+.ai_detail__graph_container{position: relative; padding-bottom: 41.2121%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_graph_bg.png") no-repeat center; background-size: 100%;}
+.ai_detail__graph_main{position: absolute; bottom: 0; left: 0; width: 100%; padding-bottom: 36.9696%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_graph.png") no-repeat center; background-size: 100%;}
+.ai_detail__graph_main_tit_wrap{position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
+.ai_detail__graph_main_tit{width: 12.125%; padding-bottom: 9.095%; position: absolute; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.ai_detail__graph_main_tit_wrap .ai_detail__graph_main_tit:nth-of-type(1){top: 18%; left: 7%; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_graph_tit_1.png");}
+.ai_detail__graph_main_tit_wrap .ai_detail__graph_main_tit:nth-of-type(2){top: -10%; left: 68.3%; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_graph_tit_2.png");}
+.ai_detail__graph_main_tit_wrap .ai_detail__graph_main_tit:nth-of-type(3){top: 52%; right: 0.8%; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_graph_tit_3.png");}
+.ai_detail__graph_main_score{position: absolute; bottom: -75%; left: 50%; transform: translateX(-50%); width: 47.845%; padding-bottom: 47.845%; border-radius: 50%; background: linear-gradient(90deg, #4071D4, #AAF9FF, #1FA4B8, #334ED6);}
+.ai_detail__graph_main_score_num{position: absolute; display: flex; align-items: center; justify-content: center; width: 60%; padding-bottom: 60%;}
+.ai_detail__graph_main_score_num-1{top: -28%; left: -29%;}
+.ai_detail__graph_main_score_num-2{top: -40%; left: 52%;}
+.ai_detail__graph_main_score_num-3{top: -1%; left: 86%;}
+.ai_detail__graph_main_score_num_txt{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 0 6px; border-radius: 10px; background-color: rgba(0, 0, 0, 0.2); line-height: 20px; font-size: 13px; color: #FFFFFF; white-space: nowrap;}
+
+.ai_detail__graph_main_score_clip{position: absolute; bottom: 0; width: 100%; padding-bottom: 50%; background-color: #F4F7F9;}
+.ai_detail__graph_main_score_container{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 96.48%; padding-bottom: 96.48%; border-radius: 50%; background-color: #FFFFFF;}
+.ai_detail__graph_main_score_txt{position: absolute; top: 20%; left: 50%; transform: translate(-50%); white-space: nowrap; line-height: 25px; font-size: 21px; font-weight: 700; color: #202020;}
+.ai_detail__graph_main_score_txt_strong{color: #0F1ED8;}
+.ai_detail__graph_main_score_txt::before{content: ""; position: absolute; bottom: 0; width: 100%; height: 8px; border-radius: 3px; background-color: #F8E792; z-index: -1;}
+.ai_detail__graph_content{position: relative; display: flex; flex-direction: column; align-items: center; padding: 8px 12px 12px; border-radius: 4px; background-color: #FFFFFF; box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);}
+.ai_detail__graph_tit{background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' id='%eb%a0%88%ec%9d%b4%ec%96%b4_1' x='0' y='0' style='enable-background:new 0 0 13 13' version='1.1' viewBox='0 0 13 13'%3e%3cstyle%3e.st0%7bfill:%23707070%7d%3c/style%3e%3cpath id='%ed%83%80%ec%9b%90_11532' d='M6.5 0C10.1 0 13 2.9 13 6.5S10.1 13 6.5 13 0 10.1 0 6.5 2.9 0 6.5 0zm0 12c3 0 5.5-2.5 5.5-5.5S9.5 1 6.5 1 1 3.5 1 6.5 3.5 12 6.5 12z' class='st0'/%3e%3cpath id='%ed%8c%a8%ec%8a%a4_484624' d='M6.4 7.5c-.2 0-.5-.3-.5-.5s.1-.4.3-.5c.4-.1 1.4-.6 1.4-1.3 0-.7-.6-1.3-1.3-1.3-.5 0-1 .3-1.2.9 0 .2-.3.3-.5.2-.3 0-.4-.3-.3-.6C4.7 3.2 6 2.6 7.2 3c.9.3 1.5 1.2 1.5 2.2 0 1.5-2 2.2-2.1 2.3h-.2z' class='st0'/%3e%3cpath id='%ec%84%a0_16000' d='M6.5 10.5c-.4 0-.8-.4-.8-.8s.4-.8.8-.8.8.4.8.8-.4.8-.8.8z' class='st0'/%3e%3cpath id='%ed%8c%a8%ec%8a%a4_484628' d='M6.4 8.4c-.3 0-.5-.2-.5-.5v-.7c0-.3.2-.5.5-.5s.5.2.5.5v.7c0 .3-.2.5-.5.5z' class='st0'/%3e%3c/svg%3e") no-repeat right; background-size: 13px; padding-right: 17px; line-height: 26px; font-size: 14px; font-weight: 700;}
+.ai_detail__graph_detail_wrap{position: relative; display: flex; align-items: center; width: 100%; margin-top: 6px;}
+.ai_detail__graph_detail{position: relative; width: 25%; height: 65px; margin-right: 6px; background-color: #F8F8F8; border-radius: 4px; border: 1px solid #EBEBEB; border-top: none; box-sizing: border-box;}
+.ai_detail__graph_detail:last-of-type{margin-right: 0;}
+.ai_detail__graph_detail_top{position: absolute; top: 0; left: -1px; width: 100%; height: 6px; border-radius: 4px 4px 0 0; border: 1px solid transparent;}
+.ai_detail__graph_detail:nth-of-type(1) .ai_detail__graph_detail_top{background-color: #5E7EFF;}
+.ai_detail__graph_detail:nth-of-type(2) .ai_detail__graph_detail_top{background-color: #42D4CF;}
+.ai_detail__graph_detail:nth-of-type(3) .ai_detail__graph_detail_top{background-color: #48D1F5;}
+.ai_detail__graph_detail:nth-of-type(4) .ai_detail__graph_detail_top{background-color: #95A6B1;}
+.ai_detail__graph_detail_container{position: relative; top: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: calc(100% - 8px);}
+.ai_detail__graph_detail_tit{font-size: 13px;}
+.ai_detail__graph_detail_degree{margin-top: 2px; font-size: 16px; font-weight: 700;}
+.ai_detail__graph_detail_degree-high{color: #1CAF17;}
+.ai_detail__graph_detail_degree-row{color: #EC4B4B;}
+.ai_detail__graph_detail_degree-good{display: flex; align-items: center; font-size: 15px;}
+.ai_detail__graph_detail_degree-worse{display: flex; align-items: center; font-size: 15px;}
+.ai_detail__graph_detail_degree_ico{width: 18px; height: 18px; margin-left: 2px; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.ai_detail__graph_detail_degree-good .ai_detail__graph_detail_degree_ico{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_graph_good.png");}
+.ai_detail__graph_detail_degree-worse .ai_detail__graph_detail_degree_ico{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_graph_worse.png");}
+
+
+.ai_detail__list{padding: 0 15px;}
+.ai_detail__list:last-child{padding-bottom: 24px;}
+.ai_detail__list_tit{display: flex; align-items: center; width: 100%; padding: 8px 14px; margin: 20px 0 6px; box-sizing: border-box; border-radius: 8px 8px 0 0; background-color: #455CD1; box-shadow: 0 0 6px rgba(0, 0, 0, 0.08); font-size: 14px; font-weight: 700; color: #FFFFFF;}
+.ai_detail__list_box{border-radius: 4px; background-color: #FFFFFF; box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);}
+.ai_detail__list_box_wrap{position: relative; width: 100%;}
+.ai_detail__list_box_wrap-grid{display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px;}
+.ai_detail__ico_pound_wrap{display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; margin-right: 4px; border-radius: 20px;}
+.ai_detail__ico_pound{margin-right: 4px; width: 10px; height: 12px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 10.01 12.01'%3e%3cpath fill='white' d='M5.61 9.17H3.54l-.31 2.4c0 .13-.05.25-.13.35-.1.07-.22.11-.34.1h-.87a.425.425 0 0 1-.32-.1.477.477 0 0 1-.05-.35l.31-2.4H.4a.483.483 0 0 1-.31-.08c-.07-.1-.1-.22-.09-.33V7.75c-.01-.12.02-.24.08-.33.09-.06.2-.09.31-.08h1.66l.35-2.71H1.03a.483.483 0 0 1-.31-.08c-.07-.1-.1-.21-.08-.33V3.21c-.02-.12.01-.24.08-.34.09-.06.2-.09.31-.08h1.61L2.95.44c0-.13.04-.25.12-.35.08-.07.2-.1.32-.09h.9c.11-.01.23.02.31.1.06.1.08.23.05.35L4.34 2.8h2.07L6.72.45c0-.13.04-.25.12-.35.09-.08.21-.11.33-.1h.9c.11-.01.23.02.32.1.06.11.07.23.04.35L8.12 2.8h1.5c.11-.01.22.02.31.08.07.1.1.21.08.33v1.01c.01.12-.02.24-.08.33-.09.06-.2.09-.31.08H7.89l-.35 2.71h1.44c.11-.02.22.01.31.08.07.1.1.21.08.33v1.01c.01.12-.02.24-.08.33-.09.06-.2.09-.31.08H7.32l-.31 2.4c0 .13-.04.25-.12.35a.48.48 0 0 1-.33.1h-.9a.425.425 0 0 1-.32-.1.477.477 0 0 1-.05-.35l.32-2.4zM3.77 7.34h2.07l.35-2.71H4.12l-.35 2.71z'/%3e%3c/svg%3e") no-repeat center;}
+.ai_detail__ico_pound_wrap .ai_detail__ico_pound{margin-right: 0;}
+/* .ai_detail__list_box:nth-of-type(1) .ai_detail__ico_pound_wrap{background-color: #45CEC9;} */
+.ai_detail__list_box:nth-of-type(1) .ai_detail__ico_pound_wrap{background-color: #E54B8E;}
+.ai_detail__list_box_wrap-grid .ai_detail__list_box:nth-of-type(1) .ai_detail__ico_pound_wrap{background-color: #D092FF;}
+.ai_detail__list_box_wrap-grid .ai_detail__list_box:nth-of-type(2) .ai_detail__ico_pound_wrap{background-color: #656CFF;}
+.ai_detail__list_box_content{padding: 12px; line-height: 25px; font-size: 14px; color: #202020;}
+.ai_detail__list_box_content_strong{font-weight: 700; box-shadow: inset 0 -2px #FFFFFF, inset 0 -8px #D6E1FF;}
+.ai_detail__list_box_content_tit{display: flex; align-items: center; line-height: 20px; font-size: 14px; font-weight: 700;}
+.ai_detail__list_box_content_txt{margin-top: 6px; line-height: 19px; font-size: 13px;}
+.ai_detail__list_box_content_txt_strong{font-size: 13px; font-weight: 500; box-shadow: inset 0 -1px #FFFFFF, inset 0 -8px #D6E1FF;}
+
+.ai_detail__list_box_common{position: relative; display: flex; justify-content: center; width: 100%; padding: 16px 11px; box-sizing: border-box;}
+.ai_detail__list_box_common_container{position: relative; padding-bottom: 75.8169%; width: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_common_bg.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box_common_shadow{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40.91%; padding-bottom: 40.91%; box-sizing: border-box; border-radius: 50%; box-shadow: 0 0 20px #C4C7FF;}
+.ai_detail__list_box_common_hobby{position: absolute; top: 50%; transform: translateY(-50%); width: 35.07%; padding-bottom: 35.07%; margin-top: 6.82%; box-sizing: border-box; border-radius: 50%; background-color: #656CFF;}
+.ai_detail__list_box_common_hobby-my{left: 0;}
+.ai_detail__list_box_common_hobby-opponent{right: 0;}
+.ai_detail__list_box_common_hobby_txt_wrap{position: absolute; display: flex; flex-direction: column; justify-content: space-around; align-items: center; width: 100%; height: 100%; padding: 15% 20%; box-sizing: border-box;}
+.ai_detail__list_box_common_hobby_txt{min-width: 30%; max-width: 90%; line-height: 13px; font-size: 13px; font-weight: 400; color: #FFFFFF; word-break: break-all; -webkit-line-clamp: 1; display: -webkit-box; text-overflow: ellipsis; -webkit-box-orient: vertical; overflow: hidden;}
+.ai_detail__list_box_common_hobby_txt-same{font-size: 14px; font-weight: 700;}
+.ai_detail__list_box_common_hobby_txt:nth-of-type(1){margin-right: 10%; margin-left: auto;}
+.ai_detail__list_box_common_hobby_txt:nth-of-type(2){margin-top: 4%; margin-right: auto;}
+.ai_detail__list_box_common_hobby_txt:nth-of-type(3){margin-right: 5%; margin-left: auto;}
+.ai_detail__list_box_common_hobby_txt:nth-of-type(4){margin-right: auto;}
+.ai_detail__list_box_common_hobby_txt:nth-of-type(5){margin-right: 20%; margin-left: auto;}
+.ai_detail__list_box_common_hobby-opponent .ai_detail__list_box_common_hobby_txt:nth-of-type(1){margin-right: 0;}
+.ai_detail__list_box_common_hobby-opponent .ai_detail__list_box_common_hobby_txt:nth-of-type(2){margin-left: 5%;}
+.ai_detail__list_box_common_hobby-opponent .ai_detail__list_box_common_hobby_txt:nth-of-type(3){margin-right: 0;}
+.ai_detail__list_box_common_hobby-opponent .ai_detail__list_box_common_hobby_txt:nth-of-type(4){margin-left: 10%;}
+.ai_detail__list_box_common_hobby-opponent .ai_detail__list_box_common_hobby_txt:nth-of-type(5){margin-right: 10%;}
+.ai_detail__list_box_common_circle{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center; width: 40.91%; padding-bottom: 40.26%; box-sizing: border-box; border-radius: 50%; background-color: #FFFFFF; border: 1px solid #656CFF;}
+.ai_detail__list_box_common_circle_txt{position: absolute; top: 50.7%; left: 50%; transform: translate(-50%, -50%); width: 100%; line-height: 153.9%; font-size: 13px; text-align: center; color: #202020; box-sizing: border-box;}
+.ai_detail__list_box_common_circle_txt_strong{font-size: 14px; font-weight: 700;}
+.ai_detail__list_box_common_circle_txt-none{line-height: 22px; font-size: 16px; font-weight: 700; color: #202020;}
+.ai_detail__list_box_common_hobby_photo{position: absolute; top: -19%; left: 50%; transform: translateX(-50%); width: 27.79%; padding-bottom: 27.79%; border: 1px solid #656CFF; border-radius: 50%; overflow: hidden;}
+.ai_detail__list_box_common_hobby-my .ai_detail__list_box_common_hobby_photo{margin-right: 3.71%;}
+.ai_detail__list_box_common_hobby-opponent .ai_detail__list_box_common_hobby_photo{margin-left: 3.71%;}
+.ai_detail__list_box_common_hobby_photo_img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box; object-fit: cover;}
+
+.ai_detail__list_box-religion{margin-top: 6px;}
+.ai_detail__list_box-religion .ai_detail__list_box_common{padding: 16px 7px;}
+.ai_detail__list_box-religion .ai_detail__list_box_common_bg{position: absolute;width: 24.054%; padding-bottom: 24.054%; box-sizing: border-box; border-radius: 50%; background-color: #E8E1F6;}
+.ai_detail__list_box-religion .ai_detail__list_box_common_bg:nth-of-type(1){top: 50%; left: 14%; transform: translateY(-50%);}
+.ai_detail__list_box-religion .ai_detail__list_box_common_bg:nth-of-type(2){top: 50%; right: 14%; transform: translateY(-50%);}
+.ai_detail__list_box-religion .ai_detail__list_box_common_container{position: relative; padding-bottom: 75.8169%; width: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_common_bg_religion.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box-religion .ai_detail__list_box_common_shadow{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 39.875%; padding-bottom: 39.875%; box-sizing: border-box; border-radius: 50%; box-shadow: 0 0 24px rgba(152, 101, 255, 0.32);}
+.ai_detail__list_box-religion .ai_detail__list_box_common_circle{width: 39.875%; padding-bottom: 39.245%; border: 1px solid #8365FF;}
+.ai_detail__list_box-religion .ai_detail__list_box_common_circle_txt{line-height: 22px; font-size: 16px; font-weight: 700;}
+.ai_detail__list_box_common_religion{position: absolute; top: 50%; transform: translateY(-50%); width: 25.978%; padding-bottom: 25.978%; box-sizing: border-box; border-radius: 50%; background-color: #8365FF;}
+.ai_detail__list_box_common_religion-my{left: 0;}
+.ai_detail__list_box_common_religion-opponent{right: 0;}
+.ai_detail__list_box_common_religion_photo{position: absolute; top: -19%; left: 50%; transform: translateX(-50%); width: 37.5%; padding-bottom: 37.5%; border: 1px solid #8365FF; border-radius: 50%; overflow: hidden;}
+.ai_detail__list_box_common_religion-my .ai_detail__list_box_common_religion_photo{margin-right: 3.71%;}
+.ai_detail__list_box_common_religion-opponent .ai_detail__list_box_common_religion_photo{margin-left: 3.71%;}
+.ai_detail__list_box_common_religion_photo_img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box; object-fit: cover;}
+.ai_detail__list_box_common_religion_txt_wrap{position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-align: center;}
+.ai_detail__list_box_common_religion_txt{font-size: 16px; font-weight: 700; color: #FFFFFF;}
+.ai_detail__list_box-dis .ai_detail__list_box_common .ai_detail__list_box_common_shadow{box-shadow: 0 0 24px rgba(164, 164, 164, 0.32);}
+.ai_detail__list_box-dis .ai_detail__list_box_common .ai_detail__list_box_common_circle{border-color: #A4A4A4;}
+
+.ai_detail__list_box-ymti{margin-top: 6px;}
+.ai_detail__list_box-ymti .ai_detail__list_box_common{padding: 9px 12px 3px;}
+.ai_detail__list_box-ymti .ai_detail__list_box_common_container{position: relative; padding-bottom: 75.8169%; width: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_common_bg_ymti.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box-ymti .ai_detail__list_box_common_shadow{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 39.875%; padding-bottom: 39.875%; box-sizing: border-box; border-radius: 50%; box-shadow: 0 0 20px rgba(136, 232, 202, 0.4);}
+.ai_detail__list_box-ymti .ai_detail__list_box_common_bg{position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); width: 54.905%; padding-bottom: 54.905%; box-sizing: border-box; border-radius: 50%; background-color: #FFFFFF; box-shadow: 0 3px 12px rgba(136, 232, 202, 0.4);}
+.ai_detail__list_box-ymti .ai_detail__list_box_common_circle{width: 41.18%; padding-bottom: 40.525%; border: 1px solid #2DBC76; box-shadow: none;}
+.ai_detail__list_box_common_circle_img{position: absolute; left: 50%; bottom: -17%; transform: translateX(-50%); width: 117.75%;}
+.ai_detail__list_box_common_ymti{position: absolute; top: 50%; transform: translateY(-50%); width: 20.92%; padding-bottom: 20.92%; box-sizing: border-box; border-radius: 50%; background-color: #FFFFFF; box-shadow: 0 3px 12px rgba(136, 232, 202, 0.4);}
+.ai_detail__list_box_common_ymti-my{left: 12px;}
+.ai_detail__list_box_common_ymti-opponent{right: 12px;}
+.ai_detail__list_box_common_ymti_photo{position: absolute; top: -80%; width: 46.88%; padding-bottom: 46.88%; border: 2px solid #FFFFFF; box-shadow: 0 0 6px rgba(0, 202, 255, 0.12); border-radius: 50%; overflow: hidden;}
+.ai_detail__list_box_common_ymti-my .ai_detail__list_box_common_ymti_photo{left: -8%;}
+.ai_detail__list_box_common_ymti-opponent .ai_detail__list_box_common_ymti_photo{right: -8%;}
+.ai_detail__list_box_common_ymti_photo_img{position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box; object-fit: cover;}
+.ai_detail__list_box_common_ymti_txt{position: absolute; top: 108%; left: 50%; transform: translateX(-50%); white-space: nowrap; text-align: center; line-height: 14px; font-size: 11px; font-weight: 700; color: #569956; text-shadow: 0 1px 1px rgba(104, 146, 121, 0.36);}
+.ai_detail__list_box_common_ymti_ico_wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 62.5%; padding-bottom: 62.5%;}
+.ai_detail__list_box_common_ymti_ico{position: absolute; width: 100%; height: 100%;}
+.ai_detail__list_box_common_ymti_bar_wrap{position: absolute; width: 18.75%; padding-bottom: 31.25%;}
+.ai_detail__list_box_common_ymti_bar{position: absolute; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_ymti_bar.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box_common_ymti-my .ai_detail__list_box_common_ymti_bar_wrap{top: -32%; left: 32%;}
+.ai_detail__list_box_common_ymti-opponent .ai_detail__list_box_common_ymti_bar_wrap{transform: scaleX(-1); top: -32%; right: 32%;}
+.ai_detail__list_box_btn_wrap{display: flex; align-items: center; padding: 0 12px 12px;}
+.ai_detail__list_box_btn:nth-of-type(2){margin-left: 6px;}
+.ai_detail__list_box_btn{display: flex; align-items: center; justify-content: center; width: 100%; height: 40px; border: 1px solid #F1F1F1; background-color: #FFFFFF; box-sizing: border-box; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); line-height: 13px; font-size: 13px;}
+.ai_detail__list_box_btn_ico{width: 17px; height: 20px; margin-left: 2px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 17 20' viewBox='0 0 17 20'%3e%3cpath d='M0 0h17v20H0z' style='fill:none'/%3e%3cpath d='m5.7 5.5 4.9 5.1-4.9 5.1' style='fill:none%3bstroke:%23707070%3bstroke-linecap:round%3bstroke-linejoin:round%3bstroke-miterlimit:10'/%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+
+.ai_detail__list_box_distance{padding: 15px 8px;}
+.ai_detail__list_box_distance-foreign{padding: 0;}
+.ai_detail__list_box_distance-foreign .ai_detail__list_box_distance_container{position: relative; padding-bottom: 59.6969%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_foreign.png") no-repeat center; background-size: 100%;}
+
+.ai_detail__list_box_distance_container{position: relative; padding-bottom: 100.6369%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box_distance_container-foreign{background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_2.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box_distance_container-foreign .ai_detail__list_box_distance_loc{margin-left: 15%;}
+.ai_detail__list_box_distance_loc_wrap{position: absolute; width: 100%; height: 100%;}
+.ai_detail__list_box_distance_loc{position: absolute; display: flex; justify-content: center; width: 12.74%; padding-bottom: 15.29%; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.ai_detail__list_box_distance_loc-11{top: 3%; left: 20%;}
+.ai_detail__list_box_distance_loc-21{top: 48%; left: 62%;}
+.ai_detail__list_box_distance_loc-22{top: 28%; left: 60%;}
+.ai_detail__list_box_distance_loc-23{top: 6%; left: 13%;}
+.ai_detail__list_box_distance_loc-24{top: 54%; left: 40%;}
+.ai_detail__list_box_distance_loc-25{top: 25%; left: 42%;}
+.ai_detail__list_box_distance_loc-26{top: 40%; left: 72%;}
+.ai_detail__list_box_distance_loc-29{top: 20%; left: 38%;}
+.ai_detail__list_box_distance_loc-31{top: 1%; left: 27%;}
+.ai_detail__list_box_distance_loc-32{top: 4%; left: 54%;}
+.ai_detail__list_box_distance_loc-33{top: 10%; left: 45%;}
+.ai_detail__list_box_distance_loc-34{top: 28%; left: 33%;}
+.ai_detail__list_box_distance_loc-35{top: 38%; left: 38%;}
+.ai_detail__list_box_distance_loc-36{top: 58%; left: 36%;}
+.ai_detail__list_box_distance_loc-37{top: 20%; left: 60%;}
+.ai_detail__list_box_distance_loc-38{top: 40%; left: 62%;}
+.ai_detail__list_box_distance_loc-39{top: 78%; left: 28%;}
+.ai_detail__list_box_distance_loc-foreign{top: 30%; left: -8%;}
+.ai_detail__list_box_distance_loc-foreign_my{top: 30%; left: 12%;}
+.ai_detail__list_box_distance_loc-foreign_opponent{top: 30%; right: 12%;}
+.ai_detail__list_box_distance_loc-man{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_loc_man.png");}
+.ai_detail__list_box_distance_loc-woman{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_loc_woman.png");}
+.ai_detail__list_box_distance_loc-common{width: 20.385%; padding-bottom: 23.25%; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_loc_common.png");}
+.ai_detail__list_box_distance_loc-airplane{width: 31.215%; padding-bottom: 15.29%; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_loc_airplane.png");}
+.ai_detail__list_box_distance_loc-airplane .ai_detail__list_box_distance_loc_photo_container{top: -18%; left: 19%; width: 28.58%; padding-bottom: 28.58%; border: 1px solid #7587F8;}
+.ai_detail__list_box_distance_loc-airplane .ai_detail__list_box_distance_loc_txt{bottom: 0; left: 25%;}
+.ai_detail__list_box_distance_loc-foreign_my.ai_detail__list_box_distance_loc-man{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_loc_foreign_man.png");}
+.ai_detail__list_box_distance_loc-foreign_my.ai_detail__list_box_distance_loc-woman{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_loc_foreign_woman.png");}
+.ai_detail__list_box_distance_loc-foreign_opponent.ai_detail__list_box_distance_loc-man{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_loc_foreign_man.png");}
+.ai_detail__list_box_distance_loc-foreign_opponent.ai_detail__list_box_distance_loc-woman{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_loc_foreign_woman.png");}
+.ai_detail__list_box_distance-foreign .ai_detail__list_box_distance_loc{width: 12.125%; padding-bottom: 14.55%;}
+.ai_detail__list_box_distance-foreign .ai_detail__list_box_distance_loc_photo_container{width: 75%; padding-bottom: 75%;}
+.ai_detail__list_box_distance_loc-common .ai_detail__list_box_distance_loc_photo_container{width: 46.89%; padding-bottom: 46.89%;}
+.ai_detail__list_box_distance_loc-common .ai_detail__list_box_distance_loc_photo_container:nth-of-type(1){top: 10%; left: 10%;}
+.ai_detail__list_box_distance_loc-common .ai_detail__list_box_distance_loc_photo_container:nth-of-type(2){bottom: 9%; right: 9%;}
+.ai_detail__list_box_distance_loc.ai_detail__list_box_distance_loc-common{margin-left: -3%; margin-top: -6.4%;}
+.ai_detail__list_box_distance_loc_photo_wrap{position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; height: 82%;}
+.ai_detail__list_box_distance_loc_photo_container{position: absolute; width: 75%; padding-bottom: 75%; border: 1px solid #FFFFFF;border-radius: 50%; overflow: hidden;}
+.ai_detail__list_box_distance_loc_photo{position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+.ai_detail__list_box_distance_loc_txt{position: absolute; bottom: -17px; line-height: 17px; font-size: 12px; font-weight: 700; color: #202020;}
+.ai_detail__list_box_distance_none{position: relative; width: 100%; padding-bottom: 36.33%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_distance_none.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box_distance_none_txt{position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-size: 14px; color: #202020;}
+
+.ai_detail__list_box_keyword_wrap{position: relative; padding-bottom: 62.5%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_keyword_bg.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box_keyword{position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: 700;}
+.ai_detail__list_box_keyword_txt{position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap; text-align: center;}
+.ai_detail__list_box_keyword_txt-s{transform: scale(0.7);}
+.ai_detail__list_box_keyword-1{top: 14%; left: 38%; width: 32.125%; padding-bottom: 32.125%; background-color: #656CFF; font-size: 3.9vw; color: #FFFFFF;}
+.ai_detail__list_box_keyword-2{top: 40%; left: 15%; width: 24.245%; padding-bottom: 24.245%; background-color: #8E94FF; font-size: 3.62vw; color: #FFFFFF;}
+.ai_detail__list_box_keyword-3{top: 11%; left: 21%; width: 16.97%; padding-bottom: 16.97%; background-color: #8E94FF; font-size: 3.62vw; color: #FFFFFF;}
+.ai_detail__list_box_keyword-4{top: 64%; left: 37%; width: 15.76%; padding-bottom: 15.76%; background-color: #ACB0FF; font-size: 3.35vw; color: #3238BB;}
+.ai_detail__list_box_keyword-5{top: 65%; left: 54%; width: 12.73%; padding-bottom: 12.73%; background-color: #BFC2FF; font-size: 2.8vw; color: #3238BB;}
+.ai_detail__list_box_keyword-6{top: 47%; left: 67%; width: 20.61%; padding-bottom: 20.61%; background-color: #9A9FFF; font-size: 2.8vw; color: #FFFFFF;}
+.ai_detail__list_box_keyword-7{top: 23%; left: 71%; width: 14.55%; padding-bottom: 14.55%; background-color: #BFC2FF; font-size: 3.06vw; color: #3238BB;}
+.ai_detail__list_box_keyword-8{top: 27%; left: 9%; width: 12.125%; padding-bottom: 12.125%; background-color: #BFC2FF; font-size: 2.8vw; color: #3238BB;}
+.ai_detail__list_box_keyword-9{top: 47%; left: 6%; width: 8.485%; padding-bottom: 8.485%; background-color: #DBDCFF; font-size: 3.35vw; color: #3238BB;}
+.ai_detail__list_box_keyword-10{top: 37%; left: 84%; width: 10.91%; padding-bottom: 10.91%; background-color: #DBDCFF; font-size: 2.8vw; color: #3238BB;}
+.ai_detail__list_box_keyword_none{position: relative; width: 100%; padding-bottom: 36.33%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_keyword_none.png") no-repeat center; background-size: 100%;}
+.ai_detail__list_box_keyword_none_txt{position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-size: 14px; color: #202020;}
+
+.ai_detail__blur{position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; z-index: 2;}
+.ai_detail__blur_container{position: absolute; width: 100%; height: 100%; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);  border-radius: 4px; overflow: hidden; z-index: 1;}
+.ai_detail__blur_bg{width: 100%; height: 100%; background-color: #FFFFFF; opacity: 0.6;}
+.ai_detail__blur_btn{position: relative; padding: 4px 14px; border-radius: 15px; box-sizing: border-box; border: 1px solid #656CFF; background-color: #FFFFFF; font-size: 13px; color: #202020; z-index: 2;}
+.ai_detail__blur_btn_img{position: absolute; top: -23px; right: -39px; width: 54px; height: 84px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_blur_click.png") no-repeat center; background-size: 100%;}
+
+.ai_detail__error{position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: calc(100vh - 45px);}
+.ai_detail__error_container{display: flex; flex-direction: column; align-items: center; width: 100%; text-align: center;}
+.ai_detail__error_img{width: 80px; height: 80px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_detail/img_ai_detail_error.png") no-repeat center; background-size: 100%;}
+.ai_detail__error_tit{margin-top: 24px; line-height: 24px; font-size: 16px; font-weight: 700; color: #202020;}
+.ai_detail__error_info{margin-top: 8px; font-size: 14px;}
+
+@media screen and (min-width: 460px) {
+	.ai_detail__list_box_keyword-1{font-size: 18px;}
+	.ai_detail__list_box_keyword-2{font-size: 17px;}
+	.ai_detail__list_box_keyword-3{font-size: 17px;}
+	.ai_detail__list_box_keyword-4{font-size: 16px;}
+	.ai_detail__list_box_keyword-5{font-size: 13px;}
+	.ai_detail__list_box_keyword-6{font-size: 13px;}
+	.ai_detail__list_box_keyword-7{font-size: 13px;}
+	.ai_detail__list_box_keyword-8{font-size: 13px;}
+	.ai_detail__list_box_keyword-9{font-size: 16px;}
+	.ai_detail__list_box_keyword-10{font-size: 13px;}
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __footer
+	설　명 : 공통 푸터
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.footer{width:100%;}
+.footer__container{width:100%; background-color:#FAFAFA; box-sizing: border-box; overflow: hidden;}
+.footer__menu_wrap{display:flex; align-items: center; height:44px;}
+.footer__menu{padding:0 8px;}
+.footer__menu:first-of-type{padding-left:0;}
+.footer__menu_bar{width:1px; height:12px; background-color:#D4D4D4;}
+.footer__logo{display:block; width:61px; height:auto;}

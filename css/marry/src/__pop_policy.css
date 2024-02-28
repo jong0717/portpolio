@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_policy
+	설　명 : 약관내용 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / overflow / width / height / padding / margin / border / background / font / etc...
+---------------------------------------------*/
+.pop_policy{position: relative;}
+.pop_policy__container{max-height: 400px; overflow-y: auto;}
+.pop_policy__container::-webkit-scrollbar{width: 10px;}
+.pop_policy__container::-webkit-scrollbar-thumb{border-radius: 2px; border: 3px solid transparent; background: rgba(0,0,0,.25); background-clip: padding-box;}
+.pop_policy__container::-webkit-scrollbar-track{background: none; box-shadow: 0 0 0 rgba(0, 0, 0, 0);}
+.pop_policy__pre_wrap{text-align: left; line-height: 25px; font-size: 13px; color: #505050; white-space: pre-line; word-break: break-all;}
+.pop_policy__info_wrap{padding-top: 8px;}
+.pop_policy__info{font-size: 12px;}
+.pop_policy__more{margin-top: 6px; font-size: 13px; color: var(--primary-500);}
+.pop_policy__guide{display: flex; flex-direction: column; gap: 10px; padding: 10px 16px; margin: 10px 0; border-top: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1;}
+.pop_policy__guide_txt{font-size: 13px; color: #202020;}

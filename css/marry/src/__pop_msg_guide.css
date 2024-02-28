@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_msg_guide
+	설　명 : 메시지창 코치마크
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_msg_guide{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.pop_msg_guide__img_01{position: absolute; top: 0; right: 0; width: 328px; height: 236px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/talk/img_msg_guide_01.png") no-repeat center; background-size: 100%;}
+.pop_msg_guide__img_02{position: absolute; top: 0; right: 0; width: 230px; height: 190px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/talk/img_msg_guide_02.png") no-repeat center; background-size: 100%;}
+.pop_msg_guide__img_03{position: absolute; top: 0; right: 0; width: 200px; height: 220px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/talk/img_msg_guide_03.png") no-repeat center; background-size: 100%;}
+.pop_msg_guide__img_04{position: absolute; top: 220px; left: 50%; transform: translateX(-50%); width: 260px; height: 136px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/talk/img_msg_guide_04.png") no-repeat center; background-size: 100%;}
+.pop_msg_guide__btn{position: absolute; left: 50%; bottom: 50px; transform: translateX(-50%); width: 160px; border-radius: 22px; border: 1px solid #fff; background: rgba(0, 0, 0,.4); line-height: 42px; font-size: 16px; color: #fff; text-align: center;}

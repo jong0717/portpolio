@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __luck
+	설　명 : 운세 오행,사주팔자
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/* 오행,사주팔자 */
+.luck_type{width: 50px; height: 50px; border-radius: 5px; text-align: center; color: #fff; background-position: center; background-size: 100%;}
+.luck_type-s{width: 40px; height: 40px;}
+.luck_type-water{background-color: #404040; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/type/type_water.png");}
+.luck_type-tree{background-color: #30D446; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/type/type_tree.png");}
+.luck_type-fire{background-color: #FF6E6E; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/type/type_fire.png");}
+.luck_type-iron{background-color: #F1F1F1; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/type/type_iron.png");}
+.luck_type-earth{background-color: #FFE013; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/type/type_earth.png");}

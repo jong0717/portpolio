@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : evnt_balance
+	설　명 : 밸런스 이벤트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.evnt_balance{position: relative; width: 100%;}
+.evnt_balance::after{content: ""; position: absolute; top: 0; width: 100%; height: calc(100vh - 45px); background-color: #F4F7F9;}
+.evnt_balance__box{position: relative;}
+.evnt_balance__bg{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; width: 100%; overflow: hidden; z-index: -1;}
+.evnt_balance__bg_img{width: 100%;}
+.evnt_balance__container{position: relative; z-index: 1; overflow: hidden;}
+.evnt_balance__content{position: relative; padding: 6.66% 0 6.66%; background: rgba(0, 0, 0, .2);}
+
+/* 상단 */
+.evnt_balance__top{position: relative; padding-top: 7.22%;}
+.evnt_balance__tit{padding-bottom: 12.77%; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_balance/img_evnt_balance_tit_new.png"); background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.evnt_balance__sub{margin-top: 2.22%; font-weight: 700; color: #FFF; text-align: center;}
+.evnt_balance__notice{display: flex; align-items: center; width: fit-content; height: 28px; padding: 0 10px; margin: 4.44% auto 0; border-radius: 18px; background: #FFF; line-height: 16px; font-size: 13px; color: #5337A0; white-space: nowrap;}
+.evnt_balance__notice::before{content: ""; width: 16px; height: 16px; border-radius: 16px; margin-right: 4px; background: #5F47A1 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 16 16'%3e%3cpath fill='white' d='M6.8 12.2c0-.3.1-.6.3-.8.2-.2.5-.3.8-.3.3 0 .6.1.8.3.2.2.3.5.3.8 0 .3-.1.6-.3.8-.2.2-.5.3-.8.3-.3 0-.6-.1-.8-.3-.1-.2-.3-.5-.3-.8zM7 2.6h2l-.2 7.3H7.2L7 2.6z'/%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+.evnt_balance__turn{position: relative; display: flex; align-items: flex-end; width: 100%; margin-top: 8.88%;}
+.evnt_balance__turn_btn{display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 1.25;  width:100%; min-width:62px; height: 54px; padding: 0 4px; border-radius: 12px 12px 0 0; box-sizing: border-box; background: rgba(0 ,0, 0, .5);}
+.evnt_balance__turn_tit{color: rgba(255, 255, 255, .8); font-size: 14px; font-weight: 700; white-space: nowrap;}
+.evnt_balance__turn_sub{color:#fff; font-size: 12px; white-space: nowrap;}
+.evnt_balance__turn_btn.active{flex-shrink: 1; max-width:50%; height: 60px; background: rgba(0 ,0, 0, .2);}
+.evnt_balance__turn_btn.active .evnt_balance__turn_tit {font-size: 16px; color: #fff;}
+
+/* 주제 */
+.evnt_balance__topic{position: relative; padding: 0 30px; box-sizing: border-box; text-align: center; word-break: keep-all; word-wrap: break-word;}
+.evnt_balance__topic_txt{font-size: 20px; font-weight: 700; color: #FFFFFF; text-shadow: 0 2px 3px rgba(0, 0, 0, .4);}
+.evnt_balance__topic_img{position: relative; top: 3px; display: inline-flex; width: 24px; height: 24px; margin-right: 4px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_balance/img_evnt_balance_answer_top_new.png") no-repeat center; background-size: 24px;}
+
+/* 답변 */
+.evnt_balance__answer_wrap{position: relative; display: flex; gap: 0 20px;  margin: 5.55% 30px 0;}
+.evnt_balance__answer_wrap::after{content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 38px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_balance/img_evnt_balance_answer_center.png") no-repeat center; background-size: 100%; z-index: 1;}
+.evnt_balance__answer{display: flex; flex-direction: column; width: 47.5%;}
+.evnt_balance__answer_container{position: relative; width: 100%; min-height: 23.245vh; height: 100%; box-sizing: border-box; z-index: 1;}
+.evnt_balance__answer_box{position: relative; display: flex; align-items: center; justify-content: center; flex-wrap: nowrap; height: 100%; padding: 40px 16px; border-radius: 12px; border: 2px solid #FFFFFF; border-style: dashed; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.16); text-align: center; word-break: keep-all; word-wrap: break-word; white-space: wrap; z-index: 1; overflow: hidden;}
+.evnt_balance__answer_txt{width: 100%; font-size: 20px; color: #FFFFFF; }
+.evnt_balance__answer.active .evnt_balance__answer_box{border: 4px solid #FFFFFF; background-color: rgba(0, 0, 0, .5);}
+.evnt_balance__answer.disabled .evnt_balance__answer_container{opacity: 0.7;}
+
+/* 버튼 */
+.evnt_balance__btn_wrap{margin: 0 30px;}
+.evnt_balance__btn{display: flex; align-items: center; justify-content: center; width: 100%; height: 44px; margin-top: 6.66%; border: 2px solid #FFFFFF; border-radius: 25px; box-sizing: border-box; font-size: 16px; font-weight: 700; color: #FFFFFF; background-color: #112C84;}
+.evnt_balance__info{margin-bottom: 5.55%; color: #FFFFFF; text-align: center;}
+
+/* 알림 */
+.evnt_balance__check_wrap{margin: 0 30px;}
+.evnt_balance__check{display: flex; align-items: center; justify-content: center; width: 100%; height: 44px; margin-top: 6.66%; border: 2px solid #FFFFFF; border-radius: 25px; box-sizing: border-box; font-size: 14px; font-weight: 700; color: #202020; background: linear-gradient(115deg, #FDFA59, #FFFECB 40%, #FDFA59);}
+
+/* 푸터 */
+.evnt_balance__footer{position: relative; padding: 16px 10px; background-color: #F4F7F9; z-index: 1;}
+.evnt_balance__footer_container{position: relative; padding: 10px 12px; background-color: #FFF; border-radius: 8px; box-shadow: 0 1px 2px rgba(0, 0, 0, .16);}
+.evnt_balance__footer_ico{position: absolute; top: 8px; right: 10px; width: 24px; height: 24px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 24 24'%3e%3cpath fill='none' stroke='%23202020' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.2' d='m5.6 9.3 6.4 5.4 6.4-5.4'/%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+.evnt_balance__footer_ico.active{transform: rotate(180deg);}
+.evnt_balance__footer_tit{font-size: 13px; font-weight: 700; color: #202020;}
+.evnt_balance__footer_info_wrap{position: relative;}
+.evnt_balance__footer_info{display: flex; font-size: 11px; color: #202020; word-break: keep-all;}
+.evnt_balance__footer_info::before{content: "·"; margin: 0 2px;}
+.evnt_balance__footer_info.tc-1 {display: -webkit-box; word-break: break-all;}
+
+/* 결과페이지 답변 */
+.evnt_balance__answer_wrap-result{margin-top: 8.33%;}
+.evnt_balance__answer_wrap-result .evnt_balance__answer_txt{margin-bottom: 9px; font-size: 16px;}
+.evnt_balance__answer_wrap-result .evnt_balance__answer_container{min-height: 25.676vh;}
+.evnt_balance__answer_num{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); font-size: 20px; font-weight: 700; color: #FFFFFF; z-index: 1; white-space: nowrap; text-shadow: 0 3px 5px rgba(0, 0, 0, .5);}
+.evnt_balance__answer-win .evnt_balance__answer_box{border: 4px solid #FFFFFF; background-color: rgba(0, 0, 0, 0.5);}
+.evnt_balance__answer-win .evnt_balance__answer_txt{font-weight: 700;}
+.evnt_balance__answer-win .evnt_balance__answer_container::after{content: ""; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 102px; height: 62px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_balance/img_evnt_balance_answer_win.png") no-repeat center; background-size: 100%; z-index: 1;}
+.evnt_balance__answer-fail .evnt_balance__answer_box{border: 4px solid rgba(255, 255, 255, .7); background-color: rgba(0, 0, 0, 0.5);}
+.evnt_balance__answer-fail .evnt_balance__answer_txt{font-weight: 700;}
+.evnt_balance__answer-fail .evnt_balance__answer_container::after{content: ""; position: absolute; top: -22px; left: 50%; transform: translateX(-50%); width: 116px; height: 60px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_balance/img_evnt_balance_answer_fail.png") no-repeat center; background-size: 100%; z-index: 1;}
+.evnt_balance__answer-draw::after{content: ""; position: absolute; top: -22px; left: 50%; transform: translateX(-50%); width: 148px; height: 78px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_balance/img_evnt_balance_answer_draw_w.png") no-repeat center; background-size: 100%; z-index: 2;}
+.evnt_balance__answer-draw .evnt_balance__answer_box{background-color: rgba(0, 0, 0, 0.5); border: 4px solid #FFFFFF;}
+.evnt_balance__answer-draw_opp .evnt_balance__answer_container{opacity: 0.8;}
+.evnt_balance__answer-draw_opp .evnt_balance__answer_box{border: 2px dashed #FFFFFF;}
+
+/* 리스트 */
+.evnt_balance__prf{position: relative; width: 100%; padding: 24px 0 40px; box-sizing: border-box; background-color: #F4F7F9; z-index: 1;}
+.evnt_balance__prf-empty{padding-bottom: 274px;}
+.evnt_balance__prf_txt{font-size: 20px; font-weight: 700; color: #202020; text-align: center;}
+.evnt_balance__prf_list_wrap{position: relative; display: flex; flex-direction: column; gap: 8px; padding: 0 10px; margin-top: 24px;}
+.evnt_balance__prf_list{position: relative; display: flex; align-items: center; padding: 8px 0 8px 20px; border: 1px solid #E5E5E5; border-radius: 8px; box-sizing: border-box; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); background-color: #FFFFFF;}
+.evnt_balance__prf_photo{position: relative; flex: none; width:60px; height: 60px; border-radius: 50%; border: 2px solid #FFFFFF; box-sizing:border-box;  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);}
+.evnt_balance__bdg_secret{position: absolute; left: 50%; bottom: -4px; width: 40px; transform: translate(-50%);}
+.evnt_balance__prf_photo_img{width:100%; height:100%; border-radius:50%; object-fit:cover;}
+.evnt_balance__prf_content{margin-left: 16px;}
+.evnt_balance__prf_nick{font-size: 14px; color: #202020;}
+.evnt_balance__prf_info{display: flex; align-items: center; flex: none; gap: 0 4px; margin-top: 4px;}
+.evnt_balance__prf_info_bar{width: 1px; height: 12px; background-color: #B8B8B8;}
+.evnt_balance__prf_info_txt{flex: none; font-size: 13px; color: #777777;}
+.evnt_balance__badge_new{background:#F67B8C;}
+.evnt_balance__badge_new, .evnt_balance__badge_re{font-size:0.76rem; width:28%; min-width:30px; height:16px; line-height:16px; border-radius:8px; margin-right:1px;}
+.evnt_balance__badge_new, .evnt_balance__badge_re{width:26.8%;}

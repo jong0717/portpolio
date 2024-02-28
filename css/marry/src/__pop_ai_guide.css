@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_ai_guide
+	설　명 : 무성의한 자기소개글 ai 필터링 / 가족소개글 작성 안내 가이드 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_ai_guide{position: relative; width: 100%; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 1px 4px rgba(0, 0, 0, .32);}
+.pop_ai_guide__container{position: relative; width: 100%; padding: 40px 15px 20px; box-sizing: border-box;}
+.pop_ai_guide__tit{width: 100%; margin-bottom: 12px; line-height: 21px; text-align: center; color: #202020;}
+.pop_ai_guide__btn_wrap{margin-top: 16px;}
+.pop_ai_guide__btn_cls{position: absolute; z-index: 1; top: 0; right: 0; display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: nowrap; width: 44px; height: 44px;}
+.pop_ai_guide__ico_cls{width: 100%; height: 100%; background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cg fill='none' stroke='%23202020' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M28.001 4.153l-24 23.7M28.001 27.853l-24-23.7'/%3e%3c/g%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: center; background-size: 16px 16px;}
+
+.pop_ai_guide__exp_box{position: relative; margin-top: 22px; border-radius: 8px; border: 1px solid #707070;}
+.pop_ai_guide__exp_tit_wrap{position: absolute; top: -11px; right: 0; display: flex; justify-content: center; width: 100%;}
+.pop_ai_guide__exp_tit{height: 22px; padding: 0 8px; border-radius: 4px; border: 1px solid; box-sizing: border-box; background-color: #FFF; line-height: 20px; font-size: 11px;}
+.pop_ai_guide__exp_tit-green{border-color: #17BC6F; color: #17BC6F;}
+.pop_ai_guide__exp_tit-red{border-color: #FF1919; color: #FF1919;}
+.pop_ai_guide__exp_icon_container{display: flex; justify-content: space-evenly; align-items: center; padding: 24px 36px 12px;}
+.pop_ai_guide__exp_icon_wrap{min-width: 80px;}
+.pop_ai_guide__exp_icon{width: 50px; height: 50px; margin: 0 auto 4px; border-radius: 50%; background-color: #F1F1F1; background-position: center; background-size: 50px 50px; background-repeat: no-repeat;}
+.pop_ai_guide__exp_icon-hobby{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_pop_guide_hobby.png");}
+.pop_ai_guide__exp_icon-character{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_pop_guide_character.png");}
+.pop_ai_guide__exp_icon-type{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_pop_guide_type.png");}
+.pop_ai_guide__exp_icon-family{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_pop_guide_family.png");}
+.pop_ai_guide__exp_icon-home{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_pop_guide_home.png");}
+.pop_ai_guide__exp_icon-initial{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_pop_guide_initial.png");}
+.pop_ai_guide__exp_icon-dismiss{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_pop_guide_dismiss.png");}
+.pop_ai_guide__exp_icon-sns{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_pop_guide_sns.png");}
+.pop_ai_guide__exp_icon_txt{text-align: center; font-size: 14px; color: #202020;}
+.pop_ai_guide__exp_txt{padding: 8px; border-radius: 0 0 8px 8px; background-color: #F1F1F1; text-align: center; font-size: 12px; line-height: 16px; word-break: break-all;}
+.pop_ai_guide__quistion_btn{margin-top: 16px; text-align: center;}
+.pop_ai_guide__quistion_txt{display: inline-block; padding-left: 18px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cg fill='%23505050'%3e%3cpath d='M15 30C6.73 30 0 23.27 0 15S6.73 0 15 0s15 6.73 15 15-6.73 15-15 15zm0-28C7.83 2 2 7.83 2 15s5.83 13 13 13 13-5.83 13-13S22.17 2 15 2z'/%3e%3cpath d='M17.22 11.33c0-1.21-.77-2.13-2.16-2.13-1.03 0-1.94.53-2.66 1.34l-1.43-1.3c1.08-1.23 2.55-2.11 4.38-2.11 2.55 0 4.33 1.45 4.33 4.03 0 3.21-3.92 4.4-3.54 7.68h-2.22c-.53-3.71 3.3-5.12 3.3-7.51zm-3.85 11.2c0-1.03.73-1.8 1.69-1.8.95 0 1.69.77 1.69 1.8s-.75 1.76-1.69 1.76c-.97 0-1.69-.73-1.69-1.76z'/%3e%3c/g%3e%3c/svg%3e") left center no-repeat; background-size: 16px 16px; text-decoration: underline; font-size: 12px; color: #505050; cursor: pointer;}

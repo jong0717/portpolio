@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __card_evnt
+	설　명 : 이벤트 페이지 카드배너
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/* 이벤트 카드배너 */
+.card_evnt{padding:0 15px 12px 15px;}
+.card_evnt-s{width: 240px;}
+.card_evnt__wrap{display: flex; flex-direction: column; width: 100%; height: auto; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgb(0 0 0 / 16%); cursor: pointer;}
+
+/* 카드배너 이미지 */
+.card_evnt__img_wrap{position: relative; flex:0 0 auto; width: 100%; padding-bottom: 30.2%;}
+.card_evnt__img_wrap-swipe{padding-bottom: 45.833%;}
+.card_evnt__img{position: absolute; width: 100%; height: 100%;}
+
+/* 카드배너 이미지 딤 */
+.card_evnt__dim{position: absolute; top: 0; left: 0; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background: rgba(0,0,0,.4); z-index: 1;}
+
+/* 카드배너 하단 콘텐츠 */
+.card_evnt__content_wrap{position:relative; width: 100%; height: auto;}
+.card_evnt__content_container{padding:12px; background:#ffffff;}
+.card_evnt__badge_wrap{position:relative; display: flex; width: 100%; }
+.card_evnt__txt_content_wrap{display: flex; justify-content: space-between; align-items: flex-end; width: 100%; margin-top: 2px;}
+.card_evnt__txt{display: -webkit-box; -webkit-line-clamp: 2; text-overflow: ellipsis; -webkit-box-orient: vertical; overflow: hidden; line-height: 23px; font-size: 16px; font-weight: 700; color: #202020; word-break: break-all;}
+.card_evnt__txt-line_2{min-height: 44px;}
+.card_evnt__txt.card_evnt__txt-end{color: #505050;}
+
+/* 카드 이벤트 스와이프  */
+.card_evnt__swipe{position: relative;}
+.card_evnt__swipe_bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/start/img_home_event_bg.png") center top no-repeat; background-size: cover; z-index: -1;}

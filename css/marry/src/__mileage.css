@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : mileage
+	설　명 : 마일리지 교환
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.mileage{position: relative; background-color: #FFF; border-bottom: 8px solid #F1F1F1;}
+.mileage__info{width: 100%; padding: 9px 0 10px; background-color: #EFF3FF; text-align: center;}
+.mileage__info_txt{padding-left: 20px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 16 16'%3e%3cg fill='%232D418B'%3e%3cpath d='M8 15c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7M8 2C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6'/%3e%3cpath d='M8 4.3c.4 0 .8.4.8.8s-.4.8-.8.8-.8-.4-.8-.8.4-.8.8-.8M8 6.8c.4 0 .7.3.7.7v3.9c0 .4-.4.7-.7.7-.4 0-.7-.3-.7-.7V7.5c0-.4.3-.7.7-.7'/%3e%3c/g%3e%3c/svg%3e") left center no-repeat; background-size: 16px; color: #2D418B; text-decoration: underline; cursor: pointer;}
+.mileage__content{padding: 12px 15px 20px; background-color: #FAFAFA;}
+.mileage__status{padding: 14px 16px; border-radius: 8px; background: linear-gradient(120deg, #7496FF, #4169E1); box-shadow: 0 2px 6px rgba(0, 0, 0, .16);}
+.mileage__status_txt_wrap{display: flex; align-items: center; width: 100%;}
+.mileage__status_txt_wrap:nth-child(2){margin-top: 8px;}
+.mileage__status_txt{font-size: 16px; color: #FFF;}
+.mileage__status_price{margin-left: auto; padding-left: 24px; background-position: left center; background-repeat: no-repeat; background-size: 18px;  font-size: 18px; font-weight: 700; color: #FFF;}
+.mileage__status_price-mileage{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/ico_mileage.png");}
+.mileage__status_price-coin{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/ico_mileage_coin.png");}
+
+.mileage__exchange{margin-top: 8px; padding: 12px 12px 16px; border-radius: 8px; background-color: #FFF; box-shadow: 0 2px 6px rgba(0, 0, 0, .16);}
+.mileage__exchange_tit{width: max-content; margin: 0 auto; padding-left: 24px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/ico_exchange_marry.png") left center no-repeat; background-size: 24px; font-size: 18px; color: #2D418B;}
+.mileage__exchange_sub{margin-top: 2px; text-align: center; font-size: 12px; color: #6986CB;}
+.mileage__exchange_input_wrap{margin: 16px 0;}
+.mileage__input_wrap{display: flex; align-items: center;}
+.mileage__input{position: relative;}
+.mileage__input::after{content: ""; position: absolute; top: 9px; left: 12px; width: 18px; height: 18px; background-position: center; background-repeat: no-repeat; background-size: 100% auto; z-index: 1;}
+.mileage__input-mileage::after{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/ico_mileage.png");}
+.mileage__input-coin::after{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/ico_mileage_coin.png");}
+.mileage__input .input_box__txt_input{height: 36px; padding-left: 38px;}
+.mileage__exchange_ico{flex: none; width: 30px; height: 30px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 30 30'%3e%3cg fill='none' stroke='%23202020' stroke-linecap='round' stroke-width='1.2'%3e%3cpath stroke-linejoin='round' d='M5.234 13.685h19.4l-5.4-5.2'/%3e%3cpath d='M5.234 17.485h19.4'/%3e%3c/g%3e%3c/svg%3e") center no-repeat; background-size: 100% auto;}
+
+/* 상단고정 */
+/* .mileage-fixed{position: fixed; top: 45px; left: 0; z-index: 1; animation: slideInDown 0.3s ease-out forwards;}
+.mileage-fixed .mileage__info{display: none;}
+.mileage-fixed .mileage__content{padding: 0;}
+.mileage-fixed .mileage__status{border-radius: 0; padding: 12px 31px;}
+.mileage-fixed .mileage__status_txt_wrap:nth-child(2){display: none;}
+.mileage-fixed .mileage__exchange{margin-top: 0; border-radius: 0 0 8px 8px;}
+.mileage-fixed .mileage__exchange_input_wrap{margin: 10px 12px;}
+.mileage-fixed .input_box__info_txt{display: none;}
+
+@media (min-width: 460px) {
+	.mileage-fixed{left: 50%; width: 460px; margin-left: -230px; }
+} */

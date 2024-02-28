@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __bdg_age
+	설　명 : 나이대 뱃지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.bdg_age{position: relative; width: 34px; height: 20px; margin-left: 8px; border-radius: 4px; background-color: #E9F4FF;}
+.bdg_age__txt{text-align: center; line-height: 20px; font-size: 13px; font-weight: bold; color: #2780E3;}
+.bdg_age::before{content: '';position: absolute;top: 5px; left: -4px; width: 10px;height: 10px;border-radius: 4px;background-color: #E9F4FF;clip-path: polygon(23% 24%, 76% 77%, 100% 0%);transform: rotate(-135deg);
+}

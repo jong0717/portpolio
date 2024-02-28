@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __nick_edit
+	설　명 : 닉네임 변경 페이지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.nick_edit{position: relative;}
+.nick_edit__container{padding: 0 15px;}
+.nick_edit__img{width: 100%; padding-bottom: 35.55%; background: url("https://image.yeoboya.com/imgs/new_wedding_member/img/img_nick_edit.png") no-repeat center; background-size: 100% auto;}
+.nick_edit__info{margin-top: 24px; text-align: center; line-height: 24px;color: #202020;}
+.nick_edit__tit{margin-top: 20px; text-align: center; font-size: 18px; font-weight: 700; color: #3654AE;}
+.nick_edit__btn_wrap{padding: 28px 15px 24px;}

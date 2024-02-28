@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : evnt_gift_var
+	설　명 : 선물형 이벤트 변수 모음
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+[data-evnt_gift="evnt_sample_candy"] {
+
+	/* 컬러 */
+	--evnt_gift__color_type_main : #6935D4;
+	--evnt_gift__color_type_sub : #AA3BA6;
+	--evnt_gift__color_type_bg_main : #FFF1FC;
+	--evnt_gift__color_type_bg_sub : #FFFAEB;
+
+	/*공통 아이콘*/
+	--evnt_gift__ico_type_a : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/ico_sample_candy_type_a.png");
+	--evnt_gift__ico_type_b : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/ico_sample_candy_type_b.png");
+
+	/* 상세 페이지 */
+	--evnt_gift__detail_btn-top : 64.8%;
+
+	/* 랭킹 페이지 */
+	--evnt_gift__info-bg_img : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 14 14'%3e%3cg transform='translate(68.037 3.001)'%3e%3ccircle cx='-61' cy='4' r='6' fill='none' stroke='%236935D4'/%3e%3cpath fill='%236935D4' d='M-61.6 5.8h.8c-.2-1.6 1.6-2.2 1.6-3.6 0-.9-.7-1.7-1.6-1.8h-.2c-.7 0-1.4.3-1.9.9l.5.5c.3-.4.8-.6 1.3-.6.6 0 1 .4 1.1.9v.1c-.1 1.2-1.9 1.8-1.6 3.6zm.4 2.3c.4 0 .7-.3.7-.7 0-.4-.3-.7-.6-.7-.4 0-.7.3-.7.7-.1.4.2.7.6.7z' opacity='.9'/%3e%3c/g%3e%3c/svg%3e");
+	--evnt_gift__top-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/bg_sample_candy_ranking.png");
+	--evnt_gift__top_tit-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/img_sample_candy_ranking_title.png");
+
+	/* 메인 페이지 */
+	--push_evnt_gift__bg-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/img_evnt_sample_candy_push.png");
+	--push_evnt_gift__txt-pd_top : 14px;
+	--all_drop__float_img-evnt_gift-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/btn_alldrop_evnt_sample_candy.png");
+	--all_drop__float_img-evnt_gift-h : 50px;
+	--float_pop__btn_txt_img-evnt_gift-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/btn_float_sample_candy_txt.png");
+	--float_pop__btn_txt_img-evnt_gift-w: 150px;
+
+	/* 프로필 배너 공통 */
+	--evnt_gift__pf_bnr-text_shadow : none;
+	--evnt_gift__pf_bnr_point-color : #6935D4;
+	--evnt_gift__pf_bnr_nomal-color : #fff;
+	--evnt_gift__pf_bnr_btn_grdnt : linear-gradient(to bottom, #9B68EB, #5B1ED3);
+
+	/* 내 프로필 업 페이지 */
+	--evnt_gift__my_banner-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/bg_evnt_sample_candy_pf_bnr.png");
+
+	/* 프로필상세 페이지 */
+	--pf_evnt_gift-bg_img:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/bg_evnt_sample_evnt_pf_bnr2.png");
+	--pf_evnt_gift__cnt_deco-w : 52px;
+	--pf_evnt_gift__cnt_deco-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/img_evnt_sample_candy_pf_txt.png");
+	--pop_evnt_gift__top_img-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/img_pop_evnt_sample_candy.png");
+
+	/* 메시지 */
+	--chat_evnt_gift__notice-bg_color : #8858EB;
+	--chat_evnt_gift__box_btn-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/bg_evnt_sample_candy_msg_btn.png");
+	--chat_evnt_gift__box-bg_img : url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/bg_evnt_sample_candy_msg.png");
+	--chat_evnt_gift__txt-color : #000;
+}

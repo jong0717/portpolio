@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __float_btn
+	설　명 : 플로팅 버튼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/* 플로팅 버튼 */
+.float_btn{position: relative;}
+.float_btn__wrap{position:relative; z-index: 2; width:50px; height:50px;}
+.float_btn__btn_plus{width:100%; height:100%; border-radius: 50%; background-image:url("https://image.yeoboya.com/imgs/new_wedding/img/ico_new_floating_2.png"); background-repeat: no-repeat; background-position: center; background-size:20px 20px; box-shadow: 0 1px 3px 0 rgba(0,0,0,.21); transition: transform 0.2s ease-out;}
+.float_btn__btn_plus{background-color:#7c9af8;}
+.float_btn__btn_plus-active{transform: rotate(45deg);}
+.float_btn__btn_marry{position:absolute; top:-6px; left: -6px; width:62px; height:62px; border-radius: 50%; box-shadow: 0 1px 5px 0 rgba(0,0,0,.21);}
+.float_btn__btn_marry{background:url("https://image.yeoboya.com/imgs/new_wedding/img/quick_donut_2.gif") no-repeat center; background-size:100% auto; box-shadow: 0 0 7px 0 rgba(122,139,239,.8);}
+.float_btn__btn_up{width:100%; height:100%; border-radius: 50%; box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);}
+.float_btn__btn_up{border:1px solid #4169E1; background:rgba(255,255,255,1) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'%3e%3cpath fill='none' stroke='%234169E1' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M13.5 34.5l15-12 15 12'/%3e%3c/svg%3e") no-repeat center; background-size:28px;}
+
+/* 프로필 플로팅 */
+.float_btn-prf .float_btn__btn_plus{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 20 20'%3e%3cpath fill='white' d='M9 1.5h2v17H9z'/%3e%3cpath fill='white' d='M1.5 9h17v2h-17z'/%3e%3c/svg%3e"); background-color: #7496FF; box-shadow: 0 2px 4px rgba(0, 0, 0, .16);}
+.float_btn-prf .float_btn__btn_plus.float_btn__btn_plus-active{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 20 20'%3e%3cpath fill='%232D418B' d='M9 1.5h2v17H9z'/%3e%3cpath fill='%232D418B' d='M1.5 9h17v2h-17z'/%3e%3c/svg%3e"); background-color: #FFF;}
+
+/* 플로팅 배너 */
+.float_btn__bnr{position: relative; display: flex; align-items: center; right: -100%; height: 62px; padding: 0 55px 0 24px; border-radius: 50px 0 0 50px; box-sizing: border-box; background: linear-gradient(to right, #475FE8, #6C8EF8); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16); overflow: hidden; white-space: nowrap;}
+.float_btn__bnr_wrap{position: absolute; top: -10px; right: 24px; padding: 4px 0 4px 2px; overflow: hidden;}
+.float_btn__bnr.active{right: -100%; animation-name: floatBnropenAni; animation-duration: 0.5s; animation-timing-function: ease-out; animation-fill-mode: forwards;}
+.float_btn__bnr.disabled{right: 0; animation-name: floatBnrcloseAni; animation-duration: 0.5s; animation-timing-function: ease-out; animation-fill-mode: forwards;}
+.float_btn__bnr_txt{line-height: 20px; text-align: left; color: #FFF;}
+.float_btn__bnr_txt_strong{font-weight: 700; color: #FFF782;}
+.float_btn__bnr_arrow{position: relative; display: inline-flex; top: 1px; width: 13px; height: 13px; margin-left: 2px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 13 13'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='1.4' d='M7.4 11 11 6.5 7.4 2M2 11l3.6-4.5L2 2'/%3e%3c/svg%3e") no-repeat center; background-size: 13px;}
+
+@keyframes floatBnropenAni {0%{right: -100%;}100%{right: 0;}}
+@keyframes floatBnrcloseAni {0%{right: 0;} 100%{right: -100%;}}

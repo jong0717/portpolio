@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_toast
+	설　명 : 공통 토스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_toast {position: relative; display:flex; justify-content: center;}
+.pop_toast__layer {position:relative; display:flex; align-items:center; min-width:160px; max-width:80%; border-radius:5px; padding:12px 16px; background:rgba(0,0,0,1); box-sizing: border-box;}
+.pop_toast__layer-full {width:100%; max-width:calc(100% - 30px);}
+.pop_toast__layer_ani {animation:fadeInUp .5s forwards;}
+.pop_toast__layer_ani-out {animation:fadeOutDown .5s forwards;}
+.pop_toast__txt {font-size:14px; color:#fff; text-align: center;}
+.pop_toast__txt-left {text-align: left;}
+.pop_toast__txt_tit {display:block; font-size:14px; font-weight:500; padding-bottom:8px;}
+.pop_toast__btn {display:flex; align-items: center; padding:6px 0; border:1px solid #fff; border-radius:4px; pointer-events:fill;}
+.pop_toast__btn_txt{padding-left: 12px; color: #FFFFFF; font-size: 13px;}
+.pop_toast__btn_icon {display:inline-block; width:18px; height:18px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cpath d='M12.005 9.002l7.47 8.03-7.47 8.03' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'/%3e%3c/svg%3e") center no-repeat; background-size:100%;}
+.pop_toast__btn-yellow{border:1px solid #FCFF9A;}
+.pop_toast__btn-yellow .pop_toast__btn_txt{color: #FCFF9A;}
+.pop_toast__btn-yellow .pop_toast__btn_icon{display:inline-block; width:18px; height:18px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cpath d='M12.005 9.002l7.47 8.03-7.47 8.03' fill='none' stroke='%23FCFF9A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10'/%3e%3c/svg%3e") center no-repeat; background-size:100%;}

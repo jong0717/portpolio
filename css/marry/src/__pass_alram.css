@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pass_alram
+	설　명 : 패스 알람
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pass_alram{position: relative; padding: 8px 10px 0;}
+.pass_alram__content{display: flex; align-items: center; justify-content: center; height: 32px; border-radius: 4px; box-sizing: border-box;}
+.pass_alram__content-week{border: 1px solid #C6D5FF; background-color: #EFF3FF;}
+.pass_alram__content-4weeks{border: 1px solid #D7C6FF; background-color: #F0EFFF;}
+.pass_alram__img{width: 94px; height: 16px; background: no-repeat center; background-size: 100%;}
+.pass_alram__content-week .pass_alram__img{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_bm/img_pass_alram_week.png");}
+.pass_alram__content-4weeks .pass_alram__img{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_bm/img_pass_alram_4weeks.png");}
+.pass_alram__txt{margin-left: 8px; font-size: 13px; color: #202020;}

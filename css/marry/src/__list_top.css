@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __list_top
+	설　명 : 리스트 상단 선택삭제, 설명글
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.list_top{width:100%; background-color: #FFF; box-sizing: border-box;}
+.list_top-bg{background-color: #FAFAFA;}
+.list_top-bd_f1{border-bottom: 1px solid #f1f1f1;}
+.list_top__wrap{display:flex; align-items: center; flex: none; color:#202020;}
+.list_top__chk_wrap{display:flex; align-items: center; width:100%; height:50px; border-bottom:1px solid #F1F1F1; box-sizing: border-box;}
+
+.list_top__container{display: flex; align-items: center; min-height: 44px;}
+.list_top__txt_btn{position: relative; display: flex; justify-content: center; align-items: center; margin: 0 8px; padding: 12px 3px; cursor: pointer;}
+.list_top__txt_btn-disabled{color:#909090; cursor: default;}
+.list_top__txt_btn:last-child{margin-right: 0;}
+.list_top__txt_btn::after{content: ""; position: absolute; top: 50%; left: -8px; width: 1px; height: 12px; background-color: #909090; transform: translateY(-50%);}
+.list_top__txt_btn:first-child:after{display: none;}
+.list_top__icon_del{flex: none; width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' xml:space='preserve'%3e%3cpath fill='%23202020' d='M5.1 15a2.563 2.563 0 0 1-2.58-2.53V5h-1a.51.51 0 0 1-.51-.5c0-.28.23-.51.5-.51h3.51V3.6c.03-.9.78-1.62 1.68-1.6h2.6c.9-.02 1.65.7 1.67 1.6v.39h3.51c.28 0 .51.23.51.5 0 .28-.23.51-.5.51h-1v7.47A2.563 2.563 0 0 1 10.91 15H5.1zm-1.55-2.53c.01.85.7 1.53 1.55 1.52h5.8c.85.01 1.54-.67 1.55-1.52V5.03h-8.9v7.44zm6.39-8.48V3.6c-.02-.34-.3-.6-.64-.59H6.7a.615.615 0 0 0-.64.59v.39h3.88zm-.96 8.29V6.24c.01-.28.25-.51.54-.49.27.01.48.22.49.49v6.04c-.01.28-.25.51-.54.49a.511.511 0 0 1-.49-.49zm-2.99 0V6.24c0-.29.23-.52.52-.52.29 0 .52.23.52.52v6.04c0 .29-.23.52-.52.52-.29 0-.52-.23-.52-.52z'/%3e%3c/svg%3e") center no-repeat; background-size: 16px 16px;}
+.list_top__txt_btn-disabled .list_top__icon_del{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' xml:space='preserve'%3e%3cpath fill='%23909090' d='M5.1 15a2.563 2.563 0 0 1-2.58-2.53V5h-1a.51.51 0 0 1-.51-.5c0-.28.23-.51.5-.51h3.51V3.6c.03-.9.78-1.62 1.68-1.6h2.6c.9-.02 1.65.7 1.67 1.6v.39h3.51c.28 0 .51.23.51.5 0 .28-.23.51-.5.51h-1v7.47A2.563 2.563 0 0 1 10.91 15H5.1zm-1.55-2.53c.01.85.7 1.53 1.55 1.52h5.8c.85.01 1.54-.67 1.55-1.52V5.03h-8.9v7.44zm6.39-8.48V3.6c-.02-.34-.3-.6-.64-.59H6.7a.615.615 0 0 0-.64.59v.39h3.88zm-.96 8.29V6.24c.01-.28.25-.51.54-.49.27.01.48.22.49.49v6.04c-.01.28-.25.51-.54.49a.511.511 0 0 1-.49-.49zm-2.99 0V6.24c0-.29.23-.52.52-.52.29 0 .52.23.52.52v6.04c0 .29-.23.52-.52.52-.29 0-.52-.23-.52-.52z'/%3e%3c/svg%3e");}
+.list_top__icon_edit{flex: none; width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' xml:space='preserve'%3e%3cg fill='%23202020'%3e%3cpath d='M11.86 16H2.27C1.3 16 .51 15.21.5 14.23v-9.6c0-.97.79-1.76 1.77-1.77h6.57c.28 0 .5.22.5.5s-.22.5-.5.5H2.27a.77.77 0 0 0-.77.77v9.6c0 .42.34.77.77.77h9.59c.42 0 .77-.34.77-.77V7.69c0-.28.22-.5.5-.5s.5.22.5.5v6.54c0 .98-.79 1.77-1.77 1.77z'/%3e%3cpath d='m15.14 2.45-1.09-1.1c-.46-.47-1.22-.47-1.69-.01L4.45 9.3c-.02.01-.04.02-.05.03a.21.21 0 0 0-.04.06l-.24.23c-.05.06-.1.13-.12.21l-.93 3.02c-.01.05-.02.1-.02.15 0 .28.22.5.5.5.05 0 .1 0 .15-.01l3-.93c.08-.02.15-.07.21-.12l8.24-8.28c.46-.48.46-1.24-.01-1.71zm-2.06-.41c.08-.08.2-.07.27 0l1.09 1.1c.08.08.08.2 0 .28l-.27.28-1.38-1.36.29-.3c0 .01 0 .01 0 0zm-6.24 9.03L5.47 9.7l6.62-6.65 1.38 1.36-6.63 6.66zm-2-.58 1.21 1.21-1.74.54.53-1.75z'/%3e%3c/g%3e%3c/svg%3e") center no-repeat; background-size: 16px 16px;}
+.list_top__vertical{width: 1px; height: 12px; background-color: #909090;}
+/* on/off 필터 */
+.list_top__switch{flex:0 0 auto; display:flex; align-items: center;}
+.list_top__switch_txt{font-size:14px; padding-right:4px;}

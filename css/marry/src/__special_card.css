@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __special_card
+	설　명 : 특별한 자기소개
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.special_card{display: flex; align-items: center; justify-content:center; gap: 8px;}
+.special_card__item{position: relative; flex: none; cursor: pointer;}
+.special_card__item_img_wrap{padding: 0 1px; border: 1px solid #E1E1E1; border-radius: 4px 4px 0 0;}
+.special_card__item_img{display: block; width: 68px; height: 68px;}
+.special_card__item_tit{border-radius: 0 0 4px 4px; background: #6486EE; line-height: 24px; font-size: 12px; color: #fff; text-align: center;}
+.special_card__item_cnt_bdg{position: absolute; right: -6px; top: -4px; z-index: 2; width: 18px; height: 18px; border-radius: 50%; background-color: #3c3; color: #fff; text-align: center; font-size: 12px; font-weight: 700; line-height: 18px;}

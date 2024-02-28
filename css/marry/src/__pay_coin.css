@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pay_coin
+	설　명 : 아이템 결제 정보
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pay_coin{position: relative; padding: 20px 0 32px;}
+.pay_coin__tit{padding-left: 20px; font-size: 16px; font-weight: 700; color: #202020;}
+.pay_coin__list_wrap{padding-top: 10px;}
+.pay_coin__list{display: flex; align-items: center; min-height: 36px; padding: 0 20px;}
+.pay_coin__list-result{background-color: #EFF3FF;}
+.pay_coin__list_txt{font-size: 14px;}
+.pay_coin__list_price{margin-left: auto; font-weight: 700; color: #202020;}
+.pay_coin__list-result .pay_coin__list_price{color: #4169E1;}
+.pay_coin__notice{margin-top: 28px; font-size: 14px; color: #202020; text-align: center;}
+.pay_coin__notice_emp{color: #4169E1; font-weight: 700;}
+.pay_coin__btn_wrap{padding: 12px 15px 0;}

@@ -1,0 +1,98 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __all_drop
+	설　명 : 전체 보기 드롭 박스
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.all_drop{position: absolute; top: 0; right: 0;}
+.all_drop__admin_wrap{position:absolute; top:10px; left:10px; z-index: 10;}
+.all_drop__menu{position: relative; display: flex;}
+.all_drop__ul{position:relative;}
+.all_drop__li{position: relative; width: 80px; height: 54px; border-bottom: 1px solid #D4D4D4; background: #fff;}
+/* .all_drop__space{margin-top: 6px; width: 90px; height: 38px;} */
+.all_drop__li-l{height: 62px;}
+.all_drop__li:last-child{border-bottom: none; border-radius: 0 0 4px 4px;}
+.all_drop__li-idealtype {background-color:#EFF3FF;}
+.all_drop__btn{cursor: pointer;}
+.all_drop__btn_ico{position: relative; display:flex; justify-content: center;}
+.all_drop__btn_txt{text-align: center; letter-spacing: -1px;}
+.all_drop__li-l .all_drop__btn_txt{line-height: 14px;}
+.all_drop__bdg{position:absolute; top: 4px; right: 4px;}
+.all_drop__bdg-under {top:auto; bottom: 18px; right: 8px;}
+.all_drop__bdg-dot{width:6px; height:6px; border-radius: 50%; background-color:#FF5858;}
+.all_drop__bdg-cnt{min-width:17px; height:15px; padding: 0 4px; border-radius: 8px; background-color:#FF5858; line-height:15px; text-align: center; color:#fff; font-size:11px; box-sizing: border-box;}
+.all_drop__bdg-n{right:6px; width:17px; height:17px; border-radius: 50%; background:#FF5656 url("https://image.yeoboya.com/imgs/new_wedding/common/ico_new_n.png")no-repeat center; background-size:15px;}
+.all_drop__bdg-ai{right:5px; width:15px; height:15px; border-radius: 50%; background:#3654AE url("https://image.yeoboya.com/imgs/new_wedding/common/ico_new_ai.png")no-repeat center; background-size:15px;}
+.all_drop__side {display: flex; flex-direction: column; min-width:90px; margin-top: 12px; margin-right: 10px;}
+.all_drop__side_img_btn{position: relative; text-align: center; font-size: 0; cursor: pointer; }
+.all_drop__side_img-ymti{width: 90px;}
+.all_drop__side_img-youtube{width: 85px;}
+.all_drop__side_img-tvcf{width: 90px;}
+.all_drop__side_img-dalgona{width: 90px;}
+.all_drop__side_img-event{width: 85px;}
+.all_drop__side_img-evnt_ice{width: 93px; height: 101px;}
+.all_drop__side_img-evnt_lantern{width: 93px; height: 100px;}
+.all_drop__side_img-evnt_trophy{width: 90px; height: 130px;}
+.all_drop__side_img-evnt_christmas{width: 90px; height: 74px;}
+.all_drop__side_img-evnt_pocket2{width: 90px; height: 74px;}
+.all_drop__side_img-evnt_choco{width: 90px; height: 80px;}
+.all_drop__side_img-evnt_candy{width: 90px; height: 70px;}
+.all_drop__side_img-c_02{width: 90px;}
+.all_drop__side_img-c_02_awards{width: 86px;}
+.all_drop__side_img-evnt_dalgona{width: 80px;}
+.all_drop__side_img-noble{width: 90px;}
+.all_drop__side_img-luck{width: 90px;}
+.all_drop__col{display: flex; flex-direction: column; justify-content: center;}
+.all_drop__side_img-evnt_flower22{width: 90px; height: auto;}
+.all_drop__side_img-evnt_flower23{width: 90px; height: auto;}
+.all_drop__side_img-invite{width: 90px; height: auto;}
+.all_drop__side_img-balance{width: 90px; height: 82px;}
+
+/* 전체보기 드롭다운 왼쪽 플로팅 영역 */
+.all_drop__float{display: flex; flex-direction: column-reverse;margin-right:12px;}
+.all_drop__float_btn{width:100%; cursor: pointer;}
+.all_drop__float_img{margin-left: auto; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.all_drop__float_img-dalla{width:90px; height:120px;}
+.all_drop__float_img-story{width:90px; height:100px;}
+.all_drop__float_img-gage{width:90px; height:54px;}
+.all_drop__float_img-stamp {width: 100px; height: 82px;}
+.all_drop__float_img-prf_like{width: 90px; height: 92px;}
+.all_drop__float_img-rose {width: 90px; height: 62px;}
+.all_drop__float_img-balance {width: 90px; height: 88px;}
+.all_drop__float_img-evnt_bouquet {width: 95px; height: 117px;}
+.all_drop__float_img-ice_cream {width: 90px; height: 64px;}
+.all_drop__float_img-luck {width: 90px; height: 90px;}
+.all_drop__float_img-samgye {width: 94px; height: 90px;}
+.all_drop__float_img-parasol {width: 100px; height: 92px;}
+.all_drop__float_img-ice_cream2 {width: 90px; height: 64px;}
+.all_drop__float_img-flower3 {width: 95px; height: 117px;}
+.all_drop__float_img-moon {width: 90px; height: 70px;}
+.all_drop__float_img-maple {width: 90px; height: 70px;}
+.all_drop__float_img-persimmon{width: 90px; height: 70px;}
+.all_drop__float_img-prfup {width: 90px; height: 90px;}
+.all_drop__float_img-rose2 {width: 90px; height: 70px;}
+.all_drop__float_img-evnt_christmas2{width: 90px; height: 70px;}
+.all_drop__float_img-roulette{width: 90px; height: 100px;}
+.all_drop__float_img-bok2{width: 90px; height: 70px;}
+.all_drop__float_img-evnt_gift{width: 90px; height: var(--all_drop__float_img-evnt_gift-h); background-image: var(--all_drop__float_img-evnt_gift-bg_img);}
+
+
+/* 아이콘 */
+.all_drop__ico{width: 28px; height: 28px; margin-top:4px; background: url("https://image.yeoboya.com/imgs/new_wedding/common/ico_all_drop.png") no-repeat; background-size: 252px 28px;}
+.all_drop__ico-message{background-position:0 0;}
+.all_drop__ico-secret{background-position:-28px 0;}
+.all_drop__ico-profile{background-position:-56px 0;}
+.all_drop__ico-interest{background-position:-84px 0;}
+.all_drop__ico-talk{background-position:-112px 0;}
+.all_drop__ico-want_meet{background-position:-140px 0;}
+.all_drop__ico-newcomer{background-position:-168px 0;}
+.all_drop__ico-thanks{background-position:-196px 0;}
+.all_drop__ico-more{background-position:-224px 0;}
+.all_drop__ico-ymti{width:40px; height: 28px; background:url("https://image.yeoboya.com/imgs/new_wedding/common/ico_all_drop_ymti.png") no-repeat center; background-size:100%;}
+.all_drop__ico-idealtype {width:36px; height:26px; background:url("https://image.yeoboya.com/imgs/new_wedding/common/ico_all_drop_idealtype2.png") no-repeat center; background-size:100%;}
+.all_drop__ico-prf_like {width:28px; height:28px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png") no-repeat center; background-size:100%;}
+.all_drop__ico-prf_up{width:28px; height:28px; background:url("https://image.yeoboya.com/imgs/new_wedding/common/ico_all_drop_prf_up.png") no-repeat center; background-size:100%;}
+
+.mt100 {margin-top:100px;}

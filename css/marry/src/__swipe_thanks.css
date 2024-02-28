@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __swipe_thanks
+	설　명 : Thanks 여보야 스와이프
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.swipe_thanks{position: relative;}
+.swipe_thanks__bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/start/img_home_thanks_bg-2.png") center no-repeat; background-size: cover;}
+.swipe_thanks__img{position: absolute; bottom: 0; left: 0; width: 130px; height: 193px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/start/img_home_thanks_family.png") center no-repeat; background-size: cover;}
+/* .swipe_thanks__container .list_swipe__slide:first-child{padding-left: 115px;} */
+.swipe_thanks__badge{width: 123px; height: 32px; padding:0 5px; background: #EFF3FF; border-radius: 4px; overflow: hidden; text-align: center;}
+.swipe_thanks__badge_txt{font-size: 16px; line-height: 32px; font-weight: 700; color: #3654AE;}
+.swipe_thanks__container{position: relative;}
+.swipe_thanks__card{position: relative; width: 173px; height: 173px; padding: 16px; border-radius: 8px; border: 1px solid #F1F1F1; background: #fff; box-sizing: border-box; cursor: pointer;}
+.swipe_thanks__card_txt{height: 44px; margin-bottom: 9px; color: #202020; line-height: 22px;}
+.swipe_thanks__card_txt_hr{width: 100%; height: 1px; margin: auto 0 8px;  background: #E1E1E1;}
+.swipe_thanks__card_prf_container{display: flex; align-items: center;}
+.swipe_thanks__card_prf_name{flex: 0 0 auto; display: inline-block; position: relative; padding-right: 15px; font-size: 14px; font-weight: 700;}
+.swipe_thanks__card_prf_name::after{content: "**"; position: absolute; top: 2px; right: 2px;}
+.swipe_thanks__card_prf_name-long{padding-right: 22px;}
+.swipe_thanks__card_prf_name-long::after{content: "***"; position: absolute; top: 2px; right: 2px;}
+.swipe_thanks__card_prf_name-short{padding-right: 8px;}
+.swipe_thanks__card_prf_name-short::after{content: "*"; position: absolute; top: 2px; right: 2px;}
+.swipe_thanks__card_prf_info{position: relative; display: flex; align-items: center; font-size: 14px;}
+.swipe_thanks__card_prf_info_gender{flex: 0 0 auto;}
+.swipe_thanks__card_prf_info_line{display: block; width: 1px; height: 8px; margin: 0 4px; background-color: #B8B8B8;}
+.swipe_thanks__card_prf_nation{display: flex; align-items: center; margin-left: auto; font-size: 13px;}
+.swipe_thanks__card_prf_nation_img{margin: 0; border: 1px solid #909090;}
+.swipe_thanks__card_prf_nation_ico{margin:2px 2px 0 0;}
+
+.swipe_thanks__swipe_wrap {width:100%; padding-left:130px; overflow:hidden;box-sizing: border-box;}

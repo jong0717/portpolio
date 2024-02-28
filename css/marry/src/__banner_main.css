@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __banner_main
+	설　명 : 메인페이지 배너
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.banner_main{width:100%;}
+.banner_main__container{position:relative; width:100%; overflow: hidden;}
+.banner_main__wrapper{display:flex; width:100%;}
+.banner_main__slide{position:relative; flex:0 0 auto; width:100%; height:0; padding-bottom:37.2222%;}
+.banner_main__slide-l{padding-bottom:56.3888%;}
+.banner_main__slide-m{padding-bottom:41.6666%;}
+.banner_main__slide-s{padding-bottom:25%;}
+.banner_main__img{position:absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; cursor: pointer;}
+.banner_main__img-noclick{cursor: default;}
+.banner_main__frac_pagination{position: absolute; bottom: 4px; right: 8px; display: flex; justify-content: center; align-items: center; width: 45px; height: 17px; border-radius: 25px; background: rgba(0, 0, 0, .7); font-size: 12px; line-height: 17px; color: transparent;}
+.banner_main__frac_current{padding-right: 3px; color: #FFF;}
+.banner_main__frac_total{position: relative; padding-left: 4px; color: #BFBFBF;}
+.banner_main__frac_total::before{content: ""; position: absolute; top: 50%; left: -6px; width: 10px; height: 10px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='%23C0BFBF' d='M8.5 17.5h-.3c-.5-.2-.8-.7-.7-1.2l4-13c.2-.5.7-.8 1.2-.7.5.2.8.7.7 1.2l-4 13c-.1.4-.5.7-.9.7z'/%3e%3c/svg%3e") center no-repeat; background-size: 10px 10px; transform: translateY(-50%); z-index: 10;}

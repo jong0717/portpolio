@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __sub_list_day
+	설　명 : 서브 리스트 날짜선
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.sub_list_day{position: relative; display: flex; align-items: center; font-size: 12px; font-weight: 700; color: #202020; white-space: nowrap;}
+.sub_list_day::before{content: ""; height: 2px; width: 100%; margin-right: 14px; background-color: #D0D0D0;}
+.sub_list_day::after{content: ""; height: 2px; width: 100%; margin-left: 14px; background-color: #D0D0D0;}
+.sub_list_day-b8::before{background-color: #b8b8b8;}
+.sub_list_day-b8::after{background-color: #b8b8b8;}

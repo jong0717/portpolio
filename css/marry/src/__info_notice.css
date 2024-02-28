@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __info_notice
+	설　명 : 상단 공지 알림
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.info_notice{position: absolute; top:-30%; width: 100%; padding: 0 15px; box-sizing: border-box;}
+.info_notice.active{animation-name: infoNotice; animation-duration: 6s; animation-timing-function: ease-in-out; animation-fill-mode: forwards;}
+.info_notice__content{position: relative; display: flex; justify-content: center; align-items: center; padding: 5px; background-color: #F3EFFF; border: 1px solid transparent; border-color: #9475FC; border-radius: 6px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);}
+.info_notice-want_meet::after{content: ""; position: absolute; top: -8px; left: 100px; width: 18px; height: 9px; background: url("https://image.yeoboya.com/imgs/new_wedding/img/img_info_notice__tooltip.png") no-repeat center; background-size: 100% auto;}
+.info_notice__content_ico{width: 24px; height: 24px; margin-right: 2px; background: url("https://image.yeoboya.com/imgs/new_wedding/img/img_info_notice_ico-purple.png") no-repeat center; background-size: 100%;}
+.info_notice-want_meet .info_notice__content_ico{background-image: url("https://image.yeoboya.com/imgs/new_wedding/img/img_info_notice_ico_call-purple.png");}
+.info_notice__content_txt{font-size: 12px; font-weight: 700; line-height: 18px; color: #202020;letter-spacing: -1px;}
+.info_notice__content_txt_tht{padding-left: 1px; background:linear-gradient(to top, rgba(127, 98, 226, 0.4) 50%, transparent 50%); color: #7F62E2;}
+
+@keyframes infoNotice {
+    0% {top:-30%;}
+    10%{top:-20%;}
+    30% {top:94px;}
+    50% {top:94px;}
+    60% {top:94px;}
+    70% {top:94px;}
+    80% {top:94px;}
+    90% {top:94px;}
+    100% {top:-30%;}
+}

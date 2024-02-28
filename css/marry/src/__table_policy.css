@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __table_policy
+	설　명 : 약관 테이블
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / overflow / width / height / padding / margin / border / background / font / etc...
+---------------------------------------------*/
+.table_policy{width: 100%; text-align: center; color: #505050; border-collapse: collapse; border-spacing: 0;}
+.table_policy__th{height: 48px; border: 1px solid #d4d4d4; background: #f1f1f1; font-size: 14px; vertical-align: middle;}
+.table_policy__td{padding: 4px; font-size: 12px; border: 1px solid #d4d4d4; vertical-align: middle;}

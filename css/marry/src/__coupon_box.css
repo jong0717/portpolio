@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __coupon_box
+	설　명 : 쿠폰함
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.coupon_box{position: relative;}
+.coupon_box__alarm{display: flex; align-items: center; padding: 16px 15px; box-sizing: border-box; background-color: #E9F2FF;}
+.coupon_box__alarm_txt{line-height: 20px; font-size: 14px; color:#202020;}
+.coupon_box__alarm_txt_emp{font-weight: 700; color: #253066;}
+.coupon_box__alarm_btn_wrap{width: 96px; margin-left: auto; cursor: pointer;}
+.coupon_box__container{position: relative; min-height: calc(100vh - 85px); padding: 12px 15px 78px 15px; box-sizing: border-box;}
+.coupon_box__info{padding: 6px 15px 0; font-size: 12px; color: #909090;}
+.coupon_box__ul{position: relative;}
+.coupon_box__li{display: flex; align-items: center; min-height: 79px; margin-bottom: 8px; padding: 0 12px; border-radius: 8px; border: 1px solid transparent; box-sizing: border-box; box-shadow: 0 1px 3px rgba(0, 0, 0, .15); background-color: #FFF; box-sizing: border-box; cursor: pointer;}
+.coupon_box__box{display: flex; align-items: center; width: 100%;}
+.coupon_box__icon{position: relative; flex: none; width: 40px; height: 40px; border-radius: 50%; background: #E9F2FF url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_coupon_percent_blue.png") center no-repeat; background-size: 32px 32px;}
+.coupon_box__icon-birthday{background: #E9F2FF url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_coupon_birthday_blue.png") center no-repeat; background-size: 32px 32px;}
+.coupon_box__icon-welcomeback{background: #E9F2FF url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_coupon_welcomeback_blue.png") center no-repeat; background-size: 32px 32px;}
+.coupon_box__icon-item_discount{background: #FFE0DF url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_coupon_item_discount_red.png") center no-repeat; background-size: 32px 32px;}
+.coupon_box__icon-item_bonus{background: #FFE0DF url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_coupon_item_bonus_red.png") center no-repeat; background-size: 32px 32px;}
+.coupon_box__icon_dim{position: absolute; top: 0; left: 0; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; border-radius: 50%; background-color: rgba(0, 0, 0, .4); font-size: 12px; font-weight: 700; color: #FFF; line-height: 14px;}
+.coupon_box__content{padding-left: 8px;}
+.coupon_box__title{font-size: 14px; font-weight: 700; color: #202020;}
+.coupon_box__date{font-size: 12px; color: #202020;}
+.coupon_box__condition{margin-top: 4px; line-height: 17px; font-size: 12px; color: #707070;}
+.coupon_box__date-red{color: #FF1919;}
+.coupon_box__date-orange{color: #FF6600;}
+.coupon_box__btn{flex: none; display: flex; justify-content: center; align-items: center; width: 66px; height: 30px; margin-left: auto; border-radius: 4px; border: 1px solid #3654AE; color: #3654AE; font-size: 13px; box-sizing: border-box; cursor: pointer;}
+
+/* 쿠폰선택 시 활성화 */
+.coupon_box__li.active{border: 1px solid #3654AE;}
+
+/* 기간만료 시 비활성화 */
+.coupon_box__li-disabled .coupon_box__icon{background: #B8B8B8 url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_coupon_percent_white.png") center no-repeat; background-size: 32px 32px;}
+.coupon_box__li-disabled .coupon_box__title{color: #707070;}
+.coupon_box__li-disabled .coupon_box__date{color: #909090;}
+.coupon_box__li-disabled .coupon_box__btn{border: none; background-color: #B8B8B8; color: #FFF; cursor: default;}
+.coupon_box__li-disabled .coupon_box__btn-dark{background-color: #909090;}
+
+/* .coupon_box__guide{position: fixed;left: 0; width: 100%; background-color: #E9F2FF; box-sizing: border-box; z-index: 10;}
+.coupon_box__guide_container{position: relative; display: block; width: 100%; height: 36px; box-sizing: border-box; overflow: hidden;}
+.coupon_box__guide_wrapper{height: 100%;}
+.coupon_box__guide_slide{display: flex; align-items: center; height: 100%;}
+.coupon_box__guide_txt{display: flex; font-size: 14px; color: #202020;}
+.coupon_box__guide-bot{bottom: 0; padding: 10px 12px;}
+.coupon_box__guide-top{top: 45px; padding: 0px 12px;}
+
+
+@media (min-width:460px) {
+	.coupon_box__guide{left: 50%; width: 460px; transform: translateX(-50%);}
+} */

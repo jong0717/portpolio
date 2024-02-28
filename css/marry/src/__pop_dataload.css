@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*---------------------------------------------
+파일명 : __pop_dataload
+설　명 : 데이터 로드 팝업
+작성순서 : 1. 레이아웃 2.크기/간격 3.박스모양 4.폰트 5.기타
+position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_dataload{position: relative; padding: 15px; box-sizing: border-box; border-radius: 8px; background: #FFF; box-shadow: 0 2px 3px rgba(0, 0, 0, .2);}
+.pop_dataload__ani{margin: 0 auto; width: 208px; height: 78px;}
+.pop_dataload__txt{margin-top: 8px; color: #202020; text-align: center;}
+.pop_dataload__info{margin-top: 4px; font-size: 13px; color: #707070; text-align: center;}

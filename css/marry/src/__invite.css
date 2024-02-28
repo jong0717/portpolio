@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __invite
+	설　명 : 친구 초대 페이지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.invite{display: flex; flex-direction: column; min-height: calc(100vh - 45px); background-color: #F5F5F5;}
+.invite__top{padding-top: 30px; background-color: #4169E1;}
+.invite__top_tit{width: 290px; height: 130px; margin: 0 auto; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_invite_top_tit.png") center no-repeat; background-size: 100% auto;}
+.invite__top_img{width: 360px; height: 286px; margin: 0 auto; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_invite_top_coin_3.png") center no-repeat; background-size: 100% auto;}
+.invite__top_txt{margin: 24px 0 6px; line-height: 22px; font-size: 16px; font-weight: 700; color: #FFF; text-align: center;}
+.invite__top_txt_emp{font-size: 18px; color: #FFFF97;}
+.invite__top_tht{font-size: 18px; color: #FFFF97; font-weight: 700; background: linear-gradient(to top, #2D418B 40%, transparent 40%); background-position-y: -1px;}
+.invite__gift{position: relative; width: 100%; padding: 0 20px; margin-top: -36px;box-sizing: border-box;}
+.invite__gift_container{border-radius: 8px; background-color: #FFF; box-shadow: 0 1px 4px rgba(0, 0, 0, .16);}
+.invite__gift_tit{padding: 20px 0 15px; margin: 0 10px; border-bottom: 1px solid #F1F1F1; box-sizing: border-box; text-align: center; color: #202020;}
+.invite__gift_swipe_wrap{width: 100%; overflow: hidden;}
+.invite__gift_swipe{display: flex; width: 100%;}
+.invite__gift_swipe_container{flex: none; display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px 16px; width: 100%; padding: 20px 12px; box-sizing: border-box;}
+.invite__gift_detail{position: relative; display: flex; flex-direction: column; align-items: center;}
+.invite__gift_detail_top{position: relative; display: flex; align-items: center; justify-content: center; gap: 2px 0; width: 46px; height: 46px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_invite_gift_detail_bg.png"); background-repeat: no-repeat; background-position: center; background-size: 100%; font-size: 12px; font-weight: 700; color: #7496FF;}
+.invite__gift_detail_txt{font-size: 12px; font-weight: 700; color: #7496FF;}
+.invite__gift_detail_content{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.invite__gift_detail_content-blue{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_invite_gift_detail_content_blue.png");}
+.invite__gift_detail_content-red{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_invite_gift_detail_content_red.png");}
+.invite__gift_detail_num{position: absolute; top: -12px; left: 50%; transform: translateX(-50%); padding: 1px 4px 2px; border-radius: 4px; background: linear-gradient(135deg, #FCCA24, #FFA010); font-size: 12px; font-weight: 700; color: #FFF; white-space: pre; text-shadow: 0 1px 1px rgba(0, 0, 0, .16);}
+.invite__gift_detail.disabled .invite__gift_detail_top{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_invite_gift_detail_bg_gray.png"); color: #ACACAC;}
+.invite__gift_detail.disabled .invite__gift_detail_txt{color: #ACACAC;}
+.invite__gift_detail.disabled .invite__gift_detail_content{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_invite_gift_detail_content_gray.png")}
+.invite__gift_detail.disabled .invite__gift_detail_num{background: linear-gradient(135deg, #D4D4D4, #ACACAC);}
+.invite__gift_detail.active .invite__gift_detail_top{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_invite_gift_detail_bg_pink.png");}
+.invite__gift_swipe_pagination{display: flex; justify-content: center; gap: 0 4px; padding-bottom: 16px; width: 100%;}
+.invite__gift_swipe_pagination_bullet{width: 6px; height: 6px; border-radius: 4px; background-color: #E1E1E1;}
+.invite__gift_swipe_pagination_bullet.active{transition:ease-in-out; transition-duration: 0.1s; width: 12px; background-color: #4169E1;}
+.invite__content{padding: 28px 20px 40px;}
+.invite__btn{display: flex; align-items: center; justify-content: center; width: 100%; height: 50px; margin-bottom: 12px; border-radius: 8px; font-size: 16px; font-weight: 700; box-shadow: 0 2px 6px rgba(0, 0, 0, .16); cursor: pointer;}
+.invite__btn-kakao{background-color: #FEE73A; color: #3E2723;}
+.invite__btn-link{background-color: #202020; color: #FFF;}
+.invite__btn_ico{width: 20px; height: 20px; margin-right: 4px; background-size: 100% auto; background-position: center; background-repeat: no-repeat;}
+.invite__btn-kakao .invite__btn_ico{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/ico_invite_btn_kakao.png");}
+.invite__btn-link .invite__btn_ico{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/ico_invite_btn_link.png");}
+.invite__btn:last-child{margin-bottom: 0;}
+.invite__explain_tit{margin-top: 48px; font-size: 24px; font-weight: 700; color: #202020; text-align: center;}
+.invite__explain_box{margin-top: 20px; padding: 16px 24px; border-radius: 8px; background-color: #FFF; text-align: center;}
+.invite__explain_ico{width: 44px; height: 44px; margin: 0 auto 4px; background-position: center; background-repeat: no-repeat; background-size: 100% auto;}
+.invite__explain_ico-hand{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/ico_invite_hand.png");}
+.invite__explain_ico-highfive{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/ico_invite_highfive.png");}
+.invite__explain_txt{font-size: 17px; font-weight: 700; color: #202020;}
+.invite__explain_or{margin: 16px 0; font-size: 13px; font-weight: 700; color: #909090;}
+.invite__explain_txt_sub{margin-top: 4px; font-size: 13px; color: #707070;}
+.invite__info{margin-top: 16px; padding-left: 24px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 20 20'%3e%3ccircle cx='10' cy='10' r='6.7' fill='none' stroke='%23909090'/%3e%3ccircle cx='10' cy='6.7' r='.6' fill='%23909090'/%3e%3cpath fill='%23909090' d='M10 8.3c.3 0 .6.2.6.6v4.5c0 .3-.2.6-.6.6-.3 0-.6-.2-.6-.6V8.9c0-.3.3-.6.6-.6z'/%3e%3c/svg%3e") left top no-repeat; background-size: 20px; font-size: 13px;}
+.invite__notice{margin-top: auto; padding: 24px 20px 52px; background-color: #FFF;}
+.invite__notice_tit{font-size: 13px; font-weight: 700; color: #202020;}
+.invite__notice_ul{display: list-item; margin-top: 8px; padding-left: 8px;}
+.invite__notice_li{font-size: 12px; font-weight: 400; color: #202020; list-style-type: " · ";}

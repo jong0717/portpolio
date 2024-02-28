@@ -1,0 +1,168 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __deco_main
+	설　명 : 메인리스트 꾸미기
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+/* 변수 */
+/* 001 - 나비 테마 */
+[data-deco="deco_main_a001"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_001.png");
+	--deco_main_border_color: #8C5FCB;
+	--deco_main_background_color: #F3F0FF;
+	--deco_main_btn_color: #935DDF;
+	--deco_main_btn_my_color: #A39AEC;
+	--deco_main_bdg_color: #F9B515;
+	--deco_main_bdg_bg_color: #FFF2D4;
+}
+/* 002 - 꽃 테마 */
+[data-deco="deco_main_a002"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_002.png");
+	--deco_main_border_color: #FFC620;
+	--deco_main_background_color: #FFFBEC;
+	--deco_main_btn_color: #F66D78;
+	--deco_main_btn_my_color: #FFD060;
+	--deco_main_bdg_color: #00AA28;
+	--deco_main_bdg_bg_color: #E8FFED;
+}
+/* 003 - 바다 테마 */
+[data-deco="deco_main_a003"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_003.png");
+	--deco_main_border_color: #36B7F2;
+	--deco_main_background_color: #F2FBFF;
+	--deco_main_btn_color: #33C7BD;
+	--deco_main_btn_my_color: #86CFCB;
+	--deco_main_bdg_color: #EE9631;
+	--deco_main_bdg_bg_color: #FEF5E2;
+}
+/* 004 - 보름달 테마 */
+[data-deco="deco_main_a004"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_004.png");
+	--deco_main_border_color: #547CB8;
+	--deco_main_background_color: #EFF4FB;
+	--deco_main_btn_color: #3572CC;
+	--deco_main_btn_my_color: #7BA5DF;
+	--deco_main_bdg_color: #FE6FB4;
+	--deco_main_bdg_bg_color: #FFF1F8;
+}
+/* 005 - 골드 테마 */
+[data-deco="deco_main_a005"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_005.png");
+	--deco_main_border_color: #AF947A;
+	--deco_main_background_color: #FBF6EF;
+	--deco_main_btn_color: #776856;
+	--deco_main_btn_my_color: #C7AC86;
+	--deco_main_bdg_color: #FCCC5C;
+	--deco_main_bdg_bg_color: #FFF5D5;
+}
+/* 006 - 초록 테마 */
+[data-deco="deco_main_a006"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_006.png");
+	--deco_main_border_color: #97CB29;
+	--deco_main_background_color: #FBFFF2;
+	--deco_main_btn_color: #77AC0F;
+	--deco_main_btn_my_color: #ADD55E;
+	--deco_main_bdg_color: #A7732E;
+	--deco_main_bdg_bg_color: #FFEFBC;
+}
+/* 007 - 고양이(보라) 테마 */
+[data-deco="deco_main_a007"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_007.png");
+	--deco_main_border_color: #8C5FCB;
+	--deco_main_background_color: #F3F0FF;
+	--deco_main_btn_color: #935DDF;
+	--deco_main_btn_my_color: #A39AEC;
+	--deco_main_bdg_color: #F9B515;
+	--deco_main_bdg_bg_color: #FFF2D4;
+}
+/* 008 - 돛단배(보라) 테마 */
+[data-deco="deco_main_a008"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_008.png");
+	--deco_main_border_color: #8C5FCB;
+	--deco_main_background_color: #F3F0FF;
+	--deco_main_btn_color: #935DDF;
+	--deco_main_btn_my_color: #A39AEC;
+	--deco_main_bdg_color: #F9B515;
+	--deco_main_bdg_bg_color: #FFF2D4;
+}
+/* 009 - 비눗방울(노랑) 테마 */
+[data-deco="deco_main_a009"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_009.png");
+	--deco_main_border_color: #FFC620;
+	--deco_main_background_color: #FFFBEC;
+	--deco_main_btn_color: #F66D78;
+	--deco_main_btn_my_color: #FFD060;
+	--deco_main_bdg_color: #00AA28;
+	--deco_main_bdg_bg_color: #E8FFED;
+}
+/* 010 - 황진이(노랑) 테마 */
+[data-deco="deco_main_a010"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_010.png");
+	--deco_main_border_color: #FFC620;
+	--deco_main_background_color: #FFFBEC;
+	--deco_main_btn_color: #F66D78;
+	--deco_main_btn_my_color: #FFD060;
+	--deco_main_bdg_color: #00AA28;
+	--deco_main_bdg_bg_color: #E8FFED;
+}
+/* 011 - 선비(바다) 테마 */
+[data-deco="deco_main_a011"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_011.png");
+	--deco_main_border_color: #36B7F2;
+	--deco_main_background_color: #F2FBFF;
+	--deco_main_btn_color: #33C7BD;
+	--deco_main_btn_my_color: #86CFCB;
+	--deco_main_bdg_color: #EE9631;
+	--deco_main_bdg_bg_color: #FEF5E2;
+}
+/* 012 - 여름(바다) 테마 */
+[data-deco="deco_main_a012"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_012.png");
+	--deco_main_border_color: #36B7F2;
+	--deco_main_background_color: #F2FBFF;
+	--deco_main_btn_color: #33C7BD;
+	--deco_main_btn_my_color: #86CFCB;
+	--deco_main_bdg_color: #EE9631;
+	--deco_main_bdg_bg_color: #FEF5E2;
+}
+/* 013 - 잉어(파랑) 테마 */
+[data-deco="deco_main_a013"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_013.png");
+	--deco_main_border_color: #547CB8;
+	--deco_main_background_color: #EFF4FB;
+	--deco_main_btn_color: #3572CC;
+	--deco_main_btn_my_color: #7BA5DF;
+	--deco_main_bdg_color: #FE6FB4;
+	--deco_main_bdg_bg_color: #FFF1F8;
+}
+/* 014 - 커피(골드) 테마 */
+[data-deco="deco_main_a014"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_014.png");
+	--deco_main_border_color: #AF947A;
+	--deco_main_background_color: #FBF6EF;
+	--deco_main_btn_color: #776856;
+	--deco_main_btn_my_color: #C7AC86;
+	--deco_main_bdg_color: #FCCC5C;
+	--deco_main_bdg_bg_color: #FFF5D5;
+}
+/* 015 - 왕관(골드) 테마 */
+[data-deco="deco_main_a015"] {
+	--deco_main_frame: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/deco/img_photo_frame_015.png");
+	--deco_main_border_color: #AF947A;
+	--deco_main_background_color: #FBF6EF;
+	--deco_main_btn_color: #776856;
+	--deco_main_btn_my_color: #C7AC86;
+	--deco_main_bdg_color: #FCCC5C;
+	--deco_main_bdg_bg_color: #FFF5D5;
+}
+[data-deco^="deco_main"].main_li{border-color: var(--deco_main_border_color);}
+/* [data-deco^="deco_main"].main_my{padding-top: 0;}
+[data-deco^="deco_main"].main_my .mylist_box{position: relative; top: 0; left: 0; right: 0; border-radius: 3px; margin-bottom: 4px;} */
+[data-deco^="deco_main"] .main_photo_frame{position: absolute; top: -7px; left: -7px; width: 70px; height: 70px; background: var(--deco_main_frame) no-repeat center;  background-size: 100% auto;}
+[data-deco^="deco_main"].main_li .photo_box .autoup_badge{border-color: var(--deco_main_bdg_color); background-color: var(--deco_main_bdg_bg_color); color: var(--deco_main_bdg_color); box-shadow: 0 1px 3px rgba(0, 0, 0, .16);}
+[data-deco^="deco_main"].main_li .badge_box .badge_num{background: var(--deco_main_bdg_color);}
+[data-deco^="deco_main"].main_li .photo_box .photo_num{background-color: var(--deco_main_bdg_color);}
+[data-deco^="deco_main"].main_li .info_box{border-color: var(--deco_main_border_color); background: var(--deco_main_background_color);}
+[data-deco^="deco_main"].main_li .info_box .btn_main_contact{background: var(--deco_main_btn_color); color: #FFF;}
+[data-deco^="deco_main"].main_my .info_box .btn_main_contact{background: var(--deco_main_btn_my_color);}

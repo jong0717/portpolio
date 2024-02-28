@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __sub_list_ico_bdg.css
+	설　명 : 서브리스트 아이콘 뱃지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.sub_list_ico_bdg{position: relative; height: 21px;}
+.sub_list_ico_bdg-chk{width: 24px; background: url("https://image.yeoboya.com/imgs/new_wedding/renewal2/ico_new_chk.png") no-repeat bottom left; background-size: 12px 11px;}
+.sub_list_ico_bdg-book{width: 30px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/book_ani_04.gif") no-repeat bottom left; background-size: 21px 16px;}
+.sub_list_ico_bdg__cnt{position: absolute; top: 0; right: 0; width: 14px; height: 14px; line-height: 14px; border-radius: 100%; background: #5c89f4; color: #fff; font-size: 10px; font-weight: 700; text-align: center;}

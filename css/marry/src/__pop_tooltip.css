@@ -1,0 +1,25 @@
+@charset "utf-8";/*---------------------------------------------
+파일명 : __pop_tooltip
+설　명 : 프로필 추가등록 팝업
+작성순서 : 1. 레이아웃 2.크기/간격 3.박스모양 4.폰트 5.기타
+position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_tooltip{position: absolute; top: 120px; right: 6px;}
+.pop_tooltip-fixed{position: fixed !important; overflow-y: hidden !important;}
+.pop_tooltip__container{width: 266px; height: 164px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/pop_update_tooltip_bg.png") no-repeat center; background-size: 100% auto;}
+.pop_tooltip__content{position: absolute; bottom: 53px; width: 100%; text-align: center; font-size: 13px; line-height: 16px; color: #202020;}
+.pop_tooltip__content_strong{font-weight: 700; color: #FF5656;}
+.pop_tooltip__btn_wrap{position: absolute; bottom:15px; width: 100%; box-sizing: border-box; padding: 0 17px;}
+.pop_tooltip__btn{width: 100%; height: 30px; background-color: #4169E1; border-radius: 4px; line-height: 30px; text-align: center; font-size: 13px; color: #FFFFFF;}
+
+/* 프로필 페이지 툴팁 */
+.pop_tooltip-view{width: 100%; padding: 0 8px; top: 0; right: 0; box-sizing: border-box;}
+.pop_tooltip-view_2{top: 281px;}
+.pop_tooltip-profile_view{top: 100%; right: 1px;}
+.pop_tooltip-profile_view_2{top: 324px;}
+.pop_tooltip-profile_view .pop_tooltip__container{width: 240px; height: 160px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/pop_ai_detail_tooltip_bg.png") no-repeat center; background-size: 100% auto; z-index: 1;}
+.pop_tooltip__img{display: flex; align-items: center; justify-content: center; width: 100%; height: 50px; border-radius: 6px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/bg_idealtype_pf_bnr_ex.png") no-repeat center; background-size: 100% auto;}
+.pop_tooltip__img_badge{position: absolute; top: 0; left: 8px; width: 35px; height: 35px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_idealtype_pf_bnr_new_badge.png") no-repeat center; background-size: 100%;}
+.pop_tooltip__img_txt{line-height: 20px; font-size: 14px; font-weight: 700; text-align: center; color: #FFFFFF;}
+.pop_tooltip__img_txt_strong{color: #65FFFF;}

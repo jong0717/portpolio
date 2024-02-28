@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pf_visit_list.css
+	설　명 : 열람 프로필 내역 리스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pf_visit_list{position: relative; margin-top: 5px;}
+.pf_visit_list__inner{position: relative; margin-top: 8px; padding: 0 10px;}
+.pf_visit_list__item{display: flex; align-items: flex-start; padding: 9px 0 12px; cursor: pointer;}
+.pf_visit_list__photo_wrap{display: flex; align-items: center;}
+.pf_visit_list__info_wrap{display: flex; align-self: center; width: 100%; padding-left: 6px;}
+.pf_visit_list__info_nick_wrap{display: flex; align-items: center;}
+.pf_visit_list__info_nick_wrap-man{color: #427FCF;}
+.pf_visit_list__info_nick_wrap-woman{color: #FF5777;}
+.pf_visit_list__info_nick{margin-left: 4px; font-size: 13px;}
+.pf_visit_list__info_age{margin-left: 2px; font-size: 13px;}
+.pf_visit_list__sub_info{flex: none; display: flex; flex-direction: column; align-items: flex-end; align-self: stretch; padding-bottom: 4px; margin-left: auto;}
+.pf_visit_list__sub_info_bdg{padding: 0 6px; margin-bottom: 7px; border: 1px solid #00B4B1; border-radius: 3px; line-height: 26px; font-size: 13px; color: #00B4B1;}
+.pf_visit_list__sub_info_time{margin-top: auto;}
+.pf_visit_list__hr{position: absolute; left: 90px; bottom: 0; right: 10px; height: 1px; background-color: #D4D4D4;}
+.pf_visit_list__info_ico_bdg{display: flex; gap: 6px;}
+.pf_visit_list__ha{display: flex; align-items: center; padding-top: 10px;}
+.pf_visit_list__ha-gap_4{gap: 4px;}
+.pf_visit_list__ha-gap_6{gap: 6px;}
+
+/* 뱃지 */
+.pf_visit_list__come_bdg{padding: 0 8px; border-radius: 3px; line-height: 28px; font-size: 13px; font-weight: 700;}
+.pf_visit_list__come_bdg-default{background-color: #F1F1F1;}
+.pf_visit_list__come_bdg-all{background-color: #F6F0FF; color: #835CC9;}
+.pf_visit_list__come_bdg-plus{background-color: #EFF3FF; color: #3654AE;}
+
+.pf_visit_list__send_bdg{display: flex; align-items: center; height: 28px; padding-left: 6px; border-radius: 3px;}
+.pf_visit_list__send_bdg-ai{background: #F3F6FF url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/sub_list/bg_pf_visit_list__send_ai_01.png") no-repeat left 3px bottom 3px; background-size: 23px 14px; color: #3654AE;}
+.pf_visit_list__send_bdg-default{background: #F3F6FF url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/sub_list/bg_pf_visit_list__send_default_01.png") no-repeat left 3px bottom 3px; background-size: 32px 14px; color: #505050;}
+.pf_visit_list__send_bdg-all{background: #F3F6FF url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/sub_list/bg_pf_visit_list__send_all_01.png") no-repeat left 3px bottom 3px; background-size: 32px 14px; color: #835CC9;}
+.pf_visit_list__send_bdg_txt{position: relative; font-size: 13px; font-weight: 700;}
+.pf_visit_list__send_bdg_cnt{ position: absolute; z-index: 1; top: -2px; right: -15px; width: 14px; height: 14px; line-height: 14px; border-radius: 100%; background: #5c89f4; color: #fff; font-size: 10px; font-weight: 700; text-align: center;
+}
+.pf_visit_list__send_bdg_arrow{width: 24px; height: 24px; margin-left: 14px; background: no-repeat center; background-size: 100%;}
+.pf_visit_list__send_bdg-ai .pf_visit_list__send_bdg_arrow{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 24 28'%3e%3cpath fill='none' stroke='%233654AE' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' d='M18.4 11.9 12 17.1 5.6 12'/%3e%3c/svg%3e");}
+.pf_visit_list__send_bdg-default .pf_visit_list__send_bdg_arrow{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 24 28'%3e%3cpath fill='none' stroke='%23505050' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' d='M18.4 11.9 12 17.1 5.6 12'/%3e%3c/svg%3e");}
+.pf_visit_list__send_bdg-all .pf_visit_list__send_bdg_arrow{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 24 28'%3e%3cpath fill='none' stroke='%23835CC9' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' d='M18.4 11.9 12 17.1 5.6 12'/%3e%3c/svg%3e");}
+.pf_visit_list__send_bdg.active .pf_visit_list__send_bdg_arrow{transform: rotate(180deg);}

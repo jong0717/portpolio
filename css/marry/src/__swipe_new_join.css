@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __swipe_new_join
+	설　명 : 최근 가입자 스와이프
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.swipe_new_join{position: relative; border-radius: 8px; overflow: hidden; isolation: isolate;}
+.swipe_new_join__bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/start/img_home_local_bg.png") center top no-repeat; background-size: cover; }
+.swipe_new_join__container{position: relative;}
+
+/* 타이틀 */
+.swipe_new_join__tit{position: relative; padding: 10px 16px 8px; font-weight: 700; color: #FFF;}
+.swipe_new_join__tit_num{font-size: 23px; font-weight: 700;}
+.swipe_new_join__tit_cnt{position: relative; font-weight: 500; font-size: 15px;}
+.swipe_new_join__tit_cnt::after{content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #fff;}
+
+/* 스와이프 카드*/
+.swipe_new_join__card{position: relative; width: 116px; height: 116px; border-radius: 8px;  background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/start/img_local_people_2.png") center no-repeat; background-size: 100% 100%; cursor: pointer; overflow: hidden; z-index: 0;}
+.swipe_new_join__card-more{background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/start/img_local_people_more_2.png") center no-repeat; background-size: 100% 100%;}
+.swipe_new_join__card_tit{margin: 12px; color: #4169E1; z-index: 1;}
+.swipe_new_join__card_num{font-size: 21px; font-weight: 700;}
+.swipe_new_join__card_ani{width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_radio
+	설　명 : 신고하기 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_radio{position: relative; width: 100%; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 1px 4px rgb(0, 0, 0, .32);}
+.pop_radio__container{width: 100%; padding: 24px 15px 20px; box-sizing: border-box;}
+.pop_radio__container-pt{padding-top:40px}
+.pop_radio__content{width: 100%;}
+.pop_radio__tit{width: 100%; margin-bottom: 16px; line-height: 21px; text-align: center; color: #202020;}
+.pop_radio__slct{margin: 0 10px}
+.pop_radio__slct_li{border-bottom: 1px solid #F1F1F1;}
+.pop_radio__slct_li:last-child{border-bottom: none}
+.pop_radio__sub_slct{margin-bottom: 8px; border-radius: 4px; background-color: #F1F1F1;}
+.pop_radio__sub_slct_li{margin: 0 12px; border-bottom: 1px solid #E1E1E1;}
+.pop_radio__sub_slct_li:last-child{border-bottom: none;}
+.pop_radio__btn_wrap{display: flex; margin-top: 24px;}
+.pop_radio__info_txt{width:100%; text-align:center; line-height:18px; font-size:13px;}
+.pop_radio__btn_cls{position:absolute; top:0; right:0; display: flex; align-items: center; justify-content: center; width:44px; height:44px;}
+.pop_radio__round_box{margin-top: 12px; padding: 12px; border-radius: 8px; background-color: #FAFAFA;}
+.pop_radio__round_box.active{background-color: #F8FAFF;}
+.pop_radio__round_box_tit_wrap{display: flex; align-items: center;}
+.pop_radio__round_box_tit{font-weight: 700; font-size: 14; color: #202020;}
+.pop_radio__round_box_txt{margin-top: 2px; font-size: 12px;}

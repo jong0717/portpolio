@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pf_story
+	설　명 : 프로필 스토리
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pf_story{margin-bottom: 10px; border: 1px solid #f1f1f1; border-radius: 8px; background: #fff; box-shadow:0 1px 4px rgba(0, 0 , 0, .16);}
+.pf_story__top_wrap{display: flex; align-items: center; padding: 12px;}
+.pf_story__top{padding-left: 8px;}
+.pf_story__top_tit{color: #202020;}
+.pf_story__top_txt{font-size: 12px;}
+.pf_story__top_btn{position: relative; margin-left: auto; padding: 0 8px; border: 1px solid #E2E2E2; border-radius: 4px; font-size: 12px; color: #707070; line-height: 22px; cursor: pointer; z-index: 0;}
+.pf_story__top_btn-blue{border-color: #3654AE; color: #3654AE;}
+.pf_story__top_btn_tip{position: absolute; top: -42px; right: 0; padding: 5px 10px; border-radius: 8px; background: #000;}
+.pf_story__top_btn_tip_txt{font-size: 12px; color: #fff; white-space: nowrap;}
+.pf_story__top_btn_tip_txt_emp{color: #B2C5FF;}
+.pf_story__top_btn_tip_triangle{position: absolute; bottom: -6px; right: 8px; width: 10px; height: 9px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 8.6 7.9'%3e%3cpath d='M5.2 7.4c-.3.5-.9.7-1.4.4-.1-.1-.3-.2-.4-.4L.1 1.5C-.1 1 0 .4.5.1.7 0 .8 0 1 0h6.6c.6 0 1 .4 1 1 0 .2 0 .3-.1.5L5.2 7.4z'/%3e%3c/svg%3e") no-repeat center; background-size: 100%; z-index: -1;}
+.pf_story__feed_wrap{position: relative; border-radius: 0 0 8px 8px; overflow: hidden;}
+.pf_story__feed_dim{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .8);}
+.pf_story__feed_dim_inner{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.pf_story__feed_dim_inner_txt{font-size: 14px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0 , 0, .48); text-align: center; white-space: nowrap;}
+.pf_story__feed_dim_inner_btn{width: 88px; margin: 12px auto 0; border-radius: 4px; background: #fff; line-height: 34px; font-weight: 700; text-align: center; color: #3654AE; cursor: pointer;}
+.pf_story__feed_none{display: flex; flex-direction: column; align-items: center; justify-content: center; height: 120px; background: #FAFAFA;}
+.pf_story__feed_none_txt{font-size: 16px; font-weight: 700; color: #909090;}
+.pf_story__feed_none_btn{padding: 0 16px; margin-top: 12px; border: 1px solid #3654AE; border-radius: 4px; background: #fff; font-weight: 700; line-height: 32px; color: #3654AE; cursor: pointer;}

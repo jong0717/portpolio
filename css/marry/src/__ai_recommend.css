@@ -1,0 +1,313 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __ai_recommend
+	설　명 : AI 추천 리스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+@keyframes aiBnrArrow{
+    0%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translateY(200%);
+    }
+}
+@keyframes aiBnrArrowOpacity{
+    0%,20%,80%,100%{
+        opacity: 0;
+    }
+    40%,60%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes aniMoneyPf {
+    0%{
+        transform: translate(-50%, -20%);
+    }
+    100%{
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes aniMsgPf {
+    0%{
+        transform: translate(-50%, 20%);
+    }
+    100%{
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes aniPlayPf01 {
+    0%{
+        transform: translate(100%, 0);
+    }
+    100%{
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes aniPlayPf02 {
+    0%{
+        transform: translate(-50%, 0) rotate(6deg);
+    }
+    100%{
+        transform: translate(-50%, 0) rotate(0);
+    }
+}
+@keyframes aniPlayPfDetail02{
+    0%{
+        transform:rotate(-12deg);
+    }
+    100%{
+        transform:rotate(0);
+    }
+}
+
+/* 메인리스트 배너 */
+.ai_recommend{position:relative; width:100%;}
+.ai_recommend__container{position:relative; width:100%; height:91px; background-color:#fff;}
+.ai_recommend__bnr{position:absolute; top:8px; left:10px; right:10px; display:flex; align-items: center; height:75px; border:1px solid #7496FF; border-radius:8px 8px 32px 32px; background-color:#EFF3FF; box-sizing: border-box; cursor: pointer; overflow: hidden;}
+.ai_recommend__bnr_img{flex:0 0 auto; width:47px; height:100%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_ai_banner.png")no-repeat center; background-size:100% auto;}
+.ai_recommend__bnr_content{width:100%; padding:0 4px; box-sizing: border-box; letter-spacing: -1px;}
+.ai_recommend__bnr_tit{display:flex; align-items: center; color:#202020; font-weight: 700;}
+.ai_recommend__bnr_new_badge{width:29px; height:16px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_bnr_new_badge.png") no-repeat center; background-size:100% auto;}
+.ai_recommend__bnr_arrow_wrap{position:relative; flex:0 0 auto; width:25px; height:100%; margin-right:12px;}
+.ai_recommend__bnr_arrow{position:absolute; top:50%; width:100%; height:8px; margin-top:-4px; animation: aiBnrArrow 1.6s linear infinite, aiBnrArrowOpacity 1.6s linear infinite;}
+.ai_recommend__bnr_arrow:nth-of-type(1){background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 16' xml:space='preserve'%3e%3cpath fill='none' stroke='%234169E1' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M39.1 2.36 25 13.64 10.9 2.36'/%3e%3c/svg%3e") no-repeat center; background-size:100% auto;}
+.ai_recommend__bnr_arrow:nth-of-type(2){background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 16' xml:space='preserve'%3e%3cpath fill='none' stroke='%233654AE' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M39.1 2.36 25 13.64 10.9 2.36'/%3e%3c/svg%3e") no-repeat center; background-size:100% auto; animation-delay: -.4s, -.4s;}
+
+/* 메인리스트 배너 open */
+.ai_recommend.ai_recommend-open {position:fixed; left:50%; transform: translateX(-50%); top:90px; max-width:460px; z-index:100;}
+.ai_recommend-open .ai_recommend__container{background-color:#EFF3FF;}
+.ai_recommend-open .ai_recommend__bnr_arrow{animation: none; transform: rotate(180deg);}
+.ai_recommend-open .ai_recommend__bnr_arrow:nth-of-type(1){margin-top:-8px;}
+.ai_recommend-open .ai_recommend__bnr_arrow:nth-of-type(2){margin-top:0}
+
+.pop_ai_recommend{position:absolute; top:-1px; z-index: 1; width:100%; border-radius: 0 0 8px 8px; background-color:#EFF3FF;}
+.pop_ai_recommend__container{position: relative;}
+.pop_ai_recommend__btn_wrap{position:relative; display:flex; align-items: center; width:100%; min-height:48px; padding:0 12px 0 8px; border:1px solid #E1E1E1; border-radius: 4px; background-color:#fff; box-sizing: border-box; cursor: pointer;}
+.pop_ai_recommend__btn_ico{flex:0 0 auto; width:40px; height:40px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/ico_ai_recommend_fix.png"); background-repeat: no-repeat; background-size:320px 40px;}
+.pop_ai_recommend__btn_ico-man{background-position: 0 0;}
+.pop_ai_recommend__btn_ico-woman{background-position: -40px 0;}
+.pop_ai_recommend__btn_ico-soon{background-position: -80px 0;}
+.pop_ai_recommend__btn_ico-mate{background-position: -120px 0;}
+.pop_ai_recommend__btn_ico-money{background-position: -160px 0;}
+.pop_ai_recommend__btn_ico-msg{background-position: -200px 0;}
+.pop_ai_recommend__btn_ico-play{background-position: -240px 0;}
+.pop_ai_recommend__btn_ico-marry{background-position: -280px 0;}
+.pop_ai_recommend__time{font-size:12px; color:#FF6E6E;}
+.pop_ai_recommend__btn{width:44px; height:26px; border-radius: 3px; background-color:#EFF3FF; text-align: center; line-height:26px; font-size:13px; font-weight: 700; color:#3654AE;}
+.pop_ai_recommend__btn-active{width:68px; background-color:#FFF1F1; color:#FF6E6E;}
+.pop_ai_recommend__btn_info{display:inline-flex; justify-content: center; align-items: center; height:26px; padding:0 8px; border-radius: 3px; background-color:#E3E9FF; font-size:13px; font-weight: 700; color:#3654AE;}
+.pop_ai_recommend__new_badge{position:absolute; top:-9px; left:-9px; z-index: 10; width:32px; height:32px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_new_badge_pink.png") no-repeat center; background-size:100% auto;}
+.pop_ai_recommend__hr{width:100%; height:1px; background-color:#d4d4d4;}
+
+/* 신규 가입회원 방문 리스트  open */
+.ai_recommend.ai_recommend_visit-open {position: relative; z-index: 100;}
+.ai_recommend_visit-open .ai_recommend__container{background-color: #EFF3FF;}
+.ai_recommend_visit-open .ai_recommend__bnr_arrow{animation: none; transform: rotate(180deg);}
+.ai_recommend_visit-open .ai_recommend__bnr_arrow:nth-of-type(1){margin-top: -8px;}
+.ai_recommend_visit-open .ai_recommend__bnr_arrow:nth-of-type(2){margin-top:0}
+.pop_ai_recommend_visit{position: relative; width: 100%; border-radius: 0 0 8px 8px; background-color: #EFF3FF;}
+.ai_recommend_visit-fixed{position: fixed !important; overflow-y: hidden !important;}
+
+/***** AI 추천 리스트 페이지 *****/
+/* 남은 시간 */
+.ai_recommend__top{position:relative; display:flex; align-items: center; width:100%; height:44px; background-color:#fff;}
+.ai_recommend__top::after{content:""; position: absolute; top:100%; z-index: -1; width:100%; height:1px; margin-top:-1px; box-shadow: 0 1px 3px 0 rgba(0,0,0,.16);}
+.ai_recommend__top_btn{flex:0 0 auto; display:flex; align-items: center; width:44px; height:100%; padding:0 15px; font-size:12px; font-weight:700; color:#3654AE;}
+.ai_recommend__top_btn-disabled{color:#B8B8B8;}
+/* 상단 랭킹 */
+.ai_recommend__ranking_top{position:relative; width:100%;}
+.ai_recommend__ranking_top_container{position:fixed; z-index: 1; width:100%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_ai_recommend_ranking.png") no-repeat center; background-size:cover; overflow: hidden;}
+.ai_recommend__ranking_top_time{display:flex; align-items: center; justify-content: center;}
+.ai_recommend__ranking_top_info{padding:8px 0; margin:0 15px; border-radius: 8px; background:rgba(0,30,133,.4); text-align: center; color:#fff; font-size:12px;}
+.ai_recommend__ranking_top_tit{width:100%; height:0; padding-bottom:10.8333%; margin-top:12px; background-repeat:no-repeat; background-position: center top; background-size: 100% auto; opacity: 1;}
+.ai_recommend__ranking_top_wrap{position:relative; width:100%; height:0; padding-bottom:68%;}
+.ai_recommend__ranking_top_box{position:absolute; bottom:0; left:50%; width:75%; height:0; padding-bottom:22.2222%; margin-bottom:10px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_ai_recommend_ranking.png") no-repeat center bottom; background-size:100% auto; transform: translateX(-50%); opacity: 1;}
+.ai_recommend__ranking_top_pf{position:absolute; bottom:0; left:50%; z-index: 1; width:19.4444%; margin-bottom:22%; transform: translateX(-50%); opacity: 1;}
+.ai_recommend__ranking_top_pf-01{width:22.2222%; margin-bottom:27%;}
+.ai_recommend__ranking_top_pf-02{margin-left:-24.4444%;}
+.ai_recommend__ranking_top_pf-03{margin-left:24.4444%;}
+.ai_recommend__ranking_top_pf_img_wrap{position:relative;}
+.ai_recommend__ranking_top_pf_img{width:100%; height:0; padding-bottom:100%; border-radius: 50%; background-repeat: no-repeat; background-size:cover; background-position:center;}
+.ai_recommend__ranking_top_pf_frame{position:absolute; top:50%; left:50%; width:114.2857%; height:0; padding-bottom:150%; margin-top:-11.4285%; transform: translate(-50%, -50%); background-repeat: no-repeat; background-size:cover; background-position:center;}
+.ai_recommend__ranking_top_pf_txt{margin-top:9%; text-align: center; color:#fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.ai_recommend__ranking_top_btn{display:flex; justify-content: center; align-items: center; width:118px; height:32px; margin:0 auto; border-radius: 16px; background-color:#fff; color:#001F8A;}
+/* 상단 랭킹 - 애니효과 */
+/* .ai_recommend__ranking_top-ani .ai_recommend__ranking_top_tit{animation: fadeInUp 1s forwards;}
+.ai_recommend__ranking_top-ani .ai_recommend__ranking_top_box{animation: fadeIn 1s forwards .5s;}
+.ai_recommend__ranking_top-ani .ai_recommend__ranking_top_pf-01{animation: fadeIn 1s forwards .8s;}
+.ai_recommend__ranking_top-ani .ai_recommend__ranking_top_pf-02{animation: fadeIn 1s forwards 1.1s;}
+.ai_recommend__ranking_top-ani .ai_recommend__ranking_top_pf-03{animation: fadeIn 1s forwards 1.4s;} */
+
+/* 상단 랭킹-필터 추가(경제력,메시지응답,취미,결혼에 진지하게 생각) */
+.ai_recommend__theme{position:relative; width:100%;}
+.ai_recommend__theme_container{position:fixed; z-index: 1; width:100%; overflow: hidden;}
+.ai_recommend__theme_time{display:flex; align-items: center; justify-content: center;}
+.ai_recommend__theme_time_icon{flex:0 0 auto; width:16px; height:17px; margin-right:4px;}
+.ai_recommend__theme_time_txt{font-size:13px;}
+.ai_recommend__theme_tit{display:block; width:100%;}
+.ai_recommend__theme_info{position:relative; text-align: center; font-size:12px;}
+.ai_recommend__theme_wrap{position:relative; width:100%; height:0;}
+.ai_recommend__theme_bot{position:absolute; bottom:0; left:50%; width:100%; font-size:0; transform: translateX(-50%);}
+.ai_recommend__theme_pf_txt{position:absolute; bottom:100%; width:100%; text-align: center; font-size:12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+[data-theme="money_woman"] .ai_recommend__theme_container{background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_ai_recommend_theme_money_woman.png") no-repeat center; background-size:cover;}
+[data-theme="money_woman"] .ai_recommend__theme_time{height:34px; background-color:#3B3A4A;}
+[data-theme="money_woman"] .ai_recommend__theme_time_icon{background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 34' xml:space='preserve'%3e%3cg fill='%238B8796'%3e%3cpath d='M3.82 8.7c.71-.02 1.26-.6 1.26-1.3.01-1.66 1.36-3 3.02-3 .25-.01.5.02.74.09.67.2 1.38-.19 1.57-.86.2-.67-.19-1.38-.86-1.57-.47-.13-.95-.2-1.48-.19-3.08.02-5.56 2.54-5.53 5.64.02.66.57 1.19 1.23 1.19h.05zM15.23 17.73l2.5 1.94c.22.17.49.26.76.26.06 0 .12 0 .17-.01.33-.05.63-.22.84-.49.2-.27.29-.6.25-.94-.05-.33-.22-.63-.49-.84l-1.99-1.55v-4.97c0-.7-.57-1.26-1.27-1.27-.34 0-.66.13-.89.37-.24.24-.37.56-.37.9v5.58c-.01.4.17.78.49 1.02z'/%3e%3cpath d='M17.27 4.6v-.46c0-.7-.57-1.27-1.27-1.27-.7 0-1.27.57-1.27 1.27v.46c-7.03.68-12.26 6.89-11.7 13.96a13.08 13.08 0 0 0 4.46 8.81l-1.56 2.21c-.4.57-.27 1.36.3 1.77s1.36.27 1.77-.3l1.57-2.21c4 2.31 8.9 2.31 12.9 0l1.57 2.21c.2.28.49.46.82.52.07.01.14.02.21.02.26 0 .51-.08.73-.23.28-.2.46-.49.52-.82.06-.33-.02-.67-.21-.95l-1.57-2.21a12.96 12.96 0 0 0 4.5-9.83C29 10.89 23.86 5.25 17.27 4.6zm9.21 12.94c0 5.78-4.7 10.48-10.48 10.48S5.52 23.32 5.52 17.54 10.22 7.06 16 7.06s10.48 4.7 10.48 10.48zM29.45 7.2c-.12-2.96-2.56-5.34-5.55-5.34-.47 0-.98.06-1.46.19a1.266 1.266 0 1 0 .71 2.43c.22-.06.45-.09.69-.09h.07c1.66 0 3.01 1.35 3.02 3v.12c.01.33.15.63.39.86.23.21.53.33.84.33h.04c.71-.02 1.26-.6 1.26-1.31l-.01-.19z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:100% auto;}
+[data-theme="money_woman"] .ai_recommend__theme_time_txt{color:#8B8796;}
+[data-theme="money_woman"] .ai_recommend__theme_time_emp{margin-left:4px; color:#FBCD08;}
+[data-theme="money_woman"] .ai_recommend__theme_info{width:296px; padding:8px 0; margin:-20px auto 0; border-radius: 4px; border:1px solid rgba(255,243,194,.4); background:rgba(0,0,0,.4); color:#A0A0AA; box-sizing:border-box;}
+[data-theme="money_woman"] .ai_recommend__theme_info::before{content:""; position:absolute; top:-17px; left:-15px; width:37px; height:38px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_ai_recommend_theme_detail_money_woman.png") no-repeat center; background-size:100% auto;}
+[data-theme="money_woman"] .ai_recommend__theme_wrap{padding-bottom:59%; margin-top:12px;}
+[data-theme="money_woman"] .ai_recommend__theme_pf{position:absolute; bottom:0; left:50%; z-index: 1; width:19.4444%; transform: translateX(-50%); opacity: 0;}
+[data-theme="money_woman"] .ai_recommend__theme_pf-01{margin-bottom:35%;}
+[data-theme="money_woman"] .ai_recommend__theme_pf-02{margin-left:-27.7778%; margin-bottom:24%;}
+[data-theme="money_woman"] .ai_recommend__theme_pf-03{margin-left:27.7778%; margin-bottom:13%;}
+[data-theme="money_woman"] .ai_recommend__theme_pf_img_wrap{position:relative;}
+[data-theme="money_woman"] .ai_recommend__theme_pf_img{width:100%; height:0; padding-bottom:100%; border-radius: 50%; background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="money_woman"] .ai_recommend__theme_pf_frame{position:absolute; top:50%; left:50%; width:114.2857%; height:0; padding-bottom:114.2857%; transform: translate(-50%, -50%); background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="money_woman"] .ai_recommend__theme_pf_txt{font-weight:700; color:#fff; margin-bottom:2px;}
+[data-theme="money_woman"].ai_recommend__theme-ani .ai_recommend__theme_pf-01{animation: fadeIn 1s forwards .6s, aniMoneyPf 1s forwards .6s;}
+[data-theme="money_woman"].ai_recommend__theme-ani .ai_recommend__theme_pf-02{animation: fadeIn 1s forwards .3s, aniMoneyPf 1s forwards .3s;}
+[data-theme="money_woman"].ai_recommend__theme-ani .ai_recommend__theme_pf-03{animation: fadeIn 1s forwards .1s, aniMoneyPf 1s forwards;}
+
+[data-theme="money_man"] .ai_recommend__theme_container{background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_ai_recommend_theme_money_man.png") no-repeat center; background-size:cover;}
+[data-theme="money_man"] .ai_recommend__theme_time{height:34px; background-color:#FFF9E8;}
+[data-theme="money_man"] .ai_recommend__theme_time_icon{background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 34' xml:space='preserve'%3e%3cg fill='%232C2C36'%3e%3cpath d='M3.82 8.7c.71-.02 1.26-.6 1.26-1.3.01-1.66 1.36-3 3.02-3 .25-.01.5.02.74.09.67.2 1.38-.19 1.57-.86.2-.67-.19-1.38-.86-1.57-.47-.13-.95-.2-1.48-.19-3.08.02-5.56 2.54-5.53 5.64.02.66.57 1.19 1.23 1.19h.05zM15.23 17.73l2.5 1.94c.22.17.49.26.76.26.06 0 .12 0 .17-.01.33-.05.63-.22.84-.49.2-.27.29-.6.25-.94-.05-.33-.22-.63-.49-.84l-1.99-1.55v-4.97c0-.7-.57-1.26-1.27-1.27-.34 0-.66.13-.89.37-.24.24-.37.56-.37.9v5.58c-.01.4.17.78.49 1.02z'/%3e%3cpath d='M17.27 4.6v-.46c0-.7-.57-1.27-1.27-1.27-.7 0-1.27.57-1.27 1.27v.46c-7.03.68-12.26 6.89-11.7 13.96a13.08 13.08 0 0 0 4.46 8.81l-1.56 2.21c-.4.57-.27 1.36.3 1.77s1.36.27 1.77-.3l1.57-2.21c4 2.31 8.9 2.31 12.9 0l1.57 2.21c.2.28.49.46.82.52.07.01.14.02.21.02.26 0 .51-.08.73-.23.28-.2.46-.49.52-.82.06-.33-.02-.67-.21-.95l-1.57-2.21a12.96 12.96 0 0 0 4.5-9.83C29 10.89 23.86 5.25 17.27 4.6zm9.21 12.94c0 5.78-4.7 10.48-10.48 10.48S5.52 23.32 5.52 17.54 10.22 7.06 16 7.06s10.48 4.7 10.48 10.48zM29.45 7.2c-.12-2.96-2.56-5.34-5.55-5.34-.47 0-.98.06-1.46.19a1.266 1.266 0 1 0 .71 2.43c.22-.06.45-.09.69-.09h.07c1.66 0 3.01 1.35 3.02 3v.12c.01.33.15.63.39.86.23.21.53.33.84.33h.04c.71-.02 1.26-.6 1.26-1.31l-.01-.19z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:100% auto;}
+[data-theme="money_man"] .ai_recommend__theme_time_txt{color:#2C2C36;}
+[data-theme="money_man"] .ai_recommend__theme_time_emp{margin-left:4px; color:#FC6602;}
+[data-theme="money_man"] .ai_recommend__theme_info{width:296px; padding:8px 0; margin:-20px auto 0; border-radius: 4px; border:1px solid #FF8A00; background:#FEE6A4; color:#545454; box-sizing:border-box;}
+[data-theme="money_man"] .ai_recommend__theme_info::before{content:""; position:absolute; top:-17px; left:-15px; width:37px; height:38px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_ai_recommend_theme_detail_money_woman.png") no-repeat center; background-size:100% auto;}
+[data-theme="money_man"] .ai_recommend__theme_wrap{padding-bottom:59%; margin-top:12px;}
+[data-theme="money_man"] .ai_recommend__theme_pf{position:absolute; bottom:0; left:50%; z-index: 1; width:19.4444%; transform: translateX(-50%); opacity: 0;}
+[data-theme="money_man"] .ai_recommend__theme_pf-01{margin-bottom:35%;}
+[data-theme="money_man"] .ai_recommend__theme_pf-02{margin-left:-27.7778%; margin-bottom:24%;}
+[data-theme="money_man"] .ai_recommend__theme_pf-03{margin-left:27.7778%; margin-bottom:13%;}
+[data-theme="money_man"] .ai_recommend__theme_pf_img_wrap{position:relative;}
+[data-theme="money_man"] .ai_recommend__theme_pf_img{width:100%; height:0; padding-bottom:100%; border-radius: 50%; background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="money_man"] .ai_recommend__theme_pf_frame{position:absolute; top:50%; left:50%; width:114.2857%; height:0; padding-bottom:114.2857%; transform: translate(-50%, -50%); background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="money_man"] .ai_recommend__theme_pf_txt{font-weight:700; color:#2C2C36; margin-bottom:2px;}
+[data-theme="money_man"].ai_recommend__theme-ani .ai_recommend__theme_pf-01{animation: fadeIn 1s forwards .6s, aniMoneyPf 1s forwards .6s;}
+[data-theme="money_man"].ai_recommend__theme-ani .ai_recommend__theme_pf-02{animation: fadeIn 1s forwards .3s, aniMoneyPf 1s forwards .3s;}
+[data-theme="money_man"].ai_recommend__theme-ani .ai_recommend__theme_pf-03{animation: fadeIn 1s forwards .1s, aniMoneyPf 1s forwards;}
+
+[data-theme="msg_woman"] .ai_recommend__theme_container{background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_ai_recommend_theme_msg_woman.png") no-repeat center; background-size:cover;}
+[data-theme="msg_woman"] .ai_recommend__theme_time{height:34px; background-color:#6075F5;}
+[data-theme="msg_woman"] .ai_recommend__theme_time_icon{background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 34' xml:space='preserve'%3e%3cg fill='%23FFFFFF'%3e%3cpath d='M3.82 8.7c.71-.02 1.26-.6 1.26-1.3.01-1.66 1.36-3 3.02-3 .25-.01.5.02.74.09.67.2 1.38-.19 1.57-.86.2-.67-.19-1.38-.86-1.57-.47-.13-.95-.2-1.48-.19-3.08.02-5.56 2.54-5.53 5.64.02.66.57 1.19 1.23 1.19h.05zM15.23 17.73l2.5 1.94c.22.17.49.26.76.26.06 0 .12 0 .17-.01.33-.05.63-.22.84-.49.2-.27.29-.6.25-.94-.05-.33-.22-.63-.49-.84l-1.99-1.55v-4.97c0-.7-.57-1.26-1.27-1.27-.34 0-.66.13-.89.37-.24.24-.37.56-.37.9v5.58c-.01.4.17.78.49 1.02z'/%3e%3cpath d='M17.27 4.6v-.46c0-.7-.57-1.27-1.27-1.27-.7 0-1.27.57-1.27 1.27v.46c-7.03.68-12.26 6.89-11.7 13.96a13.08 13.08 0 0 0 4.46 8.81l-1.56 2.21c-.4.57-.27 1.36.3 1.77s1.36.27 1.77-.3l1.57-2.21c4 2.31 8.9 2.31 12.9 0l1.57 2.21c.2.28.49.46.82.52.07.01.14.02.21.02.26 0 .51-.08.73-.23.28-.2.46-.49.52-.82.06-.33-.02-.67-.21-.95l-1.57-2.21a12.96 12.96 0 0 0 4.5-9.83C29 10.89 23.86 5.25 17.27 4.6zm9.21 12.94c0 5.78-4.7 10.48-10.48 10.48S5.52 23.32 5.52 17.54 10.22 7.06 16 7.06s10.48 4.7 10.48 10.48zM29.45 7.2c-.12-2.96-2.56-5.34-5.55-5.34-.47 0-.98.06-1.46.19a1.266 1.266 0 1 0 .71 2.43c.22-.06.45-.09.69-.09h.07c1.66 0 3.01 1.35 3.02 3v.12c.01.33.15.63.39.86.23.21.53.33.84.33h.04c.71-.02 1.26-.6 1.26-1.31l-.01-.19z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:100% auto;}
+[data-theme="msg_woman"] .ai_recommend__theme_time_txt{color:#FFF;}
+[data-theme="msg_woman"] .ai_recommend__theme_time_emp{margin-left:4px; color:#FFF;}
+[data-theme="msg_woman"] .ai_recommend__theme_tit{margin-top:24px;}
+[data-theme="msg_woman"] .ai_recommend__theme_info{width:100%; color:#8585A2;}
+[data-theme="msg_woman"] .ai_recommend__theme_wrap{padding-bottom:80.8333%;}
+[data-theme="msg_woman"] .ai_recommend__theme_detail_ani{position:absolute; top:0; right:0; width:38.8889%;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf{position:absolute; bottom:0; left:50%; z-index: 1; width:17.7778%; transform: translateX(-50%); opacity: 0;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf-01{margin-left:-18.4722%; margin-bottom:55.1388%;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf-02{margin-bottom:39.4444%;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf-03{margin-left:20.4167%; margin-bottom:21.3889%;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf_img_wrap{position:relative;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf_img{width:100%; height:0; padding-bottom:100%; border-radius: 50%; background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf_frame{position:absolute; top:50%; left:50%; width:100%; height:0; padding-bottom:100%; transform: translate(-50%, -50%); background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf_frame::after{position:absolute; bottom:-8px; left:50%; width:40px; height:17px; border-radius: 20px; margin-left:-20px; text-align: center; line-height:17px; font-size:10px; font-weight:700; color:#fff;;}
+[data-theme="msg_woman"] .ai_recommend__theme_pf-01 .ai_recommend__theme_pf_frame::after{content:"1순위"; background:linear-gradient(to right bottom, #FFC63F, #F19800);}
+[data-theme="msg_woman"] .ai_recommend__theme_pf-02 .ai_recommend__theme_pf_frame::after{content:"2순위"; background:linear-gradient(to right bottom, #BCE8E8, #0CA1A1);}
+[data-theme="msg_woman"] .ai_recommend__theme_pf-03 .ai_recommend__theme_pf_frame::after{content:"3순위"; background:linear-gradient(to right bottom, #FEB18D, #D25E32);}
+[data-theme="msg_woman"] .ai_recommend__theme_pf_txt{font-weight:700; color:#505050; margin-bottom:2px;}
+[data-theme="msg_woman"].ai_recommend__theme-ani .ai_recommend__theme_pf-01{animation: fadeIn 1s forwards .6s, aniMsgPf 1s forwards .6s;}
+[data-theme="msg_woman"].ai_recommend__theme-ani .ai_recommend__theme_pf-02{animation: fadeIn 1s forwards .3s, aniMsgPf 1s forwards .3s;}
+[data-theme="msg_woman"].ai_recommend__theme-ani .ai_recommend__theme_pf-03{animation: fadeIn 1s forwards .1s, aniMsgPf 1s forwards;}
+
+[data-theme="play_man"] .ai_recommend__theme_container{background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_ai_recommend_theme_play_man.png") no-repeat center; background-size:cover;}
+[data-theme="play_man"] .ai_recommend__theme_time{height:34px; background-color:#047682;}
+[data-theme="play_man"] .ai_recommend__theme_time_icon{background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 34' xml:space='preserve'%3e%3cg fill='%23FFFFFF'%3e%3cpath d='M3.82 8.7c.71-.02 1.26-.6 1.26-1.3.01-1.66 1.36-3 3.02-3 .25-.01.5.02.74.09.67.2 1.38-.19 1.57-.86.2-.67-.19-1.38-.86-1.57-.47-.13-.95-.2-1.48-.19-3.08.02-5.56 2.54-5.53 5.64.02.66.57 1.19 1.23 1.19h.05zM15.23 17.73l2.5 1.94c.22.17.49.26.76.26.06 0 .12 0 .17-.01.33-.05.63-.22.84-.49.2-.27.29-.6.25-.94-.05-.33-.22-.63-.49-.84l-1.99-1.55v-4.97c0-.7-.57-1.26-1.27-1.27-.34 0-.66.13-.89.37-.24.24-.37.56-.37.9v5.58c-.01.4.17.78.49 1.02z'/%3e%3cpath d='M17.27 4.6v-.46c0-.7-.57-1.27-1.27-1.27-.7 0-1.27.57-1.27 1.27v.46c-7.03.68-12.26 6.89-11.7 13.96a13.08 13.08 0 0 0 4.46 8.81l-1.56 2.21c-.4.57-.27 1.36.3 1.77s1.36.27 1.77-.3l1.57-2.21c4 2.31 8.9 2.31 12.9 0l1.57 2.21c.2.28.49.46.82.52.07.01.14.02.21.02.26 0 .51-.08.73-.23.28-.2.46-.49.52-.82.06-.33-.02-.67-.21-.95l-1.57-2.21a12.96 12.96 0 0 0 4.5-9.83C29 10.89 23.86 5.25 17.27 4.6zm9.21 12.94c0 5.78-4.7 10.48-10.48 10.48S5.52 23.32 5.52 17.54 10.22 7.06 16 7.06s10.48 4.7 10.48 10.48zM29.45 7.2c-.12-2.96-2.56-5.34-5.55-5.34-.47 0-.98.06-1.46.19a1.266 1.266 0 1 0 .71 2.43c.22-.06.45-.09.69-.09h.07c1.66 0 3.01 1.35 3.02 3v.12c.01.33.15.63.39.86.23.21.53.33.84.33h.04c.71-.02 1.26-.6 1.26-1.31l-.01-.19z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:100% auto;}
+[data-theme="play_man"] .ai_recommend__theme_time_txt{color:#FFF; letter-spacing: -1px;}
+[data-theme="play_man"] .ai_recommend__theme_time_emp{margin-left:4px; color:#FFF;}
+[data-theme="play_man"] .ai_recommend__theme_info{position:absolute; left:0; width:100%; color:#C8B491; box-sizing:border-box;}
+[data-theme="play_man"] .ai_recommend__theme_wrap{padding-bottom:104.1666%;}
+[data-theme="play_man"] .ai_recommend__theme_detail_ani_01{position:absolute; width:34.7223%; margin-top:11.1112%;}
+[data-theme="play_man"] .ai_recommend__theme_detail_ani_02{position:absolute; right:0; width:27.7778%; margin-top:-3.3333%; margin-right:-8.0556%;}
+[data-theme="play_man"] .ai_recommend__theme_detail_ani_03{position:absolute; bottom:0; width:25%; margin-bottom:-2.7778%;}
+[data-theme="play_man"] .ai_recommend__theme_pf{position:absolute; bottom:0; left:50%; z-index: 1; transform: translateX(-50%); opacity: 1;}
+[data-theme="play_man"] .ai_recommend__theme_pf-01{width:22.2222%; margin-bottom:44.1667%; transform: translateX(100%);}
+[data-theme="play_man"] .ai_recommend__theme_pf-ani.ai_recommend__theme_pf-01{animation:aniPlayPf01 2s forwards;}
+[data-theme="play_man"] .ai_recommend__theme_pf-02{width:19.4444%; margin-left:-27.7778%; margin-bottom:27.7778%; transform-origin: 0% 75%;}
+[data-theme="play_man"] .ai_recommend__theme_pf-ani.ai_recommend__theme_pf-02{animation:aniPlayPf02 .5s 4 forwards alternate-reverse .5s; animation-timing-function: ease-in-out;}
+[data-theme="play_man"] .ai_recommend__theme_pf-03{width:16.9444%; margin-left:23.0556%; margin-bottom:15%;}
+[data-theme="play_man"] .ai_recommend__theme_pf_img_wrap{position:relative;}
+[data-theme="play_man"] .ai_recommend__theme_pf_img{width:100%; height:0; padding-bottom:100%; border-radius: 50%; background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="play_man"] .ai_recommend__theme_pf_frame{position:absolute; z-index: -1; top:50%; left:50%; height:0; transform: translate(-50%, -50%);}
+[data-theme="play_man"] .ai_recommend__theme_pf-01 .ai_recommend__theme_pf_frame{width:291.25%; padding-bottom:206.25%; margin-left:79%; margin-top:-39.75%;}
+[data-theme="play_man"] .ai_recommend__theme_pf-02 .ai_recommend__theme_pf_frame{width:192.8571%; padding-bottom:157.1428%; margin-left:-35.9154%; margin-top:-5.6338%; background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="play_man"] .ai_recommend__theme_pf-02 .ai_recommend__theme_pf_frame::before{content:""; position:absolute; width:55.5556%; height:0; padding-bottom:74.0741%; margin-top:-17.4074%; background:url("https://image.yeoboya.com/imgs/new_wedding/frame/fr_ai_theme_play_man_02_detail.png") no-repeat center; background-size:cover; transform-origin: 0 100%;}
+[data-theme="play_man"] .ai_recommend__theme_pf-ani.ai_recommend__theme_pf-02 .ai_recommend__theme_pf_frame::before{animation:aniPlayPfDetail02 .5s 4 forwards alternate-reverse .5s; animation-timing-function: ease-in-out;}
+[data-theme="play_man"] .ai_recommend__theme_pf-03 .ai_recommend__theme_pf_frame{width:247.5409%; padding-bottom:252.4590%; margin-left:40.75%; margin-top:20.25%;}
+[data-theme="play_man"] .ai_recommend__theme_pf_txt{bottom:unset; top:100%; font-weight:700; color:#2C2C36; margin-top:10px;}
+
+[data-theme="marry_man"] .ai_recommend__theme_container{background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_ai_recommend_theme_marry_man.png") no-repeat center; background-size:cover;}
+[data-theme="marry_man"] .ai_recommend__theme_time{height:34px;}
+[data-theme="marry_man"] .ai_recommend__theme_time_icon{background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 34' xml:space='preserve'%3e%3cg fill='%23FFFFFF'%3e%3cpath d='M3.82 8.7c.71-.02 1.26-.6 1.26-1.3.01-1.66 1.36-3 3.02-3 .25-.01.5.02.74.09.67.2 1.38-.19 1.57-.86.2-.67-.19-1.38-.86-1.57-.47-.13-.95-.2-1.48-.19-3.08.02-5.56 2.54-5.53 5.64.02.66.57 1.19 1.23 1.19h.05zM15.23 17.73l2.5 1.94c.22.17.49.26.76.26.06 0 .12 0 .17-.01.33-.05.63-.22.84-.49.2-.27.29-.6.25-.94-.05-.33-.22-.63-.49-.84l-1.99-1.55v-4.97c0-.7-.57-1.26-1.27-1.27-.34 0-.66.13-.89.37-.24.24-.37.56-.37.9v5.58c-.01.4.17.78.49 1.02z'/%3e%3cpath d='M17.27 4.6v-.46c0-.7-.57-1.27-1.27-1.27-.7 0-1.27.57-1.27 1.27v.46c-7.03.68-12.26 6.89-11.7 13.96a13.08 13.08 0 0 0 4.46 8.81l-1.56 2.21c-.4.57-.27 1.36.3 1.77s1.36.27 1.77-.3l1.57-2.21c4 2.31 8.9 2.31 12.9 0l1.57 2.21c.2.28.49.46.82.52.07.01.14.02.21.02.26 0 .51-.08.73-.23.28-.2.46-.49.52-.82.06-.33-.02-.67-.21-.95l-1.57-2.21a12.96 12.96 0 0 0 4.5-9.83C29 10.89 23.86 5.25 17.27 4.6zm9.21 12.94c0 5.78-4.7 10.48-10.48 10.48S5.52 23.32 5.52 17.54 10.22 7.06 16 7.06s10.48 4.7 10.48 10.48zM29.45 7.2c-.12-2.96-2.56-5.34-5.55-5.34-.47 0-.98.06-1.46.19a1.266 1.266 0 1 0 .71 2.43c.22-.06.45-.09.69-.09h.07c1.66 0 3.01 1.35 3.02 3v.12c.01.33.15.63.39.86.23.21.53.33.84.33h.04c.71-.02 1.26-.6 1.26-1.31l-.01-.19z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size:100% auto;}
+[data-theme="marry_man"] .ai_recommend__theme_time_txt{color:#FFF;}
+[data-theme="marry_man"] .ai_recommend__theme_time_emp{margin-left:4px; color:#FFFF00;}
+[data-theme="marry_man"] .ai_recommend__theme_info{position:relative; width:76.3889%; padding:8px 0; margin:0 auto; border-radius: 8px; background-color:#223EC5; color:#FFF; box-sizing:border-box;}
+[data-theme="marry_man"] .ai_recommend__theme_info_detail{position:absolute; top:0; left:0; width:32.3636%; height:0; padding-bottom:40%; margin:-31.2727% 0 0 -14.5454%;}
+[data-theme="marry_man"] .ai_recommend__theme_info_detail_ani{position: absolute; width:100%; height:100%;}
+[data-theme="marry_man"] .ai_recommend__theme_info::after{content:""; position:absolute; top:0; right:0; width:34.5454%; height:0; padding-bottom:53.4545%; margin:-15.2727% -18.1818% 0 0; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_ai_recommend_theme_detail_marry_man_02.png") no-repeat center; background-size:cover;}
+[data-theme="marry_man"] .ai_recommend__theme_wrap{padding-bottom:66.6667%;}
+[data-theme="marry_man"] .ai_recommend__theme_pf{position:absolute; bottom:0; left:50%; z-index: 1; width:18.3333%; transform: translateX(-50%); opacity: 1;}
+[data-theme="marry_man"] .ai_recommend__theme_pf-01{margin-bottom:34.8611%;}
+[data-theme="marry_man"] .ai_recommend__theme_pf-02{margin-left:-29.3056%; margin-bottom:29.3055%;}
+[data-theme="marry_man"] .ai_recommend__theme_pf-03{margin-left:29.3056%; margin-bottom:23.75%;}
+[data-theme="marry_man"] .ai_recommend__theme_pf_img_wrap{position:relative;}
+[data-theme="marry_man"] .ai_recommend__theme_pf_img{width:100%; height:0; padding-bottom:100%; border-radius: 50%; background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="marry_man"] .ai_recommend__theme_pf_frame{position:absolute; top:50%; left:50%; width:136.36%; height:0; padding-bottom:136.36%; transform: translate(-50%, -50%); background-repeat: no-repeat; background-size:cover; background-position:center;}
+[data-theme="marry_man"] .ai_recommend__theme_pf_txt{font-weight:700; color:#FFF; margin-bottom:8px;}
+
+/* 리스트 */
+.ai_recommend__list_wrap{position: relative; z-index: 1; width:100%; padding:12px 15px 24px; margin-top:-10px; border-radius: 8px 8px 0 0; background-color:#EFF3FF; box-sizing: border-box;}
+[data-theme="money_woman"] ~ .ai_recommend__list_wrap,
+[data-theme="money_man"] ~ .ai_recommend__list_wrap{background-color:#F3F3F3;}
+[data-theme="play_man"] ~ .ai_recommend__list_wrap{background-color:#FDECC1;}
+[data-theme="marry_man"] ~ .ai_recommend__list_wrap{background-color:#8D9FF5;}
+.ai_recommend__list{position:relative; width:100%; border:1px solid #D4D4D4; border-radius: 8px; background-color:#fff; box-sizing:border-box; box-shadow: 0 1px 3px 0 rgba(0,0,0,.16); overflow: hidden;}
+.ai_recommend__list_content{display:flex; min-height:92px; padding:12px; line-height:23px;}
+.ai_recommend__list_info_box{display:flex; align-items: center; height:32px; padding-left:10px; border-top:1px solid #D4D4D4; background-color:#F5F5F5; box-sizing: border-box;}
+.ai_recommend__list_info{display:flex; align-items: center; font-size:12px; font-weight:700;}
+.ai_recommend__list_info_bar{width:1px; height:10px; margin:0 4px;}
+.ai_recommend__list_info_btn{flex:0 0 auto; width:70px; height:100%; margin-left:auto; border-radius: 0 0 8px 0; background-color:#FCDE46; text-align: center; line-height:31px; font-size:13px; color:#202020;}
+.ai_recommend__new_badge{position:absolute; top:8px; left:6px; z-index: 10; width:32px; height:32px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_new_badge.png") no-repeat center; background-size:100% auto;}
+
+.ai_recommend__photo_wrap{position:relative;}
+.ai_recommend__photo_frame{position:absolute; z-index: 2; top:0; left:0; width:70px; height:70px; border-radius: 50%; -webkit-mask-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 70' xml:space='preserve'%3e%3cpath d='M35 2c18.2 0 33 14.8 33 33S53.2 68 35 68 2 53.2 2 35 16.8 2 35 2m0-2C15.67 0 0 15.67 0 35s15.67 35 35 35 35-15.67 35-35S54.33 0 35 0z'/%3e%3c/svg%3e");mask-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 70' xml:space='preserve'%3e%3cpath d='M35 2c18.2 0 33 14.8 33 33S53.2 68 35 68 2 53.2 2 35 16.8 2 35 2m0-2C15.67 0 0 15.67 0 35s15.67 35 35 35 35-15.67 35-35S54.33 0 35 0z'/%3e%3c/svg%3e");}
+.ai_recommend__photo_frame-1{background:linear-gradient(to right bottom, #FFD35B, #FF8800);}
+.ai_recommend__photo_frame-2{background:linear-gradient(to right bottom, #DDDDDD, #999999);}
+.ai_recommend__photo_frame-3{background:linear-gradient(to right bottom, #E6AD7C, #BE7C3D);}
+.ai_recommend__photo_frame-4{background:linear-gradient(to right bottom, #C9D7FF, #9FB7FF);}
+.ai_recommend__photo_medal{position:absolute; z-index: 1; top:70px; left:50%; width:24px; height:31px; margin:-2px 0 0 -12px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_ai_recommend_list_medal.png") no-repeat; background-size: auto 100%;}
+.ai_recommend__photo_medal-1{background-position:0 0;}
+.ai_recommend__photo_medal-2{background-position:-24px 0;}
+.ai_recommend__photo_medal-3{background-position:-48px 0;}
+.ai_recommend__photo_medal-4{background-position:-72px 0;}
+.ai_recommend__photo_medal-5{background-position:-96px 0;}
+.ai_recommend__photo_medal-6{background-position:-120px 0;}
+.ai_recommend__photo_medal-7{background-position:-144px 0;}
+.ai_recommend__photo_medal-8{background-position:-168px 0;}
+.ai_recommend__photo_medal-9{background-position:-192px 0;}
+.ai_recommend__photo_medal-10{background-position:-216px 0;}
+
+.ai_recommend__list_empty{width:100%;}
+.ai_recommend__list_empty div{width:100%; height:18px; margin-bottom:8px; background-color:#E1E1E1;}
+.ai_recommend__list_empty div:first-of-type{width:85px;}
+.ai_recommend__list_overlay{position:absolute; left:-1px; top:-1px; z-index: 2; display:flex; align-items: center; justify-content: center; width:calc(100% + 2px); height:calc(100% + 2px); border-radius: 8px; background:rgba(0,0,0,.5); backdrop-filter: blur(4px);}
+
+.ai_recommend__badge_secret{display:inline-flex; width:16px; height:16px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_like/secret_badge.png") no-repeat center; background-size: 100% auto; vertical-align:-2px;}
+
+@media (min-width:460px) {
+    .ai_recommend__ranking_top_container,
+    .ai_recommend__theme_container{left:50%; width:460px; margin-left:-230px;}
+}

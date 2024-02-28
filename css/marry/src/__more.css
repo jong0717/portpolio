@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __more
+	설　명 : 더보기 페이지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/* 더보기 페이지 상단 */
+.more{position: relative;}
+.more__top{position: relative; width: 100%; padding-bottom: 52.5%; background: linear-gradient(135deg, #887BFF, #5B4BEC);}
+.more__top_bg{position: absolute; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/img_more_top_bg.png") no-repeat top; background-size: 100%;}
+
+/* 더보기 페이지 리스트 */
+.more__container{position: relative; padding: 0 15px 24px; margin-top: -38.5%;}
+.more__main{width: 100%; height: 100%; padding: 20px 0 12px; border-radius: 8px; box-sizing: border-box; background-color: #FBFBFF; box-shadow: 0 1px 2px rgba(0 ,0 ,0, 0.2);}
+.more__tit_wrap{position: relative; width: 100%; padding: 0 8px 0 12px; box-sizing: border-box; cursor: pointer;}
+.more__tit_sub{font-size: 14px; color: #202020;}
+.more__tit_main{display: flex; align-items: center; margin-top: 2px;}
+.more__tit_main_txt{display: flex; align-items: center; font-size: 18px; font-weight: 700; color: #202020;}
+.more__tit_main_txt::after{content: ""; width: 24px; height: 24px; margin-left: 2px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_tit.png") no-repeat center; background-size: 100% auto;}
+.more__tit_hightlight{color: #6F60F4;}
+.more__tit_main_btn_wrap{display: flex; align-items: center; margin-left: auto;}
+.more__tit_main_btn_txt{margin-right: 5px; font-size: 14px; color: #202020;}
+.more__tit_main_btn{display: flex; justify-content: center; align-items: center; width: 20px; height:20px; margin-left: auto; border-radius: 50%; background: #6E5FF4 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 56'%3e%3cpath fill='%23FFFFFF' d='M21.5 45c-.3 0-.7-.1-.9-.3-.6-.5-.8-1.5-.2-2.1l11.3-14.1-11.4-14.1c-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2l12 15c.4.5.4 1.3 0 1.9l-12 15c-.2.4-.7.6-1.1.6z'/%3e%3c/svg%3e") no-repeat 2px center; background-size: 18px; cursor: pointer;}
+.more__tit_date{display: inline-block; padding: 0 6px; margin-top: 8px; border-radius: 4px; background-color: #EFF0FF; line-height: 20px; font-size: 12px;}
+.more__tit_date_emp{color: #6F60F4;}
+.more__post_wrap{margin: 16px 12px 0; border: 1px solid #F1F1F1; border-radius: 8px; overflow: hidden;}
+
+.more__sub{padding: 12px 0; margin-top: 20px; border-radius: 8px; box-sizing: border-box; background-color: #FBFBFF; box-shadow: 0 1px 2px rgba(0 ,0 ,0, .16);}
+.more__sub_top{padding: 0 12px;}
+.more__sub_txt{font-size: 12px;}
+.more__sub_tit_wrap{display: flex; align-items: center; margin-top: 2px;}
+.more__sub_tit{font-size: 18px; font-weight: 700; color: #202020;}
+.more__sub_tit_btn{flex: none; padding-right: 24px; height: 24px; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 24 24'%3e%3cpath fill='%23202020' d='M9.6 18c.2 0 .3-.1.5-.2l4.8-5.5c.2-.2.2-.5 0-.7l-4.8-5.5c-.3-.1-.6-.2-.9 0-.2.2-.3.5-.1.7v.1l4.5 5.1-4.5 5.1c-.2.2-.2.5 0 .7h.1c.1.2.3.2.4.2'/%3e%3c/svg%3e") no-repeat right center; background-size: 24px; line-height: 24px; font-size: 12px; cursor: pointer;}
+
+.more__list_btn_wrap{display: grid; grid-template-columns: repeat(1, 1fr); gap: 2px 0; padding: 4px 0; margin: 10px 8px 0; border-radius: 8px; background-color: #FFFFFF;}
+.more__list_btn_box{display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 4px;}
+.more__list_btn{position: relative; display: flex; align-items: center; padding: 6px 0;}
+.more__list_btn_bar_wrap{position: absolute; bottom: 0; width: 100%; padding: 0 10px; box-sizing: border-box;}
+.more__list_btn_bar{height: 1px; background-color: #ECECEC;}
+.more__list_btn_box:last-child .more__list_btn_bar_wrap{display: none;}
+.more__list_btn_ico{width: 28px; height: 28px; margin: 0 4px 0 5px; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.more__list_btn_txt{line-height: 20px; font-size: 14px; color: #202020;}
+
+.more__list_btn_ico-fortune{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn_fortune.png");}
+.more__list_btn_ico-fate{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn_fate.png");}
+.more__list_btn_ico-cheme{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn_cheme.png");}
+
+
+.more__menu{display:grid; grid-template-columns: repeat(2, 1fr); gap: 8px 12px; width: 100%; height: 100%; padding: 20px 15px; background-color: #FFFFFF; box-sizing: border-box;}
+.more__menu_li{display: flex; align-items: center; width: 100%; height: 48px; padding: 6px 8px; border: 1px solid #F1F1F6; border-radius: 8px; background-color: #FBFBFF; box-sizing: border-box; cursor: pointer;}
+.more__menu_li_ico{width: 36px; height: 36px; border: 1px solid #F1F1F6; border-radius: 50%; background-color: #FFF; background-position: center; background-repeat: no-repeat; background-size: 36px;}
+.more__menu_li_ico-wedding{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn_new_wedding.png");}
+.more__menu_li_ico-recruit{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn_new_recruit.png");}
+.more__menu_li_ico-commu{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn_new_commu.png");}
+.more__menu_li_ico-market{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn_new_market.png");}
+.more__menu_li_ico-gift{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn_new_gift.png");}
+.more__menu_li_ico-fortune{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/ico_more_btn__new_fortune.png");}
+.more__menu_li_txt{margin-left: 6px; font-size: 14px; color: #202020;}
+
+.more__post_swipe_container{position: relative; width: 100%; height: 76px;}
+.more__post_swipe_wrapper{height: 100%;}
+.more__post_swipe_slide{height: 100%;}
+
+.more__gift_best_goods{position: relative; display: flex; flex-direction: column; width: 116px; height: auto; border: 1px solid #F1F1F1; overflow: hidden; border-radius: 8px; background: #FFFFFF; cursor: pointer; box-sizing: border-box;}
+.more__gift_goods_img_wrap{position: relative; width: 100%; padding-bottom: 100%;}
+.more__gift_goods_img{position: absolute; top:0; left: 0; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/more_best_goods_ex.png") no-repeat center; background-size: 100% auto;}
+.more__gift_goods_txt_wrap{padding:4px 8px 8px;}
+.more__gift_goods_brd{font-size: 12px; color: #B8B8B8; line-height: 18px;}
+.more__gift_goods_name{font-size: 14px;}
+.more__gift_goods_price{margin-top: 4px; font-size: 14px; font-weight: 700; color: #202020;}
+.more__gift_best_goods_btn{position: relative; display: flex; justify-content: center; align-items: center; width: 62px; height: 62px; margin-top: 16px; background: #FFFFFF; border-radius: 30px; cursor: pointer;}
+.more__gift_best_goods_btn_ico{width: 20px; height: 40px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='80'%3e%3cg data-name='%ea%b7%b8%eb%a3%b9 3' fill='none'%3e%3cpath data-name='%ed%8c%a8%ec%8a%a4 2' d='M14.299 16.714 32.928 40 14.299 63.286' stroke='%23505050' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='4'/%3e%3cpath data-name='%ec%82%ac%ea%b0%81%ed%98%95 15025' d='M.001 0h40v80h-40z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 20px 40px;}

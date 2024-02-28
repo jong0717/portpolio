@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : evnt_sample_candy_ani
+	설　명 : 샘플 애니 이벤트 
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.evnt_sample_candy_ani{position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.5); z-index: 0;}
+
+/* 준비 */
+.evnt_sample_candy_ani__ready{position: relative; display: flex; flex-direction: column; align-items: center; width:100%; height:100%; padding-top: 6vh; box-sizing: border-box; visibility: hidden; opacity: 0; transition: 0.5s ease-out;}
+.evnt_sample_candy_ani__ready.active{visibility: visible; opacity: 1;}
+.evnt_sample_candy_ani__ready_tit{width: 360px; height: 110px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/img_evnt_sample_candy_ani_tit.png") no-repeat center; background-size: 100%;}
+.evnt_sample_candy_ani__ready_txt_wrap{min-width: 230px; padding: 6px 15px; border: 1px solid #FFFA96; border-radius: 30px; box-sizing: border-box; text-align: center;}
+.evnt_sample_candy_ani__ready_txt{color: #FFFA96; font-size: 14px;}
+.evnt_sample_candy_ani__ready_txt_sub{padding-top: 18px; color: #D1D1D1; font-size: 14px; font-weight: 400; text-align: center;}
+.evnt_sample_candy_ani__ready_info{padding-top: 2px; font-size: 13px; color: #d1d1d1; font-weight: 400;}
+.evnt_sample_candy_ani__ready_info_emp{color: #FF8489; font-weight: 500;}
+.evnt_sample_candy_ani__ready_btn{position: absolute; left: 50%; transform: translateX(-50%); top: 86vh; width: 172px; height: 55px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/img_evnt_sample_candy_ani_start_btn.png") no-repeat center; background-size: 100%; cursor: pointer;}
+
+/* 결과 */
+.evnt_sample_candy_ani__result{position: relative; display: flex; flex-direction: column; align-items: center; width:100%; height:100%; padding:7.5vh 0 4vh; box-sizing: border-box; visibility: hidden; opacity: 0; transition: 0.5s ease-out;}
+.evnt_sample_candy_ani__result.active{visibility: visible; opacity: 1;}
+.evnt_sample_candy_ani__result_tit{width: 244px; height: 60px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/img_evnt_sample_candy_ani_result_tit.png") no-repeat center; background-size: 100%;}
+.evnt_sample_candy_ani__result_txt_wrap{min-width: 230px; padding: 6px 15px; margin-top: 16px; border: 1px solid #FFFA96; border-radius: 30px; box-sizing: border-box; background-color: rgba(0,0, 0,.7); text-align: center;}
+.evnt_sample_candy_ani__result_txt{color: #fff; font-size: 14px;}
+.evnt_sample_candy_ani__result_txt_emp{font-size: 16px; color: #FFFA96;}
+.evnt_sample_candy_ani__result_item_wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 112px; background-color: rgba(0,0, 0,.8);}
+.evnt_sample_candy_ani__result_item_tit{font-size: 17px; color: #fff;}
+.evnt_sample_candy_ani__result_item{display: flex; align-items: center; padding-top: 10px;}
+.evnt_sample_candy_ani__result_item_ico{width: 45px; height: 45px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_sample_candy/ico_sample_candy_type_a.png") no-repeat center; background-size: 100%;}
+.evnt_sample_candy_ani__result_item_cnt{margin-left: 8px; font-size: 29px; color: #FFEE00;}
+.evnt_sample_candy_ani__result_info{padding: 0 24px; margin-top: auto; border-top: 1px solid #fff; border-bottom: 1px solid #fff; line-height: 31px; font-size: 13px; font-weight: 400; color: #fff;}
+.evnt_sample_candy_ani__result_info_emp{color: #FFEE00;}
+
+/* 기타 */
+.evnt_sample_candy_ani__cls{position:absolute; z-index: 10; width:50px; height:50px; top:0; right:0; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cpath fill='%23ffffff' d='M19.84 16L31.2 4.64A2.716 2.716 0 0027.36.8L16 12.16 4.64.8A2.716 2.716 0 00.8 4.64L12.16 16 .8 27.36a2.716 2.716 0 003.84 3.84L16 19.84 27.36 31.2a2.716 2.716 0 003.84-3.84L19.84 16z'/%3e%3c/svg%3e") no-repeat center; background-size:16px;}
+.evnt_sample_candy_ani_lottie_wrap{position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;}
+.evnt_sample_candy_ani_lottie{width: 100%; height: 100%;}

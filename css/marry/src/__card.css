@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __card
+	설　명 : 카드형 레이아웃
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.card{position:relative; width:100%; height:100%;}
+/* 상단 프로필사진 */
+.card__photo_top{position:absolute; z-index: 2; top:0; left:50%; transform:translate(-50%, -50%);}
+/* CONTAINER */
+.card__container{position:relative; width:100%; height:100%; padding:10px; border-radius: 8px; background-color:#fff; overflow:hidden; box-shadow: 0 1px 3px 0 rgba(0,0,0,.16); box-sizing: border-box;}
+/* 유저정보 */
+.card__profile_wrap{display:flex; align-items: center; width:100%;}
+.card__cursor{cursor: pointer;}
+.card__profile_content{width:100%; padding-left:6px; box-sizing: border-box;}
+.card__name{width:100%; text-overflow: ellipsis; white-space: nowrap; overflow:hidden;}
+.card__name_wrap{display: flex; align-items: center;}
+.card__profile_sub{display: flex; align-items: center;}
+/* 내용 */
+.card__content{width:100%;}
+.card__content_txt{line-height: 26px; word-break: break-all;}
+/* 업체 카드 - 버튼영역 */
+.card__btn_wrap{display:flex; width:100%; padding:8px 0; box-sizing: border-box;}
+.card__btn_wrap-center{flex-wrap: wrap;}
+.card__btn{position:relative; width:25%; margin-right:10px;}
+.card__btn-col_3{display: flex; flex-direction: column; justify-content: center; align-items:center; width:33.333%; min-height: 80px; margin-right: 0;}
+.card__btn_txt{font-size: 14px; margin-top: 4px;}
+.card__btn-disabled{cursor:default;}
+.card__btn-disabled .card__btn_ico{opacity: 0.41;}
+.card__btn-disabled .card__btn_txt{color: #909090;}
+.card__btn_new{position:absolute; top:3px; left:50%; width:6px; height:6px; margin-left:18px; border-radius: 50%; background-color:#FF3131;}
+.card__btn_new-cnt{position:absolute; top:3px; left:50%; width:21px; height:15px; margin-left:16px; border-radius: 8px; background-color:#FF5656; font-size:11px; line-height:15px; text-align: center; color:#fff; font-weight:500; box-sizing: border-box;}
+.card__btn_tooltip{position: absolute; top: -24px; left: 50%; width: 184px; height: 32px; border-radius: 20px 20px 20px 0; background: #2D418B url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/profile/img_txt_prf_reg.png") no-repeat 10px 10px; background-size: 126px 14px;}
+.card__btn_tooltip::after{content: ""; position: absolute; top: -6px; right: 6px; width:38px; height: 38px;background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/profile/ico_prf_reg_gift.png") no-repeat; background-size:cover; }
+/* 서브 내용 */
+.card__sub_wrap{position: relative;}
+.card__sub_tit{display: flex; align-items: center;}
+.card__sub_contents{display: flex; align-items: center; flex-wrap: wrap;}
+.card__sub_graphs_wrap{display: flex; justify-content: space-evenly; align-items: center;}
+
+/* 뱃지 */
+.card__top_bdg_wrap{position: absolute; top: 0; right: 0; display: flex;}
+
+/*카드 폰트 컬러*/
+.card__cor_blue{color: #427FCF;}
+.card__cor_red{color: #FF5777}

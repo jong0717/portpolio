@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __luck
+	설　명 : 운세 로딩
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.luck_ani{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.luck_ani__content{width: 140px; height: 130px;}
+.luck_ani__txt{margin-top: 23px; color: #fff; text-align: center;}

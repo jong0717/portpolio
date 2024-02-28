@@ -1,0 +1,448 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : chat_evnt
+	설　명 : 단기 이벤트 종료시에도 유지가 필요한 css 모음
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/* =========== 과거 이벤트 모음 ========= */
+
+/*------------------ 계절별 이벤트(공통) --------------------*/
+.season_evnt{position:relative; width:162px; height:auto;}
+.season_evnt .season_bg{display:block; width:100%; height:auto;}
+.season_evnt .season_msg_box{position:absolute; bottom:4px; left:4px; width:153px; height:60px; text-align:center;}
+.season_evnt .season_msg_box .season_msg{font-size:1rem; line-height:16px; padding-top:14px;}
+.season_evnt .season_msg_box .season_num_pt{font-weight:700;}
+@media screen and (min-width:360px){
+.season_evnt{width:192px;}
+.season_evnt .season_msg_box{position:absolute; bottom:5px; left:5px; width:182px; height:67px;}
+.season_evnt .season_msg_box .season_msg{font-size:15px; line-height:19px; padding-top:13px;}
+}
+
+/*------ 트리이벤트, 황금돼지이벤트(공통) -------*/
+.season_evnt .tree_msg_box .season_msg{color:#000;}
+.season_evnt .tree_msg_box .season_num_pt{color:#ff2942;}
+
+/*------ 봄꽃이벤트 -------*/
+.season_evnt .flower_msg_box .season_msg{color:#3a2d2d;}
+.season_evnt .flower_msg_box .season_num_pt{color:#f23b73;}
+
+/*------ 클로버이벤트 -------*/
+.season_evnt .clover_msg_box .season_msg{color:#3a2d2d;}
+.season_evnt .clover_msg_box .season_num_pt{color:#3c9a00;}
+
+/*------ 해바라기이벤트 -------*/
+.season_evnt .sunflower_msg_box .season_msg{color:#3a2d2d;}
+.season_evnt .sunflower_msg_box .season_num_pt{color:#ff4b2d;}
+
+/*------ 프로필 스타 이벤트 -------*/
+.season_evnt .star_msg_box .season_msg{color:#3a2d2d;}
+.season_evnt .star_msg_box .season_num_pt{color:#FF6E0F;}
+
+/* =========== 장갑 이벤트 ========= */
+/* 메시지 */
+.winter_gloves_chat_my_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/winter_glove/winter_gloves_event_chat.png") no-repeat center; background-size:214px; float:right;}
+.winter_gloves_chat_partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/winter_glove/winter_gloves_event_chat.png") no-repeat center; background-size:214px;}
+.winter_gloves_chat_txt{display:block; text-align:center; margin:0 auto; padding-top:125px; color:#fff; font-size:17px; line-height:22px;}
+.winter_gloves_chat_counter{color:#f7dc8e;}
+
+/* =========== 복주머니 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_pocket__my_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bok/bg_evnt_bok_msg.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_pocket__partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bok/bg_evnt_bok_msg.png") no-repeat center; background-size:214px;}
+.winter_pocket_chat_txt{display:block; text-align:center; margin:0 auto; padding-top:152px; color:#FFEDD5; font-size:17px; line-height:22px;}
+.winter_pocket_chat_counter{color:#FFEE00;}
+
+/* =========== #5932 봄꽃 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_flower__my_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower/bg_evnt_flower_msg.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_flower__partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower/bg_evnt_flower_msg.png") no-repeat center; background-size:214px;}
+.chat_evnt_flower__txt{display:block; text-align:center; margin:0 auto; padding-top:139px; color:#2A7C6E; font-size:17px; line-height:22px;}
+.chat_evnt_flower__counter{color:#005050; font-weight: bold;}
+
+/* =========== #6589 팥빙수 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_ice__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_ice/bg_evnt_ice_msg.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_ice__partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_ice/bg_evnt_ice_msg.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_ice__txt{margin:0 auto 10px; padding-top: 112px; color:#306899; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_ice__counter{color:#00426A; font-weight: bold;}
+.chat_event_ice__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #306899; border-radius: 4px; background: #fff; font-size: 16px; font-weight: bold; color: #306899;}
+.chat_evnt_ice__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_ice__notice{width: 100%; height: 120px; margin: 0 auto; background: #3654AE; border-radius: 5px; text-align: center;}
+.chat_evnt_ice__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px;}
+.chat_evnt_ice__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_ice__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #fff; border-radius: 4px; font-size: 14px; font-weight: bold; color: #306899;}
+
+/* =========== #6810 추석 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_lantern__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_lantern/bg_evnt_lantern_chat.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_lantern__partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_lantern/bg_evnt_lantern_chat.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_lantern__txt{margin:0 auto 10px; padding-top: 112px; color:#FFF; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_lantern__counter{color:#FFE400; font-weight: bold;}
+.chat_event_lantern__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #320A6E; border-radius: 4px; background: #fff; font-size: 16px; font-weight: bold; color: #320A6E;}
+.chat_evnt_lantern__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_lantern__notice{width: 100%; height: 120px; margin: 0 auto; background: #320A6E; border-radius: 5px; text-align: center;}
+.chat_evnt_lantern__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_lantern__notice_txt-bold{font-weight: 700;}
+.chat_evnt_lantern__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_lantern__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #fff; border: 1px solid #FF8800; border-radius: 4px; font-size: 14px; font-weight: bold; color: #FF8800; box-sizing: border-box;}
+
+/* =========== #6935 달고나 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_dalgona__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_dalgona/bg_evnt_dalgona_chat.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_dalgona__partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_dalgona/bg_evnt_dalgona_chat.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_dalgona__txt{margin:0 auto 10px; padding-top: 112px; color:#A5743D; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_dalgona__counter{color:#D55500; font-weight: bold;}
+.chat_event_dalgona__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #5A3200; border-radius: 4px; background: #fff; font-size: 16px; font-weight: bold; color: #5A3200;}
+.chat_evnt_dalgona__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_dalgona__notice{width: 100%; height: 120px; margin: 0 auto; background: #A4630B; border-radius: 5px; text-align: center;}
+.chat_evnt_dalgona__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_dalgona__notice_txt-bold{font-weight: 700;}
+.chat_evnt_dalgona__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_dalgona__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #fff; border: 1px solid #5A3200; border-radius: 4px; font-size: 14px; font-weight: bold; color: #5A3200; box-sizing: border-box;}
+
+/* =========== #7271 연말 좋아요 이벤트 ========= */
+/* 메세지 */
+.chat_evnt_like__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_like__notice{width: 100%; height: 120px; margin: 0 auto; background: #0A6450; border-radius: 5px; text-align: center;}
+.chat_evnt_like__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_like__notice_txt-bold{font-weight: 700;}
+.chat_evnt_like__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_like__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #fff; border: 1px solid #D23C46; border-radius: 4px; font-size: 14px; font-weight: bold; color: #D23C46; box-sizing: border-box;}
+
+/* =========== #7723 22년 봄꽃 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_flower22__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower22/bg_evnt_flower22_chat.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_flower22__partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower22/bg_evnt_flower22_chat.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_flower22__txt{margin:0 auto 10px; padding-top: 112px; color:#28A48B; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_flower22__counter{color:#006E64; font-weight: 900;}
+.chat_evnt_flower22__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #006E64; border-radius: 4px; background: #fff; font-size: 16px; font-weight: bold; color: #006E64;}
+.chat_evnt_flower22__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_flower22__notice{width: 100%; height: 120px; margin: 0 auto; background: #28A48B; border-radius: 5px; text-align: center;}
+.chat_evnt_flower22__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_flower22__notice_txt-bold{font-weight: 700;}
+.chat_evnt_flower22__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_flower22__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFDC; border: 1px solid #006E64; border-radius: 4px; font-size: 14px; font-weight: bold; color: #006E64; box-sizing: border-box;}
+.chat_evnt_flower22__partner_box-no_btn .chat_evnt_flower22__txt{padding-top: 145px;}
+.chat_evnt_flower22__partner_box-no_btn {background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower22/bg_evnt_flower22_chat_2.png") no-repeat center; background-size: 214px 218px;}
+
+/* =========== #9092 월드컵 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_trophy__my_box{position: relative; width:214px; height:218px; float:right; z-index: 0;}
+.chat_evnt_trophy__partner_box{width:214px; height:214px; position: relative; z-index: 0;}
+.chat_evnt_trophy__txt{margin:0 auto 10px; padding-top: 112px; color:#FFFFFF; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_trophy__counter{font-weight: 700;}
+.chat_evnt_trophy__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #006E64; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-weight: bold; color: #006E64;}
+.chat_evnt_trophy__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_trophy__notice{width: 100%; height: 120px; margin: 0 auto; background: #329F8B; border-radius: 5px; text-align: center;}
+.chat_evnt_trophy__notice_txt{padding: 20px 0 15px; color: #FFFFFF; font-size: 14px; font-weight: 400;}
+.chat_evnt_trophy__notice_txt-bold{font-weight: 700;}
+.chat_evnt_trophy__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_trophy__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #E4F9EB; border: 1px solid #006E64; border-radius: 4px; font-size: 14px; font-weight: bold; color: #006E64; box-sizing: border-box;}
+.chat_evnt_thropy__bg-no_btn+.chat_evnt_trophy__txt{padding-top: 145px;}
+.chat_evnt_thropy__bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_trophy/bg_evnt_trophy_chat.png") no-repeat center; background-size: 100% auto; z-index: -1;}
+.chat_evnt_thropy__bg-no_btn{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_trophy/bg_evnt_trophy_chat_2.png");}
+
+/* =========== #9199 크리스마스 이벤트 ========= */
+/* 메시지 */
+/* .chat_evnt_gift__my_box{position: relative; width:214px; height:218px; float:right; z-index: 0;}
+.chat_evnt_gift__partner_box{width:214px; height:218px; position: relative; z-index: 0;}
+.chat_evnt_gift__bg-no_btn+.chat_evnt_christmas__txt{padding-top: 150px;}
+.chat_evnt_gift__bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_christmas/bg_evnt_christmas_chat.png") no-repeat center; background-size: 100% auto; z-index: -1;}
+.chat_evnt_gift__bg-no_btn{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_christmas/bg_evnt_christmas_chat_2.png");}
+.chat_evnt_christmas__txt{margin:0 auto 10px; padding-top: 115px; color:#276C56; font-size:18px; line-height:20px; text-align:center;}
+.chat_evnt_christmas__counter{font-weight: 700;}
+.chat_evnt_christmas__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #276C56; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-weight: bold; color: #276C56;}
+.chat_evnt_christmas__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_christmas__notice{width: 100%; height: 120px; margin: 0 auto; background: #276C56; border-radius: 5px; text-align: center;}
+.chat_evnt_christmas__notice_txt{padding: 20px 0 15px; color: #FFFFFF; font-size: 14px; font-weight: 400;}
+.chat_evnt_christmas__notice_txt-bold{font-weight: 700;}
+.chat_evnt_christmas__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_christmas__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #ffffff; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: bold; color: #276C56; box-sizing: border-box;} */
+
+/* =========== #9281 2023 새해 복주머니 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_pocket2__my_box{position: relative; width:214px; height:218px; float:right; z-index: 0;}
+.chat_evnt_pocket2__partner_box{width:214px; height:218px; position: relative; z-index: 0;}
+.chat_evnt_pocket2__bg-no_btn+.chat_evnt_pocket2__txt{padding-top: 150px;}
+.chat_evnt_pocket2__bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_pocket2/bg_evnt_pocket2_chat.png") no-repeat center; background-size: 100% auto; z-index: -1;}
+.chat_evnt_pocket2__bg-no_btn{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_pocket2/bg_evnt_pocket2_chat_2.png");}
+.chat_evnt_pocket2__txt{margin:0 auto 10px; padding-top: 115px; color:#FFF; font-size:18px; line-height:20px; text-align:center;}
+.chat_evnt_pocket2__counter{font-weight: 700;}
+.chat_evnt_pocket2__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #8E3D55; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-weight: bold; color: #8E3D55;}
+.chat_evnt_pocket2__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_pocket2__notice{width: 100%; height: 120px; margin: 0 auto; background: #8E3D55; border-radius: 5px; text-align: center;}
+.chat_evnt_pocket2__notice_txt{padding: 20px 0 15px; color: #FFFFFF; font-size: 14px; font-weight: 400;}
+.chat_evnt_pocket2__notice_txt-bold{font-weight: 700;}
+.chat_evnt_pocket2__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_pocket2__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #ffffff; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: bold; color: #8E3D55; box-sizing: border-box;}
+
+/* =========== #9380 발렌타인 초콜릿 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_choco__my_box{position: relative; width:210px; height:210px; float:right; z-index: 0;}
+.chat_evnt_choco__partner_box{width:210px; height:210px; position: relative; z-index: 0;}
+.chat_evnt_choco__bg-no_btn+.chat_evnt_choco__txt{padding-top: 146px;}
+.chat_evnt_choco__bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_choco/bg_evnt_choco_chat.png") no-repeat center; background-size: 100% auto; z-index: -1;}
+.chat_evnt_choco__bg-no_btn{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_choco/bg_evnt_choco_chat_2.png");}
+.chat_evnt_choco__txt{margin:0 auto 8px; padding-top: 110px; color:#FFF; font-size:18px; line-height:20px; text-align:center; text-shadow: 0 1px 1px #DE677A;}
+.chat_evnt_choco__counter{font-weight: 700;}
+.chat_evnt_choco__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #F2386D; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-weight: bold; color: #F2386D;}
+.chat_evnt_choco__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_choco__notice{width: 100%; height: 120px; margin: 0 auto; background: #F78E9F; border-radius: 5px; text-align: center;}
+.chat_evnt_choco__notice_txt{padding: 20px 0 15px; color: #FFFFFF; font-size: 14px; font-weight: 400;}
+.chat_evnt_choco__notice_txt-bold{font-weight: 700;}
+.chat_evnt_choco__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_choco__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #ffffff; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: bold; color: #F2386D; box-sizing: border-box;}
+
+/* =========== #9403 화이트 캔디 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_candy__my_box{position: relative; width:210px; height:210px; float:right; z-index: 0;}
+.chat_evnt_candy__partner_box{width:210px; height:210px; position: relative; z-index: 0;}
+.chat_evnt_candy__bg-no_btn+.chat_evnt_candy__txt{padding-top: 146px;}
+.chat_evnt_candy__bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_candy/bg_evnt_msg_chat.png") no-repeat center; background-size: 100% auto; z-index: -1;}
+.chat_evnt_candy__bg-no_btn{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_candy/bg_evnt_msg_chat_2.png");}
+.chat_evnt_candy__txt{margin:0 auto 8px; padding-top: 110px; color:#FFF; font-size:18px; line-height:20px; text-align:center; text-shadow: 0 1px 2px rgba(0, 0, 0, .24);}
+.chat_evnt_candy__counter{font-weight: 700;}
+.chat_evnt_candy__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #451F91; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-weight: bold; color: #451F91;}
+.chat_evnt_candy__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_candy__notice{width: 100%; height: 120px; margin: 0 auto; background: #9D6BEC; border-radius: 5px; text-align: center;}
+.chat_evnt_candy__notice_txt{padding: 20px 0 15px; color: #FFFFFF; font-size: 14px; font-weight: 400;}
+.chat_evnt_candy__notice_txt-bold{font-weight: 700;}
+.chat_evnt_candy__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_candy__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #ffffff; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: bold; color: #451F91; box-sizing: border-box;}
+
+/* =========== #9615 2023년 봄꽃 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_flower23__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower22/bg_evnt_flower22_chat.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_flower23__partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower22/bg_evnt_flower22_chat.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_flower23__txt{margin:0 auto 10px; padding-top: 112px; color:#28A48B; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_flower23__counter{color:#006E64; font-weight: 900;}
+.chat_evnt_flower23__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #006E64; border-radius: 4px; background: #fff; font-size: 16px; font-weight: bold; color: #006E64;}
+.chat_evnt_flower23__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_flower23__notice{width: 100%; height: 120px; margin: 0 auto; background: #28A48B; border-radius: 5px; text-align: center;}
+.chat_evnt_flower23__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_flower23__notice_txt-bold{font-weight: 700;}
+.chat_evnt_flower23__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_flower23__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFDC; border: 1px solid #006E64; border-radius: 4px; font-size: 14px; font-weight: bold; color: #006E64; box-sizing: border-box;}
+.chat_evnt_flower23__partner_box-no_btn .chat_evnt_flower23__txt{padding-top: 145px;}
+.chat_evnt_flower23__partner_box-no_btn {background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower22/bg_evnt_flower22_chat_2.png") no-repeat center; background-size: 214px 218px;}
+
+/* =========== #9788 5월 장미꽃 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_rose__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose/bg_evnt_rose_chat.png") no-repeat center; background-size:214px 218px; float:right;}
+.chat_evnt_rose__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose/bg_evnt_rose_chat.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_rose__txt{margin:0 auto 10px; padding-top: 112px; color:#5A0B06; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_rose__counter{color:#EB3225; font-weight: 900;}
+.chat_evnt_rose__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #EB3225; border-radius: 4px; background: #fff; font-size: 16px; font-weight: bold; color: #EB3225;}
+.chat_evnt_rose__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_rose__notice{width: 100%; height: 120px; margin: 0 auto; background: #77B739; border-radius: 5px; text-align: center;}
+.chat_evnt_rose__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_rose__notice_txt-bold{font-weight: 700;}
+.chat_evnt_rose__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_rose__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFDC; border-radius: 4px; font-size: 14px; font-weight: bold; color: #EB3225; box-sizing: border-box;}
+.chat_evnt_rose__partner_box-no_btn .chat_evnt_rose__txt{padding-top: 120px;}
+.chat_evnt_rose__partner_box-no_btn {background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose/bg_evnt_rose_chat_2.png") no-repeat center; background-size: 214px 218px;}
+
+/* =========== #9918 23년 6월 꽃다발 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_bouquet__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bouquet/bg_evnt_bouquet_msg.png") no-repeat center; background-size:214px 218px; float:right;}
+.chat_evnt_bouquet__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bouquet/bg_evnt_bouquet_msg.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_bouquet__txt{margin:0 auto 10px; padding-top: 112px; color:#2A7C6E; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_bouquet__counter{color:#005050; font-weight: 700;}
+.chat_evnt_bouquet__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #006E64; border-radius: 8px; background: #fff; font-size: 16px; font-weight: bold; color: #006E64;}
+.chat_evnt_bouquet__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_bouquet__notice{width: 100%; height: 120px; margin: 0 auto; background: #28A48B; border-radius: 5px; text-align: center;}
+.chat_evnt_bouquet__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_bouquet__notice_txt-bold{font-weight: 700;}
+.chat_evnt_bouquet__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_bouquet__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFDC; border: 1px solid #006E64; border-radius: 4px; font-size: 14px; font-weight: bold; color: #006E64; box-sizing: border-box;}
+.chat_evnt_bouquet__partner_box-no_btn .chat_evnt_bouquet__txt{padding-top: 140px;}
+.chat_evnt_bouquet__partner_box-no_btn {background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bouquet/bg_evnt_bouquet_msg.png") no-repeat center; background-size: 214px 218px;}
+
+/* =========== #9937 23년 7월 아이스크림 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_ice_cream__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_ice_cream/bg_evnt_ice_cream_msg.png") no-repeat center; background-size:214px 218px; float:right;}
+.chat_evnt_ice_cream__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_ice_cream/bg_evnt_ice_cream_msg.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_ice_cream__txt{margin:0 auto 10px; padding-top: 112px; color:#FFFFFF; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_ice_cream__counter{color:#FFFC9B; font-weight: 900;}
+.chat_evnt_ice_cream__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #3BA6FF; border-radius: 4px; background: #fff; font-size: 16px; font-weight: 700; color: #1C98FF;}
+.chat_evnt_ice_cream__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_ice_cream__notice{width: 100%; height: 120px; margin: 0 auto; background: #1C98FF; border-radius: 5px; text-align: center;}
+.chat_evnt_ice_cream__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_ice_cream__notice_txt-bold{font-weight: 700;}
+.chat_evnt_ice_cream__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_ice_cream__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFFF; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: 700; color: #1C98FF; box-sizing: border-box;}
+.chat_evnt_ice_cream__partner_box-no_btn .chat_evnt_ice_cream__txt{padding-top: 140px;}
+
+/* =========== #10059 23년 7월 복날의 삼계탕 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_samgye__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_samgye/bg_evnt_samgye_msg.png") no-repeat center; background-size:214px 218px; float:right;}
+.chat_evnt_samgye__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_samgye/bg_evnt_samgye_msg.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_samgye__txt{margin:0 auto 10px; padding-top: 114px; color:#442510; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_samgye__counter{color:#C14C0C; font-weight: 900;}
+.chat_evnt_samgye__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #C14C0C; border-radius: 4px; background: #fff; font-size: 16px; font-weight: 700; color: #C14C0C;}
+.chat_evnt_samgye__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_samgye__notice{width: 100%; height: 120px; margin: 0 auto; background: #C14C0C; border-radius: 5px; text-align: center;}
+.chat_evnt_samgye__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_samgye__notice_txt-bold{font-weight: 700;}
+.chat_evnt_samgye__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_samgye__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFFF; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: 700; color: #442510; box-sizing: border-box;}
+.chat_evnt_samgye__partner_box-no_btn .chat_evnt_samgye__txt{padding-top: 140px;}
+
+/* =========== #10128 23년 8월 파라솔 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_parasol__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_parasol/bg_evnt_parasol_msg.png") no-repeat center; background-size:214px 218px; float:right;}
+.chat_evnt_parasol__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_parasol/bg_evnt_parasol_msg.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_parasol__txt{margin:0 auto 10px; padding-top: 114px; color:#785429; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_parasol__counter{color:#FF5211; font-weight: 900;}
+.chat_evnt_parasol__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #E89300; border-radius: 4px; background: #fff; font-size: 16px; font-weight: 700; color: #E89300;}
+.chat_evnt_parasol__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_parasol__notice{width: 100%; height: 120px; margin: 0 auto; background: #1094F8; border-radius: 5px; text-align: center;}
+.chat_evnt_parasol__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_parasol__notice_txt-bold{font-weight: 700;}
+.chat_evnt_parasol__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_parasol__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFFF; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: 700; color: #1094F8; box-sizing: border-box;}
+.chat_evnt_parasol__partner_box-no_btn .chat_evnt_parasol__txt{padding-top: 140px;}
+
+/* =========== #10158 23년 8월 아이스크림 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_ice_cream2__my_box{position: relative; width:214px; height:218px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_ice_cream/bg_evnt_ice_cream_msg.png") no-repeat center; background-size:214px 218px; float:right;}
+.chat_evnt_ice_cream2__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_ice_cream/bg_evnt_ice_cream_msg.png") no-repeat center; background-size:214px 218px;}
+.chat_evnt_ice_cream2__txt{margin:0 auto 10px; padding-top: 112px; color:#FFFFFF; font-size:18px; line-height:21px; text-align:center;}
+.chat_evnt_ice_cream2__counter{color:#FFFC9B; font-weight: 900;}
+.chat_evnt_ice_cream2__btn{display: flex; justify-content: center; align-items: center;;  margin: 0 auto; width: 180px; height: 40px; border: 1px solid #3BA6FF; border-radius: 4px; background: #fff; font-size: 16px; font-weight: 700; color: #1C98FF;}
+.chat_evnt_ice_cream2__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_ice_cream2__notice{width: 100%; height: 120px; margin: 0 auto; background: #1C98FF; border-radius: 5px; text-align: center;}
+.chat_evnt_ice_cream2__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_ice_cream2__notice_txt-bold{font-weight: 700;}
+.chat_evnt_ice_cream2__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_ice_cream2__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFFF; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: 700; color: #1C98FF; box-sizing: border-box;}
+.chat_evnt_ice_cream2__partner_box-no_btn .chat_evnt_ice_cream2__txt{padding-top: 140px;}
+
+/* =========== #10213 23년 9월 1차 가을의 꽃송이 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_flower3__my_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower3/bg_evnt_flower3_msg.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_flower3__partner_box{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower3/bg_evnt_flower3_msg.png") no-repeat center; background-size:214px;}
+.chat_evnt_flower3__my_box-btn{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower3/bg_evnt_flower3_msg_btn.png") no-repeat center; background-size:214px; float:right;}
+.chat_evnt_flower3__partner_box-btn{width:214px; height:214px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower3/bg_evnt_flower3_msg_btn.png") no-repeat center; background-size:214px;}
+.chat_evnt_flower3__txt{display:block; text-align:center; margin:0 auto; padding-top: 140px; color:#2A7C6E; font-size:17px; line-height:22px;}
+.chat_evnt_flower3__partner_box-btn .chat_evnt_flower3__txt{padding-top: 114px;}
+.chat_evnt_flower3__my_box-btn .chat_evnt_flower3__txt{padding-top: 114px;}
+.chat_evnt_flower3__counter{color:#005050; font-weight: bold;}
+.chat_evnt_flower3__btn{display: flex; justify-content: center; align-items: center;;  margin: 6px auto 0; width: 180px; height: 40px; border: 1px solid #006E64; border-radius: 8px; box-sizing: border-box; background: #fff; font-size: 16px; font-weight: bold; color: #006E64; cursor: pointer;}
+.chat_evnt_flower3__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_flower3__notice{width: 100%; height: 120px; margin: 0 auto; background: #28A48B; border-radius: 5px; text-align: center;}
+.chat_evnt_flower3__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_flower3__notice_txt-bold{font-weight: 700;}
+.chat_evnt_flower3__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_flower3__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFFDC; border: 1px solid #006E64; border-radius: 4px; font-size: 14px; font-weight: bold; color: #006E64; box-sizing: border-box; cursor: pointer;}
+
+/* =========== #10229 23년 9월 2차 보름달 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_moon__my_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_moon/bg_evnt_moon_msg.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_moon__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_moon/bg_evnt_moon_msg.png") no-repeat center; background-size:100%;}
+.chat_evnt_moon__my_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_moon/bg_evnt_moon_msg_btn.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_moon__partner_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_moon/bg_evnt_moon_msg_btn.png") no-repeat center; background-size:100%;}
+.chat_evnt_moon__txt{display:block; text-align:center; margin:0 auto; padding-top: 140px; color:#FFF; font-size:17px; line-height:22px; text-shadow: 0 0 8px #FF3E9F;}
+.chat_evnt_moon__partner_box-btn .chat_evnt_moon__txt{padding-top: 114px;}
+.chat_evnt_moon__my_box-btn .chat_evnt_moon__txt{padding-top: 114px;}
+.chat_evnt_moon__counter{color:#FFF980; font-weight: bold;}
+.chat_evnt_moon__btn{display: flex; justify-content: center; align-items: center;;  margin: 6px auto 0; width: 180px; height: 40px; border: 1px solid #5C5CAF; border-radius: 8px; box-sizing: border-box; background: #fff; font-size: 16px; font-weight: bold; color: #5C5CAF; cursor: pointer;}
+.chat_evnt_moon__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_moon__notice{width: 100%; height: 120px; margin: 0 auto; background: #8888E8; border-radius: 5px; text-align: center;}
+.chat_evnt_moon__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_moon__notice_txt-bold{font-weight: 700;}
+.chat_evnt_moon__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_moon__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFCE3; border: 1px solid #5C5CAF; border-radius: 4px; font-size: 14px; font-weight: bold; color: #5C5CAF; box-sizing: border-box; cursor: pointer;}
+
+/* =========== #10271 23년 10월 1차 단풍잎 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_maple__my_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_maple/bg_evnt_maple_msg.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_maple__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_maple/bg_evnt_maple_msg.png") no-repeat center; background-size:100%;}
+.chat_evnt_maple__my_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_maple/bg_evnt_maple_msg_btn.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_maple__partner_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_maple/bg_evnt_maple_msg_btn.png") no-repeat center; background-size:100%;}
+.chat_evnt_maple__txt{display:block; text-align:center; margin:0 auto; padding-top: 140px; color:#FFFFFF; font-size:17px; line-height:22px; text-shadow: 0 0 8px #FF8527;}
+.chat_evnt_maple__partner_box-btn .chat_evnt_maple__txt{padding-top: 114px;}
+.chat_evnt_maple__my_box-btn .chat_evnt_maple__txt{padding-top: 114px;}
+.chat_evnt_maple__counter{color:#A32323; font-weight: bold;}
+.chat_evnt_maple__btn{display: flex; justify-content: center; align-items: center;;  margin: 6px auto 0; width: 180px; height: 40px; border: 1px solid #A32323; border-radius: 8px; box-sizing: border-box; background: #fff; font-size: 16px; font-weight: bold; color: #A32323; cursor: pointer;}
+.chat_evnt_maple__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_maple__notice{width: 100%; height: 120px; margin: 0 auto; background: #E57B65; border-radius: 5px; text-align: center;}
+.chat_evnt_maple__notice_txt{padding: 20px 0 15px; color: #fff; font-size: 14px; font-weight: 400;}
+.chat_evnt_maple__notice_txt-bold{font-weight: 700;}
+.chat_evnt_maple__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_maple__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFF7E1; border: 1px solid #A32323; border-radius: 4px; font-size: 14px; font-weight: bold; color: #A32323; box-sizing: border-box; cursor: pointer;}
+
+/* =========== #10329 23년 10월 2차 감 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_persimmon__my_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_persimmon/bg_evnt_persimmon_msg.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_persimmon__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_persimmon/bg_evnt_persimmon_msg.png") no-repeat center; background-size:100%;}
+.chat_evnt_persimmon__my_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_persimmon/bg_evnt_persimmon_msg_btn.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_persimmon__partner_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_persimmon/bg_evnt_persimmon_msg_btn.png") no-repeat center; background-size:100%;}
+.chat_evnt_persimmon__txt{display:block; text-align:center; margin:0 auto; padding-top: 140px; color:#391600; font-size:17px; line-height:22px;}
+.chat_evnt_persimmon__partner_box-btn .chat_evnt_persimmon__txt{padding-top: 118px;}
+.chat_evnt_persimmon__my_box-btn .chat_evnt_persimmon__txt{padding-top: 118px;}
+.chat_evnt_persimmon__counter{color:#391600; font-weight: 700;}
+.chat_evnt_persimmon__btn{display: flex; justify-content: center; align-items: center;;  margin: 6px auto 0; width: 180px; height: 40px; border: 1px solid #DD4F32; border-radius: 8px; box-sizing: border-box; background: #fff; font-size: 16px; font-weight: bold; color: #DD4F32; cursor: pointer;}
+.chat_evnt_persimmon__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_persimmon__notice{width: 100%; height: 120px; margin: 0 auto; background: #F4D5C1; border-radius: 5px; text-align: center;}
+.chat_evnt_persimmon__notice_txt{padding: 20px 0 15px; color: #522103; font-size: 14px; font-weight: 400;}
+.chat_evnt_persimmon__notice_txt-bold{font-weight: 700;}
+.chat_evnt_persimmon__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_persimmon__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFFCE3; border: 1px solid #DD4F32; border-radius: 4px; font-size: 14px; font-weight: bold; color: #DD4F32; box-sizing: border-box; cursor: pointer;}
+
+/* =========== #10437 23년 11월 2차 장미 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_rose2__my_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose2/bg_evnt_rose2_msg.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_rose2__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose2/bg_evnt_rose2_msg.png") no-repeat center; background-size:100%;}
+.chat_evnt_rose2__my_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose2/bg_evnt_rose2_msg_btn.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_rose2__partner_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose2/bg_evnt_rose2_msg_btn.png") no-repeat center; background-size:100%;}
+.chat_evnt_rose2__txt{display:block; text-align:center; margin:0 auto; padding-top: 140px; color:#4A532F; font-size:17px; line-height:22px;}
+.chat_evnt_rose2__partner_box-btn .chat_evnt_rose2__txt{padding-top: 118px;}
+.chat_evnt_rose2__my_box-btn .chat_evnt_rose2__txt{padding-top: 118px;}
+.chat_evnt_rose2__counter{color:#D1334F; font-weight: 700;}
+.chat_evnt_rose2__btn{display: flex; justify-content: center; align-items: center;;  margin: 6px auto 0; width: 180px; height: 40px; border: 1px solid #4A532F; border-radius: 8px; box-sizing: border-box; background: #fff; font-size: 16px; font-weight: bold; color: #4A532F; cursor: pointer;}
+.chat_evnt_rose2__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_rose2__notice{width: 100%; height: 120px; margin: 0 auto; background: #D66F75; border-radius: 5px; text-align: center;}
+.chat_evnt_rose2__notice_txt{padding: 20px 0 15px; color: #FFF; font-size: 14px; font-weight: 400;}
+.chat_evnt_rose2__notice_txt-bold{font-weight: 700;}
+.chat_evnt_rose2__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_rose2__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #FFF0E9; border-radius: 4px; font-size: 14px; font-weight: 700; color: #D1334F; box-sizing: border-box; cursor: pointer;}
+
+/* =========== #10482 23년 12월 선물형 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_christmas2__my_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_christmas2/bg_evnt_christmas2_msg.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_christmas2__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_christmas2/bg_evnt_christmas2_msg.png") no-repeat center; background-size:100%;}
+.chat_evnt_christmas2__my_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_christmas2/bg_evnt_christmas2_msg_btn.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_christmas2__partner_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_christmas2/bg_evnt_christmas2_msg_btn.png") no-repeat center; background-size:100%;}
+.chat_evnt_christmas2__txt{display:block; text-align:center; margin:0 auto; padding-top: 140px; color:#276C56; font-size:17px; line-height:22px;}
+.chat_evnt_christmas2__partner_box-btn .chat_evnt_christmas2__txt{padding-top: 114px;}
+.chat_evnt_christmas2__my_box-btn .chat_evnt_christmas2__txt{padding-top: 114px;}
+.chat_evnt_christmas2__counter{color:#276C56; font-weight: 700;}
+.chat_evnt_christmas2__btn{display: flex; justify-content: center; align-items: center;;  margin: 6px auto 0; width: 180px; height: 40px; border: 1px solid #276C56; border-radius: 8px; box-sizing: border-box; background: #fff; font-size: 16px; font-weight: bold; color: #276C56; cursor: pointer;}
+.chat_evnt_christmas2__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_christmas2__notice{width: 100%; height: 120px; margin: 0 auto; background: #276C56; border-radius: 5px; text-align: center;}
+.chat_evnt_christmas2__notice_txt{padding: 20px 0 15px; color: #FFF; font-size: 14px; font-weight: 400;}
+.chat_evnt_christmas2__notice_txt-bold{font-weight: 700;}
+.chat_evnt_christmas2__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_christmas2__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #fff; border-radius: 4px; font-size: 14px; font-weight: 700; color: #006E64; box-sizing: border-box; cursor: pointer;}
+
+
+/* =========== #10527 24년 01월 선물형 이벤트 ========= */
+/* 메시지 */
+.chat_evnt_bok2__my_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bok2/bg_evnt_bok2_msg.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_bok2__partner_box{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bok2/bg_evnt_bok2_msg.png") no-repeat center; background-size:100%;}
+.chat_evnt_bok2__my_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bok2/bg_evnt_bok2_msg_btn.png") no-repeat center; background-size:100%; float:right;}
+.chat_evnt_bok2__partner_box-btn{width:214px; height:218px; position: relative; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bok2/bg_evnt_bok2_msg_btn.png") no-repeat center; background-size:100%;}
+.chat_evnt_bok2__txt{display:block; text-align:center; margin:0 auto; padding-top: 140px; color:#004C81; font-size:17px; line-height:22px;}
+.chat_evnt_bok2__partner_box-btn .chat_evnt_bok2__txt{padding-top: 114px;}
+.chat_evnt_bok2__my_box-btn .chat_evnt_bok2__txt{padding-top: 114px;}
+.chat_evnt_bok2__counter{color:#4669D9; font-weight: 700;}
+.chat_evnt_bok2__btn{display: flex; justify-content: center; align-items: center;;  margin: 6px auto 0; width: 180px; height: 40px; border: 1px solid #4669D9; border-radius: 8px; box-sizing: border-box; background: #fff; font-size: 16px; font-weight: bold; color: #4669D9; cursor: pointer;}
+.chat_evnt_bok2__notice_wrap{padding: 0 23px 14px;}
+.chat_evnt_bok2__notice{width: 100%; height: 120px; margin: 0 auto; background: #5A88C4; border-radius: 5px; text-align: center;}
+.chat_evnt_bok2__notice_txt{padding: 20px 0 15px; color: #FFF; font-size: 14px; font-weight: 400;}
+.chat_evnt_bok2__notice_txt-bold{font-weight: 700;}
+.chat_evnt_bok2__notice_btn_wrap{margin: 0 10px;}
+.chat_evnt_bok2__notice_btn{width: 100%; height: 35px; display: flex; justify-content: center; align-items: center; margin: 0 auto; background: #fff; border-radius: 4px; font-size: 14px; font-weight: 700; color: #5A88C4; box-sizing: border-box; cursor: pointer;}

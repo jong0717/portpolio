@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_pay
+	설　명 : 내 코인
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.my_pay { position: relative; padding:16px 30px 14px; box-shadow: 0 1px 4px rgba(0,0,0,.16);} 
+.my_pay-bg { background-color:#EFF3FF; } 
+.my_pay__card { width:100%; border-radius: 10px; overflow: hidden; background-color: #FFF; box-shadow: 0 1px 4px rgba(0,0,0,.16);}
+
+.my_pay__coin_wrap {width:100%; padding: 16px 20px 8px; box-sizing: border-box; background:#fff; text-align: center;}
+.my_pay__coin_tit {font-size:14px; color:#505050;} 
+.my_pay__coin { display: -webkit-box; display: -ms-flexbox; display: flex; justify-content: center; align-items: center; margin-left:16px; } 
+.my_pay__coin_icon { width:25px; height:25px; margin-right:6px; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3e%3ccircle fill='%23FFDB45' cx='25' cy='25' r='25'/%3e%3ccircle fill='%23FFB630' cx='25' cy='25' r='17.97'/%3e%3cpath fill='white' d='M14.84 25.22c0-7.23 5.18-11.4 11.05-11.4 2.32 0 4.57.85 6.3 2.4l-2.71 3.67a4.938 4.938 0 00-3.32-1.43c-3.28 0-5.53 2.67-5.53 6.76 0 4.06 2.24 6.68 5.37 6.68 1.56-.07 3.05-.69 4.21-1.74l2.24 3.75a10.75 10.75 0 01-7.07 2.63c-5.98 0-10.54-4.17-10.54-11.32z'/%3e%3c/svg%3e") no-repeat center; background-size:25px 25px; } 
+.my_pay__coin_num { font-size:24px; color:#202020; font-weight:700; }
+
+.my_pay__btn {position: relative; width:100%; text-align: center; background:linear-gradient(to bottom, #7496FF, #4169E1); overflow: hidden;} 
+.my_pay__btn_txt{line-height:35px; color:#fff; font-weight:700; text-shadow: 0 2px 2px rgba(54, 84,174, .37);}
+
+.my_pay__info {display: flex; justify-content: center; align-items: center; margin-top: 8px; width:100%;} 
+.my_pay__info_txt {margin-left: 4px; font-size:13px; font-weight:500; color:#505050; } 
+.my_pay__info_accent {font-weight: 700; color: #202020;} 
+.my_pay__ico_tip{width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 16 16'%3e%3cg fill='%23202020'%3e%3cpath d='M8 15c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7M8 2C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6'/%3e%3cpath d='M8 4.3c.4 0 .8.4.8.8s-.4.8-.8.8-.8-.4-.8-.8.4-.8.8-.8M8 6.8c.4 0 .7.3.7.7v3.9c0 .4-.4.7-.7.7-.4 0-.7-.3-.7-.7V7.5c0-.4.3-.7.7-.7'/%3e%3c/g%3e%3c/svg%3e") center no-repeat; background-size: 100% auto; cursor: pointer;}
+
+.my_pay__mileage{display: flex; justify-content: center; align-items: center; gap: 4px; margin: 0 auto 16px; padding: 0 44px; width: max-content; height: 30px; border-radius: 16px; background-color: #F1F1F1;}
+.my_pay__mileage_txt{padding-left: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/ico_mileage.png") left center no-repeat; background-size: 16px; font-size: 13px; font-weight: 400; color: #202020;}
+.my_pay__mileage_num{font-size: 13px; font-weight: 700; color: #202020;}
+.my_pay__mileage_more{padding: 3px 0; font-size: 11px; color: #3654AE; text-decoration: underline; cursor: pointer;}

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __msg_ticket
+	설　명 : 메시지 이용권
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.msg_ticket{padding: 28px 15px 0;}
+
+.msg_ticket__tit{font-size: 16px; font-weight: 700; color: #202020;}
+.msg_ticket__tit_sub{margin-top: 4px; font-size: 14px; color: #707070;}
+
+/* .msg_ticket__list_wrap{margin-top: 16px;}
+.msg_ticket__list{display: flex; align-items: center;}
+.msg_ticket__list:not(:first-child){margin-top: 15px;}
+.msg_ticket__ico_msg{width: 48px; height: 48px; border: 1px solid #D4D4D4; border-radius: 50%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_bm/ico_item_msg.png") no-repeat center; background-size: 28px;}
+.msg_ticket__txt{margin-left: 16px; font-size: 16px; color: #202020;}
+.msg_ticket__price{min-width: 86px; padding: 4px 8px 4px 32px; margin-left: auto; border-radius: 4px; box-sizing: border-box; background: #FFF9E2 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3e%3ccircle fill='%23FFDB45' cx='25' cy='25' r='25'/%3e%3ccircle fill='%23FFB630' cx='25' cy='25' r='17.97'/%3e%3cpath fill='white' d='M14.84 25.22c0-7.23 5.18-11.4 11.05-11.4 2.32 0 4.57.85 6.3 2.4l-2.71 3.67a4.938 4.938 0 00-3.32-1.43c-3.28 0-5.53 2.67-5.53 6.76 0 4.06 2.24 6.68 5.37 6.68 1.56-.07 3.05-.69 4.21-1.74l2.24 3.75a10.75 10.75 0 01-7.07 2.63c-5.98 0-10.54-4.17-10.54-11.32z'/%3e%3c/svg%3e") no-repeat left 8px center; background-size: 18px; color: #202020; font-weight: 700; text-align: right;} */
+
+.msg_ticket__item_wrap{display: flex; align-items: center; gap: 10px; padding-top: 12px;}
+.msg_ticket__item{display: flex; flex-direction: column; align-items: center; width: 100%; padding: 10px 0; border: 1px solid #E1E1E1; border-radius: 8px; box-sizing: border-box; cursor: pointer;}
+.msg_ticket__item_tit{color: #202020; font-weight: 700;}
+.msg_ticket__item_price{padding-left: 20px; margin-top: 5px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3e%3ccircle fill='%23FFDB45' cx='25' cy='25' r='25'/%3e%3ccircle fill='%23FFB630' cx='25' cy='25' r='17.97'/%3e%3cpath fill='white' d='M14.84 25.22c0-7.23 5.18-11.4 11.05-11.4 2.32 0 4.57.85 6.3 2.4l-2.71 3.67a4.938 4.938 0 00-3.32-1.43c-3.28 0-5.53 2.67-5.53 6.76 0 4.06 2.24 6.68 5.37 6.68 1.56-.07 3.05-.69 4.21-1.74l2.24 3.75a10.75 10.75 0 01-7.07 2.63c-5.98 0-10.54-4.17-10.54-11.32z'/%3e%3c/svg%3e") no-repeat left center; background-size: 16px; color: #202020;}

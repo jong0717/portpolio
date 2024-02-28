@@ -1,0 +1,352 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : idealtype
+	설　명 : AI 나의 이상형 찾기
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+@keyframes aiBoarderAni{
+	10%{
+		box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.28), 0 0 20px rgba(255, 255, 255, 0.1);
+		color:#00FFFF; 
+	}
+}
+
+/* 이상형 찾기 페이지 */
+.idealtype__analysis {width:100%;height:calc( 100vh - 45px ); background:linear-gradient(#143E9F, #02226E, #010924);}
+.idealtype__bg {position:absolute; top:0; left:0; width:100%; height:100%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype__bg.png") no-repeat top center; background-size:100% auto;}
+.idealtype__bg-ani {background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype__bg_ani.png") no-repeat top center; background-size:100% auto;}
+.idealtype__contents_wrap{position: relative; display:flex; justify-content:center; align-items:center; width:100%; height:100%;}
+.idealtype__contents{display:flex; flex-direction: column; align-items:center; width:100%; height:auto;}
+.idealtype__graphic_img {width:100%; max-width:420px;}
+
+/* 상대방프로필 로딩 애니메이션 */
+.idealtype__ani_box_wrap {width:100%; height:auto;}
+.idealtype__ani_box {width:50%; max-width:420px; margin: 0 auto;}
+
+/* #9066 AI 분석 리포트 로딩 애니메이션 */
+.idealtype__ani_box_wrap-bg{display: flex; align-items: center; justify-content: center; width: 268px; height: 222px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_idealtype_ani.png") no-repeat center; background-size: 100%;}
+.idealtype__ani_box_wrap-bg .idealtype__ani_box{width: 212px; padding-right: 4px; margin-top: 30px;}
+
+
+.idealtype__btn_more {min-width:158px; height:44px; line-height:44px; text-align:center; padding:0 30px; border-radius:25px; box-sizing: border-box; background-color:#fff; color:#253066; font-weight: 700;}
+.idealtype__describe {margin-top:-16px; text-shadow: 0 1px 2px rgba(0, 0, 0, .48);}
+.idealtype__describe_txt {font-size:15px; color:#fff; text-align:center;}
+.idealtype__describe_txt_b {font-size:20px; color:#FFD81B; font-weight: 700;}
+.idealtype__nickname_wrap {line-height:24px; color:#fff; font-size:16px; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, .48);}
+.idealtype__ani_wrap {position: relative; width:80%; text-align: center; }
+.idealtype__ani_txt{width: 70%; height:35px; margin: 0 auto 5px; border-radius: 4px; line-height: 35px; box-shadow: inset 0 0 20px rgba(255, 255, 255, 0); animation: aiBoarderAni 3.6s cubic-bezier(0.19, 1, 0.22, 1) infinite; color:#616D8B;}
+.idealtype__ani_txt:nth-child(2){animation-delay: 1.2s;}
+.idealtype__ani_txt:nth-child(3){animation-delay: 2.4s;}
+
+@keyframes ani_version2 {
+	0% {margin-top:0;}
+	15% {margin-top:0;}
+	30% {margin-top:-50px;}
+	50% {margin-top:-50px;}
+	65% {margin-top:-100px;}
+	85% {margin-top:-100px;}
+	100% {margin-top:-150px;}
+}
+
+
+/* 이상형 리스트 페이지 */
+.idealtype_list__wrap{position:relative; width:100%; min-height:calc( 100vh - 45px ); background-color:#F5F6F8;}
+.idealtype_list__bg {position:absolute; width:100%; height:275px; background:linear-gradient(#0C328B, #021E61, #010924); overflow:hidden;}
+.idealtype_list__bg::before {content:''; display: block; width:auto; height:275px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype_list__bg.png") no-repeat top center; background-size:auto 275px;}
+.idealtype_list__container {position:relative;}
+.idealtype_list__guide {display: flex; align-items: center; width:100%; padding:0 15px; box-sizing: border-box;}
+.idealtype_list__guide_icon {display:flex; flex:0 0 auto; align-items:center;}
+.idealtype_list__guide_txt {line-height:23px; text-decoration:underline; text-underline-position:under;}
+.idealtype_list__my {display:flex; flex-direction: column; align-items:center;}
+.idealtype_list__my_card{margin-top:-10px;}
+.idealtype_list__myinfo_wrap {width:100%; box-sizing: border-box;}
+.idealtype_list__nickname_bg {border:1px solid #fff; border-radius:8px; background-color:rgba(61,94,255,0.16);}
+.idealtype_list__describe {display:block;}
+.icon_idealtype__update {width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/icon_idealtype_update.png") center no-repeat; background-size: 100%;}
+
+/* 온보딩 */
+.idealtype__on_layer{position: relative; width:91.6%; min-width:330px; max-width:390px; border-radius:8px; box-sizing: border-box; box-shadow: 0 2px 6px 0 rgba(0,0,0,.21); background-color:#fff; cursor: pointer;}
+.idealtype__on_content {position:relative; display:flex; flex-direction: column; justify-content:center; align-items:center;  border-radius:8px; overflow:hidden;}
+.idealtype__on_header{width: 100%; padding-bottom: 18.18%; background:#081843 url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype__on_header2.png") no-repeat center; background-size: 100%;}
+.pop__idealtype_fit_section{margin: 8px; background: #F1F6FC; border-radius: 8px; background-color: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.20);}
+.idealtype__on_describe {line-height:18px;}
+.idealtype__on_swipe{width: 100%; overflow: hidden;}
+.idealtype__on_swipe_container{position: relative; width: 100%;}
+.idealtype__on_swipe_wrapper{width: 100%; display: flex;}
+.idealtype__on_swipe_slide{position: relative; width: 100%; flex: 0 0 auto; display: flex; flex-direction: column; align-items: center;}
+.idealtype__on_img {width:71.5%; min-width:236px; max-width:270px;}
+.idealtype__on_txt {display:block; line-height:19px; color:#202020;}
+.idealtype__highlight {background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype__highlight.png") no-repeat center 14px; background-size:auto 6px; font-weight:700;}
+.idealtype__on_pager {position:absolute; top:40%; width:40px; height:40px; padding:10px 4px;}
+.idealtype__on_pager-left {left:0; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype__on_pager_left.png") no-repeat center; background-size:100%;}
+.idealtype__on_pager-right {right:0; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype__on_pager_right.png") no-repeat center; background-size:100%;}
+.idealtype__on_pagination{position:absolute; bottom: 24px; width: 100%; display:flex; justify-content: center; align-items: center; width:100%;}
+.idealtype__on_pagination-bottom{bottom: 0;}
+.idealtype__on_pagination_bullet{width:8px; height:8px; border-radius: 50%; margin-right:8px; background-color:#ACC1FF;}
+.idealtype__on_pagination_bullet:last-child{margin-right: 0;}
+.idealtype__on_pagination_bullet-active{background-color:#3654AE;}
+
+/* 프로필 - 띠배너 */
+.idealtype__pf_bnr{position: relative; width:100%; background-color:#f3f4f6; box-sizing: border-box; z-index: 1;}
+.idealtype__pf_bnr-pd{padding:4px 8px 0;}
+.idealtype__pf_bnr_container{position: relative; display:flex; align-items: center; justify-content: space-around; width:100%; height:50px; box-sizing: border-box; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_idealtype_pf_bnr.png") repeat-x center; background-size:100% auto; overflow: hidden; cursor: pointer;}
+.idealtype__pf_bnr_container-pd {border-radius:5px;}
+.idealtype__pf_bnr_img_wrap{flex:0 0 auto; width:39px; height:39px;}
+.idealtype__pf_bnr_img{display:block; width:100%; height:100%; object-fit:contain;}
+.idealtype__pf_bnr_content{width:auto;}
+.idealtype__pf_ai_bdg{margin-left: -4px; margin-right: 2px; width: 15px; height: 15px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ymti/common/bdg_ymti_profile_ai.png") center no-repeat; background-size: 15px;}
+.idealtype__pf_bnr_txt_img{display:block; width:100px; height:20px; margin:0 auto;}
+.idealtype__pf_bnr_right{flex:0 0 auto;}
+.idealtype__pf_bnr_btn_arrow{width:30px; height:30px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/ico_idealtype_arrow_right.png") no-repeat center; background-size:36px 36px;}
+.idealtype__pf_bnr_btn_arrow-ani{width:40px; height:40px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/ani__idealtype_arrow_right.gif") no-repeat center; background-size:100%; opacity:0.6;}
+.idealtype_bnr_img-ani {
+	-webkit-animation: ani-blink 2s infinite both;
+	animation: ani-blink 2s infinite both;
+}
+.idealtype__pfedit_bnr {position:relative; width:100%; height:50px; overflow: hidden;}
+.idealtype__pfedit_bnr-fixed {position:fixed; left:0; top:0; z-index:11;}
+.idealtype__pfedit_bnr_bg {display:flex; align-items: center; justify-content:center; width:100%; height:50px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype__pfedit_bnr_bg.png") no-repeat center; background-size:auto 50px; overflow: hidden;}
+.idealtype__pfedit_bnr_img_wrap {flex:0 0 auto; width:29px; height:29px;}
+.idealtype__pop_bg{position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, .4);}
+@media (min-width: 460px) {
+	.idealtype__pop_bg{left: 50%; width: 460px; margin-left: -230px;}
+}
+
+/**
+ * ----------------------------------------
+ * animation ani-blink
+ * ----------------------------------------
+ */
+@-webkit-keyframes ani-blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes ani-blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* #6936 AI 나의 이상형 찾기 팝업 */
+/* 메인리스트 조건팝업 */
+/* .pop__idealtype_layer{position: relative; width:86%; max-width:400px; min-width:325px; border-radius:10px; box-sizing: border-box; box-shadow: 0 2px 6px 0 rgba(0,0,0,.21);}
+.pop__idealtype_bg{width:100%; height:100%; border-radius:10px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/pop_idealtype_bg.png") no-repeat center; background-size:100% auto; overflow: hidden;}
+.pop__idealtype_content {display:flex; flex-direction: column; justify-content:center; align-items:center;}
+.pop__idealtype_top_img {width:80%; height:auto;}
+.pop__idealtype_state_wrap {position:absolute; top:6px; right:8px;}
+.icon__idealtype_state {width:33px; height:33px; border-radius:50%;}
+.icon__idealtype_state-clear {background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/ico_idealtype_clear.png") no-repeat center; background-size:100%;}
+.icon__idealtype_state-unclear {background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/ico_idealtype_unclear.png") no-repeat center; background-size:100%;}
+.pop__idealtype_opts_tit_wrap {position:absolute; bottom:10px; width:100%; text-align: center;}
+.pop__idealtype_opts_tit {font-size:13px; color:#02226E; font-weight:700;}
+.pop__idealtype_describe {display:flex; flex-direction: column; align-items: center; justify-content:center; width:calc( 100% - 30px ); min-height:78px; line-height:20px; padding:6px; border:1px solid #fff; border-radius:8px; box-sizing:border-box; background-color:rgba(61,94,255,0.16); text-align:center;}
+.pop__idealtype_btn {min-width:160px; max-width:200px; height:44px; line-height:44px; padding:0 24px; border-radius:25px; box-sizing: border-box; background-color:#fff; color:#253066; font-weight: 700; text-align:center;}
+.pop__idealtype_btn-off {background-color:#ACACAC; color:#414141;} */
+
+/* #6936 AI 맞춤형 분석 */
+/* donut progressbar 팝업 */
+/* .pop__idealtype_fit_layer{position: relative; width:86%; max-width:400px; min-width:330px; box-shadow: 0 2px 6px 0 rgba(0,0,0,.21);}
+.pop__idealtype_fit_container{border-radius: 10px; background-color: #D9EAFF; overflow: hidden;}
+.pop__idealtype_fit_header{width: 100%; padding-bottom: 18.18%; background:#081843 url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_idealtype_fit_header.png") center no-repeat; background-size: 100%;}
+.pop__idealtype_fit_section{margin: 8px; *background: #F1F6FC; border-radius: 8px; background-color: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.20);}
+.pop__idealtype_fit_tit {width:179px; height:33px; line-height:33px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/idealtype_pf_pop_bg.png") no-repeat center; background-size:100%; color:#fff;}
+.pop__idealtype_fit_graph_wrap{display: flex; justify-content: space-around; padding-bottom: 12px;}
+.pop__idealtype_fit_ymti_txt{display: inline-block; padding-left: 12px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' xml:space='preserve'%3e%3cpath fill='%23FFAB66' d='M6.5 10.3c-2.5.3-6.3 5.4-4.2 7.4 2.9 2.8 5.5-1.5 6.1-4-.1 2.3-.2 6.6 3.4 6.2 3.5-.4 4.2-6 .9-7.1 1.8.7 3 1.5 5.3 1.1 1.6-.3 2.6-3.3 1.9-5-1.3-2.7-5.2-1.6-6.5.1C15 6.9 17 1.9 12.7.6c-3-1.1-4.5 3.7-4 6.5C7.1 4.2 2.2 1.7.6 5.9c-1.1 2.8 3.5 6 5.4 4.7'/%3e%3cpath fill='%23FFFFAB' d='M13.2 9.9c-.1 1.5-1.4 2.7-2.9 2.6-1.5-.1-2.7-1.4-2.6-2.9C7.7 8.1 9 6.9 10.5 7c1.6.1 2.8 1.4 2.7 2.9z'/%3e%3c/svg%3e") left center no-repeat; background-size: 10px 10px;}
+.pop__idealtype_fit_ymti_content{padding-bottom: 16px;}
+.pop__idealtype_fit_ymti_jewel_q{width: 64px; height: 64px; padding-bottom: 8px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/ymti/common/img_ymti_default.png") center no-repeat; background-size: 100%;}
+.pop__idealtype_fit_ymti_content_result{display: flex; align-items: center; margin-bottom: 12px;}
+.pop__idealtype_fit_ymti_btn{display:inline-block; width: 100%; height: 44px; line-height:44px; margin-bottom: 10px; background: #4C95A7; color: #fff; font-weight: bold; border-radius: 8px; text-align: center;}
+.pop__idealtype_fit_ymti_img{display: block; width: 110px; height: auto; margin: 0 auto;}
+.pop__idealtype_fit_ymti_img_tit{display: block; width: 100px; height: auto; margin: 0 auto;}
+.pop__idealtype_fit_ymti_ex_wrap{margin-left: 2px;}
+.pop__idealtype_fit_ymti_ex_txt{word-break: break-all;}
+.pop__idealtype_fit_ymti_ex_emp{background: linear-gradient(180deg,rgba(255,255,255,0) 70%, rgba(255, 123, 123, 0.40) 50%); font-weight: bold;} */
+
+/* #6936 AI 결혼 지수 분석 */
+/* linear progressbar 일부만 살아있음.. */
+.pop__idealtype_quot_layer {position: relative; width:86%; max-width:400px; min-width:330px; box-shadow: 0 2px 6px 0 rgba(0,0,0,.21); border-radius: 8px; background-color:#fff;}
+.pop__idealtype_quot_bg {position:absolute; width:100%; *height:125px; height:105px; background:linear-gradient(#081843, #0B215A, #1E3B83); overflow:hidden; border-radius:8px 8px 0 0;}
+.pop__idealtype_quot_bg::before {content:''; display: block; width:auto; height:125px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/pop_idealtype_quot_bg.png") no-repeat top center; background-size:auto 125px;}
+.pop__idealtype_quot_container {position:relative; display:flex; flex-direction: column; align-items: center;}
+.pop__idealtype_quot_header {width:200px; height:36px; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/pop_idealtype_quot_header.png") center no-repeat; background-size:100%;}
+.pop__idealtype_quot_result {display:flex; flex-direction: column; align-items: center; width:calc( 100% - 30px ); border:1px solid #fff; border-radius:8px; box-sizing: border-box; background-color:#fff; box-shadow: 0 1px 3px rgba(0,0,0,.16);}
+.pop__idealtype_quot_result.idealtype_quot-yellow {border:1px solid #FFFDCB;}
+.pop__idealtype_quot_result.idealtype_quot-blue {border:1px solid #DDF6F6;}
+.pop__idealtype_quot_result.idealtype_quot-green {border:1px solid #E4F8E5;}
+.pop__idealtype_quot_result.idealtype_quot-pink {border:1px solid #FFE6EC;}
+.pop__idealtype_quot_score {width:100%; text-align:center; border-radius: 8px 8px 0 0;}
+.pop__idealtype_quot_score_box {width:160px; height:40px; line-height:39px; margin:0 auto; border-radius:8px; font-size:29px; color:#fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .16);}
+.idealtype_quot-yellow .pop__idealtype_quot_score {background:#FFFEE9;}
+.idealtype_quot-yellow .pop__idealtype_quot_score_box {background:linear-gradient(#FFE851, #FFC041);}
+.idealtype_quot-blue .pop__idealtype_quot_score {background:#DDF6F6;}
+.idealtype_quot-blue .pop__idealtype_quot_score_box {background:linear-gradient(#0DBCE9, #0C80EE);}
+.idealtype_quot-green .pop__idealtype_quot_score {background:#E4F8E5;}
+.idealtype_quot-green .pop__idealtype_quot_score_box {background:linear-gradient(#45E966, #30BC39);}
+.idealtype_quot-pink .pop__idealtype_quot_score {background:#FFE6EC;}
+.idealtype_quot-pink .pop__idealtype_quot_score_box {background:linear-gradient(#FF72A2, #EC004F);}
+.pop__idealtype_quot_graph {width:calc( 100% - 30px );}
+
+
+/* 프로필 페이지 팝업 _ AI 설명 */
+.idealtype__pop_exp{position: relative; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_idealtype_pop_bg.png") center no-repeat; background-size: 100% 100%;}
+.idealtype__pop_exp_header{width: 100%; padding-bottom: 18.2%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_idealtype_pop_header.png") center top -1px no-repeat; background-size: 100% auto;}
+.idealtype__pop_exp_content{position: relative; padding: 12px 15px 20px;}
+
+.idealtype__pop_exp_img_wrap{position: relative; min-width: 300px; padding-bottom: 66.666%; margin: 0 auto;}
+.idealtype__pop_exp_img{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.idealtype__pop_exp_img{animation-name: fadeIn, fadeOut; animation-duration: 0.8s, 0.5s; animation-timing-function: ease-in, ease-in-out; animation-fill-mode: forwards; opacity: 0;}
+.idealtype__pop_exp_img:nth-child(1){animation-delay: 0.2s, 2.2s;}
+.idealtype__pop_exp_img:nth-child(2){animation-delay: 2.6s, 7s;}
+.idealtype__pop_exp_img:nth-child(3){animation-name:fadeIn; animation-timing-function:ease-in; animation-delay: 7.4s;}
+.idealtype__pop_exp_img-1{background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_idealtype_pop_img-1.png") center no-repeat; background-size: 100% auto;}
+.idealtype__pop_exp_img-2{background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_idealtype_pop_img-2.png") center no-repeat; background-size: 100% auto;}
+.idealtype__pop_exp_img-3{background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_idealtype_pop_img-3.png") center no-repeat; background-size: 100% auto;}
+
+.idealtype__pop_exp_txt_wrap{padding-top: 14px; font-size: 16px; line-height: 23px; text-align: center;}
+.idealtype__pop_exp_txt{animation: fadeInUp 1s ease-out; animation-fill-mode: forwards; opacity: 0;}
+.idealtype__pop_exp_txt:nth-child(1){animation-delay: 0.3s;}
+.idealtype__pop_exp_txt:nth-child(2){animation-delay: 1.2s;}
+.idealtype__pop_exp_txt:nth-child(3){animation-delay: 2.4s;}
+.idealtype__pop_exp_txt:nth-child(4){animation-delay: 3.6s;}
+.idealtype__pop_exp_txt:nth-child(5){animation-delay: 4.8s;}
+.idealtype__pop_exp_txt:nth-child(6){animation-delay: 6s;}
+.idealtype__pop_exp_txt:nth-child(7){animation-delay: 7.2s;}
+.idealtype__pop_exp_txt:nth-child(8){animation-delay: 8.4s;}
+.idealtype__pop_exp_txt:nth-child(9){animation-delay: 9.6s;}
+
+/* 프로필 페이지 팝업 _ AI 분석 총합 */
+.idealtype__pop_total {border-radius:8px; overflow: hidden; background-color:#042674;}
+.idealtype__pop_total_top {width: 100%; height:auto; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_idealtype_pop_total_top_bg2.png") no-repeat center; background-size: auto 125px; text-align: center;}
+.idealtype__pop_total_header_img {width:247px; height:auto; margin-bottom:-17px;}
+.idealtype__pop_total_score {color:#65FFFF; font-size:60px; font-weight:bold; margin-bottom:-10px;}
+/* #7977 결혼지수 분석 고도화 */
+.idealtype__pop_total_score-red{color: #FF51E8;}
+.idealtype__pop_total_score-yellow{color: #F8F244;}
+.idealtype__pop_total_bot {width:100%; height:auto; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_idealtype_pop_total_bot_bg.png") no-repeat center; background-size: auto 81px; text-align: center;}
+.idealtype__pop_total_bot_tit {color:#fff; font-size:14px; font-weight:700; text-shadow: 0 1px 2px rgba(0, 0, 0, .48);}
+.idealtype__pop_total_bot_txt {color:#fff; font-size:13px; line-height: 17px; text-shadow: 0 1px 2px rgba(0, 0, 0, .48);}
+.idealtype__pop_total_graph {position:relative; width:100%; height:257px; background:#fff;}
+.idealtype__pop_total_graph-auto {min-height:257px; height:auto;}
+.idealtype__pop_total_graph_header{display: flex; align-items: center; width:100%; height:45px; background-color:#fff; border-bottom:1px solid #f1f1f1; box-sizing: border-box;}
+.idealtype__total_graph_header_btn{position:relative; display: flex; justify-content: center; align-items: center; min-width:45px; height:45px;}
+.idealtype__total_graph_header_btn .header__ico_back{width:100%; height:100%; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3e%3cpath fill='%233654AE' d='M38 49c-.59 0-1.17-.26-1.56-.75l-12-15c-.58-.73-.58-1.77 0-2.5l12-15a2 2 0 012.81-.31 2 2 0 01.31 2.81L28.56 32l11 13.75A2 2 0 0138 49z'/%3e%3c/svg%3e") no-repeat center; background-size:32px;}
+.idealtype__total_graph_header_tit{flex:1; display: flex; align-items: center; overflow:hidden;}
+.idealtype__total_graph_header_txt{color:#202020; font-size:15px; font-weight:700; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+.idealtype__pop_total_graph_ani {width:100%; display:flex; justify-content: center;}
+.idealtype__pop_total_graph_ani_box {width:270px; height:186px; padding:20px 9px 0 0}
+.idealtype__pop_total_graph_pie {position:absolute; top:0; width:100%; display:flex; align-items: center; justify-content: center; box-sizing: border-box;}
+.graph_pie__wrap {display:flex; align-items: center; justify-content:center; width:100%;}
+.graph_pie {position:relative; display:flex; align-items: center;}
+.graph_pie.graph_pie-blue {flex-direction: row-reverse;}
+.graph_pie.graph_pie-violet {position:absolute; top:20px; left:50%; transform: translateX(-72px);}
+.graph_pie__half {position:relative; width:90px; height:180px; border-radius:90px 0 0 90px; background-color:#75B2FF;}
+.graph_pie-purple .graph_pie__half {border-radius:0 90px 90px 0; background-color:#A6A4E5;}
+.graph_pie__piece {width:0; height:0;}
+.graph_pie-violet .graph_pie__piece {border-left:72px solid transparent; border-right:72px solid transparent; border-top: 80px solid #E5B1E1; border-radius: 50%;}
+
+.graph_pie__score {position:absolute; line-height:19px; min-width:72px;}
+.graph_pie-blue .graph_pie__score {top:18px; left:-52px;}
+.graph_pie-purple .graph_pie__score {bottom:-10px; right:-55px;}
+.graph_pie-violet .graph_pie__score {top:9px; right:-87px;}
+.graph_pie-blue .graph_pie__score_num {color:#177CFF; background:linear-gradient(to top, #C4DEFF 33%, transparent 33%);}
+.graph_pie-violet .graph_pie__score_num {color:#AA68FF; background:linear-gradient(to top, #E0C8FF 33%, transparent 33%);}
+.graph_pie-purple .graph_pie__score_num {color:#7C7AE4; background:linear-gradient(to top, #C2C1FF 33%, transparent 33%);}
+.graph_pie__ai_txt {position:absolute; top:52%; left:50%; transform:translate(-50%, -50%); width:70px; height:70px; line-height:18px; padding-top:12px; border-radius:50%; background-color:#fff; text-align: center; color:#202020; font-size:15px; font-weight: 700; box-sizing: border-box;}
+.graph_pie__ai_subtxt {position:absolute; width:100%; bottom:0; text-align: center; font-size: 13px; color:#909090;}
+
+.graph_pie .graph_pie-invisible {background:transparent; border-color:transparent;}
+
+.idealtype__pop_msg{position:relative; width:100%; border-radius: 8px; overflow: hidden;}
+.idealtype__pop_msg_header{position:relative; z-index: 1; width:100%; height:0; padding-bottom:36.3636%; background:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_idealtype_pop_msg_top_bg.png") no-repeat center; background-size:100% auto;}
+.idealtype__pop_msg_content{width:100%; padding: 0 8px 8px; background-color:#D9EAFF; box-sizing: border-box;}
+.idealtype__pop_msg_slct_wrap{position:relative; z-index: 2; width:100%; padding:16px; border-radius: 8px; margin-top:-12.7388%; background:#fff; box-sizing: border-box;}
+.idealtype__pop_msg_slct{border-bottom:1px solid #E1E1E1; word-break: keep-all;}
+.idealtype__pop_msg_slct-last{border-bottom: 0 none;}
+/*
+ * ----------------------------------------
+ * animation scale-in-center
+ * graph_pie__score 등장 애니메이션
+ * ----------------------------------------
+ */
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both; animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+@-webkit-keyframes scale-in-center {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes scale-in-center {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.idealtype__dots{position: relative; display: inline-block;}
+.idealtype__dot{display: inline-block;}
+.idealtype__dot:nth-child(2) {animation: aiDotAni1 2s infinite ease-out; opacity: 0;}
+.idealtype__dot:nth-child(3) {animation: aiDotAni2 2s infinite ease-out; opacity: 0;}
+
+@keyframes aiDotAni1 {
+	0%{opacity: 0;}
+	20%{opacity: 0;}
+	30%{opacity: 1;}
+	80%{opacity: 1;}
+	100%{opacity: 0;}
+}
+@keyframes aiDotAni2 {
+	0%{opacity: 0;}
+	50%{opacity: 0;}
+	60%{opacity: 1;}
+	80%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+/* 공통 요소 */
+.idealtype__fc-yellow {color:#FFD81B;}
+.idealtype__fc-sky {color:#65FFFF;}
+.idealtype__fc-gray{color: #E1E1E1;}
+.idealtype__txtshadow-light{text-shadow: 0 1px 2px rgba(0, 0, 0, .2);}
+.idealtype__txtshadow {text-shadow: 0 1px 2px rgba(0, 0, 0, .48);}
+
+.ico_ai_txt {font-size:12px; font-weight:700; color:#2D418B; letter-spacing:-1;}
+
+/* #9066 AI 분석 리포트 추가 */
+/* .idealtype__pf_bnr-report .idealtype__pf_bnr_container{position: relative; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_idealtype_pf_bnr_report.png") no-repeat center; background-size: 100% auto;}
+.idealtype__pf_bnr_badge{position: absolute; top: 0; left: 0; width: 35px; height: 35px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bg_idealtype_pf_bnr_new_badge.png") no-repeat center; background-size: 100%;}
+.pf_fixed_wrap.fixed .idealtype__pf_bnr-report .idealtype__pf_bnr_container{border: none;} */
+
+/* #9222 AI 분석 리포트 배너 수정 */
+.pf_fixed_wrap.fixed .idealtype__pf_bnr-report .idealtype__pf_bnr_container{border: none;}
+.idealtype__pf_bnr-report .idealtype__pf_bnr_right{position: absolute; right: 20px;}
+.idealtype__pf_bnr-report .idealtype__pf_bnr_container{background-repeat: no-repeat; background-position: center; background-size: 100%;}

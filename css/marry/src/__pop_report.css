@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_report
+	설　명 : 신고하기 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_report{position: relative; width: 100%; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 1px 4px rgb(0, 0, 0, .32);}
+.pop_report__container{width: 100%; padding: 24px 15px 20px; box-sizing: border-box;}
+.pop_report__content{width: 100%;}
+.pop_report__tit{width: 100%; margin-bottom: 16px; line-height: 21px; text-align: center; color: #202020;}
+.pop_report__slct{margin: 0 10px}
+.pop_report__slct_li{border-bottom: 1px solid #F1F1F1;}
+.pop_report__slct_li:last-child{border-bottom: none}
+.pop_report__sub_slct{margin-bottom: 8px; border-radius: 4px; background-color: #F1F1F1;}
+.pop_report__sub_slct_li{margin: 0 12px; border-bottom: 1px solid #E1E1E1;}
+.pop_report__sub_slct_li:last-child{border-bottom: none;}
+.pop_report__msg_box{position: relative; height: 124px; border-radius: 4px; background-color: #F1F1F1;}
+.pop_report__msg_img{display: block; max-width: 100%; max-height: 100%; margin: auto; object-fit: contain;}
+.pop_report__msg_txt_wrap{height: 124px; padding: 12px; box-sizing: border-box; border-radius: 4px; background-color: #F1F1F1;}
+.pop_report__msg_txt{height: 100%; font-size: 14px; color: #707070; word-break: break-all; overflow: auto;}
+.pop_report__btn_wrap{display: flex; margin-top: 24px;}
+.pop_report__msg_cnt{position: absolute; bottom: 10px; right: 10px; padding: 0 10px; border-radius: 18px; background-color: rgba(0, 0, 0, .7); font-size: 12px; color: #FFF; line-height: 19px;}
+.pop_report_notice_wrap{padding-top: 12px;}
+.pop_report_notice{margin-top: 4px; text-align: center; font-size: 13px;}
+@media (min-width: 460px) {
+	.pop_report__msg_txt::-webkit-scrollbar{width: 4px;}
+	.pop_report__msg_txt::-webkit-scrollbar-thumb{height: 20%; background-color: rgba(144, 144, 144, 0.5); border-radius: 2px;}
+}

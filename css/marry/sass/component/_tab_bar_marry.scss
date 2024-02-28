@@ -1,0 +1,47 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                   Tab bar                  □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 하단 네비게이션 탭바
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.tab_bar{
+    &__container{
+        &-shadow_none{box-shadow: initial;}
+    }
+    &__ico{
+        width:32px;
+        height:32px;
+        background: left top no-repeat;
+        background-size:64px 32px;
+        .active &{
+            background-position:-32px 0;
+        }
+        &-marry{
+            background-image:url("#{$url_marry}/common/ico_tab_bar_marry.png");
+        }
+        &-story{
+            background-image:url("#{$url_marry}/common/ico_tab_bar_story.png");
+        }
+        &-my{
+            background-image:url("#{$url_marry}/common/ico_tab_bar_my.png");
+        }
+        &-more{
+            background-image:url("#{$url_marry}/common/ico_tab_bar_more.png");
+        }
+        &-msg{
+            background-image:url("#{$url_marry}/common/ico_tab_bar_msg.png");
+        }
+        &-prf{
+            background-image:url("#{$url_marry}/common/ico_tab_bar_prf.png");
+        }
+    }
+    &__badge_count{
+        border: none;
+        line-height: 15px;
+    }
+}

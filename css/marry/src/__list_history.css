@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __list_history
+	설　명 : 이용내역 리스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.list_history{position: relative; padding: 20px;} 
+.list_history__tit_wrap{display: flex; align-items: center;}
+.list_history__tit{font-size: 16px; font-weight: 700; color: #202020;}
+.list_history__tit_sub{margin-left: 4px; font-size: 14px; color: #707070;}
+.list_history__filter{margin-left: auto; display: flex; align-items: center; padding:5px 9px; border: 1px solid #B8B8B8; border-radius: 4px; box-sizing: border-box; cursor: pointer;}
+.list_history__filter_txt{font-size: 14px;}
+.list_history__filter_ico{margin-left: 2px; width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3e%3cg fill='%23505050'%3e%3cpath d='M27 9.25H5c-.55 0-1-.45-1-1s.45-1 1-1h22c.55 0 1 .45 1 1s-.45 1-1 1z'/%3e%3cpath d='M20.24 5.25h4c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1zM27 17H5c-.55 0-1-.45-1-1s.45-1 1-1h22c.55 0 1 .45 1 1s-.45 1-1 1z'/%3e%3cpath d='M11.76 19h-4c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h4c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1zM27 24.75H5c-.55 0-1-.45-1-1s.45-1 1-1h22c.55 0 1 .45 1 1s-.45 1-1 1z'/%3e%3cpath d='M19.66 26.75h-4c-.55 0-1-.45-1-1v-4c0-.55.45-1 1-1h4c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 16px;}
+.list_history__inner{padding-top: 4px;}
+.list_history__date{display: flex; align-items: center; margin-top: 8px;}
+.list_history__date::before, .list_history__date::after{display: block; content: ""; width: 100%; height: 2px; background-color: #F1F1F1;}
+.list_history__date_txt{flex: none; padding: 0 10px; border-radius: 12px; background-color: #f1f1f1; font-size: 12px; line-height: 24px; color: #707070;}
+.list_history__hr{height: 1px; background: #eee;}
+
+.list_history__item{display: flex; align-items: center; min-height: 74px;}
+.list_history__item_ico{width: 36px; height: 36px; border: 1px solid #f1f1f1; border-radius: 4px; background: no-repeat center; background-size: 36px; box-sizing: border-box;}
+.list_history__item_txt_wrap{padding-left: 12px;}
+.list_history__item_txt{font-size: 14px; font-weight: 700; color: #202020;}
+.list_history__item_txt-supply{color: #E3407D;}
+.list_history__item_date{margin-top: 2px; font-size: 12px; font-weight: 400; color: #707070;}
+
+.list_history__item_state_wrap{margin-left: auto; padding-right: 8px; text-align: right;}
+.list_history__item_state{font-size: 12px; color: #202020;}
+.list_history__item_state-use{color: #F26A6A;}
+.list_history__item_state-supply{color: #E3407D;}
+.list_history__item_state-free{color: #14AF67;}
+
+.list_history__item_state_amount{margin-top: 2px; font-weight: 700; color: #202020;}
+.list_history__item_state_amount-use{color: #F26A6A;}

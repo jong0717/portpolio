@@ -1,0 +1,9 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __sub_list_time.css
+	설　명 : 서브리스트 시간
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.sub_list_time{padding-left: 16px; background: url("https://image.yeoboya.com/imgs/new_wedding/renewal/img_sublist/ico_sublist_time_02.png") no-repeat left center; background-size: 13px; font-size: 12px; color: #707070;}

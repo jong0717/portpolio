@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __push_info
+	설　명 : 메인리스트 하단 슬라이드업 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.push_info{position: fixed; left: 50%; bottom: 0; width: 100%; --webkit--transform: translate(-50%,110%); transform: translate(-50%,110%); padding: 0 10px; box-sizing: border-box; z-index: 1000;}
+.push_info__container{position: relative; padding: 12px 15px 15px; border-radius: 8px; box-sizing: border-box; background: #F9F9F9; box-shadow: 0 0 6px rgba(0, 0, 0, .45);}
+.push_info-slideup{animation: infoPush .5s ease-in-out forwards;}
+.push_info__tit_wrap{display: flex; align-items: center;}
+.push_info__logo{flex: none; width: 32px; height: 32px; border-radius: 8px; background: url("https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png") no-repeat center; background-size: 32px 32px;}
+.push_info__tit{margin-left: 8px; font-size: 16px; font-weight: 700; color: #202020;}
+.push_info__txt{margin-top: 6px; font-size: 14px; color: #707070;}
+.push_info__container-center .push_info__tit_wrap{justify-content: center;}
+.push_info__container-center .push_info__txt{text-align: center;}
+.push_info__btn_wrap{margin-top: 12px;}
+.push_info__btn{display: flex; align-items: center; justify-content: center; width: 100%; height: 30px; border-radius: 15px; background: #4169E1; cursor: pointer;}
+.push_info__btn_txt{font-size: 13px; color: #fff;}
+.push_info__cls{position: absolute; top: 0; right: 0; cursor: pointer;}
+
+@keyframes infoPush {
+    0% {--webkit--transform:translate(-50%,110%); transform: translate(-50%,110%);}
+    100% {--webkit--transform: translate(-50%,-12px); transform: translate(-50%,-12px);}
+}
+
+@media (min-width:460px){
+	.push_info{width: 460px;}
+}

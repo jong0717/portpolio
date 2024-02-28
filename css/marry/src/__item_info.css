@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __item_info
+	설　명 : 구매 아이템 설명
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.item_info{position: relative; padding: 10px 20px; background: #EFF3FF; box-shadow: 0 1px 2px rgba(0,0,0,.16);}
+.item_info__tit{font-size: 18px; font-weight: 700; color: #202020;}
+.item_info__txt_wrap{margin-top: 4px;}
+.item_info__txt{font-size: 14px; color: #707070;}
+.item_info__subtxt{font-size: 12px;}
+.item_info__txt_emp{font-weight: 700; color: #3654AE;}

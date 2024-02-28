@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __ai_prf_bot
+	설　명 : AI 추천 프로필 바텀 영역
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.ai_prf_bot{position: relative;}
+.ai_prf_bot__content{width: 100%; height: 100%; padding: 7px 12px 16px; box-sizing: border-box; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_AI_bot_bg.png") no-repeat center; background-size: cover;}
+.ai_prf_bot__top{display: flex; align-items: center;}
+.ai_prf_bot__tit{width: 228px; height: 48px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_AI_bot_txt.png") no-repeat center; background-size: cover;}
+.ai_prf_bot__more{display: flex; justify-content: center; align-items: center; width: 55px; height: 21px; margin:0 10px 0 auto; padding-left: 4px; border: 1px solid #6986CB; border-radius: 4px; box-sizing: border-box; cursor: pointer;}
+.ai_prf_bot__more_txt{font-size: 12px; color: #6986CB; white-space: nowrap;}
+.ai_prf_bot__more_ico{flex: none; width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3e%3cpath fill='none' stroke='%236986CB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M16.96 9.97l9.31 11.64-9.31 11.64'/%3e%3c/svg%3e") no-repeat center; background-size: 100% auto;}
+/* 리스트 없을때 */
+.ai_prf_bot__list_none{display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%; min-height: 125px; padding: 16px 0; border-radius: 8px; box-sizing: border-box; background: #ffffff; box-shadow: 0 0 6px #ABB9E9;}
+.ai_prf_bot__list_none_icon{width: 40px; height: 40px; margin: 0 auto; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/icon_no_prf.png") center no-repeat; background-size: 40px 40px;}
+.ai_prf_bot__list_none_txt_wrap{text-align: center; line-height: 17px; font-size: 13px; color: #202020;}
+.ai_prf_bot__list_none_txt_highlight{padding-left: 2px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/img_txt_deco_highlight_blue.png") center top 4px no-repeat; background-size: 100% 16px; font-weight: 700; color: #3654ae;}
+/* 리스트 있을때 */
+.ai_prf_bot__list{display: flex; justify-content: space-evenly; width: 100%; margin-top: 4px;}
+.ai_prf_bot__item{position: relative; display: flex; flex-direction: column; justify-content: center; width: 33%; min-width: 106px; max-width:139px; min-height: 125px; padding: 12px 4px; margin-right: 9px; border-radius: 8px;  box-sizing: border-box; background-color: #ffffff; box-shadow: 0 0 6px #ABB9E9; cursor: pointer;}
+.ai_prf_bot__item-full{width: 100%; min-width: 124px;}
+.ai_prf_bot__item-man .ai_prf_bot__name, .ai_prf_bot__item-man .ai_prf_bot__info{color: #427fcf;}
+.ai_prf_bot__item-woman .ai_prf_bot__name, .ai_prf_bot__item-woman .ai_prf_bot__info{color: #ff5777;}
+.ai_prf_bot__img_wrap{position: relative;}
+.ai_prf_bot__img{width: 56px; height: 56px; margin: 0 auto; border: 2px solid #b9d0ff; border-radius: 50%; background-position: center; background-repeat: no-repeat; background-size: cover; box-sizing: border-box;}
+.ai_prf_bot__img_dim{position: absolute; top: 50%; left: 50%; width: 52px; height: 52px; border-radius: 50%; background-color: rgba(0,0,0,.8); transform: translate(-50%, -50%);}
+.ai_prf_bot__bdg{position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+}
+.ai_prf_bot__bdg_secret{width: 38px; height: 14px;}
+.ai_prf_bot__name{margin-top: 6px; text-align: center; line-height: 20px; font-size: 14px; color: #202020; word-break: keep-all;}
+.ai_prf_bot__info{text-align: center; line-height: 17px; font-size: 12px; color: #707070;}
+.ai_prf_bot__txt{margin-top: 8px; text-align: center; font-size: 14px;  color: #202020;}
+.ai_prf_bot__txt_nick{padding: 0 2px; background:linear-gradient(to top,#F6B0B3 50%, transparent 50%); font-weight: 700;}
+
+/* 메인리스트 */
+.ai_prf_bot__main_wrap{position: relative; left: -10px; margin:0 -18px 6px 0;}
+/* .ai_prf_bot__main_wrap .ai_prf_bot{width: calc(100% + 20px);} */
+.ai_prf_bot__main_wrap .ai_prf_bot__content{min-height: 200px; background-image: none;}

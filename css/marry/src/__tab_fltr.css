@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __tab_fltr
+	설　명 : [결혼] 메인리스트 필터
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.tab_fltr{width:100%;}
+.tab_fltr__container{display:flex; align-items: center; gap: 6px; height:48px; padding: 0 10px; background:#3654AE; box-shadow: 0 1px 3px rgba(0,0,0,.16);}
+.tab_fltr__btn{display: flex; align-items: center; height: 30px; padding: 0 7px; border: 1px solid #fff; border-radius: 6px; box-sizing: border-box; cursor: pointer;}
+.tab_fltr__btn.active{border-color: #FFFB7A;}
+.tab_fltr__btn_txt{margin-left: 2px; font-size: 14px; color: #fff;}
+.tab_fltr__btn.active .tab_fltr__btn_txt{color: #FFFB7A;}
+.tab_fltr__btn_ico{width: 20px; height: 20px; background: no-repeat center; background-size: 100%;}
+.tab_fltr__btn_ico-fltr{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_tab_fltr_fltr.png");}
+.tab_fltr__btn.active .tab_fltr__btn_ico-fltr{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_tab_fltr_fltr_active.png");}
+.tab_fltr__btn_ico-photo{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_tab_fltr_photo.png");}
+.tab_fltr__sort{display: flex; align-items: center; margin-left: auto; padding-right: 5px; cursor: pointer;}
+.tab_fltr__sort_txt{font-size: 14px; color: #fff;}
+.tab_fltr__sort.active .tab_fltr__sort_txt{color: #FFFB7A;}
+.tab_fltr__sort_ico{margin-left: 8px; border-top: 6px solid #fff; border-left: 5px solid transparent; border-right: 5px solid transparent; transform: translateY(2px);}
+.tab_fltr__sort.active .tab_fltr__sort_ico{border-top-color: #FFFB7A;}

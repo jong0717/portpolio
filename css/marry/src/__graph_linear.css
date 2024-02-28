@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : _graph_linear
+	설　명 : AI 나의 이상형 찾기
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.graph_linear {position:relative;}
+.graph_linear__tit {display:flex; justify-content: space-between; align-items:flex-end;}
+.graph_linear__tit_txt {position:relative; padding:2px 8px; background-color:#D9E1F9; border-radius: 8px;}
+.graph_linear__tit_txt::after {content:''; position:absolute; left:0; bottom:-8px; border:10px solid transparent; border-left:10px solid #D9E1F9; border-radius:6px;}
+.graph_linear__score{font-size:17px; font-weight:700;}
+.graph_linear-pink .graph_linear__score {color:#FC4784;}
+.graph_linear-blue .graph_linear__score {color:#177CFF;}
+.graph_linear-violet .graph_linear__score {color:#AA68FF;}
+.graph_linear-purple .graph_linear__score {color:#7C7AE4;}
+
+.graph_linear__wrap {position:relative; display: flex; justify-content:center; align-items: center;}
+.graph_linear__bar {position:relative; width:100%; height:20px; border-radius:10px; overflow:hidden; isolation: isolate;}
+.graph_linear__bar-h14 {height:14px;}
+.graph_linear__wave_change {position: absolute; top:0; left:0; width:100%; height:100%; transition: all 1s linear; border-radius: 10px;}
+.graph_linear__wave_change::before,
+.graph_linear__wave_change::after {content:''; position:absolute; top:50%; z-index:2; border-radius:10px;}
+.graph_linear__wave_change::before {left:-2px; width:120%; height:120%; transform:translate(-99.8%, -50%) rotate(0);}
+.graph_linear__wave_change::after {left:0; width:50px; height:50px; border-radius:50% 42% 58% 44%; transform:translate(-100%, -50%) rotate(0); animation:rotate 10s linear infinite; z-index: 1;}
+.graph_linear__wave_bar {position:relative; width:100%; height:100%; border-radius:10px; background-color:#ececec;}
+.graph_linear-pink .graph_linear__wave_change::before,
+.graph_linear-pink .graph_linear__wave_change::after {background:#FC4784;}
+.graph_linear-blue .graph_linear__wave_change::before,
+.graph_linear-blue .graph_linear__wave_change::after {background:#75B2FF;}
+.graph_linear-violet .graph_linear__wave_change::before,
+.graph_linear-violet .graph_linear__wave_change::after {background:#C9ABEF;}
+.graph_linear-purple .graph_linear__wave_change::before,
+.graph_linear-purple .graph_linear__wave_change::after {background:#A6A4E5;}
+
+@keyframes rotate {
+    50% {
+        transform: translate(-100%, -50%) rotate(360deg);
+    } 100% {
+        transform: translate(-100%, -50%) rotate(720deg);
+    }
+}

@@ -1,0 +1,102 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□               Common Marry                 □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+
+@charset "utf-8";
+
+/*----------------------------------------------*/
+// Base
+/*----------------------------------------------*/
+
+// NotoSans Fonts
+//@import "../../../common/sass/base/font";
+
+// Color
+@import "../../../common/sass/base/colors";
+@import "./base/colors_marry";
+
+// 공통 변수
+@import "../../../common/sass/base/variables";
+@import "./base/variables_marry";
+
+// Mixin
+@import "../../../common/sass/base/mixin";
+
+// Animation keyframe
+@import "../../../common/sass/base/animation";
+
+// Elevation
+@import "../../../common/sass/base/elevation";
+
+// 기본 공통 클래스 설정 (reset css 포함)
+@import "../../../common/sass/base/default";
+@import "./base/default_marry";
+
+// Typography
+@import "../../../common/sass/base/typo";
+@import "./base/typo_marry";
+
+// 레이아웃
+@import "../../../common/sass/base/layout";
+@import "./base/layout_marry";
+
+
+/*----------------------------------------------*/
+// Components
+/*----------------------------------------------*/
+
+//Photo
+@import "../../../common/sass/component/photo";
+@import "./component/photo_marry";
+
+//Photo Circle
+@import "../../../common/sass/component/photo_circle";
+@import "./component/photo_circle_marry";
+
+//Button
+@import "../../../common/sass/component/btn";
+@import "./component/btn_marry";
+
+//Icon
+@import "../../../common/sass/component/icon";
+@import "./component/icon_marry";
+
+//Header
+@import "../../../common/sass/component/header";
+@import "./component/header_marry";
+
+//Input_outer
+@import "../../../common/sass/component/input_outer";
+
+//Input
+@import "../../../common/sass/component/input";
+@import "./component/input_marry";
+
+//Input box
+@import "./component/input_box_marry";
+
+//Tab
+@import "../../../common/sass/component/tab";
+@import "./component/tab_marry.scss";
+
+//Tab bar
+@import "../../../common/sass/component/tab_bar";
+@import "./component/tab_bar_marry.scss";
+
+// Coin History
+@import "../../../common/sass/component/coin_list";
+@import "./component/coin_list_marry";
+
+// Pop Alert
+@import "../../../common/sass/component/pop_alert";
+@import "./component/pop_alert_marry";
+
+// Pop Select
+@import "../../../common/sass/component/pop_slct";
+@import "./component/pop_slct_marry";
+
+//Banner
+@import "../../../common/sass/component/banner";
+

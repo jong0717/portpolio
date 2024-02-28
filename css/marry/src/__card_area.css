@@ -1,0 +1,10 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __card_area
+	설　명 : bg가 있는 카드영역
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.card_area{background-color: #FAFAFA;}
+.card_area__card{border-radius: 16px; background-color: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.2);}

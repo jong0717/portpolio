@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __luck
+	설　명 : 운세 공통
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.luck{position: relative;}
+.luck-bg{background-color: #FAFAFA;}
+.luck-vt{display: flex; flex-direction: column; min-height: calc((var(--vh,1vh) * 100)  - 45px); box-sizing: border-box;}
+.luck__header_btn{font-weight: 700; color: #202020;}
+
+/* 메인 */
+.luck__main_top{padding: 28px 15px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/bg_luck_main.png") no-repeat right center; background-size: 120px 140px;}
+.luck__main_top_day{font-size: 12px; color: #909090;}
+.luck__main_top_txt{padding-top: 8px; font-size: 20px; font-weight: 700; color: #202020;}
+.luck__main_card_wrap{padding: 22px 15px 30px;}
+.luck__main_card{border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,.16); cursor: pointer;}
+.luck__main_card:not(:first-child){margin-top: 18px;}
+.luck__main_card_img{display: block; width: 100%;}
+.luck__main_card_bot{display: flex; align-items: center; padding: 12px 15px;}
+.luck__main_card_bot_txt{font-weight: 700; color: #202020;}
+.luck__main_card_bot_txt_sub{margin-top: 2px; font-size: 12px;}
+.luck__main_card_bot_arrow{width: 20px; height: 20px; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 20 20'%3e%3cg fill='%23707070'%3e%3cpath d='M9.1 5.6c-.2-.2-.5-.2-.8-.1-.2.3-.2.6-.1.8l3.2 3.7-3.2 3.7c-.2.3-.1.6.1.7.1.1.2.1.4.1v-.1.1c.2 0 .3-.1.4-.2l3.5-4c.2-.2.2-.5 0-.7l-3.5-4z'/%3e%3cpath d='M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm0 19c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+.luck__main_bnr_wrap{padding: 0 15px;}
+.luck__main_bnr{display: block; width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,.16); cursor: pointer;}
+
+/* 정보등록 공통 */
+.luck__reg{position: relative; padding: 16px 15px 28px;}
+.luck__reg-bg_fortune{background: #fafafa;}
+.luck__reg-bg_fate{background-color: #F4F6F9; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/bg_fate_reg_01.png"),url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/bg_fate_reg_02.png"),url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/bg_fate_reg_03.png");background-repeat: no-repeat; background-position:right 28px top 14px,left 0 bottom 60px,right bottom; background-size: 92px 42px,54px 46px,70px 40px;}
+.luck__reg-bg_cheme{background-color: #FFF5F8; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/bg_cheme_reg_01.png"),url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/bg_cheme_reg_02.png"),url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/bg_cheme_reg_03.png");background-repeat: no-repeat; background-position:right top,right 28px top 50%,left bottom 38px; background-size: 170px 112px,126px 102px,78px 84px;}
+.luck__reg_tit{font-size: 16px; color: #202020;}
+.luck__reg_card{padding: 15px 16px; margin-top: 15px; border-radius: 12px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.16);}
+.luck__reg_info_card{position: relative; padding: 16px; margin-top: 15px; border-radius: 12px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.16);}
+.luck__reg_info_card_user{color: #202020}
+.luck__reg_info_card_date{margin-top: 4px; font-size: 14px; color: #707070;}
+.luck__reg_info_card_edit_btn{position: absolute; top: 8px; right: 6px; display: flex; align-items: center; padding: 4px 8px; cursor: pointer;}
+.luck__reg_info_card_edit_btn_ico{width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 16 16'%3e%3cg fill='%23909090'%3e%3cpath d='M2.712 12.312c-.1 0-.2 0-.3-.1-.1-.1-.2-.3-.1-.4l.7-2.4c0-.1.1-.1.1-.2l6.6-6.7c.4-.4 1-.4 1.4 0l.9.9c.4.4.4 1 0 1.4l-6.6 6.7c0 .1-.1.1-.2.1l-2.4.8-.1-.1zm1.1-2.6-.5 1.5 1.5-.5 6.5-6.6c.1-.1.1-.1 0-.2l-.9-.9h-.2l-6.4 6.7z'/%3e%3cpath d='M10.212 5.912c-.1 0-.2 0-.3-.1l-1.3-1.3c-.2-.2-.2-.4 0-.6.2-.2.4-.2.6 0l1.3 1.3c.2.2.2.4 0 .6-.1.1-.2.1-.3.1zM4.912 11.312c-.1 0-.2 0-.3-.1l-1.3-1.3c-.2-.2-.2-.4 0-.6.2-.2.4-.2.6 0l1.3 1.3c.2.2.2.4 0 .6 0 .1-.1.1-.3.1zM13.312 13.712h-10.7c-.2 0-.4-.2-.4-.4s.2-.4.4-.4h10.7c.2 0 .4.2.4.4s-.2.4-.4.4z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+.luck__reg_info_card_edit_btn_txt{padding-left: 4px; font-size: 12px; color: #909090;}
+.luck__reg_more_btn{display: inline-block; margin-top: 12px; padding-left: 24px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 16 16'%3e%3cg fill='%23505050'%3e%3cpath d='M2.364 12.364c-.1 0-.2 0-.3-.1-.2-.2-.2-.3-.2-.5l.8-2.5c0-.1.1-.1.1-.2l6.8-6.9c.4-.4 1-.4 1.4 0l.9.9c.4.4.4 1 0 1.4l-6.8 7-.1.1-2.5.8h-.1zm1.1-2.8-.5 1.6 1.6-.5 6.7-6.8c.1-.1.1-.1 0-.2l-.9-.9h-.2l-6.7 6.8z'/%3e%3cpath d='M10.164 5.664c-.1 0-.3 0-.3-.1l-1.4-1.3c-.2-.2-.2-.5 0-.6.2-.2.5-.2.6 0l1.3 1.3c.2.2.2.5 0 .6 0 .1-.1.1-.2.1zM4.664 11.264c-.1 0-.2 0-.3-.1l-1.3-1.3c-.2-.2-.2-.5 0-.7.2-.2.5-.2.6 0l1.3 1.3c.2.2.2.5 0 .6 0 .2-.2.2-.3.2zM13.364 13.764h-11.1c-.2 0-.4-.2-.4-.4 0-.3.2-.5.4-.5h11.1c.2 0 .4.2.4.4 0 .3-.2.5-.4.5z'/%3e%3c/g%3e%3c/svg%3e") no-repeat left 4px center; background-size: 16px; cursor: pointer;}
+.luck__reg_more_btn_txt{position: relative; display: inline-block; font-size: 12px; line-height: 17px; color: #202020; cursor: pointer; z-index: 0;}
+.luck__reg_more_btn_txt::after{position: absolute; width: 100%; top: 50%; left: 0; bottom: 0; display: inline-block; content: ""; z-index: -1;}
+.luck__reg_more_btn-fortune .luck__reg_more_btn_txt::after{background: #FFECC5;}
+.luck__reg_more_btn-fate .luck__reg_more_btn_txt::after{background: #DBE9FF;}
+.luck__reg_more_btn-cheme .luck__reg_more_btn_txt::after{background: #FEDAE2;}
+
+.luck__reg_info_card{position: relative; padding: 16px; margin-top: 15px; border-radius: 12px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.16);}
+.luck__reg_info_card_user{color: #202020}
+.luck__reg_info_card_date{margin-top: 4px; font-size: 14px; color: #707070;}
+.luck__reg_info_card_edit_btn{position: absolute; top: 8px; right: 6px; display: flex; align-items: center; padding: 4px 8px; cursor: pointer;}
+.luck__reg_info_card_edit_btn_ico{width: 16px; height: 16px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 16 16'%3e%3cg fill='%23909090'%3e%3cpath d='M2.712 12.312c-.1 0-.2 0-.3-.1-.1-.1-.2-.3-.1-.4l.7-2.4c0-.1.1-.1.1-.2l6.6-6.7c.4-.4 1-.4 1.4 0l.9.9c.4.4.4 1 0 1.4l-6.6 6.7c0 .1-.1.1-.2.1l-2.4.8-.1-.1zm1.1-2.6-.5 1.5 1.5-.5 6.5-6.6c.1-.1.1-.1 0-.2l-.9-.9h-.2l-6.4 6.7z'/%3e%3cpath d='M10.212 5.912c-.1 0-.2 0-.3-.1l-1.3-1.3c-.2-.2-.2-.4 0-.6.2-.2.4-.2.6 0l1.3 1.3c.2.2.2.4 0 .6-.1.1-.2.1-.3.1zM4.912 11.312c-.1 0-.2 0-.3-.1l-1.3-1.3c-.2-.2-.2-.4 0-.6.2-.2.4-.2.6 0l1.3 1.3c.2.2.2.4 0 .6 0 .1-.1.1-.3.1zM13.312 13.712h-10.7c-.2 0-.4-.2-.4-.4s.2-.4.4-.4h10.7c.2 0 .4.2.4.4s-.2.4-.4.4z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+.luck__reg_info_card_edit_btn_txt{padding-left: 4px; font-size: 12px; color: #909090;}
+.luck__reg_info_card_none{text-align: center; color: #202020;}
+
+/* 그 외 운세 */
+.luck__more{padding: 24px 15px 30px;}
+.luck__more_tit{color: #202020;}
+.luck__more_list_wrap{padding-top: 16px;}
+.luck__more_list{display: flex; align-items: center; cursor: pointer;}
+.luck__more_list_img_wrap{flex: none; width: 120px;}
+.luck__more_list_img{display: block; width: 100%; border-radius: 5px;}
+.luck__more_list_inner{display: flex; align-items: center; width: 100%; padding-left: 15px;}
+.luck__more_list_txt{font-weight: 700; color: #202020;}
+.luck__more_list_txt_sub{font-size: 12px;}
+.luck__more_list_arrow{width: 20px; height: 20px; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 20 20'%3e%3cg fill='%23707070'%3e%3cpath d='M9.1 5.6c-.2-.2-.5-.2-.8-.1-.2.3-.2.6-.1.8l3.2 3.7-3.2 3.7c-.2.3-.1.6.1.7.1.1.2.1.4.1v-.1.1c.2 0 .3-.1.4-.2l3.5-4c.2-.2.2-.5 0-.7l-3.5-4z'/%3e%3cpath d='M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm0 19c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+
+/* 내 사주명식 */
+.luck__table_tit_wrap{text-align: center;}
+.luck__table_tit{display: inline-block; padding-right: 20px; margin-bottom: 14px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 16 16'%3e%3cg fill='%23505050'%3e%3cpath d='M8 .5C3.9.5.5 3.9.5 8s3.4 7.5 7.5 7.5 7.5-3.4 7.5-7.5S12.1.5 8 .5zm0 14c-3.6 0-6.5-2.9-6.5-6.5S4.4 1.5 8 1.5s6.5 2.9 6.5 6.5-2.9 6.5-6.5 6.5z'/%3e%3cpath d='M7.8 10.7c-.5.1-.9.6-.9 1.1v.1c0 .5.5.9 1 .8H8c.5-.1.9-.6.9-1.1-.1-.6-.6-.9-1.1-.9zM8.1 4.3c-1 0-1.9.4-2.6 1l.8.7c.4-.4 1-.7 1.6-.7.8 0 1.3.4 1.3 1C9.2 7.5 7 8.2 7.3 10h1.3c-.2-1.6 2.1-2.2 2.1-3.8-.1-1.2-1.1-1.9-2.6-1.9z'/%3e%3c/g%3e%3c/svg%3e") no-repeat right center; background-size: 16px 16px; color: #202020; font-weight: 700; cursor: pointer;}
+.luck__table{display: flex; align-items: center; width: 100%;}
+.luck__table_col{flex: none; display: flex; flex-direction: column; align-items: center; width: 25%;}
+.luck__table_col_tit{width: 100%; background-color: #F5F5F5; font-weight: 700; color: #202020; line-height: 30px; text-align: center;}
+.luck__table_col_txt{padding: 5px 0 12px; font-size: 14px;}
+.luck__table_col_txt_sub{padding-top: 10px; font-size: 14px;}
+
+/* 오행분석 */
+.luck__grp_tit_wrap{text-align: center;}
+.luck__grp_tit{display: inline-block; padding-right: 20px; margin-bottom: 14px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 16 16'%3e%3cg fill='%23505050'%3e%3cpath d='M8 .5C3.9.5.5 3.9.5 8s3.4 7.5 7.5 7.5 7.5-3.4 7.5-7.5S12.1.5 8 .5zm0 14c-3.6 0-6.5-2.9-6.5-6.5S4.4 1.5 8 1.5s6.5 2.9 6.5 6.5-2.9 6.5-6.5 6.5z'/%3e%3cpath d='M7.8 10.7c-.5.1-.9.6-.9 1.1v.1c0 .5.5.9 1 .8H8c.5-.1.9-.6.9-1.1-.1-.6-.6-.9-1.1-.9zM8.1 4.3c-1 0-1.9.4-2.6 1l.8.7c.4-.4 1-.7 1.6-.7.8 0 1.3.4 1.3 1C9.2 7.5 7 8.2 7.3 10h1.3c-.2-1.6 2.1-2.2 2.1-3.8-.1-1.2-1.1-1.9-2.6-1.9z'/%3e%3c/g%3e%3c/svg%3e") no-repeat right center; background-size: 16px 16px; color: #202020; font-weight: 700; cursor: pointer;}
+.luck__grp_txt{margin-bottom: 15px; text-align: center; color: #202020;}
+.luck__grp_row{display: flex; align-items: center;}
+.luck__grp_row_tit{flex: none; width: 68px; border-right: 1px solid #e1e1e1; font-size: 14px; line-height: 36px;}
+.luck__grp_row_bar_wrap{width: 100%; overflow: hidden;}
+.luck__grp_row_bar{height: 20px; width: 0; border-radius: 0 4px 4px 0;}
+.luck__grp_row_bar-water{background-color: #404040;}
+.luck__grp_row_bar-tree{background-color: #30D446;}
+.luck__grp_row_bar-fire{background-color: #FF6E6E;}
+.luck__grp_row_bar-iron{background-color: #F1F1F1;}
+.luck__grp_row_bar-earth{background-color: #FFE013;}
+
+/* 다른 결과 더보기 */
+.luck__ctgr{padding: 24px 15px 30px;}
+.luck__ctgr_tit{color: #202020; font-weight: 700;}
+.luck__ctgr_list_wrap{display: grid;  grid-template-columns: repeat(2, 1fr); gap: 12px; padding-top: 12px;}
+.luck__ctgr_list{position: relative; padding: 0 24px 0 46px; border: 1px solid #D4D4D4; border-radius: 10px; line-height: 50px; font-size: 14px; color: #202020; cursor: pointer; background: no-repeat left 12px center; background-size: 30px;}
+.luck__ctgr_list::after{position: absolute; top: 50%; right: 10px; transform: translateY(-50%); display: block; content: ""; width: 14px; height: 14px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 14 14'%3e%3cg fill='%23707070'%3e%3cpath stroke='%23707070' stroke-width='.2' d='M6.019 10.919c-.1 0-.2 0-.2-.1-.2-.1-.2-.3-.1-.5l2.6-3.2-2.6-3.2c-.1-.2-.1-.4.1-.5.2-.1.4-.1.5.1l2.8 3.4c.1.1.1.3 0 .5l-2.8 3.4c-.1.1-.2.1-.3.1'/%3e%3cpath d='M7.019.719c-3.5 0-6.3 2.8-6.3 6.3s2.8 6.3 6.3 6.3 6.3-2.8 6.3-6.3-2.8-6.3-6.3-6.3m0-.7c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 100%;}
+.luck__ctgr_list-year{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_year.png");}
+.luck__ctgr_list-type{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_type.png");}
+.luck__ctgr_list-month{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_month.png");}
+.luck__ctgr_list-money{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_money.png");}
+.luck__ctgr_list-relation{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_relation.png");}
+.luck__ctgr_list-surname{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_surname.png");}
+.luck__ctgr_list-inner_cheme{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_inner_cheme.png");}
+.luck__ctgr_list-outer_cheme{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_outer_cheme.png");}
+.luck__ctgr_list-gender{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_gender.png");}
+.luck__ctgr_list-love_type{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/ico_luck_ctgr_love_type.png");}
+
+
+/* 오행이란? */
+.luck__ex_type_tit{font-size: 14px; color: #202020;}
+.luck__ex_type_wrap{padding-top: 16px;}
+.luck__ex_type{display: flex; align-items: center;}
+.luck__ex_type:not(:first-child){padding-top: 12px;}
+.luck__ex_type_img_txt{margin-top: 2px; font-size: 14px; color: #202020; text-align: center;}
+.luck__ex_type_txt{padding-left: 10px; font-size: 14px; color: #202020;}
+
+.luck__user_list_wrap{position: relative;}
+.luck__user_list:not(:first-child){margin-top: 16px;}
+.luck__user_list{display: flex; padding: 12px 15px; border-radius: 8px; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.16);}
+.luck__user_list_info_wrap{padding-left: 8px;}
+.luck__user_list_info_top{display: flex; align-items: center;}
+.luck__user_list_info_nick{margin-left: 2px; font-weight: 700;}
+.luck__user_list_info_name{margin-left: 6px; font-weight: 700; color: #202020;}
+.luck__user_list_info_sub{margin-top: 4px; font-size: 14px;}
+.luck__user_list_info_txt{margin-top: 3px; padding-left: 11px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 9 9.5'%3e%3cpath fill='%23707070' d='M1 8.5V0H0v9.5h9v-1z'/%3e%3c/svg%3e") no-repeat left center; background-size: 9px; font-size: 13px;}
+.luck__user_list_character{position: relative; display: inline-block; margin-top: 4px; margin-left: 9px; padding: 3px 8px 3px 11px; border-radius: 2px; background-color: #EFF3FF; vertical-align: top;}
+.luck__user_list_character::before{content: ""; position: absolute; top: 50%; left: -9px; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #EFF3FF; background: #7496FF url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 9' xml:space='preserve'%3e%3cpath fill='white' d='M6.1 2.6c0 1.2-.9 2.1-2.1 2.1s-2.1-.9-2.1-2.1S2.8.5 4 .5c1.2 0 2.1 1 2.1 2.1M8 8.4H0v-.3c.1-1.7 1.6-3.1 3.3-3h1.5C6.5 5 7.9 6.4 8 8.1v.3z'/%3e%3c/svg%3e") center no-repeat; background-size: 8px 9px; box-sizing: border-box; transform: translateY(-50%);}
+.luck__user_list_character_txt_wrap{color: #4169E1; font-size: 11px;}
+.luck__user_list_character_txt{margin-right: 4px;}
+.luck__user_list_character_txt:last-child{margin-right: 0px}
+.luck__user_list_unknown{padding-left: 8px;}
+.luck__user_list_unknown_name{color: #202020; font-weight: 700;}
+.luck__user_list_unknown_date{margin-top: 4px; font-size: 14px;}
+.luck__user_list_unknown_birth{margin-top: 3px; font-size: 14px; color: #707070;}

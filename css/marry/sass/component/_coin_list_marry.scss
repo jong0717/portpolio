@@ -1,0 +1,19 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                Coin History                □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 통장 이용 내역 폼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.coin_list{
+    &__list{
+        padding:8px 0px;
+        & .checkbox__lb>.blind:checked~.checkbox__btn{
+            background-color:#483334;
+        }
+    }
+}

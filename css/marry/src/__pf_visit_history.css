@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pf_visit_history.css
+	설　명 : 열람 프로필 내역 서브 리스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pf_visit_history{position: relative; padding-bottom: 8px;}
+
+.pf_visit_history__tit{display: flex; align-items: center; height: 25px; padding: 0 5px 0 10px;}
+.pf_visit_history-all .pf_visit_history__tit{background-color: #835CC9;}
+.pf_visit_history-default .pf_visit_history__tit{background-color: #666666;}
+.pf_visit_history-ai .pf_visit_history__tit{background-color: #3654AE;}
+.pf_visit_history__tit_txt{color: #fff; font-size: 13px;}
+.pf_visit_history__tit_txt_emp{color: #FCED94;}
+.pf_visit_history__cls{flex: none; width: 14px; height: 14px; margin-left: auto; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/clse_list.png") no-repeat center; background-size: 100%; cursor: pointer;}
+
+.pf_visit_history__inner{padding: 6px 0;}
+.pf_visit_history-all .pf_visit_history__inner{background-color: #F0E6FF;}
+.pf_visit_history-default .pf_visit_history__inner{background-color: #E9E9E9;}
+.pf_visit_history-ai .pf_visit_history__inner{background-color: #E6EDFF;}
+.pf_visit_history__item{display: flex; align-items: center; padding: 8px 10px 12px;}
+.pf_visit_history__info_wrap{padding-left: 8px;}
+.pf_visit_history__nick_wrap{display: flex; align-items: center;}
+.pf_visit_history__nick{margin-left: 4px; font-size: 13px;}
+.pf_visit_history__nick-man{color: #427FCF;}
+.pf_visit_history__nick-woman{color: #FF5777;}
+.pf_visit_history__hr{margin:0 10px 0 68px; height: 1px; background-color: #D4D4D4;}
+.pf_visit_history__sub_info{display: flex; flex-direction: column; align-items: flex-end; margin-left: auto;}
+.pf_visit_history__bdg{padding: 0 6px; border: 1px solid #a8a8a8; border-radius: 3px; background-color: #f8f8f8; line-height: 26px; font-size: 13px; color: #303030;}
+.pf_visit_history__bdg-all{border-color: #00AFDD; background-color: #fff; color: #00AFDD;}
+.pf_visit_history__ai_bdg{width: 56px; line-height: 22px; border-radius: 4px; font-size: 14px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.16); text-align: center;}
+.pf_visit_history__ai_bdg-yellow{background: linear-gradient(#FFE11A, #FFA54B);}
+.pf_visit_history__ai_bdg-blue{background: linear-gradient(#0DBCE9, #0C80EE);}
+.pf_visit_history__ai_bdg-green{background: linear-gradient(#45E966, #30BC39);}
+.pf_visit_history__ai_bdg-pink{background: linear-gradient(#FF72A2, #EC004F);}
+.pf_visit_history__sub_info_ai_txt{font-size: 12px; margin-bottom: 2px;}
+.pf_visit_history__sub_info_ai_txt_emp{color: #F32F71;}
+.pf_visit_history__ai_guide_wrap{display: flex; padding-right: 15px;}
+.pf_visit_history__ai_guide{padding-left: 19px; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cg fill='%233654AE'%3e%3cpath d='M15 30C6.73 30 0 23.27 0 15S6.73 0 15 0s15 6.73 15 15-6.73 15-15 15zm0-28C7.83 2 2 7.83 2 15s5.83 13 13 13 13-5.83 13-13S22.17 2 15 2z'/%3e%3cpath d='M17.22 11.33c0-1.21-.77-2.13-2.16-2.13-1.03 0-1.94.53-2.66 1.34l-1.43-1.3c1.08-1.23 2.55-2.11 4.38-2.11 2.55 0 4.33 1.45 4.33 4.03 0 3.21-3.92 4.4-3.54 7.68h-2.22c-.53-3.71 3.3-5.12 3.3-7.51zm-3.85 11.2c0-1.03.73-1.8 1.69-1.8.95 0 1.69.77 1.69 1.8s-.75 1.76-1.69 1.76c-.97 0-1.69-.73-1.69-1.76z'/%3e%3c/g%3e%3c/svg%3e") no-repeat left center; background-size: 15px; font-size: 13px; color: #3654AE; text-decoration: underline; text-underline-position: under; cursor: pointer;}

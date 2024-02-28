@@ -1,0 +1,85 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*                                             □*/
+/*□                  pop Alert                 □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 공통 알림 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_alert{
+    &__container-pt{
+        padding-top: $pop_alert_padding_top_cls;
+    }
+    &__type_select{
+        &_box{
+            @include flex(space-around,center);
+            background-color:$gray-f1;
+        }
+        &_tit{
+            font-size: 18px;
+            font-weight: 700;
+            padding: 4px 12px;
+            color: #4169E1;
+            border: 1px solid transparent;
+            border-color: #4169E1;
+            border-radius: 30px;
+            box-sizing: border-box;
+        }
+        &_option{
+            @include flex($d:column);
+            &_img{
+                width:108px;
+                height:125px;
+                border:1px solid $gray-b8;
+                border-radius: 8px;
+                box-sizing: border-box;
+                cursor:pointer;
+                &-marry{
+                    @include background(
+                        null,
+                        url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_select_type_marry.png"),
+                        no-repeat,
+                        center,
+                        100% 100%
+                    );
+                }
+                &-re{
+                    @include background(
+                        null,
+                        url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_select_type_re.png"),
+                        no-repeat,
+                        center,
+                        100% 100%
+                    );
+                }
+            }
+            &_info{
+                @include flex(center);
+                margin-top: 12px;
+                &_img{
+                    width: 300px;
+                    height: 70px;
+                    background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_select_type_info.png") no-repeat center;
+                    background-size: 100% auto;
+                }
+            }
+        }
+    }
+    &__txt_box{
+        &-reject{
+            line-height: 17px;
+        }
+    }
+    &__img-72{
+        width: 72px;
+    }
+    &__gray_box_li_tit{
+        &-min{
+            min-width: 59px;
+            margin-right: 12px;
+        }
+    }
+}

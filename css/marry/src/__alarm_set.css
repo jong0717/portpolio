@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __alarm_set
+	설　명 : 알림설정
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.alarm_set{width:100%; padding:16px 0 8px; box-sizing:border-box;}
+.alarm_set__tit{padding:0 15px; margin-bottom:8px; font-weight: 700; color: #202020;}
+.alarm_set__content{display: flex; justify-content: space-between; align-items: center; width:100%;}
+.alarm_set__box{display: flex; align-items: center; justify-content: center; width:calc(100% / 3); height: 50px; cursor: pointer;}
+.alarm_set__box_bar{width: 1px; height: 24px; background: #E1E1E1;}
+/* .alarm_set__txt{font-size: 16px; color:#909090;} */
+.alarm_set__ico{width: 24px; height: 24px; margin:1px 2px 0 0; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.alarm_set__ico-silence{background-image: url("https://image.yeoboya.com/imgs/new_wedding_member/ico/ico_alarm_silence.png");}
+.alarm_set__ico-vibrate{background-image: url("https://image.yeoboya.com/imgs/new_wedding_member/ico/ico_alarm_vibrate.png");}
+.alarm_set__ico-sound{background-image: url("https://image.yeoboya.com/imgs/new_wedding_member/ico/ico_alarm_sound.png");}
+
+/* 알림모드 활성화 시 */
+.on .alarm_set__ico-silence{background-image: url("https://image.yeoboya.com/imgs/new_wedding_member/ico/ico_alarm_silence_on.png");}
+.on .alarm_set__ico-vibrate{background-image: url("https://image.yeoboya.com/imgs/new_wedding_member/ico/ico_alarm_vibrate_on.png");}
+.on .alarm_set__ico-sound{background-image: url("https://image.yeoboya.com/imgs/new_wedding_member/ico/ico_alarm_sound_on.png");}
+.on .alarm_set__radio .radio__lb {color:#505050;}
+
+.alarm_set__radio .radio__lb {font-size: 16px; color:#909090;}
+.alarm_set__radio .radio__chk {margin:1px 0 0 4px;}

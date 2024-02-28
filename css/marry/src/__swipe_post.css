@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __post_swipe
+	설　명 : 카드형태 포스트용 스와이프 레이아웃
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.swipe_post{position: relative;}
+.swipe_post__tit{margin: 0 15px; font-size: 18px; font-weight: 700; color: #202020;}
+.swipe_post__bg{position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, #FFF 76px, #EFF0FF 76px) #EFF0FF; z-index: -1;}
+.swipe_post__bg_2{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/more_gift_best_bg.png") no-repeat center; background-size: cover; z-index: -1;}
+.swipe_post__container{position: relative; overflow: hidden; padding: 16px 15px 18px;}
+.swipe_post__wrap{width: 100%; display: flex; flex-wrap: nowrap;}
+.swipe_post__slide{flex: none; width: 80%; min-width: 287px;}
+
+
+.swipe_post__pagination{position: absolute; left: 50%; bottom: 0; display: flex; align-items: center; transform: translateX(-50%);}
+.swipe_post__pagination_bullet{width: 6px; height: 6px; margin-right: 6px; background-color: #ABAEFF; border-radius: 50%;}
+.swipe_post__pagination_bullet:last-child{margin-right: 0;}
+.swipe_post__pagination_bullet.active{background-color: #585DEF;}

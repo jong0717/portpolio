@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __feed_story.css
+	설　명 : 스토리 피드
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.feed_story{position: relative;}
+.feed_story__container{display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 2px; row-gap: 2px;}
+.feed_story__container-bg_f1{background-color: #f1f1f1;}
+.feed_story__item{position: relative; width: 100%; cursor: pointer;}
+.feed_story__txt_only_wrap{position: relative; width: 100%; padding-bottom: 100%;}
+.feed_story__txt_only{position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 8px; box-sizing: border-box; background: #F4F7F9;}
+.feed_story__txt_only_img{width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/story/img_feed_story_txt_only.png") no-repeat center; background-size: 20px;}
+.feed_story__txt_only_txt{padding-top: 4px; font-size: 12px; color: #202020;}
+.feed_story__bdg_like{position: absolute; right: 8px; bottom: 6px; padding: 0 4px 0 22px; border-radius: 4px; background:rgba(0, 0, 0, 0.7) url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/story/ico_photo_story_like.png") left 4px center no-repeat; background-size: 16px; line-height: 20px; font-size: 12px; color: #fff;}

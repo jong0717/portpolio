@@ -1,0 +1,147 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __float_pop
+	설　명 : 플로팅 버튼 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.float_pop{visibility: hidden; position:absolute; z-index: 1; top:50%; right:-10px; opacity: 0;}
+.float_pop__bg{position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.7);}
+.float_pop__container{position:absolute; right:0; bottom:0;}
+.float_pop__list{position:absolute; right:0; bottom:0; margin-bottom:-22px; transition: transform 0.25s ease-out; transform: translateY(0);}
+.float_pop__btn{display:flex; align-items: center; justify-content: flex-end;}
+.float_pop__btn_txt{position: relative; display: flex; color:#fff; font-size:15px; font-weight:700; white-space: nowrap; opacity: 0; transition:0.2s opacity ease-in-out; transition-delay:0.2s;}
+
+/* 메인 활성화 */
+.float_pop-active{visibility: visible; opacity: 1;}
+.float_pop-active .float_pop__list-align_01{transform: translateY(-58px);}
+.float_pop-active .float_pop__list-align_02{transform: translateY(-110px);}
+.float_pop-active .float_pop__list-align_03{transform: translateY(-162px);}
+.float_pop-active .float_pop__list-align_04{transform: translateY(-214px);}
+.float_pop-active .float_pop__list-align_05{transform: translateY(-266px);}
+.float_pop-active .float_pop__list-align_06{transform: translateY(-318px);}
+.float_pop-active .float_pop__list-align_07{transform: translateY(-370px);}
+.float_pop-active .float_pop__list-align_08{transform: translateY(-422px);}
+.float_pop-active .float_pop__list-align_09{transform: translateY(-474px);}
+.float_pop-active .float_pop__btn_txt{opacity: 1;}
+
+/* 프로필 활성화 */
+.float_pop-prf.float_pop-active .float_pop__list-align_01{transform: translateY(-60px);}
+.float_pop-prf.float_pop-active .float_pop__list-align_02{transform: translateY(-114px);}
+.float_pop-prf.float_pop-active .float_pop__list-align_03{transform: translateY(-168px);}
+.float_pop-prf.float_pop-active .float_pop__list-align_04{transform: translateY(-222px);}
+.float_pop-prf.float_pop-active .float_pop__list-align_05{transform: translateY(-276px);}
+.float_pop-prf.float_pop-active .float_pop__list-align_06{transform: translateY(-330px);}
+.float_pop-prf.float_pop-active .float_pop__list-align_07{transform: translateY(-384px);}
+.float_pop-prf.float_pop-active .float_pop__list-align_08{transform: translateY(-438px);}
+.float_pop-prf.float_pop-active .float_pop__list-align_09{transform: translateY(-492px);}
+
+/* 메인 플로팅 아이콘 */
+.float_pop__btn_icon{flex:0 0 auto; display:flex; width:40px; height:40px; margin: 0 auto; border-radius: 50%; background-color: #FFF; background-position: center; background-repeat: no-repeat; background-size: 40px 40px; box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);}
+.float_pop__btn_icon_wrap{width: 70px;}
+.float_pop__btn_icon-item{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_item.png"); background-size: 23px 23px;}
+.float_pop__btn_icon-write{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_write.png"); background-size: 20px auto;}
+.float_pop__btn_icon-deco{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_deco_fix.png"); background-size:100% auto;}
+.float_pop__btn_icon-profile{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_myinfo.png"); background-size: 24px auto; background-position-y: 10px;}
+.float_pop__btn_icon-cs{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_question2.png"); background-size: 28px auto;}
+.float_pop__btn_icon-setting{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_setting.png"); background-size: 28px auto;}
+.float_pop__btn_icon-marry{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_marry.png"); background-size: 22px;}
+.float_pop__btn_icon-promotion{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_invite_promotion.png"); background-size: 46px 46px;}
+.float_pop__btn_icon-noble{background-image: url("https://image.yeoboya.com/imgs/new_wedding_noble/ico/ico_floating_noble_fix.png"); background-size:40px;}
+.float_pop__btn_icon-ymti{width: 70px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_quick_ymti.png"); background-size: 70px auto;}
+.float_pop__btn_icon-brandstory{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_quick_brandstory.png"); background-size: 20px auto;}
+.float_pop__btn_icon-mypage{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_quick_mypage.png"); background-size: 20px auto; background-position-y: 9px;}
+.float_pop__btn_icon-competition{width: 50px; height: 50px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/cpt_02/btn_c_02_main_floating_img.png"); background-size: 50px;}
+.float_pop__btn_icon-ai{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/idealtype/bdg_idealtype_pf_bnr.png"); background-size: 40px;}
+.float_pop__btn_icon-gift{width: 46px; height: 46px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/profile/ico_prf_reg_gift.png"); background-size: 46px;}
+.float_pop__btn_icon-story{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_float_story.png"); background-size: 40px;}
+
+/* 프로필 플로팅 아이콘 */
+.float_pop__prf_btn{display: flex; align-items: center; justify-content: flex-end;}
+.float_pop__prf_txt{position: relative; display: flex; margin-right: 15px; color:#fff; font-size:15px; font-weight:700; color: #FFF; white-space: nowrap; opacity: 0; transition:0.2s opacity ease-in-out; transition-delay:0.2s;}
+.float_pop__prf_ico_wrap{position: relative; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: 13px; border-radius: 50px; background: linear-gradient(to bottom, #A2CAFF, #3672FF);}
+.float_pop__prf_ani{position: absolute; top: 0; right: 0; width: 44px; height: 44px;}
+.float_pop-active .float_pop__prf_txt{opacity: 1;}
+.float_pop__prf_ico{width: 28px; height: 28px; background-position: center; background-repeat: no-repeat; background-size: 100% auto;}
+.float_pop__prf_ico-interest{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/img_float_interest.png");}
+.float_pop__prf_ico-meet{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/img_float_meet.png");}
+.float_pop__prf_ico-voice_meet{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/img_float_voice_meet.png");}
+.float_pop__prf_ico-video_meet{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/img_float_video_meet.png");}
+.float_pop__prf_ico-gift{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/img_float_gift.png");}
+.float_pop__prf_ico-like{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/img_float_like.png");}
+.float_pop__prf_ico-ai{background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/img_float_ai.png");}
+
+/* 플로팅 아이콘 - 이벤트 관련 */
+.float_pop__btn_icon-sunflower{width: 50px; height: 43px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/sunflower/float_sunflower.png"); background-size: 50px 43px;}
+.float_pop__btn_icon-lantern{width: 60px; height: 60px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_float_lantern_img.png"); background-size: 60px;}
+.float_pop__btn_icon-dalgona{width: 46px; height: 46px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_float_dalgona_img.png"); background-size: 46px;}
+.float_pop__btn_icon-trophy{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_float_trophy_img.png"); background-size: 40px;}
+.float_pop__btn_icon-christmas{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_float_christmas_img.png"); background-size: 40px;}
+.float_pop__btn_icon-pocket{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_pocket2/btn_float_pocket2_img.png"); background-size: 40px;}
+.float_pop__btn_icon-stamp{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/stamp_01/btn_float_stamp_img.png"); background-size: 40px;}
+.float_pop__btn_icon-choco{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_choco/btn_float_choco_img.png"); background-size: 40px;}
+.float_pop__btn_icon-candy{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_candy/btn_float_candy_img.png"); background-size: 40px;}
+.float_pop__btn_icon-like{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage/btn_float_gage_img.png"); background-size: 40px;}
+.float_pop__btn_icon-like_list{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage/btn_float_gage_like_list_img.png"); background-size: 40px;}
+.float_pop__btn_icon-icecream{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_ice_cream/btn_float_ice_cream_img.png"); background-size: 40px;}
+.float_pop__btn_icon-samgye{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_samgye/btn_float_samgye_img.png"); background-size: 40px;}
+.float_pop__btn_icon-parasol{background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_parasol/btn_float_parasol_img.png"); background-size: 40px;}
+.float_pop__btn_icon-flower3{width: 60px; height: 60px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower3/btn_float_flower3_img.png"); background-size: 60px;}
+.float_pop__btn_icon-moon{width: 60px; height: 60px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_moon/btn_float_moon_img.png"); background-size: 60px;}
+.float_pop__btn_icon-maple{width: 60px; height: 60px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_maple/btn_float_maple_img.png"); background-size: 60px;}
+.float_pop__btn_icon-persimmon{width: 36px; height: 48px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_persimmon/btn_float_persimmon_img.png"); background-size: 36px 48px;}
+.float_pop__btn_icon-rose2{width: 47px; height: 47px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose2/btn_float_rose2_img.png"); background-size: 47px;}
+.float_pop__btn_icon-christmas2{width: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_christmas2/btn_float_christmas2_img.png"); background-size: 40px;}
+.float_pop__btn_icon-bok2{width: 47px; height: 47px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bok2/btn_float_bok2_img.png"); background-size: 47px;}
+.float_pop__btn_icon-evnt_gift{width: 40px; height: 40px; background-image: var(--evnt_gift__ico_type_b); background-size: 40px;}
+/* 아이콘 배경색 없음 */
+.float_pop__btn_icon-bg_no{background-color: transparent; box-shadow: none; border-radius: 0;}
+
+/* 플로팅 아이콘 - 룰렛 기능 */
+.float_pop__btn_icon-roulette{width: 46px; height: 46px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/roulette/btn_float_roulette_img.png"); background-size: 100% 100%;}
+
+
+/* 플로팅 텍스트 이미지 */
+.float_pop__btn_txt_img{transform: translateX(2%); background-repeat: no-repeat; background-position: center;}
+.float_pop__btn_txt_img-competition{transform: translateX(6%); width: 199px; height: 50px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/cpt_02/btn_c_02_main_floating_txt.png"); background-size: 199px;}
+.float_pop__btn_txt_img-noble{transform: translateY(15%); width: 68px; height: 19px; background-image: url("https://image.yeoboya.com/imgs/new_wedding_noble/img/img_floating_noble_logo_fix.png"); background-size: 68px;}
+
+/* 플로팅 텍스트 이미지 - 이벤트 관련 */
+.float_pop__btn_txt_img-lantern{transform: translateX(0%); width: 143px; height: 48px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_float_lantern_txt.png"); background-size: 146px auto;}
+.float_pop__btn_txt_img-dalgona{transform: translateX(8%); width: 170px; height: 46px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_float_dalgona_txt.png"); background-size: 170px auto;}
+.float_pop__btn_txt_img-trophy{transform: translateX(7%); width: 130px; height: 34px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_float_trophy_txt.png"); background-size: 130px;}
+.float_pop__btn_txt_img-christmas{transform: translateX(4%); width: 131px; height: 35px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/btn_float_christmas_txt.png"); background-size: 131px;}
+.float_pop__btn_txt_img-pocket{width: 144px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_pocket2/btn_float_pocket2_txt.png"); background-size: 144px;}
+.float_pop__btn_txt_img-stamp{width: 106px; height: 40px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/stamp_01/btn_float_stamp_txt.png"); background-size: 106px;}
+.float_pop__btn_txt_img-choco{width: 144px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_choco/btn_float_choco_txt.png"); background-size: 144px;}
+.float_pop__btn_txt_img-candy{width: 125px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_candy/btn_float_candy_txt.png"); background-size: 100%;}
+.float_pop__btn_txt_img-like{width: 184px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/prf_like/btn_float_prf_like_txt.png"); background-size: 184px;}
+.float_pop__btn_txt_img-like_gage{width: 178px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage/btn_float_gage_txt.png"); background-size: 178px;}
+.float_pop__btn_txt_img-like_gage2{width: 142px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/btn_float_gage2_txt.png"); background-size: 142px;}
+.float_pop__btn_txt_img-like_gage4{width: 146px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage4/btn_float_gage4_txt.png"); background-size: 155px;}
+.float_pop__btn_txt_img-like_gage6{width: 178px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage6/btn_float_gage6_txt.png"); background-size: 178px; transform: translateX(15px);}
+.float_pop__btn_txt_img-icecream{width: 150px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_ice_cream/btn_float_ice_cream_txt.png"); background-size: 150px;}
+.float_pop__btn_txt_img-samgye{width: 126px; height: 40px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_samgye/btn_float_samgye_txt.png"); background-size: 126px;}
+.float_pop__btn_txt_img-parasol{transform: translateX(6%); width: 146px; height: 40px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_parasol/btn_float_parasol_txt.png"); background-size: 146px auto;}
+.float_pop__btn_txt_img-flower3{transform: translateX(-1%); width: 120px; height: 47px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_flower3/btn_float_flower3_txt.png"); background-size: 120px auto;}
+.float_pop__btn_txt_img-moon{width: 120px; height: 47px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_moon/btn_float_moon_txt.png"); background-size: 120px auto;}
+.float_pop__btn_txt_img-maple{width: 120px; height: 47px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_maple/btn_float_maple_txt.png"); background-size: 120px auto;}
+.float_pop__btn_txt_img-persimmon{width: 173px; height: 47px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_persimmon/btn_float_persimmon_txt.png"); background-size: 173px auto;}
+.float_pop__btn_txt_img-rose2{width: 120px; height: 47px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_rose2/btn_float_rose2_txt.png"); background-size: 120px auto;}
+.float_pop__btn_txt_img-christmas2{transform: translateX(4%); width: 131px; height: 35px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_christmas2/btn_float_christmas2_txt.png"); background-size: 131px;}
+.float_pop__btn_txt_img-bok2{transform: translateX(4%); width: 146px; height: 26px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_bok2/btn_float_bok2_txt.png"); background-size: 146px 26px;}
+.float_pop__btn_txt_img-evnt_gift{width: var(--float_pop__btn_txt_img-evnt_gift-w); height: 40px; background-image:var(--float_pop__btn_txt_img-evnt_gift-bg_img); background-size: 100%;}
+/* 플로팅 텍스트 이미지 - 룰렛 기능 */
+.float_pop__btn_txt_img-roulette {width: 188px; height: 26px; background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/roulette/btn_float_roulette_txt.png"); background-size: 100% auto;}
+
+/* 뱃지 */
+.float_pop__badge_new_n{position:absolute; top:-4px; right:-12px; width:16px; height:16px; line-height:16px; border-radius:50%; background:#ea3c3c; color:#fff; box-shadow:1px 1px 2px rgba(0,0,0,0.2); font-size:11px; font-weight:700; text-align:center;}
+.float_pop__badge_new_n::after{content: "N"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.float_pop__badge_new_deco{position: absolute; top: -11px; left: -18px; width: 26px; height: 26px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_float_new.png") center no-repeat; background-size: 100% auto; z-index: -1;}
+.float_pop__badge_new_theme{position: absolute; top: 3px; left: -60px; width: 58px; height: 16px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_deco_new_theme.png") center no-repeat; background-size: 100% auto; z-index: -1;}
+.float_pop__badge_count{position: absolute; top: -4px; right: -11px;min-width:17px; height:15px; padding: 0 4px; border-radius: 8px; background-color:#FF5858; line-height:15px; text-align: center; color:#fff; font-size:11px; box-sizing: border-box;}
+
+/* 텍스트 컬러 */
+.float_pop__txt_pink{color: #FF6E91;}
+.float_pop__txt_blue{color: #18ccde;}

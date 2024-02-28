@@ -1,0 +1,36 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                Layout_marry                □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+
+.content{
+    &-bluegray{
+        background-color: #F4F7F9;
+    }
+    &-grayf1{
+        background-color: #f1f1f1;
+    }
+}
+.pop{
+    &-pc{
+        @include break_point("pc"){
+            left:0;
+            width:100%;
+            margin-left:0;
+        }
+    }
+	&__full_layer{
+		&-scroll{ 
+			@include break_point("pc"){ 
+				@include scrollbar($size:6px, $thumb_size:6px, $bg:#F1F1F1);
+			}
+		}
+	}
+}
+
+.float{
+    &-main{
+        right: 15px;
+    }
+}

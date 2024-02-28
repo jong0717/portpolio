@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __fltr_round
+	설　명 : 둥근필터
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.fltr_round{display: flex; align-items: center; justify-content: center; height: 32px; padding: 0 12px; border: 1px solid #e1e1e1; border-radius: 16px; box-sizing: border-box; background: #fff; cursor: pointer;}
+.fltr_round.active{border-color: #3654AE; background-color: #3654AE;}
+.fltr_round__txt{font-size: 14px; color: #707070;}
+.fltr_round.active .fltr_round__txt{color: #fff;}
+.fltr_round__ico_triangle{flex: none; width: 0; height: 0; margin-left: 6px; border-top: 6px solid #707070; border-left: 4px solid transparent; border-right: 4px solid transparent;}
+.fltr_round.active .fltr_round__ico_triangle{border-top-color: #fff;}

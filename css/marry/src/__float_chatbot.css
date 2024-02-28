@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __float_chatbot
+	설　명 : 챗봇 플로팅 버튼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.float_chatbot{position: fixed; bottom: 50px; right: 15px; z-index: 300; display: flex; align-items: center; transition: transform 1s; transform-origin: calc(100% - 30px) calc(100% - 30px);}
+.float_chatbot__box_outer{margin-right: -30px; padding-left: 15px; overflow: hidden;}
+.float_chatbot__box{display: flex; align-items: center; height: 44px; padding: 0 38px 0 16px; border-radius: 22px 0 0 22px; background: linear-gradient(45deg, #4169E1, #7496FF); cursor: pointer; transition: 1s cubic-bezier(0.68, -0.6, 0.32, 1.6); outline: 5px solid transparent; transform: translateX(100%);}
+.float_chatbot__txt{font-size: 12px; line-height: 16px; color: #FFF;}
+.float_chatbot__ani{width: 60px; height: 60px; cursor: pointer; transition: 1s; will-change: transform;}
+.float_chatbot__box_outer.active .float_chatbot__box{transform: translateX(0);}
+.float_chatbot-hide{transform: scale(0);}
+
+@media (min-width: 460px) {
+	.float_chatbot{right: 50%; margin-right: -220px}
+}

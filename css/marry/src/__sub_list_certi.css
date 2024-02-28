@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __sub_list_certi.css
+	설　명 : 서브리스트 인증
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.sub_list_certi{box-sizing: border-box; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; word-break: break-all; line-height: 17px;}
+.sub_list_certi__item{display: inline-flex; align-items: center; margin-left: 4px;}
+.sub_list_certi__item:first-child{margin-left: 0;}
+.sub_list_certi__item_txt{color: #202020; font-size: 12px;}
+.sub_list_certi__item_bdg{width: 14px; height: 14px; margin-left: 2px; line-height: 14px; border-radius: 50%; background: #29bf00; color: #fff; font-size: 11px; text-align: center;}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_toast
+	설　명 : 공통 토스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_coupon{position: relative; cursor: pointer;}
+.pop_coupon__content{position: relative; display: flex; justify-content: center;}
+.pop_coupon__img{width: 320px; height: 332px;}
+.pop_coupon__nickname_wrap{position: absolute; top: 0; left: 50%; display: flex; justify-content: center; width: 320px; transform: translateX(-50%);}
+.pop_coupon__nickname{position: relative; height: 28px; line-height: 28px; font-size: 14px; color: #FFF;}
+.pop_coupon__nickname_txt{position: relative; z-index: 1;}
+.pop_coupon__nickname_txt_emp{font-weight: 700; color: #FFFFA0;}
+.pop_coupon__container{display: flex; flex-direction: column; align-items: center; min-width: 330px; padding: 36px 15px 20px; margin-top: 12px; border-radius: 8px; box-sizing: border-box; background-color: #FEF1F9; box-shadow: 0 1px 4px rgba(0 ,0, 0, .32);}
+.pop_coupon__top{position: absolute; top: -12px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; padding: 3px 16px; border-radius: 8px; border: 1px solid #FFA5D2; background-color: #FFF; box-sizing: border-box; z-index: 1;}
+.pop_coupon__top::after{content: ""; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 26px; height: 10px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_top.png") no-repeat center; background-size: 100%;}
+.pop_coupon__nick{color: #404040; font-size: 14px; white-space: nowrap;}
+.pop_coupon__nick_strong{font-weight: 700; color: #3E1B98;}
+.pop_coupon__tit{width: 226px; height: 96px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_tit.png") no-repeat center; background-size: 100%;}
+.pop_coupon__box{position: relative; display: flex; align-items: center; justify-content: center; min-width: 200px; min-height: 64px; padding: 10px; margin-top: 34px; border: 3px solid #FF67B3; border-radius: 8px; box-sizing: border-box; background-color: #FFFFFF; z-index: 1;}
+.pop_coupon__box_before{position: absolute; top: -21px; left: 50%; transform: translateX(-50%); width: 60px; height: 18px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_box_top.png") no-repeat center; background-size: 100%; z-index: 1;}
+.pop_coupon__box::before{content: ""; position: absolute; top: -40px; left: -18px; width: 38px; height: 58px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_box_left.png") no-repeat center; background-size: 100%; z-index: 1;}
+.pop_coupon__box::after{content: ""; position: absolute; bottom: -15px; right: -32px; width: 56px; height: 56px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_box_right.png") no-repeat center; background-size: 100%; z-index: 1;}
+.pop_coupon__item{display: flex; align-items: center;}
+.pop_coupon__item_wrap{display: flex; flex-direction: column; align-items: center; gap: 4px 0;}
+.pop_coupon__item_txt{margin-left: 8px; font-size: 14px; color: #202020;}
+.pop_coupon__item_txt_strong{font-weight: 700; color: #FF3EB6;}
+.pop_coupon__item_ico{height: 20px; background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.pop_coupon__item_ico-message{width: 22px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_item_message.png");}
+.pop_coupon__item_ico-plus{width: 20px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_item_plus.png");}
+.pop_coupon__item_ico-deco{width: 28px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_item_deco.png");}
+.pop_coupon__item_ico-like{width: 20px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_item_like.png");}
+.pop_coupon__item_ico-coin{width: 24px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_item_coin.png");}
+.pop_coupon__item_ico-interest{width: 20px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_item_interest.png");}
+.pop_coupon__item_ico-profile{width: 22px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/img_pop_coupon_item_profile.png");}
+.pop_coupon__info{position: relative; margin-top: 16px; font-size: 13px; font-weight: 400; line-height: 20px; text-align: center; color: #202020; z-index: 1;}
+.pop_coupon__info_tht{ background: linear-gradient(to top, #D3C2FF 40%, transparent 40%); background-position-y: -2px;}
+.pop_coupon__btn_wrap{display: flex; gap: 0 8px; width: 100%; margin-top: 24px;}
+.pop_coupon__btn{display: flex; align-items: center; justify-content: center; width: 64%; height: 44px; margin: 0 auto; border-width: 2px; border-style: solid; border-radius: 8px; box-sizing: border-box;}
+.pop_coupon__btn-white{background-color: #FFF; border-color: #FFD9EC; color: #FF3EB6;}
+.pop_coupon__btn-pink{background-color: #FF3EB6; border-color: #FFD9EC; color: #FFF;}

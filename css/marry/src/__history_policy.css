@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __history_policy
+	설　명 : 이용약관 이전내역 
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / overflow / width / height / padding / margin / border / background / font / etc...
+---------------------------------------------*/
+.history_policy{width: 100%; padding: 40px 0 20px; white-space: initial;}
+.history_policy__content{display: flex; align-items: center; justify-content: center; padding: 15px 0; border-radius: 8px; background: #F1F1F1; cursor: pointer; font-size: 15px;}
+.history_policy__date{margin-left: 16px; font-weight: 700;}
+.history_policy__ico_triangle{flex: none; width: 0; height: 0; margin-left: 10px; border-top: 6px solid #505050; border-left: 4px solid transparent; border-right: 4px solid transparent;}

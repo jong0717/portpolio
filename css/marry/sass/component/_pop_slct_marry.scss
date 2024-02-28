@@ -1,0 +1,36 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*                                             □*/
+/*□                  pop Select                □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 공통 선택 팝업 ( 필터, 선택 등 )
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_slct{
+	&__tit_subtxt{
+		color: $gray-90;
+	}
+	&__assist_btn{
+		@include flex($jc: center, $ai: center,);
+		&_qna{
+			padding: 0 26px 0 40px;
+			background-image: url('#{$url_member}/ico/ico_common_qna.png'), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26' xml:space='preserve'%3e%3cpath fill='none' stroke='%233654AE' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='m11.5 18.5 4-5-4-5'/%3e%3c/svg%3e");
+			background-size: 26px;
+			background-repeat: no-repeat;
+			background-position: left 8px center, right center;
+			line-height: 24px;
+			font-size: 16px;
+			font-weight: 700;
+			color: $primary-500;
+			cursor: pointer;
+		}
+	}
+	&__container{
+        &-height_60vh{
+            max-height:60vh;
+        }
+    }
+}

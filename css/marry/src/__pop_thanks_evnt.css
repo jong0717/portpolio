@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_thanks_evnt
+	설　명 : 성원감사 이벤트 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pop_thanks_evnt{position: relative; z-index: 1; width: 320px; padding-bottom: 24px; border-radius: 8px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/thanks_evnt/bg_pop_thanks_evnt.png") no-repeat top center; background-size: cover;}
+.pop_thanks_evnt__tit{width: 320px; height: 46px; margin:42px auto 12px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/thanks_evnt/img_pop_thanks_evnt_tit.png") no-repeat center; background-size: 100%;}
+.pop_thanks_evnt__sub_tit{padding-bottom: 8px; color: #202020; font-size: 14px; font-weight: 700; text-align: center;}
+.pop_thanks_evnt__txt{position: relative; margin-bottom: 20px; color: #3d3d3d; font-size: 13px; text-align: center; z-index: 0;}
+.pop_thanks_evnt__txt::before{position: absolute; bottom: 0; left: 16px; content: ""; width: 46px; height: 18px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/thanks_evnt/img_pop_thanks_evnt_txt_deco_left.png") no-repeat center; background-size: 100%; z-index: -1;}
+.pop_thanks_evnt__txt::after{position: absolute; bottom: 0; right: 28px; content: ""; width: 34px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/thanks_evnt/img_pop_thanks_evnt_txt_deco_right.png") no-repeat center; background-size: 100%; z-index: -1;}
+.pop_thanks_evnt__emp{color: #C54069; font-weight: 700;}
+.pop_thanks_evnt__emp-plus{padding-left: 14px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 12 12'%3e%3clinearGradient id='a' x1='38.956' x2='39.63' y1='-5.118' y2='-5.792' gradientTransform='matrix(12 0 0 -12 -465.078 -59.02)' gradientUnits='userSpaceOnUse'%3e%3cstop offset='0' style='stop-color:%23f17ea1'/%3e%3cstop offset='1' style='stop-color:%23db3266'/%3e%3c/linearGradient%3e%3ccircle cx='6' cy='6' r='6' fill='url(%23a)'/%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-width='1.2' d='M3 6h6M6 3v6'/%3e%3c/svg%3e") left center no-repeat; background-size: 12px;}
+.pop_thanks_evnt__promotion{width: 320px; height: 206px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/thanks_evnt/bg_pop_thanks_evnt_promotion.png") no-repeat center; background-size: 100%; text-align: center;}
+.pop_thanks_evnt__promotion-man{height: 224px; background-image: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/thanks_evnt/bg_pop_thanks_evnt_promotion_2.png");}
+.pop_thanks_evnt__promotion_top{padding-top: 50px; color: #3d3d3d;}
+.pop_thanks_evnt__promotion-man .pop_thanks_evnt__promotion_top{min-height: 120px; box-sizing: border-box;}
+.pop_thanks_evnt__promotion-woman .pop_thanks_evnt__promotion_top{min-height: 100px; box-sizing: border-box;}
+.pop_thanks_evnt__item{font-size: 16px; font-weight: 700; color: #202020;}
+.pop_thanks_evnt__promotion-man .pop_thanks_evnt__item{padding-top: 20px;}
+.pop_thanks_evnt__promotion-woman .pop_thanks_evnt__item{padding-top: 27px;}
+.pop_thanks_evnt__mileage_wrap{display: flex; align-items: center; justify-content: center; height: 30px;}
+.pop_thanks_evnt__btn{width: 166px; height: 42px; margin: 8px auto 0; border-radius: 21px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/thanks_evnt/img_pop_thanks_evnt_btn.png") no-repeat center; background-size: 100%; box-shadow: 0 3px 6px rgba(0, 0, 0, .16);}
+.pop_thanks_evnt__cls{position: absolute; top: 0; right: 0; width: 44px; height: 44px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 44 44'%3e%3cpath fill='none' stroke='%23202020' stroke-linecap='round' stroke-linejoin='round' d='M28 16.1 16 27.9M28 27.9 16 16.1'/%3e%3c/svg%3e") no-repeat center; background-size: 100%; cursor: pointer;}
+
+.pop_thanks_evnt__mileage_ico{flex: none; width: 18px; height: 18px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/item/ico_mileage.png") center no-repeat; background-size: 100% auto;}
+.pop_thanks_evnt__mileage_ico-s{width: 16px; height: 16px;}
+.pop_thanks_evnt__mileage_emp{color: #FF6E1A;}
+.pop_thanks_evnt__tht{background: linear-gradient(to top, #E9BECB 40%, transparent 40%);}
+.pop_thanks_evnt__mileage_tht{font-size: 15px; background: linear-gradient(to top, #FFE2C1 50%, transparent 50%);}
+.pop_thanks_evnt__mileage_txt{display: flex; align-items: center; justify-content: center; margin-top: 2px; font-size: 14px; color: #FF6E1A; font-weight: 700; line-height: 18px;}

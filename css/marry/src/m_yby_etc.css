@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*==================================
+            시크릿이란?
+==================================*/
+.container.scrt_wrap {padding-top:45px; height:100vh;}
+.scrt_wrap {position: relative; width: 100%; height: auto; background: #fcebed; background: -moz-linear-gradient(top, #fcebed 0%, #e2e6ee 100%); background: -webkit-linear-gradient(top, #fcebed 0%,#e2e6ee 100%); background: linear-gradient(to bottom, #fcebed 0%,#e2e6ee 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcebed', endColorstr='#e2e6ee',GradientType=0 );}
+/* 타이틀 문구 */
+.scrt_tit {width: 100%; height: auto; padding: 8px 0px; box-sizing: border-box;}
+.scrt_tit_bg {width: 100%; height: 60px; text-indent: -9999px; background: #cb6797 url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/scrt_tit.png") no-repeat center center; background-size: 248px 41px;}
+/* 시크릿 소개글 */
+.scrt_txt {width:100%; padding:8px 16px; box-sizing: border-box;}
+.scrt_txt_box {position: relative; width: 100%; height: 370px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/bg_scrt_expl.png") no-repeat;background-size: 100% 100%; box-shadow: 2px 2px 4px rgba(0,0,0,0.05);}
+.expl_section{position:absolute; top:0px; left:0px; width:100%; height:100%;}
+.expl_section > div {position:absolute; left:0; opacity:0; text-indent:-9999px;}
+.expl_section .section_1{top:60px; width:100%; height:90px; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/expl_section1.png") no-repeat center center; background-size:195px 41px;}
+.expl_section .section_2{top:155px; width:100%; height:40px; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/expl_section2.png") no-repeat center center; background-size:218px 39px;}
+.expl_section .section_3{top:165px; width:100%; height:160px; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/expl_section3.png") no-repeat center center; background-size:256px 40px;}
+.expl_section .section_4{top:30px; width:100%; height:90px; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/expl_section4.png") no-repeat center center; background-size:210px 64px;}
+.expl_section .section_5{top:125px; width:100%; height:90px; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/expl_section5.png") no-repeat center center; background-size:217px 87px;}
+.expl_section .section_6{top:235px; width:100%; height:90px; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/expl_section6.png") no-repeat center center; background-size:231px 87px;}
+/* 시크릿 소개글 버튼 */
+.btn_section{position:absolute; top:320px; left:0; width:100%; height:auto;}
+.btn_section .btn_stop{width:120px; height:36px; line-height:34px; margin:0 auto; border:1px solid #d2d5e4; border-radius:18px; padding-left:20px; box-sizing:border-box; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/ico_expl_stop.png") no-repeat 16px center; background-size:9px 14px; text-align:center; color:#8c8b97; font-size:16px; cursor:pointer;}
+.btn_section .btn_stop:active{background:rgba(0,0,0,0.03) url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/ico_expl_stop.png") no-repeat 16px center; background-size:9px 14px;}
+.btn_section .btn_play{width:120px; height:36px; line-height:34px; margin:0 auto; border:1px solid #d2d5e4; border-radius:18px; padding-left:20px; box-sizing:border-box; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/ico_expl_play.png") no-repeat 16px center; background-size:13px 15px; text-align:center; color:#8c8b97; font-size:16px; cursor:pointer;}
+.btn_section .btn_play:active{background:rgba(0,0,0,0.03) url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/ico_expl_play.png") no-repeat 16px center; background-size:13px 15px;}
+.btn_section .btn_replay{display:none; width:120px; height:36px; line-height:34px; margin:0 auto; border:1px solid #d2d5e4; border-radius:18px; padding-left:20px; box-sizing:border-box; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/ico_expl_re.png") no-repeat 14px center; background-size:15px 17px; text-align:center; color:#8c8b97; font-size:16px; cursor:pointer;}
+.btn_section .btn_replay:active{background:rgba(0,0,0,0.03) url("https://image.yeoboya.com/imgs/new_wedding/mobile/secret/ico_expl_re.png") no-repeat 14px center; background-size:15px 17px;}
+/* 시크릿 이용권 구매 버튼 */
+.btn_scrt_buy{position:relative; width:100%; height:auto; padding:10px 0; box-sizing:border-box;}
+.btn_scrt_buy a{display:block; position:relative; width:65%; height:40px; line-height:40px; margin:0 auto; border-radius:5px; background-color:#524f8e; text-align:center; color:#fff; font-size:17px; box-shadow:inset 0px -2px 0px #403d7b;}
+.btn_scrt_buy a:active{top:1px;}

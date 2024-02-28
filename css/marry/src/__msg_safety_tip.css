@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_msg_safety
+	설　명 : 메시지함 안전센터 가이드
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+
+.msg_safety_tip{position: absolute; top: 47px; right: 5px;}
+.msg_safety_tip__box{position: relative; padding: 8px 28px 8px 10px; border: 1px solid #FDB84D; border-radius: 4px; box-sizing: border-box; background-color: #FFF2DB;}
+.msg_safety_tip__box::after{position: absolute; right: 10px; bottom: 100%; display: block; content: ""; width: 10px; height: 10px; border: 1px solid #FDB84D; border-radius: 3px; background-color: #FFF2DB; transform:translateY(50%) rotate(45deg); clip-path: polygon(-10px -10px, 0% 100%, 100% 0);}
+.msg_safety_tip__txt{font-size: 12px; color: #202020; white-space: nowrap;}
+.msg_safety_tip__close{position: absolute; top: 6px; right: 6px;  width: 20px; height: 20px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 20 20'%3e%3cpath fill='%23202020' d='m10.7 10 3.7-3.6c.2-.2.2-.5 0-.7-.2-.2-.5-.2-.7 0L10 9.3 6.3 5.6c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7L9.3 10l-3.7 3.6c-.2.2-.2.5 0 .7.2.2.5.2.7 0l3.7-3.6 3.7 3.7c.2.2.5.2.7 0 .2-.2.2-.5 0-.7L10.7 10z'/%3e%3c/svg%3e") no-repeat center; background-size: 100%;}

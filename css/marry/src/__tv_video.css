@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __tv_card
+	설　명 : tv 광고 비디오
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.tv_video{position: relative; background-color: #EFF3FF;}
+.tv_video__video_container{position: relative; width: 100%; height: 0; padding-bottom: 56.25%; border: 1px solid #CCCCCC;}
+.tv_video__video{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #F1F1F1;}
+.tv_video__video_icon{position: absolute; top: -51px; right: 61px; width: 61px; height: 51px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/start/icon_yby_ad_tv.png") center no-repeat; background-size: 61px 51px;}

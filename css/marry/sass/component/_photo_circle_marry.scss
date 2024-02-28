@@ -1,0 +1,48 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                Photo_Circle                □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 기본 원형 사진 폼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.photo_circle{
+    &__img{
+        &-bd_d4{
+            border: 2px solid $gray-d4;
+        }
+        &-bd_f1{
+            border: 2px solid $gray-f1;
+        }
+        &-bd_ff{
+            border: 2px solid $white;
+        }
+    }
+    &__badge{
+        &_cnt{
+            width: 18px;
+            line-height: 18px;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 50%;
+            background: #29bf00;
+        }
+    }
+    // &__frame{
+    //     @include position(absolute,1,$t:50%,$l:50%);
+    //     @include background($r:no-repeat,$s:cover,$p:center);
+    //     height:0;
+    //     pointer-events: none;
+    //     &-ai_ring{
+    //         width:114.2857%;
+    //         padding-bottom:150%;
+    //         margin-top:-11.4285%;
+    //         transform: translate(-50%, -50%);
+    //     }
+    // }
+}

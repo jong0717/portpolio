@@ -1,0 +1,59 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pass
+	설　명 : 여보야 pass 이용권
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+
+.pop_pass{flex: 1 0 auto; position: relative; display: flex; flex-direction: column; padding: 8px 0 20px;}
+.pop_pass__cls_btn{position: absolute; top: 0; right: 0; width: 35px; height: 35px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 35 35'%3e%3cpath fill='%23202020' d='m18.7 18 5.8-5.8c.2-.2.2-.5 0-.7-.2-.2-.5-.2-.7 0L18 17.3l-5.8-5.8c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7l5.8 5.8-5.8 5.8c-.2.2-.2.5 0 .7.2.2.5.2.7 0l5.8-5.8 5.8 5.8c.2.2.5.2.7 0 .2-.2.2-.5 0-.7L18.7 18z'/%3e%3c/svg%3e") no-repeat center; background-size: 35px; cursor: pointer;}
+
+.pop_pass__item{position: relative; display: flex; width: 100%; height: 100px; padding: 12px 15px 12px 12px; border-radius: 12px; box-sizing: border-box;}
+.pop_pass__item-pkg_a{background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_bm/img_pop_pass_item_bg.png"), linear-gradient(to right bottom,#74C3FF,#5780FF); background-repeat: no-repeat; background-position: right center,center; background-size: 114px 100px,100%;}
+.pop_pass__item-pkg_b{background-image:url("https://image.yeoboya.com/imgs/new_wedding/new_bm/img_pop_pass_item_bg.png"), linear-gradient(to right bottom,#8A74FF,#6527F6); background-repeat: no-repeat; background-position: right center,center; background-size: 114px 100px,100%;}
+.pop_pass__item_tit{width: 106px; height: 32px; margin-top: 2px;}
+.pop_pass__item-pkg_a .pop_pass__item_tit{background: url("https://image.yeoboya.com/imgs/new_wedding/new_bm/img_pop_pass_txt_pkg_a.png") no-repeat center; background-size: 100%;}
+.pop_pass__item-pkg_b .pop_pass__item_tit{background: url("https://image.yeoboya.com/imgs/new_wedding/new_bm/img_pop_pass_txt_pkg_b.png") no-repeat center; background-size: 100%;}
+.pop_pass__item_tit_dis{display: inline-block; padding: 0 5px; border-radius: 13px; background: #202020; line-height: 22px; font-size: 12px; color: #fff;}
+.pop_pass__item_tit_dis_txt_emp{font-size: 14px; color: #FFFB8D; font-weight: 700; vertical-align: top;}
+.pop_pass__item_left_right{align-self: flex-end; display: flex; flex-direction: column; align-items: flex-end; margin-left: auto;}
+.pop_pass__item_price_dis{position: relative; color: #D4D4D4; font-size: 13px;}
+.pop_pass__item_price_dis::after{position: absolute; left: 50%; top: 50%; transform: translateX(-50%); display: block; content: ""; width: 66px; height: 16px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_bm/img_pop_pass_discount_arrow.png") no-repeat center; background-size: 100%;}
+.pop_pass__item_price{margin-top: -4px; font-size: 24px; color: #fff; text-shadow:0 1px 2px rgba(0,0,0,.16);}
+.pop_pass__item_price_emp{color: #FFFA64; font-weight: 700;}
+
+.pop_pass__exp_wrap{position: relative; margin:16px 15px 0; border-radius: 8px;}
+.pop_pass__exp_wrap-pkg_a{border: 1px solid #C2D5FF; background-color: #F2F6FF;}
+.pop_pass__exp_wrap-pkg_b{border: 1px solid #D5CEFF; background-color: #F4F2FF;}
+.pop_pass__exp_top{position: absolute; top: 0; left: 50%; transform: translate(-50%,-50%); padding: 4px 12px; border-radius: 4px; background-color: #fff; white-space: nowrap; color: #3654AE; font-size: 13px; font-weight: 700;}
+.pop_pass__exp_wrap-pkg_a .pop_pass__exp_top{border: 1px solid #C2D5FF;}
+.pop_pass__exp_wrap-pkg_b .pop_pass__exp_top{border: 1px solid #D5CEFF;}
+
+.pop_pass__exp_list_wrap{padding: 16px 15px;}
+.pop_pass__exp_list{display: flex; align-items: center;}
+.pop_pass__exp_list_ico{flex: none; width: 42px; height: 42px; border: 1px solid #E1E1E1; border-radius: 50%; box-sizing: border-box; background: #fff no-repeat center; background-size: 28px;}
+.pop_pass__exp_list_txt_wrap{margin-left: 12px;}
+.pop_pass__exp_list_txt{font-size: 16px; font-weight: 700; color: #202020;}
+.pop_pass__exp_wrap-pkg_a .pop_pass__exp_list_txt_emp{color: #4169E1;}
+.pop_pass__exp_wrap-pkg_b .pop_pass__exp_list_txt_emp{color: #6C37F8;}
+.pop_pass__exp_list_txt_sub{margin-top: 2px; font-size: 13px;}
+.pop_pass__exp_list_hr{position: relative; width: 100%; height: 1px; margin: 14px 0; background-color: #E1E1E1;}
+.pop_pass__exp_list_hr::after{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: block; content: ""; width: 16px; height: 16px; border-radius: 50%; background: #E1E1E1 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 8.9 8.9'%3e%3cg fill='white'%3e%3cpath d='M0 3.6h8.9v1.7H0z'/%3e%3cpath d='M3.6 0h1.7v8.9H3.6z'/%3e%3c/g%3e%3c/svg%3e") no-repeat center; background-size: 8px;}
+
+.pop_pass__exp_bot{padding: 10px 8px; margin: 12px 15px 0; border-radius: 8px; background: #F4F7F9;}
+.pop_pass__exp_bot_tit{font-size: 12px; color: #202020;}
+.pop_pass__exp_bot_txt{margin-top: 2px; font-size: 12px;}
+.pop_pass__exp_bot_txt_emp{font-weight: 700; color: #4169E1;}
+.pop_pass__exp_bot_txt_sub_wrap{margin-top: 6px;}
+.pop_pass__exp_bot_txt_sub{font-size: 12px; color: #909090;}
+.pop_pass__exp_bot_txt_sub:not(:first){margin-top: 2px;}
+.pop_pass__exp_bot_txt_sub_emp{position: relative; cursor: pointer;}
+.pop_pass__exp_bot_txt_sub_emp::after{position: absolute; left: 0; right: 0; bottom: 2px; display: block; content: ""; height: 1px; background-color: #909090;}
+
+.pop_pass__btn_wrap{padding-top: 8px; margin: auto 15px 0;}
+
+.pop_pass__bdg_use{position: absolute; top: -8px; left: 14px; padding: 0 4px; border-radius: 5px 5px 5px 0; background: #FF6E6E; line-height: 20px; font-size: 12px; color: #fff;}
+.pop_pass__bdg_discount{position: absolute; top: -8px; left: 14.5454%; padding: 0 5px; border: 1px solid #F74949; border-radius: 10px 10px 0 10px; background-color: #fff; line-height: 18px; font-size: 12px; color: #F74949;}
+.pop_pass__bdg_soon{position: absolute; top: -8px; left: 9.6969%; padding: 0 5px; border: 1px solid #505050; border-radius: 10px 10px 0 10px; background-color: #fff; line-height: 18px; font-size: 12px; color: #505050;}

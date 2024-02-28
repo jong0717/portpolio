@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __cheme
+	설　명 : 운세컨텐츠 : 궁합
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.cheme{position: relative;}
+.cheme-bg{background-color: #FFF5F8;}
+.cheme-vt{display: flex; flex-direction: column; min-height: calc((var(--vh,1vh) * 100)  - 45px); box-sizing: border-box;}
+
+.cheme__reg_top_wrap{background: #FFF5F8;}
+.cheme__reg_top{display: block; width: 100%;}
+
+.cheme__result_top{display: block; width: 100%;}
+.cheme__result{flex: 1 0 auto; padding: 0 15px 28px; background-color: #FFF5F8;}
+.cheme__result-bg{background: #FFF5F8 url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/luck/bg_cheme_result.png") repeat-y top center; background-size: 100% auto;}
+.cheme__result_inner{position: relative; margin-top: -36px;}
+.cheme__result_inner .cheme__result_card:not(:first-child){margin-top: 28px;}
+.cheme__result_card{border-radius: 12px; background-color: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.16);}
+.cheme__result_tit{font-weight: 700; text-align: center; color: #202020;}
+.cheme__result_txt{padding-top: 15px; font-size: 14px; line-height: 25px; word-break: break-all;}
+.cheme__result_info_wrap{padding: 0 15px;}
+.cheme__result_info{display: flex; align-items: center;}
+.cheme__result_info-top{align-items: flex-start;}
+.cheme__result_info_tit{margin-bottom: 15px; color: #707070;}
+.cheme__result_info_img_txt{margin-top: 4px; font-size: 12px; color: #707070; text-align: center;}
+.cheme__result_info_data{padding-left: 20px;}
+.cheme__result_info_data_name{font-size: 16px; color: #202020; font-weight: 700;}
+.cheme__result_info_data_gender{margin-top: 2px; color: #202020;}
+.cheme__result_info_data_data{margin-top: 5px; font-size: 14px; color: #707070;}
+.cheme__result_info_partner_wrap{width: 100%;}
+.cheme__result_info_partner{color: #202020;}
+.cheme__result_info_partner_date{margin-top: 5px; font-size: 14px; color: #707070;}
+.cheme__result_info_partner_none{text-align: center; color: #202020;}
+.cheme__result_detail_card{padding: 16px 15px; border-radius: 12px; background-color: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.16);}
+.cheme__result_detail_card:not(:first-child){margin-top: 28px;}
+.cheme__result_detail_tit{padding-bottom: 10px; font-weight: 700; color: #202020;}
+.cheme__result_detail_txt{padding-top: 10px; border-top: 1px solid #F1F1F1; font-size: 14px; line-height: 25px;}
+
+.cheme__history_date{position: relative; padding: 16px 0; font-size: 12px; font-weight: 700; color: #202020; text-align: center;}
+.cheme__history_date::before{position: absolute; left: 0; top: 50%; transform: translateY(-50%); content: ""; width: 34%; height: 2px; background-color: #D0D0D0;}
+.cheme__history_date::after{position: absolute; right: 0; top: 50%; transform: translateY(-50%); content: ""; width: 34%; height: 2px; background-color: #D0D0D0;}
+
+/* 버튼 */
+.cheme__btn_wrap{width: 130px; margin: 24px auto 0;}
+.cheme__btn_default {position: relative; display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%; height: 50px; border-radius: 24px; background-color: #672852; box-sizing: border-box;}
+.cheme__btn_default_txt{color: #fff; white-space: nowrap;}
+.cheme__btn_default_arrow{width: 18px; height: 18px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 18 18'%3e%3cpath fill='white' d='M6.6 15c.2 0 .3-.1.5-.2l4.8-5.5c.2-.2.2-.5 0-.7L7.1 3.2c-.3-.2-.6-.3-.9-.1-.2.2-.3.5-.1.7v.1L10.6 9l-4.5 5.1c-.2.2-.2.5 0 .7h.1c.1.2.3.2.4.2'/%3e%3c/svg%3e") no-repeat center; background-size: 18px;}
+.cheme__btn_default-m{height: 44px;}
+.cheme__btn_default.disabled{background-color: #D4D4D4; cursor: default;}

@@ -1,0 +1,109 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                   tab                      □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 탭 영역
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.tab{
+    &-active_bg_blue{
+        & .tab__tab_menu-active{
+            background: #F4F7F9;
+        }
+    }
+    &-col{
+        height: auto;
+        & .tab__tab_menu{
+            @include flex($ai:center,$d:column);
+            height:auto;
+            padding: 4px 0 6px;
+        }
+    }
+    &__tab_menu{
+        &-active{
+            .tab__tab_menu_ico_wrap{
+                opacity: 1;
+            }
+            .tab__tab_menu_ico-come{
+                background-position-x: 0;
+            }
+            .tab__tab_menu_ico-send{
+                background-position-x: -40px;
+            }
+            .tab__tab_menu_ico-gift{
+                background-position-x: -80px;
+            }
+
+        }
+        &_ico_wrap{
+            @include flex($jc:center,$ai:center);
+            flex: none;
+            &-op{
+                opacity: .5;
+            }
+        }
+        &_ico{
+            width: 20px;
+            height: 20px;
+            &-come{
+                background: url("#{$url_marry}/new_jsp/prf_like/img_prf_like_tab.png") left top no-repeat;
+                background-size: 120px 20px;
+                background-position-x: -20px;
+            }
+            &-send{
+                background: url("#{$url_marry}/new_jsp/prf_like/img_prf_like_tab.png") left top no-repeat;
+                background-size: 120px 20px;
+                background-position-x: -60px;
+            }
+            &-gift{
+                background: url("#{$url_marry}/new_jsp/prf_like/img_prf_like_tab.png") left top no-repeat;
+                background-size: 120px 20px;
+                background-position-x: -100px;
+            }
+            &-pf_all{
+                background: url("#{$url_marry}/renewal/ico_profile_all_new.png") no-repeat center;
+                background-size: 17px 14px;
+            }
+            &-pf_come{
+                background: url("#{$url_marry}/renewal/ico_arrow_come.png") no-repeat center;
+                background-size: 14px 14px;
+            }
+            &-pf_send{
+                background: url("#{$url_marry}/renewal/ico_arrow_send.png") no-repeat center;
+                background-size: 14px 14px;
+            }
+        }
+        &_txt{
+            position: relative;
+            font-weight: 700;
+            &-chk::after{
+                content: "";
+                position: absolute;
+                top:45%;
+                right: 98%;
+                transform: translateY(-50%);
+                width: 18px;
+                height: 16px;
+                background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 32'%3e%3cpath fill='%23FF1A23' d='M5.31 15.386c1.15.21 2.18.85 2.86 1.79.83 1.44 4.52 6.52 4.98 6.98s.86.92 1.35 0c2.4-4.09 5.1-8.01 8.06-11.71 3.24-3.71 6.72-7.2 10.43-10.44 0 0-9.23 14.31-10.61 16.61s-5.08 10.15-6.92 11.08c-1.42.79-3.2.39-4.15-.92-.46-.92-8.31-10.61-8.31-11.08s0-1.85 2.31-2.31z'/%3e%3c/svg%3e") no-repeat left center;
+                background-size: 100%;
+            }
+        }
+    }
+    &__border{
+        &-w75{
+            width:75px;    
+        }
+    }
+	&.fixed{
+		@include position(fixed,300,$t:0,$l:0);
+		@include break_point("pc"){
+			left: 50%;
+			width: 460px;
+			margin-left: -230px;
+		}
+	}
+}

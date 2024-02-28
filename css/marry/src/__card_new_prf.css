@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __card_new_prf
+	설　명 : 신규 프로필
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.card_new_prf{display: flex; flex-direction: column; width: 148px; height: 100%; padding: 12px; border-radius: 8px; border: 1px solid #F1F1F1; background: #F5F7FF; box-sizing: border-box; cursor: pointer;}
+.card_new_prf__tit{margin-bottom: 4px; font-size: 16px; font-weight: 700; color: #202020;}
+.card_new_prf__txt{margin-bottom: 8px; line-height: 19px; font-weight: 400;}
+.card_new_prf__txt_hr{width: 100%; height: 1px; margin: auto 0 6px; background-color: #E1E1E1;}
+.card_new_prf__sub_txt{display: flex; align-items: center; font-size: 14px;}
+.card_new_prf__sub_txt_line{display: inline-block; width: 1px; margin: 0 4px; padding: 4px 0; background-color: #B8B8B8;}
+.card_new_prf__sub_txt_arrow{width: 15px; height: 15px; margin: 0 2px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15' xml:space='preserve'%3e%3cpath fill='none' d='M0 0h15v15H0z'/%3e%3cpath fill='%23A7A7A7' d='M5.95 11.5c-.11 0-.22-.04-.3-.12a.472.472 0 0 1-.03-.66L8.44 7.5 5.62 4.29c-.17-.2-.15-.49.03-.67.18-.17.46-.16.63.02 0 .01.01.01.01.02l3.09 3.53c.16.18.16.45 0 .63l-3.09 3.53c-.08.09-.21.15-.34.15z'/%3e%3c/svg%3e") no-repeat center; background-size: 15px 15px;}

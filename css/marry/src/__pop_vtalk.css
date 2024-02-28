@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_vtalk
+	설　명 : 음성·영상 맞선 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pop_vtalk{position: relative; width: 100%; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 2px 6px rgb(0 0 0 / 36%);}
+.pop_vtalk__container{width: 100%; padding: 20px 16px 16px; box-sizing: border-box;}
+.pop_vtalk__content{width: 100%;}
+.pop_vtalk__tit{margin-bottom: 24px; text-align: center; color: #202020;}
+.pop_vtalk__txt_box{display: flex; margin-top: 12px;}
+.pop_vtalk__txt{font-size: 14px; word-break: break-word;}
+.pop_vtalk__bullet{flex:none; width:6px; height: 6px; margin: 7px 4px 0 0; border-radius: 50%; background-color: var(--primary-250);}
+ 
+.pop_vtalk__photo_wrap{position: relative; width: 80px; height: 80px; margin: 0 auto;}
+.pop_vtalk__photo_ani{position:absolute; top: 50%; left: 50%; width:112px; height:112px; transform: translate(-50%, -50%);}
+.pop_vtalk__info{display: flex; justify-content: center; align-items: center; margin-top: 16px;}
+.pop_vtalk__name{font-size: 16px; font-weight: 700; word-break: break-word;}
+.pop_vtalk__block{position:relative; padding:2px; margin-left:2px; font-size:11px; color: #A4A4A4; cursor: pointer;}
+.pop_vtalk__block::after{content: ""; position: absolute; bottom:3px; left: 2px; width: calc(100% - 4px); height: 1px; background-color: #D4D4D4;}
+.pop_vtalk__religion{display: flex; align-items: center; justify-content: center; margin-top: 2px;}
+.pop_vtalk__religion_txt{font-size: 13px;}
+
+.pop_vtalk__btn_wrap{display: flex; align-items: center; justify-content:space-evenly; margin-top: 24px;}
+.pop_vtalk__btn{display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;}
+.pop_vtalk__btn_icon{width:54px; height:54px; border-radius: 50%; background-repeat: no-repeat; background-position: center; background-size: 32px 32px;}
+.pop_vtalk__btn_txt {margin-top: 2px;}
+.pop_vtalk__btn-reject .pop_vtalk__btn_icon{background-color: #FF5D5D; background-image: url("http://image.yeoboya.com/imgs//new_wedding/new_jsp/icon/ico_vtalk_reject.png");}
+.pop_vtalk__btn-accept .pop_vtalk__btn_icon{background-color: #50CE72; background-image: url("http://image.yeoboya.com/imgs//new_wedding/new_jsp/icon/ico_vtalk_accept.png");}
+.pop_vtalk__btn-reject .pop_vtalk__btn_txt{color: #FF5D5D;}
+.pop_vtalk__btn-accept .pop_vtalk__btn_txt{color: #50CE72;}

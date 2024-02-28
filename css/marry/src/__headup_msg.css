@@ -1,0 +1,56 @@
+@charset "utf-8"; /*---------------------------------------------
+파일명 : _headup_msg
+설　명 : 메시지, 관심있어요 헤드업 푸시
+작성순서 : 1. 레이아웃 2.크기/간격 3.박스모양 4.폰트 5.기타
+position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.headup_msg { position: absolute; top: -100px; left: 0; width: 100%; margin: 16px 0; animation-name: headupmsgAni, headupmsgAni; animation-direction: normal, reverse; animation-delay: 0s, 4s; animation-duration: 0.5s, 1s; animation-timing-function: ease-out, cubic-bezier(0.68, -0.6, 0.32, 1.6); animation-fill-mode: forwards, forwards; z-index: 5000; } 
+.headup_msg-main {position: fixed; top: 34px; animation: none;}
+.headup_msg__prf { display: flex; align-items: center; margin: 0 15px; border-radius: 8px; box-shadow: 0 3px 4px rgba(0, 0, 0, .16); cursor: pointer; } 
+.headup_msg__prf-expand { display:block; } 
+.headup_msg__prf-red { border: 1px solid #FF6E6E; background-color: #FFF6F6; } 
+.headup_msg__prf-blue { border: 1px solid #4169E1; background-color: #F2FAFF; } 
+.headup_msg__prf-update { border: 1px solid #4169E1; background-color: #F2FAFF; } 
+.headup_msg__prf-chatbot { border: 1px solid #4169E1; background-color: #F2FAFF; } 
+.headup_msg__prf { padding: 14px 16px; } 
+.headup_msg__prf_base { display: flex; align-items: center; } 
+.headup_msg__prf_info { margin-left: 8px; } 
+.headup_msg__prf_info_txt{font-size: 12px;}
+.headup_msg__prf_content { display: flex; align-items: center; } 
+.headup_msg__prf-red .headup_msg__name { font-weight: 700; color: #FF6E6E; } 
+.headup_msg__prf-blue .headup_msg__name { font-weight: 700; color: #427FCF; }
+.headup_msg__prf-update .headup_msg__name.headup_msg__name-woman{color: #FF6E6E;}
+.headup_msg__prf-update .headup_msg__name.headup_msg__name-man{color: #427FCF;}
+.headup_msg__prf-update .headup_msg__msg{font-weight: 700; color: #202020;}
+.headup_msg__age { color: #202020; } 
+.headup_msg__msg { font-size: 14px;}
+
+.headup_msg__ico { width: 20px; height: 20px; background: url(https://image.yeoboya.com/imgs/new_wedding/new_jsp/icon/ico_headup_msg.png) no-repeat center; background-size: 20px 20px; margin: -2px 0 0 -7px;}
+/* 텍스트에 인라인으로 박히는 아이콘들.. */
+.headup_msg__txt_icon {display:inline-block; width:20px; height:20px; margin-top:-4px; background-size:100%; background-position: center; background-repeat: no-repeat; vertical-align: middle;}
+
+.headup_msg__arrow { width:25px; height:8px; margin-left: auto; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 16' xml:space='preserve'%3e%3cpath fill='none' stroke='%234169E1' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M39.1 2.36 25 13.64 10.9 2.36'/%3e%3c/svg%3e") no-repeat center; background-size:100% auto; transition: 0.2s ease-in; } 
+
+.headup_msg__arrow.active { transform: rotate(-180deg); } 
+.headup_msg__expand_box { display: flex; justify-content: center;} 
+.headup_msg__img_wrap{position: relative; display: flex; justify-content: center; align-items: center;}
+.headup_msg__img { max-width: 100%; max-height: 120px; object-fit: cover; }
+.headup_msg__badge {position: absolute; top: -6px; right: -10px; width: 25px; height: 16px; border: 1px solid #F5F5F5; border-radius: 16px; box-sizing: border-box; background-color: #FF5656; text-align: center; line-height: 14px; font-size: 11px; color: #fff; }
+
+.headup_msg__video_wrap { position: relative; display: block; width: 160px; height: 90px; overflow: hidden} 
+.headup_msg__video { width: 100%; height: 100%; object-fit: cover} 
+.headup_msg__video_icon { position: absolute; top: 26px; left: 50%; z-index: 20; margin-left: -14px; } 
+.headup_msg__video_modal { position: absolute;width: 100%; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; background: rgba(0,0,0,.3) } 
+.headup_msg__video_time { position: absolute; width: 40px; top: 55px; left: 50%; z-index: 20; margin-left: -20px; font-size: 13px; color: #fff; font-weight: 700; text-align: center } 
+
+
+
+
+@keyframes headupmsgAni {
+	0% { top: -100px; } 
+	100% { top: 34px } 
+}
+
+@media (min-width:460px){
+	.headup_msg { left: 50%; transform: translateX(-50%); max-width: 460px; } 
+}

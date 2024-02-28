@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __sub_list_arrow.css
+	설　명 : 서브리스트 수발신 화살표
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.sub_list_arrow{width: 14px; height: 14px; background: no-repeat center; background-size: 100%;}
+.sub_list_arrow-send{background-image: url("https://image.yeoboya.com/imgs/new_wedding/renewal/ico_arrow_send.png");}
+.sub_list_arrow-come{background-image: url("https://image.yeoboya.com/imgs/new_wedding/renewal/ico_arrow_come.png");}

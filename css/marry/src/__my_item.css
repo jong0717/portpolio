@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_item
+	설　명 : 내 아이템
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.my_item{position: relative;} 
+.my_item__tit_wrap{display: flex; align-items: center; padding: 16px 20px 0;}
+.my_item__tit{font-size: 16px; font-weight: 700; color: #202020;}
+.my_item__tit_btn{position: relative; margin-left: auto; padding: 4px 8px; color: #707070; font-size: 12px; cursor: pointer;}
+.my_item__tit_btn::after{position: absolute; left: 8px; right: 8px; bottom: 5px; content: ""; height: 1px; background: #707070;}
+.my_item__list_wrap{padding-top: 16px;}
+.my_item__list{padding: 8px 15px;}
+.my_item__list_inner{display: flex; align-items: center;}
+.my_item__list_ico{width: 36px; height: 36px; border: 1px solid #F1F1F1; border-radius: 4px; background: no-repeat center; background-size: 36px; box-sizing: border-box;}
+.my_item__list_txt{padding-left: 12px; font-size: 16px; color: #202020; font-weight: 700;}
+.my_item__list_right_wrap {margin-left: auto; min-width: 120px; text-align: center;}
+.my_item__list_count{font-size: 15px;}
+.my_item__list_period{font-size: 13px;}
+.my_item__btn_more{display: flex; justify-content: center; align-items: center; height: 36px; margin-top: 12px; background-color: #EFF3FF; cursor: pointer;}
+.my_item__btn_more_ico{margin-left: 9px; border-top: 7px solid #5989D0; border-left: 5px solid transparent; border-right: 5px solid transparent;}
+.my_item__btn_more_ico-fold{border-top: none; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 7px solid #5989D0;}
+.my_item__list_bdg_use{height: 18px; padding: 0 4px; margin-left: 4px; border: 1px solid #F74949; border-radius: 10px; font-size: 12px; color: #F74949; line-height: 16px; box-sizing: border-box;}
+
+.my_item__list_gray_box{width: 80%; margin: 2px 0 0 auto; padding: 8px 0 8px 20px; border-radius: 8px; background-color: #FAFAFA;}
+.my_item__list_gray_box_txt{padding-left: 16px; margin-top:2px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 14 14'%3e%3cpath fill='none' stroke='%23D4D4D4' stroke-linecap='round' stroke-linejoin='round' d='M4.8 3.5v6h6'/%3e%3c/svg%3e") no-repeat left center; background-size: 14px; font-size: 15px; font-weight: 400;}
+.my_item__list_gray_box_txt:first-child {margin-top: 0;}
+.my_item__list_gray_box_subtxt{font-weight: 700;}

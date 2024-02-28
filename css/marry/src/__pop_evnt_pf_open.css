@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_evnt_pf_open
+	설　명 : 프로필 열람시 이벤트 아이템 지급 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.pop_evnt_pf_open{position: relative; width: 330px; border-radius: 8px; background-color: #fff; z-index: 0; overflow: hidden;}
+.pop_evnt_pf_open__img_wrap{position: relative; width: 100%; font-size: 0;}
+.pop_evnt_pf_open__img{width: 100%;}
+.pop_evnt_pf_open__content{padding: 12px 15px 20px; text-align: center; color: #202020;}
+.pop_evnt_pf_open__tit{margin-bottom: 12px; }
+.pop_evnt_pf_open__txt_box{width: 100%; font-size: 14px; word-break: break-all;}
+.pop_evnt_pf_open__btn_wrap{margin-top: 15px;}

@@ -1,0 +1,56 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□              Variables Marry               □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+
+$font-color: map-merge((
+    "man":          $man,
+    "woman":        $woman,
+    "p-40_noble":   #DC9B63
+    
+), $font-color);
+
+//------------------------------------------------
+// Component Variables
+//------------------------------------------------
+/*----- HEADER -----*/
+$header_tit_txt_color:                $gray-20;
+
+/*----- BUTTON -----*/
+// shadow
+$btn_shadow_bg_fa:                       $gray-fa;
+
+// tab_bar
+$tab_bar_logo_border : #D6E1FF;
+$tab_bar_logo_bg : #4169E1;
+$tab_bar_btn_ico : url("#{$url_marry}/common/ico_tab_bar_btn_marry.png");
+$tab_bar_txt_color : #4169E1;
+
+/*----- PHOTO -----*/
+// size
+$photo_circle_sizes:                     join($photo_circle_sizes, (28, 60,68));
+
+//------------------------------------------------
+// Popup
+//------------------------------------------------
+/*----- pop Alert -----*/
+$pop_alert_padding_top_cls:           40px;
+$pop_alert_gray_box_bg:               $gray-f5;
+$pop_alert_gray_box_height:           36px;
+$pop_alert_gray_box_radius:           $pop_alert_gray_box_height / 2;
+
+$input_btn_tooltip_icon_color:       3654AE;
+$input_btn_plus_color:               #3654AE;
+/*----- ICON -----*/
+$icon-colors: ();
+$icon-colors: map-merge((
+	"default":    "202020",
+	"gray50":     "505050",
+	"disabled":   "B8B8B8",
+	"primary":    "3654AE",
+	"white":      "FFFFFF",
+), $icon-colors);
+/*----- PHOTO -----*/
+// size
+// $photo_circle_sizes:                     join($photo_circle_sizes, (60));

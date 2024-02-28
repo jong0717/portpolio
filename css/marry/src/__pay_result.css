@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pay_result
+	설　명 : 아이템 구매 결과
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pay_result{position: relative; padding: 24px 15px 0px;}
+.pay_result__card{padding: 28px 0; border-radius: 8px; background: #fff; box-shadow: 0 1px 4px rgba(0, 0,0,.16);}
+.pay_result__img{display: block; width: 72px; height: auto; margin: 0 auto;}
+.pay_result__item_name{margin-top: 28px; font-size: 16px; font-weight: 700; color: #4169E1; text-align: center;}
+.pay_result__txt{margin-top: 2px; font-size: 16px; color: #202020; text-align: center;}
+.pay_result__btn_wrap{margin-top: 28px;}

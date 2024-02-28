@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __post
+	설　명 : 포스트 (카드 형태, 리스트 형태 모두 포함)
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.post{position: relative; background-color: #FFF;}
+.post.disabled{background-color: #FAFAFA;}
+.post__link{position: absolute; width: 100%; height: 100%; z-index: 1;}
+.post__box{position: relative; overflow: hidden;}
+.post__box-bce1{border: 1px solid #e1e1e1;}
+.post__box-bcf1{border: 1px solid #f1f1f1;}
+.post__box-br{border-radius: 8px;}
+.post__photo_wrap{border-radius: 8px 8px 0 0; border-bottom: 1px solid #E1E1E1;}
+
+.post__topic_wrap{display: flex; align-items: center; width: 100%; padding: 10px 0;}
+.post__topic_tit{font-size: 14px; color: #202020; line-height: 20px; word-break: break-all;}
+.post__content_wrap{margin: 0 12px;}
+.post.disabled .post__content_wrap{opacity: 50%;}
+.post__content{display: flex; margin-bottom: 6px;}
+.post__content-h_64{height: 64px;}
+.post__date{margin-left: auto; font-size: 12px; color: #505050;}
+
+.post__bdg_hot{flex: none; width: 29px; height: 13px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_bdg_hot.png") center no-repeat; background-size: 29px 13px;}
+.post__bdg_new{flex: none; width: 15px; height: 15px; background: url("https://image.yeoboya.com/imgs/new_wedding/new_jsp/more/img_more_top_title_new_badge.png") no-repeat center; background-size: 100%;}
+.post__txt_wrap{width: 100%;}
+.post__tit{font-size: 14px; color: #202020; line-height: 20px; font-weight: 700; word-break: break-all;}
+.post__main_txt{margin-top: 4px; font-size: 13px; line-height: 18px; word-break: break-all;}
+.post__prf{display: flex; align-items: center; margin-bottom: 10px;}
+.post__prf_name{margin-left: 4px; font-size: 13px;}
+.post__price{font-size:15px; font-weight: 700; color:#202020;}
+.post__spot{padding-left:12px; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' xml:space='preserve'%3e%3cpath fill='%23505050' d='M12 0a8.18 8.18 0 0 0-8 8.34C4 14.12 12.01 24 12.01 24S20 13.84 20 8.34A8.18 8.18 0 0 0 12 0zm2.41 10.79a3.318 3.318 0 0 1-4.69.13c-.05-.04-.09-.09-.13-.13a3.67 3.67 0 0 1 0-5.03 3.318 3.318 0 0 1 4.69-.14c.05.05.1.09.14.14 1.32 1.4 1.32 3.61-.01 5.03z'/%3e%3c/svg%3e") left center no-repeat; background-size:12px 12px; font-size:12px;}
+.post__content_photo_wrap{flex: none; width: 64px; height: 64px; margin-left: 8px;}
+
+.post__bot{margin: 0 12px;}
+.post__bot_box{display: flex; align-items: center; width: 100%; padding:8px 0 12px;}
+.post__meta{display: flex; align-items: center;}
+.post__meta_tit{flex: none;}
+.post__icon_heart{width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_heart_mini.png") center no-repeat; background-size: 20px 20px;}
+.post__icon_thumb {width: 20px;height: 20px;background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_thumb_mini.png") center no-repeat;background-size: 20px 20px;}
+.post__icon_reply{width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_reply_mini.png") center no-repeat; background-size: 20px 20px;}
+.post__icon_views{width: 20px; height: 20px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/ico/ico_views_mini.png") center no-repeat; background-size: 20px 20px;}
+.post__meta_txt{margin: 0 8px 0 2px; font-size: 12px; color: #505050;}
+
+.post__meta_info_del{padding-left: 20px; font-size: 14px; color: #202020; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3e%3cpath fill='%23202020' d='M16 30C8.3 30 2 23.7 2 16S8.3 2 16 2s14 6.3 14 14-6.3 14-14 14m0-26C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4'/%3e%3cpath fill='%23202020' d='M16 8.6c.9 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6M16 13.6c.8 0 1.4.6 1.4 1.4v7.7c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4V15c0-.8.6-1.4 1.4-1.4'/%3e%3c/svg%3e") left center no-repeat; background-size: 16px 16px;}
+.post__meta_info_del_btn{flex: none; height: 31px; margin-left: auto; padding: 0 12px; border-radius: 4px; border: 1px solid #909090; background-color: #FFF; box-sizing: border-box; font-size: 13px; line-height: 29px;}
+
+
+
+
+
+
+
+

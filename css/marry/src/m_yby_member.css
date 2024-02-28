@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* 멤버페이지 공통 bg */
+.member_bg {min-height:100vh; background:url("https://image.yeoboya.com/imgs/new_wedding/mobile/new_login/img_bg_wrap.png") no-repeat; background-size:auto 105%; background-position:center top; overflow-x:hidden; overflow-y:auto;}
+
+
+/* 버전정보 */
+.vesion_info{position:relative; width:100%; height:auto; margin-top:10px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; font-size:1rem; color:#868686; text-align:center;}
+.vesion_info .box{display:inline-block; margin:0 auto;  padding:8px 0 4px 0;}
+.vesion_info .box:after{display:block; content:""; clear: both;}
+.vesion_info .txt_left{float:left; text-align:left;}
+.vesion_info .version_latest{font-weight:700; color:#3dd000;}
+.vesion_info .version_new{font-weight:700; color:#ffa500;}
+.vesion_info .btn_update{float:left; position:relative; width:94px; height:34px; top:3px; margin-left:20px; background:#ffa500; border-radius:3px; font-size:15px; font-weight:700; color:#fff; overflow:hidden;}
+.ripple:after{content:''; position:absolute; top:50%; left:30%; width:5px; height:5px; background:rgba(255, 255, 255, .3); opacity:0; border-radius:100%; transform:scale(1, 1) translate(-50%); transform-origin:50% 50%; animation:ripple 1.8s ease-out infinite;}
+@keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(25, 25);
+      opacity: 1;
+    }    
+    100% {
+      opacity: 0;
+      transform: scale(40, 40);
+    }
+}
+
+/*==================================
+        이용약관,개인정보취급방침
+==================================*/
+.policy_tab {position: fixed; top:45px; left:0; right:0; font-size:13px;}
+.policy_container {margin-top:87px; padding:16px;}
+.policy_txt {font-size:13px; line-height:1.75rem; white-space: pre-line; word-break: keep-all;}
+
+
+
+/*==================================
+        소셜로그인 대기
+==================================*/
+.sc_wait_wrap {display: -webkit-box; display: -ms-flexbox; display: flex; justify-content: center; align-items: center; width:100%; height:100vh;}
+.sc_wait_box {position:relative; width:300px; height:auto; margin-top:-80px; text-align: center;}
+.sc_wait_box h2 {font-size:1.35rem; margin:8px 0px 16px;}
+.sc_wait_box p {font-size:15px; line-height:1.85rem;}
+
+
+/*==================================
+        PC 레이아웃
+==================================*/
+@media (min-width:460px) {
+    .pc__bg .policy_tab{left:50%; width:460px; margin-left:-230px;}
+}

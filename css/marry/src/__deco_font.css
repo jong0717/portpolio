@@ -1,0 +1,65 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __deco_font
+	설　명 : 프로필 꾸미기 폰트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+/* 002 - 카페24빛나는별 */
+/* 메인리스트 */
+[data-font="font_a002"] .txt_box_txt{font-family: "Cafe24Shiningstar", "NotoSansKR";  letter-spacing: 0; font-size: 20px;}
+[data-font="font_a002"] .txt_box_txt.txt_deco{text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;}
+[data-font="font_a002"] .pf_view_txt{font-family: "Cafe24Shiningstar", "NotoSansKR"; letter-spacing: 0; font-size: 18px;}
+[data-font="font_a002"] .introduce_txt{font-family: "Cafe24Shiningstar", "NotoSansKR"; font-size: 20px; letter-spacing: 0;}
+[data-font="font_a002"] .pf_write_content .txt_area{font-family: "Cafe24Shiningstar", "NotoSansKR"; letter-spacing: 0; font-size: 20px;}
+[data-font="font_a002"] .pf_write_content .txt_area.txt_deco{text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;}
+[data-font="font_a002"] .pf_view_txt-ymti_type{font-size: 20px; font-weight: 500;}
+[data-font="font_a002"] .pf_view_row .flex_container .pf_view_txt{font-size: 18px;}
+[data-font="font_a002"] .age_prime_mark{font-size: 18px;}
+[data-font="font_a002"].deco_slct__font_view_txt{font-family: "Cafe24Shiningstar", "NotoSansKR"; letter-spacing: 0; font-size: 20px;}
+
+
+/* 003 - 귀염발랄체 */
+/* 메인리스트 */
+[data-font="font_a003"] .txt_box_txt{font-family: "InsungitCutelively", "NotoSansKR";  letter-spacing: -.3px; font-size: 15px;}
+[data-font="font_a003"] .txt_box_txt.txt_deco{text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;}
+/* 프로필 */
+[data-font="font_a003"] .pf_view_txt{font-family: "InsungitCutelively", "NotoSansKR"; letter-spacing: -.3px; font-size: 13px;}
+[data-font="font_a003"] .introduce_txt{font-family: "InsungitCutelively", "NotoSansKR"; font-size: 15px; letter-spacing: -.3px;}
+[data-font="font_a003"] .pf_write_content .txt_area{font-family: "InsungitCutelively", "NotoSansKR"; font-size: 15px; letter-spacing: -.3px;}
+[data-font="font_a003"] .pf_write_content .txt_area.txt_deco{text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;}
+[data-font="font_a003"] .pf_view_txt-ymti_type{font-weight: 500;}
+[data-font="font_a003"] .pf_view_row .flex_container .pf_view_txt{font-size: 13px;}
+[data-font="font_a003"] .age_prime_mark{font-size: 13px;}
+[data-font="font_a003"].deco_slct__font_view_txt{font-family: "InsungitCutelively", "NotoSansKR"; font-size: 15px; letter-spacing: -.3px;}
+
+
+/* 004 - 넥슨배찌체 */
+/* 메인리스트 */
+[data-font="font_a004"] .txt_box_txt{font-family: "NexonBazzi", "NotoSansKR";  letter-spacing: .3px; font-size: 17px;}
+[data-font="font_a004"] .txt_box_txt.txt_deco{text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;}
+/* 프로필 */
+[data-font="font_a004"] .pf_view_txt{font-family: "NexonBazzi", "NotoSansKR"; letter-spacing: .3px; font-size: 15px;}
+[data-font="font_a004"] .introduce_txt{font-family: "NexonBazzi", "NotoSansKR"; font-size: 17px; letter-spacing: .3px;}
+[data-font="font_a004"] .pf_write_content .txt_area{font-family: "NexonBazzi", "NotoSansKR"; font-size: 17px; letter-spacing: .3px;}
+[data-font="font_a004"] .pf_write_content .txt_area.txt_deco{text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;}
+[data-font="font_a004"] .pf_view_txt-ymti_type{font-size: 17px; font-weight: 500;}
+[data-font="font_a004"] .pf_view_row .flex_container .pf_view_txt{font-size: 15px;}
+[data-font="font_a004"] .age_prime_mark{font-size: 15px;}
+[data-font="font_a004"].deco_slct__font_view_txt{font-family: "NexonBazzi", "NotoSansKR"; font-size: 17px; letter-spacing: .3px;}
+
+
+/* 005 - 어비찌바체 */
+/* 메인리스트 */
+[data-font="font_a005"] .txt_box_txt{font-family: "UhBeeZZIBA", "NotoSansKR";  letter-spacing: -.1px; font-size: 16px; line-height: 23px;}
+[data-font="font_a005"] .txt_box_txt.txt_deco{text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;}
+/* 프로필 */
+[data-font="font_a005"] .pf_view_txt{font-family: "UhBeeZZIBA", "NotoSansKR"; letter-spacing: -.1px; font-size: 15px;}
+[data-font="font_a005"] .introduce_txt{font-family: "UhBeeZZIBA", "NotoSansKR"; font-size: 17px; letter-spacing: -.1px;}
+[data-font="font_a005"] .pf_write_content .txt_area{font-family: "UhBeeZZIBA", "NotoSansKR"; font-size: 17px; letter-spacing: -.1px;}
+[data-font="font_a005"] .pf_write_content .txt_area.txt_deco{text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 4px;}
+[data-font="font_a005"] .pf_view_txt-ymti_type{font-size: 17px; font-weight: 500;}
+[data-font="font_a005"] .pf_view_row .flex_container .pf_view_txt{font-size: 15px;}
+[data-font="font_a005"] .age_prime_mark{font-size: 15px;}
+[data-font="font_a005"].deco_slct__font_view_txt{font-family: "UhBeeZZIBA", "NotoSansKR"; font-size: 17px; letter-spacing: -.1px;}

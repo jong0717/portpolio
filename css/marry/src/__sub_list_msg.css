@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __sub_list_msg.css
+	설　명 : 서브리스트 메시지 이력
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.sub_list_msg{display: flex; align-items: flex-end;}
+.sub_list_msg__ico{width: 25px; height: 21px; background: url("https://image.yeoboya.com/imgs/new_wedding/img/ani_speaker.gif") no-repeat center; background-size: 100%;}
+.sub_list_msg__txt{font-size: 11px; color: #6A6A6A;}
+.sub_list_msg__txt_come{font-size: 11px; color: #FF5777;}
+.sub_list_msg__txt_send{font-size: 11px; color: #427FCF;}
