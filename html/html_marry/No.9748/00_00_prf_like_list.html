@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="robots" content="ALL">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="1 days">
+	<meta name="Subject" content="여보야">
+	<meta name="description" content="결혼, 재혼, 배우자를 찾는 스마트한 방법, 가입비 주선비 성혼비 무료, 여성결혼대상자 무료, 문의 1522-3379">
+	<meta name="keywords" content="결혼, 재혼, 결혼어플, 소개팅어플, 소개팅">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://image.yeoboya.com/imgs/new_wedding/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://image.yeoboya.com/imgs/new_wedding/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>여보야</title>
+	<link rel="canonical" href="https://m.yeoboya.com">
+
+	<link rel="stylesheet" type="text/css" href="../../../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/sass/common_marry.css">
+
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/m_yby_default.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/m_yby_sublist.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/prf_like.css">
+
+	<script src="../../../vendors/polyfill.min.js"></script>
+	<script src="../../../vendors/jquery.min.js"></script>
+	<script src="../../../vendors/lodash.min.js"></script>
+	<script src="../../../vendors/axios.min.js"></script>
+	<script src="../../../vendors/moment.min.js"></script>
+	<script src="../../../vendors/jquery-mobile.event.min.js"></script>
+	<script src="../../../vendors/onLoad.bundle.js"></script>
+	<script type="text/javascript" src="http://livejs.com/live.js "></script>
+</head>
+<body class="pc__bg" data-type="marry">
+	<div class="pc__container">
+		<div class="top top-fix">
+			<header class="header header-marry">
+				<div class="header__btn_left">
+					<a class="header__btn pl8">
+						<span class="header__ico_back"></span>
+						<span class="blind">뒤로</span>
+					</a>
+				</div>
+				<h1 class="header__tit"><span class="header__tit_txt">좋아요 리스트</span></span></h1>
+			</header>
+			<div class="tab">
+				<a class="tab__tab_menu tab__tab_menu-active"><span class="tab__tab_menu_txt fwb">나를 좋아요한 회원</span></a>
+				<a class="tab__tab_menu"><span class="tab__tab_menu_txt fwb">내가 한 회원</span></a>
+				<span class="tab__border tab__border-2_full tab__border-2_1"></span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="prf_like">
+				<div class="prf_like__filter">
+					<div class="prf_like__filter_txt">정지/탈퇴 회원은 리스트에서 제거됩니다</div>
+					<div class="prf_like__filter_tab">
+						<div class="prf_like__filter_tab_menu active">최신 순</div>
+						<div class="prf_like__filter_tab_menu">보낸 순</div>
+					</div>
+				</div>
+				<!-- 리스트 없음 -->
+				<div class="list_empty">
+					<div class="list_empty__container">
+						<div class="list_empty__img_wrap">
+							<div class="list_empty__img_list"></div>
+						</div>
+						<div class="list_empty__tit"><span class="list_empty__tit_txt"><b>받은 좋아요가 없습니다.</b></span></div>
+					</div>
+				</div>
+				<!-- 리스트 있음 -->
+				<div class="prf_like__history_wrap">
+					<div class="day_txt">
+						<span class="day">2023년 02월 09일</span>
+						<div class="line"></div>
+					</div>
+					<div class="prf_like__history">
+						<div class="prf_like__photo">
+							<img src="https://thumb.mtstarnews.com/06/2022/12/2022122818182152856_1.jpg" alt="회원사진" class="prf_like__photo_img">
+							<span class="prf_like__photo_num">5</span>
+						</div>
+						<div class="prf_like__history_content">
+							<span class="badge_re">재혼</span>
+							<div class="prf_like__history_nick tc-1 prf_like__history_nick-woman">포엠투(경북/35세)</div>
+						</div>
+						<div class="prf_like__bdg mt6 mla">
+							<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png" class="prf_like__bdg_img" />
+							<span class="prf_like__bdg_num">30,000</span>
+						</div>
+					</div>
+					<div class="prf_like__history">
+						<div class="prf_like__photo">
+							<img src="https://cdnweb01.wikitree.co.kr/webdata/editor/202108/06/img_20210806165223_3734122b.webp" alt="회원사진" class="prf_like__photo_img">
+							<span class="prf_like__photo_num">5</span>
+						</div>
+						<div class="prf_like__history_content">
+							<span class="badge_new">결혼</span>
+							<div class="prf_like__history_nick tc-1 prf_like__history_nick-man">크롱파이브(제주/34세)</div>
+						</div>
+						<div class="prf_like__bdg mt6 mla">
+							<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png" class="prf_like__bdg_img" />
+							<span class="prf_like__bdg_num">30,000</span>
+						</div>
+					</div>
+				</div>
+				<div class="prf_like__history_wrap">
+					<div class="day_txt">
+						<span class="day">2023년 02월 07일</span>
+						<div class="line"></div>
+					</div>
+					<div class="prf_like__history">
+						<div class="prf_like__photo">
+							<img src="https://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_woman_new.jpg" alt="회원사진" class="prf_like__photo_img">
+							<span class="prf_like__photo_num">5</span>
+						</div>
+						<div class="prf_like__history_content">
+							<span class="badge_new">결혼</span>
+							<div class="prf_like__history_nick tc-1 prf_like__history_nick-woman">포엠투(경북/35세)</div>
+						</div>
+						<div class="prf_like__bdg mt6 mla">
+							<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png" class="prf_like__bdg_img" />
+							<span class="prf_like__bdg_num">30,000</span>
+						</div>
+						<!-- <a class="prf_like__history_btn">열람하기</a> -->
+					</div>
+					<div class="prf_like__history">
+						<div class="prf_like__photo">
+							<img src="https://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man_new.jpg" alt="회원사진" class="prf_like__photo_img">
+							<span class="prf_like__photo_num">5</span>
+						</div>
+						<div class="prf_like__history_content">
+							<span class="badge_new">결혼</span>
+							<div class="prf_like__history_nick tc-1 prf_like__history_nick-man">크롱파이브(제주/34세)</div>
+						</div>
+						<div class="prf_like__bdg mt6 mla">
+							<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png" class="prf_like__bdg_img" />
+							<span class="prf_like__bdg_num">30,000</span>
+						</div>
+						<!-- <a class="prf_like__history_btn">열람하기</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content hidden">
+			<div class="prf_like">
+				<div class="prf_like__filter">
+					<div class="prf_like__filter_txt tc-1">정지/탈퇴 회원은 리스트에서 제거됩니다</div>
+					<div class="prf_like__filter_tab">
+						<div class="prf_like__filter_tab_menu active">최신 순</div>
+						<div class="prf_like__filter_tab_menu">보낸 순</div>
+					</div>
+				</div>
+				<!-- 리스트 없음 -->
+				<div class="list_empty">
+					<div class="list_empty__container">
+						<div class="list_empty__img_wrap">
+							<div class="list_empty__img_list"></div>
+						</div>
+						<div class="list_empty__tit"><span class="list_empty__tit_txt"><b>받은 좋아요가 없습니다.</b></span></div>
+					</div>
+				</div>
+				<!-- 리스트 있음 -->
+				<div class="prf_like__history">
+					<div class="prf_like__photo">
+						<img src="https://thumb.mtstarnews.com/06/2022/12/2022122818182152856_1.jpg" alt="회원사진" class="prf_like__photo_img">
+						<span class="prf_like__photo_num">5</span>
+					</div>
+					<div class="prf_like__history_content">
+						<span class="badge_re">재혼</span>
+						<div class="prf_like__history_nick tc-1 prf_like__history_nick-woman">포엠투(경북/35세)</div>
+					</div>
+					<div class="prf_like__bdg mt6 mla">
+						<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png" class="prf_like__bdg_img" />
+						<span class="prf_like__bdg_num">30,000</span>
+					</div>
+				</div>
+				<div class="prf_like__history">
+					<div class="prf_like__photo">
+						<img src="https://cdnweb01.wikitree.co.kr/webdata/editor/202108/06/img_20210806165223_3734122b.webp" alt="회원사진" class="prf_like__photo_img">
+						<span class="prf_like__photo_num">5</span>
+					</div>
+					<div class="prf_like__history_content">
+						<span class="badge_new">결혼</span>
+						<div class="prf_like__history_nick tc-1 prf_like__history_nick-man">크롱파이브(제주/34세)</div>
+					</div>
+					<div class="prf_like__bdg mt6 mla">
+						<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png" class="prf_like__bdg_img" />
+						<span class="prf_like__bdg_num">30,000</span>
+					</div>
+				</div>
+				<div class="prf_like__history">
+					<div class="prf_like__photo">
+						<img src="https://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_woman_new.jpg" alt="회원사진" class="prf_like__photo_img">
+						<span class="prf_like__photo_num">5</span>
+					</div>
+					<div class="prf_like__history_content">
+						<span class="badge_new">결혼</span>
+						<div class="prf_like__history_nick tc-1 prf_like__history_nick-woman">포엠투(경북/35세)</div>
+					</div>
+					<div class="prf_like__bdg mt6 mla">
+						<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png" class="prf_like__bdg_img" />
+						<span class="prf_like__bdg_num">30,000</span>
+					</div>
+				</div>
+				<div class="prf_like__history">
+					<div class="prf_like__photo">
+						<img src="https://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man_new.jpg" alt="회원사진" class="prf_like__photo_img">
+						<span class="prf_like__photo_num">5</span>
+					</div>
+					<div class="prf_like__history_content">
+						<span class="badge_new">결혼</span>
+						<div class="prf_like__history_nick tc-1 prf_like__history_nick-man">크롱파이브(제주/34세)</div>
+					</div>
+					<div class="prf_like__bdg mt6 mla">
+						<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/evnt_gage2/ico_gage_main_rank.png" class="prf_like__bdg_img" />
+						<span class="prf_like__bdg_num">30,000</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		function pT() {
+			$('.content').css({'padding-top': `${$('.top').outerHeight()}px`})
+		}
+		pT()
+
+		// 탭
+		$('.tab__tab_menu').on('click', function(e) {
+			const index = $(this).index();
+			$('.tab__tab_menu').removeClass('tab__tab_menu-active');
+			$(this).addClass('tab__tab_menu-active');
+			$('.list_top').addClass('hidden')
+			$('.bot_pop').addClass('hidden')
+
+			const tabBorder = $('.tab__border')
+			tabBorder[0].classList.remove('tab__border-2_1', 'tab__border-2_2')
+			tabBorder.addClass(`tab__border-2_${index + 1}`)
+
+			$('.content').addClass('hidden')
+			$('.content').eq(index).removeClass('hidden')
+			pT()
+		})
+		// 필터
+		$('.prf_like__filter_tab_menu').on('click', function() {
+			$('.prf_like__filter_tab_menu').removeClass('active');
+			$(this).addClass('active')
+		})
+		// list_empty 높이
+		const listEmptyHeight =  $('.top').outerHeight() + $('.prf_like__filter').outerHeight(); + 40;
+		$('.list_empty').css({'min-height': 'calc( 100vh - ' + listEmptyHeight + 'px'});
+	</script>
+
+	<script src="../../../vendors/siteMap.bundle.js"></script>
+</body>
+</html>

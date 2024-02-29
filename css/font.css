@@ -1,48 +1,48 @@
 @font-face {
     font-family: "NotoSansKR";
-    src: url('font/NotoSansKR-Black.woff2') format('woff2'),
-    url('font/NotoSansKR-Black.woff') format('woff'),
-    url('font/NotoSansKR-Black.otf') format('opentype');
+    src: url('../css/font/NotoSansKR-Black.woff2') format('woff2'),
+    url('../css/font/NotoSansKR-Black.woff') format('woff'),
+    url('../css/font/NotoSansKR-Black.otf') format('opentype');
     font-weight: 900;
 }
 
 @font-face {
     font-family: "NotoSansKR";
-    src: url('font/NotoSansKR-Bold.woff2') format('woff2'),
-    url('font/NotoSansKR-Bold.woff') format('woff'),
-    url('font/NotoSansKR-Bold.otf') format('opentype');
+    src: url('../css/font/NotoSansKR-Bold.woff2') format('woff2'),
+    url('../css/font/NotoSansKR-Bold.woff') format('woff'),
+    url('../css/font/NotoSansKR-Bold.otf') format('opentype');
     font-weight: 700;
 }
 
 @font-face {
     font-family: "NotoSansKR";
-    src: url('font/NotoSansKR-Medium.woff2') format('woff2'),
-    url('font/NotoSansKR-Medium.woff') format('woff'),
-    url('font/NotoSansKR-Medium.otf') format('opentype');
+    src: url('../css/font/NotoSansKR-Medium.woff2') format('woff2'),
+    url('../css/font/NotoSansKR-Medium.woff') format('woff'),
+    url('../css/font/NotoSansKR-Medium.otf') format('opentype');
     font-weight: 500;
 }
 
 @font-face {
     font-family: "NotoSansKR";
-    src: url('font/NotoSansKR-Regular.woff2') format('woff2'),
-    url('font/NotoSansKR-Regular.woff') format('woff'),
-    url('font/NotoSansKR-Regular.otf') format('opentype');
+    src: url('../css/font/NotoSansKR-Regular.woff2') format('woff2'),
+    url('../css/font/NotoSansKR-Regular.woff') format('woff'),
+    url('../css/font/NotoSansKR-Regular.otf') format('opentype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: "NotoSansKR";
-    src: url('font/NotoSansKR-Light.woff2') format('woff2'),
-    url('font/NotoSansKR-Light.woff') format('woff'),
-    url('font/NotoSansKR-Light.otf') format('opentype');
+    src: url('../css/font/NotoSansKR-Light.woff2') format('woff2'),
+    url('../css/font/NotoSansKR-Light.woff') format('woff'),
+    url('../css/font/NotoSansKR-Light.otf') format('opentype');
     font-weight: 300;
 }
 
 @font-face {
     font-family: "NotoSansKR";
-    src: url('font/NotoSansKR-Thin.woff2') format('woff2'),
-    url('font/NotoSansKR-Thin.woff') format('woff'),
-    url('font/NotoSansKR-Thin.otf') format('opentype');
+    src: url('../css/font/NotoSansKR-Thin.woff2') format('woff2'),
+    url('../css/font/NotoSansKR-Thin.woff') format('woff'),
+    url('../css/font/NotoSansKR-Thin.otf') format('opentype');
     font-weight: 100;
 }
 
@@ -52,9 +52,9 @@
 /* font_a002 - 카페24빛나는별 */
 @font-face {
     font-family: "Cafe24Shiningstar";
-    src: url('font/Cafe24Shiningstar.woff2') format('woff2'),
-    url('font/Cafe24Shiningstar.woff') format('woff'),
-	url('font/Cafe24Shiningstar.ttf') format('truetype');
+    src: url('../css/font/Cafe24Shiningstar.woff2') format('woff2'),
+    url('../css/font/Cafe24Shiningstar.woff') format('woff'),
+	url('../css/font/Cafe24Shiningstar.ttf') format('truetype');
     font-weight: 500;
 	unicode-range: U+0000-259F, U+2600-FFFF;
 }
@@ -62,26 +62,26 @@
 /* font_a003 - 귀염발랄체 */
 @font-face {
     font-family: "InsungitCutelively";
-    src: url('font/InsungitCutelively.woff2') format('woff2'),
-    url('font/InsungitCutelively.woff') format('woff'),
-	url('font/InsungitCutelively.ttf') format('truetype');
+    src: url('../css/font/InsungitCutelively.woff2') format('woff2'),
+    url('../css/font/InsungitCutelively.woff') format('woff'),
+	url('../css/font/InsungitCutelively.ttf') format('truetype');
     font-weight: 500;
 }
 
 /* font_a004 - 넥슨배찌체 */
 @font-face {
     font-family: "NexonBazzi";
-    src: url('font/NexonBazzi.woff2') format('woff2'),
-    url('font/NexonBazzi.woff') format('woff'),
-	url('font/NexonBazzi.ttf') format('truetype');
+    src: url('../css/font/NexonBazzi.woff2') format('woff2'),
+    url('../css/font/NexonBazzi.woff') format('woff'),
+	url('../css/font/NexonBazzi.ttf') format('truetype');
     font-weight: 500;
 }
 
 /* font_a005 - 어비찌바체 */
 @font-face {
     font-family: "UhBeeZZIBA";
-    src: url('font/UhBeeZZIBA.woff2') format('woff2'),
-    url('font/UhBeeZZIBA.woff') format('woff'),
-	url('font/UhBeeZZIBA.ttf') format('truetype');
+    src: url('../css/font/UhBeeZZIBA.woff2') format('woff2'),
+    url('../css/font/UhBeeZZIBA.woff') format('woff'),
+	url('../css/font/UhBeeZZIBA.ttf') format('truetype');
     font-weight: 500;
 }

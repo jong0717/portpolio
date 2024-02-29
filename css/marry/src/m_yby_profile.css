@@ -776,7 +776,7 @@ p.sub_describe span img {width:14px; height:auto; padding-right:2px; margin-bott
 .certification__wrap img {width:60px;} */
 /* .cert_self__wrap {height:57px; right:6px;}
 .cert_marry__wrap {height:57px; right:65px;} */
-/* .cert_btn__after {display:none;}
+.cert_btn__after {display:none;}
 .cert_self__wrap.on .cert_btn__before,
 .cert_marry__wrap.on .cert_btn__before {display:none;}
 .cert_self__wrap.on .cert_btn__after,
@@ -784,7 +784,7 @@ p.sub_describe span img {width:14px; height:auto; padding-right:2px; margin-bott
 .cert_self__wrap:active .cert_btn__before,
 .cert_marry__wrap:active .cert_btn__before {display:none;}
 .cert_self__wrap:active .cert_btn__after,
-.cert_marry__wrap:active .cert_btn__after {display:block;} */
+.cert_marry__wrap:active .cert_btn__after {display:block;}
 /* 
 .badge_cert__self {flex:none; width:62px; height:62px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/badge_cert_self.png") no-repeat center; background-size: 60px 60px;}
 .badge_cert__marry {flex:none; width:62px; height:62px; background: url("https://image.yeoboya.com/imgs/new_wedding/mobile/img/badge_cert_marry.png") no-repeat center; background-size: 60px 60px;} */

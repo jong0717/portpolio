@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="robots" content="ALL">
+    <meta name="robots" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta name="Subject" content="여보야">
+    <meta name="description" content="결혼, 재혼, 배우자를 찾는 스마트한 방법, 가입비 주선비 성혼비 무료, 여성결혼대상자 무료, 문의 1522-3379">
+    <meta name="keywords" content="결혼, 재혼, 결혼어플, 소개팅어플, 소개팅">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://image.yeoboya.com/imgs/new_wedding/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://image.yeoboya.com/imgs/new_wedding/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>여보야</title>
+    <link rel="canonical" href="https://m.yeoboya.com">
+
+	<link rel="stylesheet" type="text/css" href="../../../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/sass/common_marry.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/marry/src/ai_explain.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/idealtype.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/pop_evnt.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/pop_ai_recommend_info.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/all_drop.css">
+
+    <script src="../../../vendors/polyfill.min.js"></script>
+    <script src="../../../vendors/jquery.min.js"></script>
+    <script src="../../../vendors/lodash.min.js"></script>
+    <script src="../../../vendors/axios.min.js"></script>
+    <script src="../../../vendors/moment.min.js"></script>
+    <script src="../../../vendors/jquery-mobile.event.min.js"></script>
+    <script src="../../../vendors/onLoad.bundle.js"></script>
+    <script src="../../../js/lottie.min.js"></script>
+</head>
+<body class="pc__bg">
+    <div class="pc__container">
+        <div class="top top-fix">
+            <header class="header header-marry">
+                <div class="header__btn_left">
+                    <a class="header__btn pl8">
+                        <span class="header__ico_back"></span>
+                        <span class="blind">뒤로</span>
+                    </a>
+                </div>
+                <h1 class="header__tit"><span class="header__tit_txt">여보야 AI 서비스</span><span class="all_drop__bdg-ai ml4"></span></h1>
+                <div class="header__btn_right">
+					<a class="header__btn pr8">
+						<span class="header__ico_home"></span>
+						<span class="blind">여보야 홈으로</span>
+					</a>
+				</div>
+			</header>
+            <div class="tab">
+                <a class="tab__tab_menu tab__tab_menu-active"><span class="tab__tab_menu_txt">추천리스트</span></a>
+                <a class="tab__tab_menu tab__tab_menu"><span class="tab__tab_menu_txt">AI(인공지능)이란?</span></a>
+                <a class="tab__tab_menu"><span class="tab__tab_menu_txt">여보야 AI 서비스</span></a>
+                <span class="tab__border tab__border-3_full tab__border-3_1"></span>
+            </div>
+		</div>
+        <div class="content">
+            <div class="ai_explain__tab">
+                <div class="ai_explain__recommend">
+                    <div class="ai_explain__recommend_container">
+                        <div class="ai_explain__recommend_bg"></div>
+                        <div class="ai_explain__recommend_top">
+                            <div class="ai_explain__recommend_tit">여보야 AI 추천리스트</div>
+                            <div class="ai_explain__recommend_sub_txt">
+                                AI와 빅데이터 기반의 분석으로 
+                                <br>%닉네임%님에게
+                                <br><span class="fwb">맞춤 추천리스트</span>를 제공합니다.
+                            </div>
+                        </div>
+                        <div class="ai_explain__recommend_btn_wrap">
+                            <div class="ai_explain__recommend_btn">
+                                <!-- 여성일 경우 ai_explain__recommend_btn_ico-woman -->
+                                <span class="ai_explain__recommend_btn_ico ai_explain__recommend_btn_ico-man"></span>
+                                <div class="ai_explain__recommend_btn_txt">
+                                    <div class="ai_explain__recommend_txt_tit">나의 이상형에 가까워질수 있는 남성</div>
+                                    <div class="ai_explain__recommend_txt_time">아이템 종료까지 23:59:59</div>
+                                </div>
+                                <span class="ai_explain__recommend_btn_more ai_explain__recommend_btn_more-active">다시보기</span>
+                            </div>
+                            <!-- <div class="ai_explain__recommend_btn">
+                                <span class="ai_explain__recommend_btn_ico ai_explain__recommend_btn_ico-man"></span>
+                                <div class="ai_explain__recommend_btn_txt">나의 이상형에 가까워질수 있는 남성</div>
+                                <span class="ai_explain__recommend_btn_more">보기</span>
+                            </div> -->
+                            <div class="ai_explain__recommend_btn">
+                                <span class="ai_explain__recommend_btn_ico ai_explain__recommend_btn_ico-soon"></span>
+                                <div class="ai_explain__recommend_btn_txt">
+                                    <div class="ai_explain__recommend_txt_tit">나와 친밀도가 높은 남성</div>
+                                </div>
+                                <span class="ai_explain__recommend_btn_more">보기</span>
+                            </div>
+                            <div class="ai_explain__recommend_btn">
+                                <span class="ai_explain__recommend_btn_ico ai_explain__recommend_btn_ico-mate"></span>
+                                <div class="ai_explain__recommend_btn_txt">
+                                    <div class="ai_explain__recommend_txt_tit">나와 궁합이 맞는 남성</div>
+                                </div>
+                                <span class="ai_explain__recommend_btn_more">보기</span>
+                            </div>
+                            <div class="ai_explain__recommend_hr"></div>
+                            <!-- 결혼, 재혼 여성일 시에만 표출 -->
+                            <div class="ai_explain__recommend_btn">
+                                <span class="ai_explain__recommend_btn_ico ai_explain__recommend_btn_ico-money"></span>
+                                <div class="ai_explain__recommend_btn_txt">
+                                    <div class="ai_explain__recommend_txt_tit">평균연봉 / 재산 상위 남성</div>
+                                </div>
+                                <span class="ai_explain__recommend_btn_more">보기</span>
+                            </div>
+                            <!-- <div class="ai_explain__recommend_btn">
+                                <span class="ai_explain__recommend_btn_ico ai_explain__recommend_btn_ico-msg"></span>
+                                <div class="ai_explain__recommend_btn_txt">
+                                    <div class="ai_explain__recommend_txt_tit">소통이 활발한 남성</div>
+                                </div>
+                                <span class="ai_explain__recommend_btn_more">보기</span>
+                            </div> -->
+                            <!-- 결혼 여성일 시에 표출 -->
+                            <div class="ai_explain__recommend_btn">
+                                <span class="ai_explain__recommend_btn_ico ai_explain__recommend_btn_ico-play"></span>
+                                <div class="ai_explain__recommend_btn_txt">
+                                    <div class="ai_explain__recommend_txt_tit">나와 취미를 함께할 수 있는 남성</div>
+                                </div>
+                                <span class="ai_explain__recommend_btn_more">보기</span>
+                            </div>
+                            <!-- 재혼 여성일 시에 표출 -->
+                            <!-- <div class="ai_explain__recommend_btn">
+                                <span class="ai_explain__recommend_btn_ico ai_explain__recommend_btn_ico-marry"></span>
+                                <div class="ai_explain__recommend_btn_txt">
+                                    <div class="ai_explain__recommend_txt_tit">결혼에 대해 진지하게 생각하는 남성</div>
+                                </div>
+                                <span class="ai_explain__recommend_btn_more">보기</span>
+                            </div> -->
+                        </div>
+                        <div class="ai_explain__recommend_info_wrap">
+                            <div class="ai_explain__recommend_info">
+                                AI 추천 상대 선정 기준
+                                <span class="icon__question_cp50 ml4"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai_explain__tab fc20 fwr hidden">
+                <div class="ai_explain__lt_box ai_explain__lt_box-main ai_explain__lt_box-main-tab01">
+                    <div id="lt_01" class="ai_explain__lt_play_box ai_explain__lt_play_box-op"></div>
+                </div>
+                <!--<img class="ai_explain__img " src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab01_1.png" alt="">-->
+                <div class="ai_explain__bg ai_explain__bg-tab01">
+                    <div class="pl15 pt20 pb28">
+                        <div class="fs24 fwb pb20"><span class="at_explain_txt-point">인공지능</span>의 시작</div>
+                        <div>
+                            예상 외로 AI는 최근에 등장한 용어가 아닙니다<br>
+                            1956년, 미국 뉴햄프셔주에서 열린 다트머스 학술회의에서<br>
+                            <span class="fwb">'AI(인공지능)'</span>이란 용어가 처음으로 언급됩니다.
+                        </div>
+                    </div>
+                    <div class="px15 pb28">
+                        <div class="ai_explain__lt_box ai_explain__lt_box-tab01_sub shadow1">
+                            <div id="lt_03" class="ai_explain__lt_play_box"></div>
+                        </div>
+                        <!--<img class="ai_explain__img ai_explain__img-br8 shadow1" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab01_2.png" alt="">-->
+                    </div>
+                    <div class="pl15 pb16">
+                        1950년대는 AI의 태동기입니다.<br>
+                        컴퓨터의 등장과 발달에 따른 많은 연구가 있었고<br>
+                        AI 실현의 기대와 흥분 속에 AI는 큰 주목을 받았습니다.<br>
+                        1956년 맥커시(J. McCarthy)를 통해 Advice Taker라는<br>
+                        <span class="fwb">최초로 인간처럼 논리적 추론하는 AI가 개발</span>됩니다.
+                    </div>
+                    <div class="pl15 pb20">
+                        맥커시를 비롯해 AI 실현을 위한 많은 시도가 있었지만<br>
+                        지금처럼 뛰어난 성능의 컴퓨터가 없었고, AI를 실현시킬<br>
+                        학습법 또한 알지 못해, AI 연구는 침체기에 접어듭니다.
+                    </div>
+                    <div class="ai_explain__bg_img"></div>
+                </div>
+                <div class="pl15 py28">
+                    <div class="fs24 fwb pb20"><span class="at_explain_txt-point">인공지능</span>의 도약</div>
+                    <div>
+                        AI를 다시 활성시킨 것은, 다층 퍼셉트론 이론입니다.<br>
+                        <span class="fwb">다층 퍼셉트론 이론(MLP, Multi Layer Perceptron)</span>은<br>
+                        <span class="fwb">신경망의 구조와 기능</span>을 본따 만든 AI 학습이론입니다.
+                    </div>
+                </div>
+                <div class="px15 pb28">
+                    <img class="ai_explain__img ai_explain__img-br8 shadow1" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab01_3.png" alt="">
+                </div>
+                <div class="pl15 pb28">
+                    <div>
+                        단순히, 기존에 사용해오던 단층 학습 방법을<br>
+                        다층으로 늘린 것이지만 이는 십수년이 소요되었습니다.<br>
+                        중간층의 구조를 학습할 방법을 찾지 못했기 때문입니다.
+                    </div>
+                </div>
+                <div class="px15 pb28">
+                    <img class="ai_explain__img ai_explain__img-br8 shadow1" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab01_4.png" alt="">
+                </div>
+                <div class="pl15 pb20">
+                    <div>
+                        다층 퍼셉트론으로 중간층에 대한 학습이 가능하게 되었고<br>
+                        AI는 좀 더 복잡한 문제를 해결할 수 있게 되었고,<br>
+                        위와 같은 비선형 관계에 대해서도 해결하게 된 것입니다.
+                    </div>
+                </div>
+                <div class="ai_explain__bg ai_explain__bg-tab01">
+                    <div class="pt28 pb40 px15">
+                        <div class="ai_explain__anibox ai_explain__anibox-01 pt10 pl10">
+                            <div class="ai_explain__ani_wrap pb16">
+                                <div class="ai_explain__ani_txt">
+                                    <div class="fs16 fwb pb4">인공지능(AI)</div>
+                                    <div class="fs13 fwm">
+                                        컴퓨터가 사람처럼 생각하고<br>
+                                        판단하게 만드는 기술
+                                    </div>
+                                </div>
+                                <div class="ai_explain__ani_img ai_explain__ani_img-ai mr8"></div>
+                            </div>
+                            <div class="ai_explain__anibox ai_explain__anibox-02 mla pt10 pl10">
+                                <div class="ai_explain__ani_wrap pb16">
+                                    <div class="ai_explain__ani_txt">
+                                        <div class="fs16 fwb pb4">머신러닝(ML)</div>
+                                        <div class="fs13 fwm">
+                                            인간의 학습능력과 같은 기능을<br>
+                                            컴퓨터에 부여하기 위한 기술
+                                        </div>
+                                    </div>
+                                    <div class="ai_explain__ani_img ai_explain__ani_img-ml mr8"></div>
+                                </div>
+                                <div class="ai_explain__anibox ai_explain__anibox-03 mla pt10 pl10">
+                                    <div class="ai_explain__ani_wrap">
+                                        <div class="ai_explain__ani_txt pb28">
+                                            <div class="fs16 fwb pb4">딥러닝(DL)</div>
+                                            <div class="fs13 fwm">
+                                                빅데이터 기반으로 스스로<br>
+                                                학습하며 판단하는 기술
+                                            </div>
+                                        </div>
+                                        <div class="ai_explain__ani_img ai_explain__ani_img-dl mr8 mb8"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl15 pt10 pb28">
+                        <div class="fs24 fwb pb20">현재의 <span class="at_explain_txt-point">인공지능</span></div>
+                        <div>
+                            몇 번의 더 침체기와 이를 극복하는 연구 끝에<br>
+                            현대의 AI는 인간의 지식을 규칙화한 <span class="fwb">'전문가 시스템'</span><br>
+                            데이터의 특징을 식별해 판단하는 <span class="fwb">'머신러닝'</span><br>
+                            인간의 두뇌가 정보를 처리하는 방식의 <span class="fwb">'딥러닝'</span> 등으로<br>
+                            깊은 연구와 함께 진화된 모습으로 다가오고 있습니다.
+                        </div>
+                    </div>
+                    <div class=" px15 pb12">
+                        <img class="ai_explain__img ai_explain__img-br8 shadow1 ai_explain__img_ani" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab01_5.png" alt="">
+                    </div>
+                    <div class=" px15 pb28">
+                        <img class="ai_explain__img ai_explain__img-br8 shadow1 ai_explain__img_ani" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab01_6.png" alt="">
+                    </div>
+                    <div class="pl15 pb28">
+                        <div>
+                            내 목소리를 듣고, 분석하여 반응하는 'AI 서비스'<br>
+                            주변 사물을 인식해 운전하는 '자율주행 AI' 등<br>
+                            우리의 생활 곳곳에서 편리함을 주기 시작한 'AI'는<br>
+                            앞으로 더 성장하여 <span class="fwb">우리의 삶을 풍족하게 할 것</span>입니다.
+                        </div>
+                    </div>
+                    <div class="ai_explain__bot_bg">
+                        <div class="fs20 fwb tac py20"><span class="at_explain_txt-point">여보야 AI 서비스</span>가 그렇듯이</div>
+                        <div class="pb40">
+                            <div class="ai_explain__logo mxa"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai_explain__tab fc20 fwr hidden">
+                <div class="ai_explain__lt_box ai_explain__lt_box-main">
+                    <div id="lt_02" class="ai_explain__lt_play_box"></div>
+                </div>
+                <!--<img class="ai_explain__img" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab02_1.png" alt="">-->
+                <div class="ai_explain__bg ai_explain__bg-tab02">
+                    <div class="ai_explain_bg_img_cube_01"></div>
+                    <div class="ai_explain_bg_img_cube_02"></div>
+                    <div class="ai_explain_bg_img_cube_04"></div>
+                    <div class="px20 pt40 pb24">
+                        <div class="ai_explain_mark">
+                            <div class="at_explain_txt-point fwb py10">결혼에는 정답이 없다?</div>
+                        </div>
+                    </div>
+                    <div class="pl15 pb28">
+                        <div class="pb12">정답이 없다면, <span class="fwb">여보야가 만족스러운 답</span>을 드리겠습니다.</div>
+                        <div>
+                            배우자를 선택하는 것은 타인에게 맡길 수 없기에<br>
+                            선택의 기로에서 신중하실 회원님에게 여보야 AI서비스는<br>
+                            결정에 도움을 드릴 수 있는 가치를 전하고자 합니다.
+                        </div>
+                    </div>
+                    <div class="px15 pb40">
+                        <img class="ai_explain__img ai_explain__img-br8 shadow1 ai_explain__img_ani" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab02_2.png" alt="">
+                    </div>
+                    <div class="px15 pt10 pb40">
+                        <div class="fs24 fwb">
+                            <span class="at_explain_txt-point">내 배우자</span><br>
+                            어떻게 알아볼 수 있을까?
+                        </div>
+                    </div>
+                    <div class="pl15 pb24">
+                        <div class="pb16">
+                            결혼하는 사람들의 특징을 사람의 눈으로 분별할 수 없으나<br>
+                            <span class="fwb">AI</span>는 미세한 차이마저 분석할 수 있습니다.<br>
+                            <span class="fwb">여보야 AI 서비스</span>는 결혼과 관련된 특징들을 확인하여<br>
+                            오직 성혼을 위한 AI 기반 서비스로 구축되었습니다.
+                        </div>
+                        <div>
+                            <span class="fwb">여보야가 이뤄낸 성혼경험과 빅데이터</span>가<br>
+                            회원님에게 가장 적합한 이성을 분석해내는 것입니다.<br>
+                        </div>
+                    </div>
+                    <div class="px15 pb24">
+                        <img class="ai_explain__img ai_explain__img-br8 shadow1" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab02_3.png" alt="">
+                    </div>
+                    <div class="ai_explain__bg ai_explain__bg-tab02_white">
+                        <div class="pl15 pt24 pb40">
+                            <div class="fs24 fwb pb20">
+                                <span class="at_explain_txt-point">여보야</span>에서만<br>
+                                경험할 수 있는 <span class="at_explain_txt-point">AI</span>
+                            </div>
+                            <div>
+                                일상 속에서 만날 수 있는 흔한 AI 추천 서비스와<br>
+                                <span class="fwb">여보야 AI 시스템은 지향하는 가치부터 다릅니다.</span>
+                            </div>
+                        </div>
+                        <div class="px15 pb40">
+                            <img class="ai_explain__img ai_explain__img-330 mxa" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab02_4.png" alt="">
+                            <div class="tac fs12 fc50">
+                                Collaborative Filtering?<br>
+                                사용자 A와 사용자 B가 복숭아와 포도를 같이 구매했기에<br>
+                                사과를 산 사용자 C에게는 포도를 추천한다.
+                            </div>
+                        </div>
+                        <div class="pl15 pb28">
+                            <div class="pb16">
+                                대부분의 추천 서비스는 Item-Based또는 User-Based<br>
+                                기반의 Collaborative Filtering으로 작동합니다.<br>
+                                이는 사용자가 선호할 무언가를 추측하여 제공하는 것으로<br>
+                                '관심사'를 고려한 기본적인 알고리즘입니다.
+                            </div>
+                            <div>
+                                결혼은 그저 관심만으로 선택할 수 있는 사안이 아니므로<br>
+                                <span class="fwb">여보야 AI는 결혼과 유의한 항목들로 설계</span>되었습니다.<br>
+                                어느 서비스에서도 경험할 수 없는 <span class="at_explain_txt-point fwb">여보야만의 AI</span>입니다.
+                            </div>
+                        </div>
+                        <div class="px15 pb24 ">
+                            <img class="ai_explain__img ai_explain__img-br8 shadow1 ai_explain__img_ani" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab02_5.png" alt="">
+                        </div>
+                        <div class="ai_explain_bg_img_cube_03"></div>
+                    </div>
+                    <div class="pl15 pt24 pb28">
+                        <div class="fwb fs24 pb20">끊임없이 혁신하는 <span class="at_explain_txt-point">AI</span></div>
+                        <div class="pb16">
+                            AI의 트랜드와 신기술은 하루가 다르게 변합니다.<br>
+                            여보야는 변화에 뒤지지 않고, 결혼에 AI를 적용하고자<br>
+                            AI 엔지니어로 편성된 AI 기술연구소를 운영하고 있습니다.
+                        </div>
+                        <div>
+                            <span class="fwb">'앱을 통해 결혼을 준비하는 것'</span><br>
+                            누구도 감히 시도하지 못했던, 여보야의 첫 시작이였습니다.<br>
+                            <span class="fwb">'오직 성혼을 위한 AI 시스템을 구축하는 것'</span><br>
+                            여보야는 두번째 발걸음을 내딛고 있습니다.
+                        </div>
+                    </div>
+                    <div class="ai_explain_img_wrap px15 pb28">
+                        <div class="mr15">
+                            <img class="ai_explain__img ai_explain__img-br8 shadow1" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab02_6.png" alt="">
+                        </div>
+                        <div class="pointer">
+                            <img class="ai_explain__img ai_explain__img-br8 shadow1" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/ai_explain/img_tab02_7_1125.png" alt="">
+                        </div>
+                    </div>
+                    <div class="pl15 pb40">
+                        <div>
+                            새로운 기술과 서비스, 계속되는 도전 속에도<br>
+                            <span class="fwb">여보야의 모든 관심은 결혼이라는 본질</span>에 있습니다.
+                        </div>
+                    </div>
+                    <div class="fs20 fwb tac py20">
+                        앞으로 보여드릴 <span class="at_explain_txt-point">여보야 AI 서비스</span>에<br>
+                        많은 관심 부탁드립니다.
+                    </div>
+                    <div class="pb40">
+                        <div class="ai_explain__logo mxa"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #7239 AI 결혼 지수 분석 팝업 -->
+    <div class="pop">
+        <div class="pop_evnt">
+            <div class="pop_evnt__bg"></div>
+            <div class="pop_evnt__layer pop_evnt__layer-idealtype">
+                <div class="idealtype__pop_exp">
+                    <div class="idealtype__pop_exp_header"><span class="blind">AI 결혼 지수 분석</span> </div>
+                    <div class="idealtype__pop_exp_content">
+                        <div class="idealtype__pop_exp_img_wrap">
+                            <div class="idealtype__pop_exp_img idealtype__pop_exp_img-1"></div>
+                            <div class="idealtype__pop_exp_img idealtype__pop_exp_img-2 exptest"></div>
+                            <div class="idealtype__pop_exp_img idealtype__pop_exp_img-3"></div>
+                        </div>
+
+                        <div class="idealtype__pop_exp_txt_wrap">
+                            <div class="idealtype__pop_exp_txt">쉽고, 빠르고, 간편하게</div>
+                            <div class="idealtype__pop_exp_txt"><span class="fwb">내 인연만 쏙!</span> 찾아내기 쉽지 않으셨죠?</div>
+                            <div class="idealtype__pop_exp_txt mt12">여보야에 축적된 <span class="fwb">성혼 빅데이터</span>와</div>
+                            <div class="idealtype__pop_exp_txt">자체 개발한 정교한 <span class="fwb">AI 기술</span> 접목해</div>
+                            <div class="idealtype__pop_exp_txt">상대 회원과 성혼 가능성, 친밀감, 궁합까지!</div>
+                            <div class="idealtype__pop_exp_txt">모두 알 수 있는 <spna class="fwb fcp-50">AI 결혼지수</spna>를 확인해보세요</div>
+                            <div class="idealtype__pop_exp_txt mt12">AI 결혼지수를 알고 나면,</div>
+                            <div class="idealtype__pop_exp_txt">인연을 찾는 시간이 쉽고 즐거워집니다.</div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="pop_evnt__btn_wrap">
+                    <a class="pop_evnt__btn">닫기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #9268 AI 추천리스트 플로우 변경 -->
+    <!-- AI 선정기준 팝업 -->
+    <div class="pop">
+		<div class="pop__bg"></div>
+		<div class="pop__layer">
+			<div class="pop_ai_recommend_info">
+				<div class="pop_ai_recommend_info__content">
+					<!-- <div class="pop_ai_recommend_info__box">
+						<div class="pop_ai_recommend_info__img pop_ai_recommend_info__img-woman"></div>
+						<div class="ml12">
+							<div class="mb4 fc20 fwb">이상형에 가까운 여성이란?</div>
+							<p class="fs13">여보야 빅데이터 AI 분석을 통해 닉네임최대글자수님과 <strong class="tht-blue fc20">배우자 적합지수</strong>가 높은 여성이 우선으로 보여집니다.</p>
+						</div>
+					</div> -->
+					<div class="pop_ai_recommend_info__box">
+						<div class="pop_ai_recommend_info__img pop_ai_recommend_info__img-man"></div>
+						<div class="ml12">
+							<div class="mb4 fc20 fwb">이상형에 가까운 남성이란?</div>
+							<p class="fs13">여보야 빅데이터 AI 분석을 통해 닉네임최대글자수님과 <strong class="tht-blue fc20">배우자 적합지수</strong>가 높은 남성이 우선으로 보여집니다.</p>
+						</div>
+					</div>
+					<div class="hr mx0 my12"></div>
+					<div class="pop_ai_recommend_info__box">
+						<div class="pop_ai_recommend_info__img pop_ai_recommend_info__img-soon"></div>
+						<div class="ml12">
+							<div class="mb4 fc20 fwb">금방 가까워 질 수 있는 남성이란?</div>
+							<p class="fs13">여보야 빅데이터 AI 분석을 통해 닉네임최대글자수님과 <strong class="tht-blue fc20">금방 가까워질 확률이 높은</strong> 여성이 우선으로 보여집니다.</p>
+						</div>
+					</div>
+					<div class="hr mx0 my12"></div>
+					<div class="pop_ai_recommend_info__box">
+						<div class="pop_ai_recommend_info__img pop_ai_recommend_info__img-mate"></div>
+						<div class="ml12">
+							<div class="mb4 fc20 fwb">나와 찰떡궁합인 남성이란?</div>
+							<p class="fs13">여보야 빅데이터 AI 분석을 통해 닉네임최대글자수님과 <strong class="tht-blue fc20">궁합도가 높은</strong> 여성이 우선으로 보여집니다.</p>
+						</div>
+					</div>
+					<!-- 결혼 재혼 여성일 시 표출 -->
+					<div class="hr mx0 my12"></div>
+					<div class="pop_ai_recommend_info__box">
+						<div class="pop_ai_recommend_info__img pop_ai_recommend_info__img-money"></div>
+						<div class="ml12">
+							<div class="mb4 fc20 fwb">평균연봉 / 재산 상위 남성이란?</div>
+							<p class="fs13">여보야 빅데이터 AI 분석을 통해 닉네임최대글자수님의 연령대에 맞는 남성 회원들 <strong class="tht-blue fc20">평균 경제력(연봉,보유자산)보다 높은 기준</strong>을 가진 회원들이 우선으로 보여집니다.</p>
+						</div>
+					</div>
+					<!-- <div class="hr mx0 my12"></div>
+					<div class="pop_ai_recommend_info__box">
+						<div class="pop_ai_recommend_info__img pop_ai_recommend_info__img-msg"></div>
+						<div class="ml12">
+							<div class="mb4 fc20 fwb">메시지 응답할 확률이 높은 여성이란?</div>
+							<p class="fs13"><strong class="tht-blue fc20">진정성 있게 작성된 메시지</strong>에 응답할 확률이 높은 여성들을 우선으로 보여집니다.</p>
+						</div>
+					</div> -->
+					<!-- 결혼 여성일 시 표출 -->
+					<!-- <div class="hr mx0 my12"></div>
+					<div class="pop_ai_recommend_info__box">
+						<div class="pop_ai_recommend_info__img pop_ai_recommend_info__img-play"></div>
+						<div class="ml12">
+							<div class="mb4 fc20 fwb">나와 같이 취미를 즐길 남성이란?</div>
+							<p class="fs13">여보야 빅데이터 분석을 통해 닉네임최대글자수님의 <strong class="tht-blue fc20">연령대에 맞는 같은 취미</strong>를 가진 남성 회원들이 우선으로 보여집니다.</p>
+						</div>
+					</div> -->
+					<!-- 재혼 여성일 시 표출 -->
+					<div class="hr mx0 my12"></div>
+					<div class="pop_ai_recommend_info__box">
+						<div class="pop_ai_recommend_info__img pop_ai_recommend_info__img-marry"></div>
+						<div class="ml12">
+							<div class="mb4 fc20 fwb">결혼에 대해 진지하게 생각하는 남성이란?</div>
+							<p class="fs13">닉네임최대글자수님의 연령대에 맞는 남성회원들 중 <strong class="tht-blue fc20">혼인관계증명서, 본인인증, 차량인증</strong>등 여성에게 신뢰성을 줄 수 있도록 노력하는 남성이 우선으로 보여집니다.</p>
+						</div>
+					</div>
+				</div>
+				<div class="pop_ai_recommend_info__btn_wrap">
+					<a class="btn__btn_default btn__btn_default-m">
+						<span class="btn__btn_default_txt">확인</span>
+					</a>
+				</div>
+				<!-- <a class="pop_ai_recommend_info__btn_cls"><span class="pop_ai_recommend_info__ico_cls"></span></a> -->
+			</div>
+		</div>
+	</div>
+    <!-- 추천리스트 클릭시 프로필 등록 유도 팝업 -->
+    <div class="pop">
+		<div class="pop__bg"></div>
+		<div class="pop__layer">
+			<div class="pop_alert">
+				<div class="pop_alert__container">
+					<div class="pop_alert__content">
+						<div class="pop_alert__tit">
+                            여보야 서비스 사용을 위해서는
+                            <br>내 프로필을 등록하셔야 합니다.
+                            <br>등록하신 후 사용하시겠습니까?
+                        </div>
+					</div>
+					<div class="pop_alert__btn_wrap">
+						<a class="btn__btn_line btn__btn_line-m mr8">
+							<span class="btn__btn_line_txt">취소</span>
+						</a>
+						<a class="btn__btn_default btn__btn_default-m">
+							<span class="btn__btn_default_txt">등록하기</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- // #9268 AI 추천리스트 플로우 변경 -->
+	<script src="../../../vendors/siteMap.bundle.js"></script>
+    <script>
+        //top-fix 높이만큼 컨텐츠영역 패딩탑추가
+        let top_fix_height = $(".top-fix").height()
+        $(".content").css({"paddingTop":top_fix_height})
+        $(document).on('ready', function() {
+			let pageH = $(document).height() - $('.top').outerHeight()
+			$('.ai_explain__recommend_container').css({'min-height': `${pageH + 'px'}`})
+		})
+        $('.tab__tab_menu').on('click', function(){
+            let ind = $(this).index()
+            $(".ai_explain__tab").addClass("hidden").eq(ind).removeClass("hidden")
+
+            ind++
+            console.log(ind)
+            if (ind != 4) {
+                $('.tab__tab_menu').removeClass('tab__tab_menu-active')
+                $(this).addClass('tab__tab_menu-active')
+                $('.tab__border').removeClass('tab__border-3_1 tab__border-3_2 tab__border-3_3')
+                $('.tab__border').addClass(`tab__border-3_`+ ind)
+            }
+        })
+        let id01 = [];
+        let $window = $(window);
+        let $ai_explain_anibox = $(".ai_explain__anibox");
+        let $ai_explain__img_ani = $(".ai_explain__img_ani");
+        $window.on('scroll',function(){
+            //if($(".ai_explain__tab").eq(0).is(".hidden")) return
+            let i = $ai_explain_anibox.offset().top + $ai_explain_anibox.height();
+            if($window.scrollTop() + $window.height() > i){
+                for(let j = 0; j < $ai_explain_anibox.length ; j++){                
+                    let k = j
+                    k *= 300
+                    id01.push(
+                        window.setTimeout(function(){
+                            $ai_explain_anibox.eq(j).addClass("ai_explain__anibox-active");
+                        },k)
+                    )
+                }
+            }else if($window.scrollTop() + $window.height() < i - 200){
+                for(let z = 0; z < id01.length; z++){
+                    window.clearTimeout(id01[z])
+                }
+                id01 = [];
+                $ai_explain_anibox.removeClass("ai_explain__anibox-active");
+            }
+
+            $ai_explain__img_ani.each(function(){
+                let r = $(this).offset().top + $(this).height()
+                if($window.scrollTop() + $window.height() > r){
+                    $(this).addClass("ai_explain__img_ani-active")
+                }
+                else if($window.scrollTop() + $window.height() < r - 200){
+                    $(this).removeClass("ai_explain__img_ani-active")
+                }
+            })
+        })
+
+        let aiAni01 = lottie.loadAnimation({
+				container: document.getElementById('lt_01'),
+				renderer: "svg",
+				loop: true,
+				autoplay: true,
+				path: "../../../ani/ai_explain_1_t01.json",
+			});
+        let aiAni02 = lottie.loadAnimation({
+                container: document.getElementById('lt_02'),
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                path: "../../../ani/ai_explain_2.json",
+            });
+        let aiAni03 = lottie.loadAnimation({
+				container: document.getElementById('lt_03'),
+				renderer: "svg",
+				loop: true,
+				autoplay: true,
+				path: "../../../ani/ai_explain_3.json",
+			});
+
+        // 여보야 AI 결혼지수 분석 클릭 시 설명 팝업 열고 닫기
+        $(".pointer").on("click", function() {
+			$(".pop").removeClass("hidden");
+		});
+        $(".pop_evnt__btn_wrap").on("click", function() {
+			$(".pop_evnt__btn_wrap").parents(".pop").toggleClass("hidden");
+		});
+        $('.ai_explain__recommend_info').on('click',function(){
+            $('.pop_ai_recommend_info').parents('.pop').removeClass('hidden')
+        })
+    </script>
+	<script src="../../../js/default.js"></script>
+</body>
+</html>
