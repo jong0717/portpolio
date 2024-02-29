@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __subscribe
+	설　명 : 구독 서비스 결제
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.subscribe{position: relative;}
+.subscribe__content{display: flex; flex-direction: column; justify-content: flex-start; flex-wrap: nowrap; width: 100%; height: 100%;}
+.subscribe__content-center{justify-content: center;}
+.subscribe__bg{position: absolute; top: -50px; z-index: -1; width: 100%; height: 100%; min-height: calc(100vh - 50px); padding-bottom: 50px; background:linear-gradient(to bottom, #FFD530 94%, #FDE9AD ); overflow: hidden;}
+.subscribe__bg::before{content: ""; position: absolute; top: -54px; left: -200px; display: block; width: 477px; height: 380px; border-radius: 50%; background: radial-gradient(rgba(255,255,255,1), rgba(255,255,255,.13)); filter: blur(32px); opacity: .76;}
+.subscribe__bg::after{content: ""; position: absolute; bottom: -35px; right: -200px; display: block; width: 425px; height: 311px; border-radius: 50%; background: radial-gradient(#DF9413, rgba(255,255,255,0)); filter: blur(32px); opacity: .54;}
+.subscribe__tit{width: 174px; height: 20px; margin: 8px auto 20px; background: url("https://image.honeymatchs.com/global_honey/img/img_subscribe_tit.png") no-repeat center; background-size: 100% auto;}
+/* 상단 서비스 설명 */
+.subscribe__explain{position: relative; height: 206px; padding-top: 16px; overflow: hidden;}
+.subscribe__explain_swipe{width: 200px; margin: 0 auto;}
+/* 설명 스와이프 */
+.subscribe__swipe_list{position: relative; display: flex; width: 100%; box-sizing: border-box; overflow: initial;}
+.subscribe__swipe_list_container{width: 100%; box-sizing: border-box; overflow: initial;}
+.subscribe__swipe_list_wrapper{display: flex; width: 100%;}
+.subscribe__swipe_list_slide{flex: 0 0 auto; width: 100%; opacity: .6;}
+.subscribe__swipe_list_slide-active{animation: cardUp .5s ease-in-out forwards; opacity: 1; transition: opacity .4s ease-in-out; -webkit-transition: opacity .4s ease-in-out; -webkit-animation: cardUp .5s ease-in-out forwards;}
+.subscribe__swipe_list_slide-down{animation: cardDown .5s ease-in-out; -webkit-animation: cardDown .5s ease-in-out;}
+/* .subscribe__swipe_list_slide-next{animation: cardDown .4s ease-in;} */
+.subscribe__swipe_pagination{position: absolute; bottom: 0; left: 0; width: 100%; display:flex; justify-content: center; align-items: center; padding-bottom: 1px;}
+.subscribe__swipe_on_pagination_bullet{width:6px; height:6px; border-radius: 50%; margin-right:4px; background-color:#B8B8B8; box-shadow: 0 0 2px 0 rgba(0,0,0,.32);}
+.subscribe__swipe_on_pagination_bullet-active{width: 14px; border-radius: 3px; background-color:#202020;}
+.subscribe__explain_card{display: flex; flex-direction: column; align-items: center; width: 200px; height: 200px; padding: 16px 0 10px; border-radius: 20px; box-sizing: border-box; background: #FFFFFF;}
+.subscribe__explain_img{width:96px; object-fit: contain;}
+.subscribe__explain_num{margin-top: 4px; font-size: 12px; font-weight: 700; color: var(--sub-500);}
+.subscribe__explain_txt{margin: 4px 22px 0; text-align: center; line-height: 18px; font-weight: 700; color: #202020; word-break: keep-all;}
+/* 구독 서비스 가격 */
+.subscribe__price{width: 100%; margin-top: 24px;}
+.subscribe__price_tit{text-align: center; font-size: 16px; font-weight: 700; color: #202020;}
+.subscribe__price_list{margin-top: 12px;}
+/* 구독 서비스 가격영역 스와이프 */
+.subscribe__price_box{position: relative; display: flex; flex-direction: column;  width: 132px; height: 132px; padding: 12px; border: 1px solid #707070; border-radius: 12px; box-sizing: border-box; background-color: rgba(255,255,255,.7); cursor: pointer;}
+.subscribe__price_txt{font-size: 17px; font-weight: 700; color: #202020;}
+/* .subscribe__price_cost{margin-top: 2px; font-size: 13px; text-decoration: solid;text-decoration-line:line-through;text-decoration-thickness: 1px;} */
+.subscribe__price_real_cost{margin-top: 4px; font-size: 16px; font-weight: 700; color: var(--sub-500);}
+.subscribe__price_sale_rate{width: 68px; height: 21px; padding: 1px 5px 3px; margin: auto 0 0 auto; border-radius: 11px; box-sizing: border-box; background-color: #FFC8C8; text-align: center; font-size: 12px; font-weight: 700; color: #C11C1C; white-space: nowrap;}
+.subscribe__price_chk{position: absolute; top: 12px; right: 12px; width: 22px; height: 22px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 22 22' viewBox='0 0 22 22'%3e%3cpath d='M9.52 15.55a.89.89 0 0 1-.58-.22L5.11 11.9a.87.87 0 1 1 1.16-1.3l3.19 2.85 6.21-6.78a.87.87 0 0 1 1.23-.06c.36.33.38.88.06 1.24l-6.79 7.42c-.17.17-.4.28-.65.28z' style='fill:%23202020'/%3e%3cpath d='M11 .47c5.8 0 10.5 4.7 10.5 10.5s-4.7 10.5-10.5 10.5S.5 16.77.5 10.97 5.2.47 11 .47z' style='fill:none%3bstroke:%23202020'/%3e%3c/svg%3e") no-repeat center; background-size: 100% auto;}
+.subscribe__price_bdg{position: absolute; right: 0; bottom: 0; width: 68px; height: 24px; padding: 3px 7px 4px; box-sizing: border-box; border-radius: 11px 0 11px 0; background-color: #C4CDFC; text-align: center; font-size: 12px; font-weight: 700; color: #112585;}
+.subscribe__price_box.selected{border-color: #202020; background-color: #FFFFFF;}
+.subscribe__price_box.selected .subscribe__price_chk{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 22 22' viewBox='0 0 22 22'%3e%3cpath d='M11-.03c6.08 0 11 4.92 11 11s-4.92 11-11 11-11-4.92-11-11 4.92-11 11-11z' style='fill:%23202020'/%3e%3cpath d='M9.52 15.55a.89.89 0 0 1-.58-.22L5.11 11.9a.87.87 0 1 1 1.16-1.3l3.19 2.85 6.21-6.78a.87.87 0 0 1 1.23-.06c.36.33.38.88.06 1.24l-6.79 7.42c-.17.17-.4.28-.65.28z' style='fill:white'/%3e%3c/svg%3e");}
+.subscribe__price_info{margin: 12px 0 0; text-align: center; line-height: 17px; font-size: 12px; color: #4C4323;}
+.subscribe__policy{margin: 12px auto 8px;}
+.subscribe__policy_txt{font-size: 12px; color: #202020;}
+.subscribe__policy_txt_deco{text-decoration: underline; text-underline-offset: 3px; cursor: pointer;}
+.subscribe__btn_wrap{padding: 0 18px 24px; margin-top: auto;}
+.subscribe__btn{display: flex; justify-content: center; align-items: center; width: auto; height: 50px; border: 1px solid #202020; border-radius: 25px; background-color: #FFFFFF; box-sizing:border-box; box-shadow: 0 2px 6px rgba(0,0,0,.24); cursor: pointer;}
+.subscribe__btn_txt{font-size: 16px; font-weight: 700; color: #202020;}
+.subscribe__btn_txt_deco{color: var(--sub-500);}
+
+@keyframes cardUp {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -16px;
+    }
+}
+@keyframes cardDown {
+    0% {
+        margin-top: -16px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}

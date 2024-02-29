@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __admin_tab
+	설　명 : 관리자 페이지 탭
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.admin_tab{position: relative;}
+.admin_tab__tab{width: 100%; border-top: 1px solid #D4D4D4; border-bottom: 1px solid #D4D4D4; table-layout: fixed;}
+.admin_tab__tr{border-bottom: 1px solid #D4D4D4;}
+.admin_tab__menu{height: 46px; background: #F2F2F2; box-sizing: border-box; text-align: center; vertical-align: middle; color: #707070; cursor: pointer;}
+.admin_tab__menu:nth-child(2n+1) {border-right: 1px solid #D4D4D4;}
+.admin_tab__menu.active{background-color: var(--primary-350); color: #202020;}

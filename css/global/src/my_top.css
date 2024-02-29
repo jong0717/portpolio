@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_top
+	설　명 : 마이페이지 상단
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.my_top{display: flex; flex-direction: column; align-items: center; padding: 66px 12px 86px; border-radius: 0 0 12px 12px; background: url("https://image.honeymatchs.com/global_honey/bg/bg_my_page_circle_top.png") right top / 130px auto no-repeat, url("https://image.honeymatchs.com/global_honey/bg/bg_my_page_circle_bot.png") left bottom / 274px auto no-repeat, linear-gradient(125deg, #FFE78B, #FFCE0E);}
+.my_top__content {display: flex; align-items: center; width: 100%; padding:0 8px 0 12px; box-sizing: border-box;}
+.my_top__bdg_marry{display: inline-block; flex:none; padding: 0 5px; border: 1px solid #202020; border-radius: 6px; font-size: 11px; line-height: 16px;}
+.my_top__info_wrap {margin-left:16px;}
+.my_top__info{display: flex; align-items: center; margin-top: 5px; color: #202020;}
+.my_top__name{display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;position: relative; padding-right: 10px; font-size: 20px; font-weight: 700; line-height: 24px;  text-overflow: ellipsis; overflow: hidden; word-break: break-all; }
+.my_top__name::after{content: ""; position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 1px; height: 16px; background-color: #202020;}
+.my_top__age{font-size: 16px; padding: 0 10px;}
+.my_top__nation{display: inline-flex; align-items: center; height: 27px; margin-top: 8px; padding:0 10px; border-radius: 14px; background-color: #846900; line-height: 25px;}
+.my_top__nation_txt{font-size: 12px; color: #ffffff;}
+.my_top__nation_flag_wrap {display: flex; align-items: center; margin-right:6px;}
+.my_top__auth{display: flex; align-items: center; justify-content: center; width: 100%; height: 34px; padding: 0 10px; margin-top: 16px; border: 1px solid #FFF; border-radius: 12px; box-sizing: border-box; background-color: rgba(255, 255, 255, .4);}
+.my_top__auth_ico{width: 30px; height: 30px; background: url("https://image.honeymatchs.com/global_honey/ico/ico_my_top_auth.png") no-repeat center; background-size: 100%;}
+.my_top__auth_txt{margin-left: 2px; font-size: 14px; color: #202020;}
+.my_top__auth_arrow{width: 20px; height: 20px; margin-left: 2px; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23505050' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='1.2' d='m7.6 16 4.8-6-4.8-6'/%3e%3c/svg%3e") no-repeat center; background-size: 100%;}

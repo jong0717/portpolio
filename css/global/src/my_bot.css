@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_bot
+	설　명 : 마이페이지 하단 요소
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.my_bot{display: flex; flex-direction: column; align-items: center; margin-top: auto; padding: 32px 0 28px;}
+.my_bot__link{position: relative; display: inline-flex; padding:2px 0 3px; font-size: 13px; color: #707070; cursor: pointer;}
+.my_bot__link::after{content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: #707070;}
+.my_bot__del{display: inline-flex; margin-top:8px; padding:2px 4px 3px; font-size: 13px; color: #B8B8B8; cursor: pointer;}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_update
+	설　명 : 마이페이지 버전 및 업데이트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.my_update{display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 32px 12px 0;}
+.my_update__info{font-size: 14px; font-weight: 700; color: #707070;}
+.my_update__txt{margin-top: 4px; font-size: 13px; color: #909090;}
+.my_update__btn{flex: none; min-width: 74px; height: 30px; padding: 4px 12px 6px; margin-top: 6px; border-radius: 8px; box-sizing: border-box; background:var(--primary-300); font-size: 14px;}

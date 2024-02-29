@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_up
+	설　명 : 마이페이지 자동위로올리기
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.my_up{margin: 8px 12px 0;}
+.my_up__container{padding: 16px 12px; border-radius: 12px; box-sizing: border-box; background-color: #FFFFFF; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);}
+.my_up__content{display: flex; align-items: center;}
+.my_up__tit{font-size: 15px; color: #202020;}
+.my_up__tit_sub{font-size: 13px; color: #707070;}
+.my_up__info{margin-top: 1px; font-size: 13px; color: var(--sub-500);}

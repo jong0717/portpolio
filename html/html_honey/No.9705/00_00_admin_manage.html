@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="robots" content="ALL">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="1 days">
+	<meta name="Subject" content="여보야">
+	<meta name="description" content="결혼, 재혼, 배우자를 찾는 스마트한 방법, 가입비 주선비 성혼비 무료, 여성결혼대상자 무료, 문의 1522-3379">
+	<meta name="keywords" content="결혼, 재혼, 결혼어플, 소개팅어플, 소개팅">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://image.yeoboya.com/imgs/new_wedding/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://image.yeoboya.com/imgs/new_wedding/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>YEOBOYA</title>
+	<link rel="canonical" href="https://m.yeoboya.com">
+
+	<link rel="stylesheet" type="text/css" href="../../../css/global/font_pub.css"><!-- 퍼블에서만 보는 폰트 파일 -->
+	<link rel="stylesheet" type="text/css" href="../../../css/global/src/sass/common_global.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/global/src/admin_manage.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/global/src/admin_tab.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/global/src/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/global/src/float_btn.css">
+
+
+	<script src="../../../vendors/polyfill.min.js"></script>
+	<script src="../../../vendors/jquery.min.js"></script>
+	<script src="../../../vendors/lodash.min.js"></script>
+	<script src="../../../vendors/axios.min.js"></script>
+    <script src="../../../vendors/moment.min.js"></script>
+    <script src="../../../vendors/jquery-mobile.event.min.js"></script>
+	<script src="../../../vendors/onLoad.bundle.js"></script>
+</head>
+<body class="pc__bg">
+	<div class="pc__container">
+        <div class="top top-fix">
+			<div class="header">
+				<div class="header__btn_wrap">
+					<div class="header__btn">
+						<div class="header__ico_back"></div>
+						<span class="blind">Back</span>
+					</div>
+				</div>
+				<h1 class="header__tit"><span class="header__tit_txt">관리 기능</span></h1>
+				<div class="header__btn_wrap mla">
+					<div class="header__btn">
+						<div class="header__ico_home"></div>
+						<span class="blind">Home</span>
+					</div>
+				</div>
+			</div>
+		</div>
+        <main class="content">
+            <div class="admin_manage">
+                <div class="admin_tab">
+                    <table class="admin_tab__tab">
+                        <tr class="admin_tab__tr">
+                            <td class="admin_tab__menu active">사진 확인 대기</td>
+                            <td class="admin_tab__menu">동영상 확인 대기</td>
+                        </tr>
+                        <tr class="admin_tab__tr">
+                            <td class="admin_tab__menu">사진 확인 완료</td>
+                            <td class="admin_tab__menu">동영상 확인 완료</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="admin_manage__content">
+                    <div class="admin_manage__btn_wrap">
+                        <label class="admin_manage__btn_slct">
+                            <div class="checkbox">
+                                <div class="checkbox__wrap">
+                                    <input type="checkbox" class="checkbox__input" id="">
+                                    <div class="checkbox__btn"></div>
+                                </div>
+                                <div class="admin_manage__btn_txt pr2">전체선택</div>
+                            </div>
+                        </label>
+                        <div class="admin_manage__btn_chk_wrap">
+                            <div class="admin_manage__btn_chk admin_manage__btn_chk-confirm">선택확인</div>
+                            <div class="admin_manage__btn_chk admin_manage__btn_chk-del">선택삭제</div>
+                            <div class="admin_manage__btn_chk admin_manage__btn_chk-cancel">선택 인증취소</div>
+                        </div>
+                    </div>
+                    <div class="admin_manage__card_wrap">
+                        <div class="admin_manage__card">
+                            <div class="admin_manage__card_top">
+                                <div class="checkbox">
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" class="checkbox__input">
+                                        <div class="checkbox__btn"></div>
+                                    </div>
+                                </div>
+                                <div class="admin_manage__btn_chk_wrap admin_manage__btn_chk_wrap-s">
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-confirm">확인</div>
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-del">삭제</div>
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-cancel">인증취소</div>
+                                </div>
+                            </div>
+                            <div class="admin_manage__card_photo_wrap">
+                                <img class="admin_manage__card_photo" src="https://t1.daumcdn.net/cfile/tistory/995F9E435B6C5B9E22"/>
+                                <div class="admin_manage__card_photo_play"></div>
+                            </div>
+                            <div class="admin_manage__card_txt_wrap">
+                                <div class="admin_manage__card_txt">asdfghjk@naver.com</div>
+                                <div class="admin_manage__card_txt">닉네임 : Maryjanne</div>
+                                <div class="admin_manage__card_txt"><span class="admin_manage__card_man">[남] 46세</span></div>
+                                <div class="admin_manage__card_txt">등록 : 2023-04-20 15:14:23</div>
+                                <!-- 완료된 카드에서만 출력 -->
+                                <!-- <div class="admin_manage__card_txt">처리자 : 이승지</div> -->
+                            </div>
+                        </div>
+                        <div class="admin_manage__card">
+                            <div class="admin_manage__card_top">
+                                <div class="checkbox">
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" class="checkbox__input">
+                                        <div class="checkbox__btn"></div>
+                                    </div>
+                                </div>
+                                <div class="admin_manage__btn_chk_wrap admin_manage__btn_chk_wrap-s">
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-confirm">확인</div>
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-del">삭제</div>
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-cancel">인증취소</div>
+                                </div>
+                            </div>
+                            <div class="admin_manage__card_photo_wrap">
+                                <img class="admin_manage__card_photo" src="https://t1.daumcdn.net/cfile/tistory/995F9E435B6C5B9E22"/>
+                                <!-- 동영상인 경우 -->
+                                <!-- <div class="admin_manage__card_photo_play"></div> -->
+                            </div>
+                            <div class="admin_manage__card_txt_wrap">
+                                <div class="admin_manage__card_txt">asdfghjk@naver.com</div>
+                                <div class="admin_manage__card_txt">닉네임 : Maryjanne</div>
+                                <div class="admin_manage__card_txt"><span class="admin_manage__card_man">[남] 46세</span></div>
+                                <div class="admin_manage__card_txt">등록 : 2023-04-20 15:14:23</div>
+                                <!-- 완료된 카드에서만 출력 -->
+                                <!-- <div class="admin_manage__card_txt">처리자 : 이승지</div> -->
+                            </div>
+                        </div>
+                        <div class="admin_manage__card">
+                            <div class="admin_manage__card_top">
+                                <div class="checkbox">
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" class="checkbox__input">
+                                        <div class="checkbox__btn"></div>
+                                    </div>
+                                </div>
+                                <div class="admin_manage__btn_chk_wrap admin_manage__btn_chk_wrap-s">
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-confirm">확인</div>
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-del">삭제</div>
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-cancel">인증취소</div>
+                                </div>
+                            </div>
+                            <div class="admin_manage__card_photo_wrap">
+                                <img class="admin_manage__card_photo" src="https://photo2.yeoboya.com/photo/image/YVhtQmQ0S0RkcmRXYVdWbFozcUFmSUNHZG8xV2JXVmxhSHlBZExuQ3JBPT0.?sdir=&size=b"/>
+                                <!-- <div class="admin_manage__card_photo_play"></div> -->
+                            </div>
+                            <div class="admin_manage__card_txt_wrap">
+                                <div class="admin_manage__card_txt">asdfghjk@naver.com</div>
+                                <div class="admin_manage__card_txt">닉네임 : Maryjanne</div>
+                                <div class="admin_manage__card_txt"><span class="admin_manage__card_woman">[여] 46세</span></div>
+                                <div class="admin_manage__card_txt">등록 : 2023-04-20 15:14:23</div>
+                                <!-- 완료된 카드에서만 출력 -->
+                                <div class="admin_manage__card_txt">처리자 : 이승지</div>
+                            </div>
+                        </div>
+                        <div class="admin_manage__card">
+                            <div class="admin_manage__card_top">
+                                <div class="checkbox">
+                                    <div class="checkbox__wrap">
+                                        <input type="checkbox" class="checkbox__input">
+                                        <div class="checkbox__btn"></div>
+                                    </div>
+                                </div>
+                                <div class="admin_manage__btn_chk_wrap admin_manage__btn_chk_wrap-s">
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-confirm">확인</div>
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-del">삭제</div>
+                                    <div class="admin_manage__btn_chk admin_manage__btn_chk-cancel">인증취소</div>
+                                </div>
+                            </div>
+                            <div class="admin_manage__card_photo_wrap">
+                                <img class="admin_manage__card_photo" src="https://t1.daumcdn.net/cfile/tistory/995F9E435B6C5B9E22"/
+                                >
+                                <!-- <div class="admin_manage__card_photo_play"></div> -->
+                            </div>
+                            <div class="admin_manage__card_txt_wrap">
+                                <div class="admin_manage__card_txt">asdfghjk@naver.com</div>
+                                <div class="admin_manage__card_txt">닉네임 : Maryjanne</div>
+                                <div class="admin_manage__card_txt"><span class="admin_manage__card_man">[남] 46세</span></div>
+                                <div class="admin_manage__card_txt">등록 : 2023-04-20 15:14:23</div>
+                                <!-- 완료된 카드에서만 출력 -->
+                                <div class="admin_manage__card_txt">처리자 : 이승지</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin_manage__pagination">
+                        <div class="admin_manage__pagination_btn">이전</div>
+                        <div class="admin_manage__pagination_btn active">1</div>
+                        <div class="admin_manage__pagination_btn">2</div>
+                        <div class="admin_manage__pagination_btn">3</div>
+                        <div class="admin_manage__pagination_btn">4</div>
+                        <div class="admin_manage__pagination_btn">5</div>
+                        <div class="admin_manage__pagination_btn">6</div>
+                        <div class="admin_manage__pagination_btn">다음</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="float" style="bottom:78px;" id="float_test_up">
+            <div class="float_btn">
+                <div class="float_btn__wrap">
+                    <a class="float_btn__btn_up"></a>
+                </div>
+            </div>
+        </div>
+	</div>
+    <script>
+        $('.admin_tab__menu').on('click', function() {
+            $('.admin_tab__menu').removeClass('active');
+            $(this).addClass('active')
+        })
+        $('.admin_manage__btn_slct').on('click', function() {
+            let AllChecked = $(this).find('.checkbox__input').is(":checked");
+            $('.checkbox__input').prop('checked', !AllChecked)
+        })
+        $('.checkbox').on('click', function() {
+            const chkInput = $(this).find('.checkbox__input')
+            let checked = $(this).find('.checkbox__input').is(":checked")
+            chkInput.prop('checked', !checked)
+        })
+        $('.admin_manage__pagination_btn').on('click', function() {
+            if($(this).context.innerText !== '이전' && $(this).context.innerText !== '다음') {
+                $('.admin_manage__pagination_btn').removeClass('active');
+                $(this).addClass('active')
+            }
+        })
+    </script>
+	<script src="../../../js/default.js"></script>
+	<script src="../../../vendors/siteMap.bundle.js"></script>
+</body>
+</html>

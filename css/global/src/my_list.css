@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_list
+	설　명 : 마이페이지 메뉴 리스트
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.my_list {position: relative; margin:0 12px; box-sizing: border-box;}
+.my_list-off {margin-top:-84px;}
+.my_list__container {width:100%; padding:8px 0; margin-top:8px; border-radius: 12px; box-sizing: border-box; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, .06);}
+.my_list__box {display:flex; align-items:center; width:100%; min-height:52px; padding:12px 12px 12px 16px; box-sizing: border-box; cursor: pointer;}
+.my_list__ico{flex:none; width:26px; height:26px; margin-right:2px; background-size: 100% 100%; background-position: center; background-repeat: repeat;}
+.my_list__ico-boost{background-image:url("https://image.honeymatchs.com/global_honey/ico/ico_my_list_boost.png");}
+.my_list__ico-edit_prf{background-image:url("https://image.honeymatchs.com/global_honey/ico/ico_my_list_edit_prf.png");}
+.my_list__ico-wallet{background-image:url("https://image.honeymatchs.com/global_honey/ico/ico_my_list_prf.png");}
+.my_list__ico-block{background-image:url("https://image.honeymatchs.com/global_honey/ico/ico_my_list_block.png");}
+.my_list__ico-set{background-image:url("https://image.honeymatchs.com/global_honey/ico/ico_my_list_set.png");}
+.my_list__ico-wallet{background-image:url("https://image.honeymatchs.com/global_honey/ico/ico_my_list_wallet.png");}
+.my_list__txt{color:#202020; word-break: break-all;}
+.my_list__arrow{flex:none; width:28px; height:28px; margin-left:auto; background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 28 28'%3e%3cpath fill='none' stroke='%23505050' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='1.2' d='m11.6 20 4.8-6-4.8-6'/%3e%3c/svg%3e") center no-repeat; background-size:100% auto;}

@@ -1,0 +1,216 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                   Button                   □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 공통 버튼 폼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.btn{
+	@include position(relative);
+	width: 100%;
+	box-sizing: border-box;
+	&-multi{
+		@include flex($ai: center, $jc: center)
+	}
+	&__btn{
+		@include position(relative);
+        @include flex(center,center);
+		width: 100%;
+		min-height: $btn_height_large;
+		padding: 0 2px;
+		box-sizing: border-box;
+		border-radius: $btn_border_radius_large;
+		font-size: $btn_default_txt_size_large;
+		cursor: pointer;
+		// 기본 버튼
+		&-default{
+			background-color: $btn_default_bg;
+			color: $btn_default_txt_color;
+			&:hover{
+				@include break_point("hover") {
+					background-color: $btn_default_bg_hover;
+				}
+				&:active{
+					background-color: $btn_default_bg_active;
+				}
+			}
+		}
+
+		// 서브 버튼
+		&-sub{
+			background-color: $btn_sub_bg;
+			color: $btn_sub_txt_color;
+			&:hover{
+				@include break_point("hover") {
+					background-color: $btn_sub_bg_hover;
+				}
+				&:active{
+					background-color: $btn_sub_bg_active;
+				}
+			}
+		}
+
+		// 마이너 버튼
+		&-minor{
+			background-color: $btn_minor_bg;
+			color: $btn_minor_txt_color;
+			&:hover{
+				@include break_point("hover") {
+					background-color: $btn_minor_bg_hover;
+				}
+				&:active{
+					background-color: $btn_minor_bg_active;
+				}
+			}
+		}
+
+		// 더보기 버튼
+		&-more{
+			background-color: $btn_more_bg;
+			color: $btn_more_txt_color;
+			&:hover{
+				@include break_point("hover") {
+					background-color: $btn_more_bg_hover;
+				}
+				&:active{
+					background-color: $btn_more_bg_active;
+				}
+			}
+			& .btn__txt{
+				padding-right: 24px;
+				@include background($img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 24 24'%3e%3cpath fill='%23505050' d='M17.5 11.5c0 .2-.1.4-.3.6l-5 4c-.3.2-.7.2-.9 0l-5-4c-.3-.3-.4-.7-.2-1.1.3-.3.7-.4 1.1-.1l4.5 3.6 4.5-3.6c.3-.3.8-.2 1.1.1.1.2.2.3.2.5z'/%3e%3c/svg%3e"), $r:no-repeat, $p: right center, $s: 24px)
+			}
+		}
+
+		// 구매복원 버튼
+		&-line{
+			background-color: $white;
+			border:1px solid $btn_line_gray_color;
+			color: $btn_line_txt_color;
+			&:hover{
+				@include break_point("hover") {
+					background-color: $btn_line_bg_hover;
+				}
+				&:active{
+					background-color: $btn_line_bg_active;
+				}
+			}
+		}
+
+		// 픽스 버튼
+		&-fix{
+			background-color: $btn_default_bg;
+			color: $btn_default_txt_color;
+			box-shadow: map-get($shadows , "3");
+			&:hover{
+				@include break_point("hover") {
+					background-color: $btn_default_bg_hover;
+				}
+				&:active{
+					background-color: $btn_default_bg_active;
+				}
+			}
+			&.btn__btn-sub{
+				background-color: $btn_sub_bg;
+				color: $gray-20;
+				&:hover{
+					@include break_point("hover") {
+						background-color: $btn_sub_bg_hover;
+					}
+					&:active{
+						background-color: $btn_sub_bg_active;
+					}
+				}
+			}
+		}
+
+		// 비활성화 버튼
+		&.disabled{
+			background-color:$btn_disabled_bg;
+			color: $btn_disalbed_txt_color;
+            cursor: default;
+			&:hover{
+				@include break_point("hover") {
+					background-color: $btn_disabled_bg;
+				}
+				&:active{
+					background-color: $btn_disabled_bg;
+				}
+			}
+		}
+
+		// 사이즈 m
+		&-m{
+			min-height: $btn_height_medium;
+			border-radius: $btn_border_radius_medium;
+			font-size: $btn_default_txt_size_medium;
+		}
+		&-w_100{
+			flex: none;
+			width: 100px;
+		}
+	}
+
+	&__txt{
+		text-align: center;
+		word-break: break-word;
+	}
+
+	&__subtxt{
+		margin-top: 1px;
+		margin-left: 4px;
+		font-size: 12px;
+	}
+
+	&__icon{
+		flex: none;
+		width: $btn_icon_size_large;
+		height: $btn_icon_size_large;
+		margin-right: 4px;
+		@include background($r: no-repeat, $p: center, $s: 100%);
+		.btn__btn-m &{
+			width: $btn_icon_size_medium;
+			height: $btn_icon_size_medium;
+			margin-right: 2px;
+		}
+		&-call_accept{
+			background-image: url("#{$url_global}/ico/ico_btn_call_accept_l.png");
+		}
+		&-call_reject{
+			background-image: url("#{$url_global}/ico/ico_btn_call_reject_l.png");
+		}
+		&-photo{
+			background-image: url("#{$url_global}/ico/ico_btn_photo_l.png");
+		}
+		&-video{
+			background-image: url("#{$url_global}/ico/ico_btn_video_l.png");
+		}
+		&-contact{
+			background-image: url("#{$url_global}/ico/ico_btn_contact_l.png");
+			.btn__btn-m &{
+				background-image: url("#{$url_global}/ico/ico_btn_contact_m.png");
+			}
+		}
+		&-contact_dark{
+			.btn__btn-m &{
+				background-image: url("#{$url_global}/ico/ico_btn_contact_m-dark.png");
+			}
+		}
+		&-heart{
+			background-image: url("#{$url_global}/ico/ico_btn_heart_l.png");
+			.btn__btn-m &{
+				background-image: url("#{$url_global}/ico/ico_btn_heart_m.png");
+			}
+		}
+		&-video_talk{
+			background-image: url("#{$url_global}/ico/ico_btn_video_talk_l.png");
+			.btn__btn-m &{
+				background-image: url("#{$url_global}/ico/ico_btn_video_talk_m.png");
+			}
+		}
+	}
+}

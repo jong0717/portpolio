@@ -1,0 +1,64 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                    Color                   □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+
+$black:                #000000;
+$gray-20:              #202020;
+$gray-50:              #505050;
+$gray-70:              #707070;
+$gray-90:              #909090;
+$gray-a4:              #A4A4A4;
+$gray-b8:              #B8B8B8;
+$gray-d4:              #D4D4D4;
+$gray-e1:              #E1E1E1;
+$gray-f1:              #F1F1F1;
+$gray-fa:              #FAFAFA;
+$white:                #FFFFFF;
+
+$primary-500:          #FFCE0E;
+$primary-450:          #FFD52E;
+$primary-400:          #FFE064;
+$primary-350:          #FFE788;
+$primary-300:          #FFEEA8;
+$primary-250:          #FFF3C5;
+$primary-200:          #FFF7D6;
+$primary-150:          #FFFAE4;
+$primary-100:          #FEFBEC;
+
+$sub-500: #956800;
+
+$woman-600: #C24C87;
+$woman-500: #EE678B;
+
+$man-600: #465A95;
+$man-500: #3677CB;
+
+$marry: #CB1559;
+$marry-re: #0A768D;
+
+$badge: #29C582;
+$badge-new: #FF644B;
+
+$error: #FF644B;
+
+
+:root {
+	--primary-500: #{$primary-500};
+	--primary-450: #{$primary-450};
+	--primary-400: #{$primary-400};
+	--primary-350: #{$primary-350};
+	--primary-300: #{$primary-300};
+	--primary-250: #{$primary-250};
+	--primary-200: #{$primary-200};
+	--primary-150: #{$primary-150};
+	--primary-100: #{$primary-100};
+	--sub-500: #{$sub-500};
+	--woman-600: #{$woman-600};
+	--woman-500: #{$woman-500};
+	--man-600: #{$man-600};
+	--man-500: #{$man-500};
+	--marry: #{$marry};
+	--marry-re: #{$marry-re};
+}

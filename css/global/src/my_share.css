@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_share
+	설　명 : 마이페이지 앱 링크 공유
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.my_share{margin: 8px 12px 0;}
+.my_share__container{display:flex; align-items: center; padding: 16px 12px; border-radius: 12px; box-sizing: border-box; border:1px solid var(--primary-450); background-color: var(--primary-100); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);}
+.my_share__tit{font-size: 15px; color: #202020;}
+.my_share__info{margin-top: 1px; font-size: 13px; color: var(--sub-500);}
+.my_share__arrow{flex-shrink: 0; width: 28px; height: 28px; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 28 28'%3e%3cpath fill='none' stroke='%23505050' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='1.2' d='m11.6 20 4.8-6-4.8-6'/%3e%3c/svg%3e") center no-repeat; background-size: 100% auto;}

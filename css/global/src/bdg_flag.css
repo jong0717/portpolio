@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __bdg_flag
+	설　명 : 국기 뱃지
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.bdg_flag{flex-shrink: 0; display: inline-block; *border-radius: 2px; *border: 1px solid #3A4567; background-repeat: no-repeat; background-position: center; background-size: 100% auto; box-sizing: border-box;}
+.bdg_flag-bc_w{border-color: #FFFFFF;}
+.bdg_flag-no_bd{border: 0;}
+
+.bdg_flag-l{width: 24px; height: 24px;}
+.bdg_flag-m{width: 19px; height: 19px;}
+
+/* 국기 변경 전 */
+/* 
+.bdg_flag-l{width: 23px; height: 16px;}
+.bdg_flag-m{width: 20px; height: 14px;}
+.bdg_flag-s{width: 18px; height: 13px;} */
+
+

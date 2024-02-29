@@ -1,0 +1,127 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                   Header                   □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 공통 헤더
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+
+.header{
+	@include position(relative,300);
+    @include flex($ai:center);
+    width: 100%;
+	padding: 6px 8px 0;
+	background-color: $header_bg;
+	box-sizing: border-box;
+	transition: transform 0.2s;
+	&-no_bg{
+		background-color: transparent;
+	}
+	&-prf{
+		padding: 8px;
+		background-color: transparent;
+	}
+	&-bg_primary{
+		background-color: $primary-500;
+	}
+	&-slide_on{
+        animation:slideInDown 0.3s ease-out forwards;
+    }
+    &-slide_off{
+        animation:slideOutUp 0.3s ease-out forwards;
+    }
+
+	// 버튼
+	&__btn{
+		@include position(relative);
+		width: 44px;
+		height: 44px;
+		&_wrap{
+			flex:0 0 auto;
+			@include flex(center,center);
+			cursor: pointer;
+		}	
+	}
+
+	// 아이콘
+	&__ico{
+		&_back{
+			width: 100%;
+			height: 100%;
+			@include background($img: $header_icon_back_default, $r: no-repeat, $p: center, $s: 100%);
+			.header-prf &{
+				border-radius: 50%;
+				background-color: rgba($color: $black, $alpha: .6);
+				background-image: $header_icon_back_white;
+			}
+		}
+		
+		&_home{
+			width: 100%;
+			height: 100%;
+			@include background($img: $header_icon_home_default, $r: no-repeat, $p: center, $s: 100%);
+			.header-prf &{
+				border-radius: 50%;
+				background-color: rgba($color: $black, $alpha: .6);
+				background-image: $header_icon_home_white;
+			}
+		}
+		&_more{
+			width: 100%;
+			height: 100%;
+			@include background($img: $header_icon_more_default, $r: no-repeat, $p: center, $s: 100%);
+			.header-prf &{
+				border-radius: 50%;
+				background-color: rgba($color: $black, $alpha: .6);
+				background-image: $header_icon_more_white;
+			}
+
+		}
+		&_cls{
+			width: 100%;
+			height: 100%;
+			@include background($img: $header_icon_cls_default, $r: no-repeat, $p: center, $s: 100%)
+		}
+		&_menu{
+			width: 100%;
+			height: 100%;
+			@include background($img: $header_icon_menu_default, $r: no-repeat, $p: center, $s: 100%)
+		}
+		&_wallet{
+			width: 100%;
+			height: 100%;
+			@include background($img: $header_icon_wallet_default, $r: no-repeat, $p: center, $s: 100%)
+		}
+		&_filter{
+			width: 100%;
+			height: 100%;
+			@include background($img: $header_icon_filter_default, $r: no-repeat, $p: center, $s: 100%)
+		}
+	}
+
+	// 로고
+	&__logo{
+		@include position(relative);
+		@include flex(center,center);
+		flex:0 0 auto;
+		width: 64px;
+		height: 44px;
+		padding-left: 8px;
+		@include background($img: $header_logo, $r: no-repeat, $p: right center, $s: 64px);
+		cursor: pointer;
+	}
+	
+	&__tit{
+		width: 100%;
+		margin-left: 4px;
+		&_txt{
+			font-weight: 700;
+			color: $gray-20;
+			word-break: break-word;
+		}
+	}
+}

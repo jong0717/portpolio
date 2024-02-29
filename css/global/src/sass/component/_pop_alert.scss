@@ -1,0 +1,73 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*                                             □*/
+/*□                  pop Alert                 □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 공통 알림 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_alert{
+    @include position(relative);
+    width:100%;
+    border-radius: $popup_border_radius;
+    background-color:$popup_layer_bg;
+    overflow: hidden;
+    box-shadow: $popup_shadow;
+    &__container{
+        width:100%;
+        padding:$pop_alert_padding;
+        box-sizing: border-box;
+    }
+    &__content{
+        width:100%;
+    }
+    &__btn_wrap{
+        @include flex(center,center);
+        width:100%;
+        margin:$pop_alert_btn_margin;
+        box-sizing: border-box;
+    }
+    &__tit{
+        width:100%;
+        line-height:21px;
+        text-align: center;
+        color:$pop_alert_tit_txt_color;
+    }
+    &__txt_box{
+        width:100%;
+		margin-top: 12px;
+        text-align: center;
+        font-size:14px;
+        color:$pop_alert_txt_color;
+        word-break: break-all;
+    }
+	&__img{
+		display: block;
+		width: 100%;
+		margin-bottom: 16px;
+	}
+	&__round_box{
+		@include flex($jc: center, $ai: center);
+		width: max-content;
+		height: 36px;
+		margin: 20px auto 8px;
+		padding: 0 20px;
+		border-radius: 18px;
+		background-color: #F2F2F2;
+		&_txt{
+			font-size: 14px;
+			font-weight: 700;
+			color: $sub-500
+		}
+		&_err{
+			margin-top: 8px;
+			text-align: center;
+			font-size: 14px;
+			color: $error;
+
+		}
+	}
+}

@@ -1,0 +1,27 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□               Input_outer                  □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : form input 요소 외부 박스
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.input_outer{
+	@include flex($ai:center);
+	&-top {
+		align-items: flex-start;
+	}
+	&-bot {
+		align-items: flex-end;
+	}
+	& .input{
+		flex:1;
+		overflow: hidden;
+	}
+	& .input-auto{
+		flex:none;
+	}
+}

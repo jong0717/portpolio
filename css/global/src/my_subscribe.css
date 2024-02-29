@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __my_subscribe
+	설　명 : 구독 결제
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+/* .my_subscribe{position: relative; width: auto; padding: 16px 6px; margin: -116px 12px 0; border: 1px solid #E19D00; border-radius: 12px; box-sizing: border-box; box-shadow: 0 2px 4px rgba(0, 0, 0, .08); background: linear-gradient(125deg, #FFFFFF, #FEFBEC);} */
+.my_subscribe{width: auto; padding: 16px 6px; margin: -76px 12px 0; border: 1px solid #E19D00; border-radius: 12px; box-sizing: border-box; box-shadow: 0 2px 4px rgba(0, 0, 0, .08); background: linear-gradient(125deg, #FFFFFF, #FEFBEC);}
+.my_subscribe__tit{width: 116px; height: 22px; margin: 0 auto; background-repeat:no-repeat; background-position: center; background-size: 100% auto;}
+.my_subscribe__tit-premium{background-image: url("https://image.honeymatchs.com/global_honey/img/img_my_top_tit_premium.png");}
+.my_subscribe__content{display: flex; flex-direction: column; justify-content: center; min-height: 84px; margin-top: 8px; }
+.my_subscribe__txt{margin-top:8px; text-align: center; line-height: 17px; font-size: 13px; color: #202020;}
+.my_subscribe__date{font-weight: 700; color: #956800;}
+.my_subscribe__btn{display: flex; justify-content: center; width:100%; margin-top:12px;}
+.my_subscribe__btn .btn {width: 192px;}
+
+.my_subscribe__amber_wrap {padding:0 6px;}
+.my_subscribe__amber_tit {display: flex; font-size:14px;}
+.my_subscribe__amber_tit::after {content: ''; display: flex; width:20px; height:20px; margin-left:2px; background:url("https://image.honeymatchs.com/global_honey/ico/ico_my_amber.png") no-repeat center; background-size: 100% auto;}
+.my_subscribe__amber {margin-bottom:11px; font-size:32px; font-weight: 700; letter-spacing: -0.5px; color: #534200; text-align: center;}
+.my_subscribe__btn_multi {display: flex;}

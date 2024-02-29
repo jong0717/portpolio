@@ -1,0 +1,115 @@
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*□                                            □*/
+/*□                Photo_Circle                □*/
+/*□                                            □*/
+/*□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□*/
+/*---------------------------------------------
+	설　명 : 기본 원형 사진 폼
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.photo_circle{
+    @include position(relative);
+    flex:0 0 auto;
+    &__wrap{
+        @include position(relative);
+    }
+    &__img{
+		@include position(relative);
+        @include flex(center,center);
+        border:1px solid $photo_circle_border_default;
+        border-radius: 50%;
+        @include background($photo_circle_bg_color,null,no-repeat,center,cover);
+        box-sizing: border-box;
+		&-bc_w{
+			border-color: $white;
+		}
+		&-bc_y{
+			border-color: #FFCB00;
+		}
+		&-bw_2{
+			border-width: 2px;
+		}
+        @each $photo_circle_size in $photo_circle_sizes {
+            &-#{$photo_circle_size}{
+                width: #{$photo_circle_size}px;
+                height: #{$photo_circle_size}px;
+            }
+        }
+    }
+		&__bdg{
+		@include position(absolute);
+			&_cnt{
+				@include position($p: absolute, $t: -5px, $r: -1px);
+				@include flex(center, center);
+				width: $photo_circle_bdg_size;
+				height: $photo_circle_bdg_size;
+				border-radius: 50%;
+				border: 1px solid $white;
+				box-sizing: border-box;
+				background-color: $photo_circle_bdg_color;
+				line-height: 10px;
+				font-size: 10px;
+				font-weight: 700;
+				color: $white;
+				&-l{
+					top: -1px;
+					width: $photo_circle_bdg_size_large;
+					height: $photo_circle_bdg_size_large;
+					font-size: 13px;
+				}
+				&_grow{
+					@include position($p: absolute, $b: 0, $l: 50%);
+					transform: translate(-50%,50%);
+					min-width: 18px;
+					min-height: 18px;
+					padding: 0 4px;
+					border-radius: 9px;
+					background-color: #FF5656;
+					text-align: center;
+					line-height: 16px;
+					font-size: 12px;
+					color: #fff;
+					box-sizing: border-box;
+					font-weight: 700;
+				}		
+			}
+			&_match{
+				@include position($p: absolute, $b: 0, $l: 50%);
+				transform: translate(-50%,50%);
+				width: 56px;
+				height: 18px;
+				@include background($img: url('#{$url_global}/temporary/img_msg_match_bdg.png'), $r: no-repeat, $p: center, $s: 100%);
+			}
+			&-top_right{
+				@include position(absolute,$t:0,$r:0);
+			}
+			&-top_left{
+					@include position(absolute,$t:0,$l:0);
+			}
+			&-top_center{
+					@include position(absolute,$t:0,$l:50%);
+					transform: translateX(-50%);
+			}
+			&-bot_right{
+					@include position(absolute,$b:0,$r:0);
+			}
+			&-bot_left{
+					@include position(absolute,$b:0,$l:0);
+			}
+			&-bot_center{
+					@include position(absolute,$b:-6px,$l:50%);
+					transform: translateX(-50%);
+			}
+		}
+	// &__bdg_cnt-l{
+	// }
+	// &__bdg_cnt_grow{
+	// }
+	// &__bdg_match{
+	// }
+	&-ani_shake{
+		animation: shake .8s ease forwards;
+	}
+}
