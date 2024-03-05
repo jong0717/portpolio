@@ -1,0 +1,34 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_temp.css
+	설　명 : 커뮤니티 등록시 안내 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.pop_temp{position: relative; width: 100%; border-radius: 8px; background-color: #fff; overflow: hidden; box-shadow: 0 1px 4px rgb(0 0 0 / 32%)}
+.pop_temp__container{width: 100%; padding: 24px 15px 20px; box-sizing: border-box;}
+.pop_temp__content{width: 100%;}
+.pop_temp__tit{margin-bottom: 24px; width: 100%; text-align: center; line-height: 21px; font-weight: 700; color: #202020;}
+.pop_temp__chart_wrap{position: relative; display: flex; justify-content: center; width: 100%; height: 90px; margin-top: 24px;}
+.pop_temp__val{position: absolute; top: calc(50% + 13px); transform: translateY(-50%); font-size: 22px; font-weight: 700; color: #0A2446;}
+.pop_temp__chart_figure{display: flex; justify-content: space-between; align-items: center; margin: 0 47px 0 52px;}
+.pop_temp__chart_figure_txt{font-size: 12px;}
+.pop_temp__txt{margin-top: 16px; text-align: center; font-size: 17px; font-weight: 700;}
+.pop_temp__hr{width: 32px; height: 2px; margin: 24px auto 16px; background-color: #E1E1E1;}
+.pop_temp__info_wrap{width: 100%; text-align: center;}
+.pop_temp__info_tit{font-size: 14px; font-weight: 700;}
+.pop_temp__info_txt{margin-top: 6px; line-height: 18px; font-size: 13px; color: #707070;}
+.pop_temp__btn_wrap{display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%; margin: 24px auto 0; box-sizing: border-box;}
+/* 단계에 따른 분기 */
+.pop_temp__chart_wrap-blue .pop_temp__chart{stroke: #3A73C8;}
+.pop_temp__chart_wrap-blue .pop_temp__val{color: #3A73C8;}
+.pop_temp__chart_wrap-green .pop_temp__chart{stroke: #179812;}
+.pop_temp__chart_wrap-green .pop_temp__val{color: #179812;}
+.pop_temp__chart_wrap-yellow .pop_temp__chart{stroke: #D69600;}
+.pop_temp__chart_wrap-yellow .pop_temp__val{color: #D69600;}
+.pop_temp__chart_wrap-orange .pop_temp__chart{stroke: #EF6A12;}
+.pop_temp__chart_wrap-orange .pop_temp__val{color: #EF6A12;}
+
+
+/* .pop_temp__chart{stroke-dashoffset: 50;} */

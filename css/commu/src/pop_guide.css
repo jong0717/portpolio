@@ -10,9 +10,10 @@
 .pop_guide__container{width: 100%; padding: 24px 15px 20px; box-sizing: border-box;}
 .pop_guide__content{width: 100%;}
 .pop_guide__tit{margin-bottom: 24px; width: 100%; text-align: center; line-height: 21px; font-weight: 700; color: #202020;}
-.pop_guide__txt_box{width: 100%; margin-bottom: 16px; text-align: center; font-size: 14px; color: #202020; word-break: break-all;}
-/* .pop_guide__ */
-.pop_guide__index{width: 23px; height: 23px; margin: 0 auto 6px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/img/img_talk_balloon.png") no-repeat center; background-size: 100% auto; line-height: 23px; font-size: 12px; color: #fff; }
+.pop_guide__txt_box{display: flex; align-items: center; width: 100%; min-height: 63px; padding: 10px 12px; margin-bottom: 10px; border-radius: 8px; box-sizing: border-box; background-color: #F2F5FF; font-size: 14px; color: #202020; word-break: break-all;}
+.pop_guide__txt_box:last-child{margin-bottom: 0;}
+.pop_guide__explain{margin-left: 10px;}
+.pop_guide__index{flex: none; width: 23px; height: 23px; background: url("https://image.yeoboya.com/imgs/new_wedding_commu/img/img_talk_balloon.png") no-repeat center; background-size: 100% auto; text-align: center; line-height: 23px; font-size: 12px; color: #fff; }
 .pop_guide__subtit{font-weight: 700;}
 .pop_guide__txt{margin-top: 6px; font-size: 12px; color: #707070;}
-.pop_guide__btn_wrap{display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%; margin: 32px auto 0; box-sizing: border-box;}
+.pop_guide__btn_wrap{display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%; margin: 24px auto 0; box-sizing: border-box;}

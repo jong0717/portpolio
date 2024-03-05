@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="robots" content="ALL">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="1 days">
+	<meta name="Subject" content="여보야">
+	<meta name="description" content="결혼, 재혼, 배우자를 찾는 스마트한 방법, 가입비 주선비 성혼비 무료, 여성결혼대상자 무료, 문의 1522-3379">
+	<meta name="keywords" content="결혼, 재혼, 결혼어플, 소개팅어플, 소개팅">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://image.yeoboya.com/imgs/new_wedding/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://image.yeoboya.com/imgs/new_wedding/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>게시글 등록 | 여보야</title>
+	<link rel="canonical" href="https://m.yeoboya.com">
+
+	<link rel="stylesheet" type="text/css" href="../../../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/sass/common_community.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/slct_topic.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/btn_topic.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/list_grid.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/pop_slct.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/pop_slct_card.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/pop_alert.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/pop_guide.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/commu/src/pop_guide_old.css">
+
+	<script src="../../../vendors/polyfill.min.js"></script>
+	<script src="../../../vendors/jquery.min.js"></script>
+	<script src="../../../vendors/lodash.min.js"></script>
+	<script src="../../../vendors/axios.min.js"></script>
+    <script src="../../../vendors/moment.min.js"></script>
+    <script src="../../../vendors/jquery-mobile.event.min.js"></script>
+	<script src="../../../vendors/onLoad.bundle.js"></script>
+</head>
+<body class="pc__bg">
+	<div class="pc__container">
+		<div class="top top-fix">
+			<header class="header header-community">
+				<div class="header__btn_wrap">
+					<a class="header__btn pl8">
+						<span class="header__ico_back"></span>
+						<span class="blind">뒤로</span>
+					</a>
+				</div>
+				<h1 class="header__tit header__tit-center header__tit-abs"><span class="header__tit_txt">게시글 등록</span></h1>
+			</header>
+		</div>
+		<main class="content">
+			<form class="content__vt_container">
+				<fieldset class="mx15">
+					<legend class="blind">게시글 등록</legend>
+					<div class="mt20">
+						<!--
+							[ slct_topic 추가 클래스 ]
+							활성화 시 "active" 클래스 추가
+						-->
+						<div class="slct_topic">
+							<div class="slct_topic__txt">주제</div>
+						</div>
+					</div>
+					<div class="input mt20" data-state="default">
+						<!-- data-state 종류
+							default, focus, fill, error
+						-->
+						<label class="input__lb" for="">
+							<span class="input__lb_txt">제목</span>
+							<span class="input__txt_cnt_box"><span class="input__txt_cnt"><span class="input__txt_cnt_num">0</span>/50자</span></span>
+						</label>
+						<div class="input__input_wrap">
+							<input class="input__text_input" type="text" placeholder="제목을 입력해 주세요">
+						</div>
+					</div>
+					<div class="input mt20" data-state="default">
+						<label class="input__lb" for="">
+							<span class="input__lb_txt">내용</span>
+							<span class="input__txt_cnt_box"><span class="input__txt_cnt"><span class="input__txt_cnt_num">0</span>/5000자</span></span>
+						</label>
+						<textarea class="input__textarea input__textarea-210" name="" id="" placeholder="개인정보 노출 및 운영정책 위반 시 게시글 삭제 및 이용정지 될 수 있습니다."></textarea>
+					</div>
+				</fieldset>
+				<div class="mx15 mta pb20 pt28">
+					<a class="btn__btn_default">
+						<span class="btn__btn_default_txt">등록하기</span>
+					</a>
+				</div>
+			</form>
+		</main>
+
+		<!-- 주제태그 선택 팝업-->
+		<div class="bot_pop">
+			<div class="bot_pop__bg"></div>
+			<div class="bot_pop__layer bot_pop__layer-slide_up">
+				<div class="pop_slct_card">
+					<div class="pop_slct_card__top">
+						<div class="pop_slct_card__tit">
+							<span class="fwr">지금</span><br>
+							<span class="pop_slct_card__tit_black tht-primary_30">고민</span>있나요?
+						</div>
+						<a class="pop_slct_card__btn_cls">
+							<span class="pop_slct_card__ico_cls"></span>
+							<span class="blind">닫기</span>
+						</a>
+					</div>
+					<div class="pop_slct_card__content">
+						<ul class="pop_slct_card__container pop_slct_card__container-col2">
+							<!-- <li class="pop_slct_card__item" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding_commu/img/img_whisper_greet.png');">
+								<div class="pop_slct_card__item_txt">가입인사
+									<span class="pop_slct_card__item_new_badge"></span>
+								</div>
+							</li> -->
+							<li class="pop_slct_card__item" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding_commu/img/img_whisper_life.png');">
+								<div class="pop_slct_card__item_txt">일상생활
+									<span class="pop_slct_card__item_new_badge"></span>
+								</div>
+							</li>
+							<!-- <li class="pop_slct_card__item" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding_commu/img/img_whisper_work.png');">
+								<div class="pop_slct_card__item_txt">직장생활</div>
+							</li> -->
+							<li class="pop_slct_card__item" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding_commu/img/img_whisper_love.png');">
+								<div class="pop_slct_card__item_txt">연애</div>
+							</li>
+							<li class="pop_slct_card__item" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding_commu/img/img_whisper_friend.png');">
+								<div class="pop_slct_card__item_txt">또래끼리
+									<span class="pop_slct_card__item_new_badge"></span>
+								</div>
+							</li>
+							<li class="pop_slct_card__item" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding_commu/img/img_whisper_man.png');">
+								<div class="pop_slct_card__item_txt">남자끼리</div>
+							</li>
+							<li class="pop_slct_card__item" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding_commu/img/img_whisper_woman.png');">
+								<div class="pop_slct_card__item_txt">여자끼리</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 작성 취소 확인 팝업-->
+		<div class="pop hidden">
+			<div class="pop__bg"></div>
+			<div class="pop__layer">
+				<div class="pop_alert">
+					<div class="pop_alert__container">
+						<div class="pop_alert__content">
+							<div class="pop_alert__tit mb12"><span class="fc20">정말 작성을 취소 하시겠습니까?</span></div>
+							<div class="pop_alert__txt_box">
+								<p class="fs14 fc20">작성중인 내용은 저장되지 않습니다.</p>
+							</div>
+						</div>
+						<div class="pop_alert__btn_wrap">
+							<a class="btn__btn_line btn__btn_line-m mr8">
+								<span class="btn__btn_line_txt">예</span>
+							</a>
+							<a class="btn__btn_default btn__btn_default-m">
+								<span class="btn__btn_default_txt">계속 작성</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 등록 확인 팝업-->
+		<div class="pop hidden">
+			<div class="pop__bg"></div>
+			<div class="pop__layer">
+				<div class="pop_alert">
+					<div class="pop_alert__container">
+						<div class="pop_alert__content">
+							<div class="pop_alert__tit mb12"><span class="fc20">게시글을 등록 하시겠습니까?</span></div>
+							<div class="pop_alert__txt_box">
+								<p class="fs14 fc20">게시판 정책에 위반되는 게시글의 경우<br>경고없이 게시글이 삭제될 수 있습니다.</p>
+							</div>
+						</div>
+						<div class="pop_alert__btn_wrap">
+							<a class="btn__btn_line btn__btn_line-m mr8">
+								<span class="btn__btn_line_txt">아니오</span>
+							</a>
+							<a class="btn__btn_default btn__btn_default-m">
+								<span class="btn__btn_default_txt">네</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- #10573 속닥속닥 매너온도 도입 -->
+		<!-- 1,2,3번은 공통 / 4번은 분기 / 5번은 속닥속닥만 적용 -->
+		<div class="pop">
+			<div class="pop__bg pop__bg-dark"></div>
+			<div class="pop__layer">
+				<div class="pop_guide">
+					<div class="pop_guide__container">
+						<div class="pop_guide__content">
+							<div class="pop_guide__tit">속닥속닥 이용가이드(new)</div>
+							<div class="pop_guide__txt_box">
+								<div class="pop_guide__index">01</div>
+								<div class="pop_guide__explain">
+									<p class="pop_guide__subtit"><span class="tht-primary100_30">주제와 어울리는 게시글</span>만 올려주세요.</p>
+									<p class="pop_guide__txt">회원 및 서비스 문의는 고객센터로 부탁해요!
+									</p>
+								</div>
+							</div>
+							<div class="pop_guide__txt_box">
+								<div class="pop_guide__index">02</div>
+								<div class="pop_guide__explain">
+									<p class="pop_guide__subtit"><span class="tht-primary100_30">비매너 게시물</span>은 삭제 및 제재 대상이에요.</p>
+									<p class="pop_guide__txt">분란조장, 욕설, 인신공격성 발언은 참아주세요!
+									</p>
+								</div>
+							</div>
+							<div class="pop_guide__txt_box">
+								<div class="pop_guide__index">03</div>
+								<div class="pop_guide__explain">
+									<p class="pop_guide__subtit">소중한 <span class="tht-primary100_30">개인정보</span>는 올리지 말아주세요.</p>
+									<p class="pop_guide__txt">개인(추측성) 정보 등록 시 제재 처리됩니다!
+									</p>
+								</div>
+							</div>
+							<!-- 커뮤니티 가이드 4번 -->
+							<div class="pop_guide__txt_box">
+								<div class="pop_guide__index">04</div>
+								<div class="pop_guide__explain">
+									<p class="pop_guide__subtit">
+										<span class="tht-primary100_30">도배 및 무의미한 게시물</span>은 자제해 주세요.
+										<p class="pop_guide__txt">타 회원님들의 이용에 불편을 줄 수 있어요!
+										</p>
+									</p>
+								</div>
+							</div>
+							<div class="pop_guide__txt_box">
+								<div class="pop_guide__index">04</div>
+								<div class="pop_guide__explain">
+									<p class="pop_guide__subtit">
+										또래끼리 게시판은 <span class="tht-primary100_30">연령대가 공개</span>돼요.
+										<p class="pop_guide__txt">연령대가 공개되니 공감대 형성이 가능하겠죠?
+										</p>
+									</p>
+								</div>
+							</div>
+							<!-- 속닥속닥 가이드에만 -->
+							<div class="pop_guide__txt_box">
+								<div class="pop_guide__index">05</div>
+								<div class="pop_guide__explain">
+									<p class="pop_guide__subtit">
+										매너온도는 <span class="tht-primary100_30">또 하나의 얼굴</span>이에요.
+										<p class="pop_guide__txt">좋아요/싫어요, 신고 누적 등이 온도에 반영됩니다!
+										</p>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="pop_guide__btn_wrap">
+							<a class="btn__btn_default btn__btn_default-m">
+								<span class="btn__btn_default_txt">확인했습니다</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //#10573 속닥속닥 매너온도 도입 -->
+		<div class="pop">
+			<div class="pop__bg pop__bg-dark"></div>
+			<div class="pop__layer">
+				<div class="pop_guide_old">
+					<div class="pop_guide_old__container">
+						<div class="pop_guide_old__content">
+							<div class="pop_guide_old__tit">속닥속닥 이용가이드(old)</div>
+							<div class="pop_guide_old__txt_box">
+								<div class="pop_guide_old__index">01</div>
+								<p class="pop_guide_old__subtit"><span class="tht-primary100_30">주제와 어울리는 게시글</span>만 올려주세요</p>
+								
+								<p class="pop_guide_old__txt">속마음은 솔직하게 소통하되 회원 및 서비스 문의는
+									<br>고객센터로 해주세요
+								</p>
+								
+							</div>
+							<div class="pop_guide_old__txt_box">
+								<div class="pop_guide_old__index">02</div>
+								<p class="pop_guide_old__subtit"><span class="tht-primary100_30">비매너 게시물</span>은 삭제 대상이에요</p>
+								<p class="pop_guide_old__txt">회원 간 분란을 조장할 수 있는 글<br>욕설, 비속어, 인신공격성 발언은 참아주세요</p>
+							</div>
+							<div class="pop_guide_old__txt_box">
+								<div class="pop_guide_old__index">03</div>
+								<p class="pop_guide_old__subtit">소중한 <span class="tht-primary100_30">개인정보</span>는 올리지 말아주세요</p>
+								<p class="pop_guide_old__txt">닉네임, SNS계정, 연락처 등 개인정보(추측성)
+									<br>등록 시 <span class="fcp-50">정지 처리</span> 됩니다.
+								</p>
+							</div>
+							
+							<div class="pop_guide_old__txt_box">
+								<div class="pop_guide_old__index">04</div>
+								<p class="pop_guide_old__subtit">
+									또래끼리 게시판은 <span class="tht-primary100_30">작성자 연령대가 공개</span>됩니다.
+								</p>
+							</div>
+							
+						</div>
+						<div class="pop_guide_old__btn_wrap">
+							<a class="btn__btn_default btn__btn_default-m">
+								<span class="btn__btn_default_txt">확인했습니다</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pop">
+			<div class="pop__bg"></div>
+			<div class="pop__layer">
+				<div class="pop_alert">
+					<div class="pop_alert__container">
+						<div class="pop_alert__content">
+							<div class="pop_alert__tit mb12">작업사항</div>
+							<div class="pop_alert__txt_box">
+								<p>매너온도 설명 추가로 인해 
+									<br>팝업 스크롤 발생으로 디자인 변경
+								</p>
+							</div>
+						</div>
+						<div class="pop_alert__btn_wrap">
+							<div class="btn__btn_default">
+								<div class="btn__btn_default_txt">닫기</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		$(document).on('ready', function() {
+			let pageH = $(document).height() - $('.top').outerHeight()
+			$('.content__vt_container').css({'min-height': `${pageH + 'px'}`})
+		})
+		$('.pop_guide__btn_wrap').on('click', function() {
+			// closest : 모든 부모요소를 대상으로 원하는 요소만 선택자로 가져옴.
+			// parents : 모든 부모요소를 반환
+			$(this).closest('.pop').addClass('hidden')
+		})
+		$('.pop_slct_card__btn_cls').on('click', function() {
+			$(this).closest('.bot_pop').addClass('hidden')
+		})
+		$('.pop_slct_card__item').on('click', function() {
+			let topic = $(this).find('.pop_slct_card__item_txt').context.innerText;
+			$(this).closest('.bot_pop').addClass('hidden')
+			$('.slct_topic__txt')[0].innerText = topic;
+			$('.slct_topic').addClass('active')
+		})
+		$('.slct_topic').on('click', function() {
+			$('.bot_pop').removeClass('hidden');
+		})
+	</script>
+	<script src="../../../js/default.js"></script>
+	<script src="../../../vendors/siteMap.bundle.js"></script>
+</body>
+</html>
