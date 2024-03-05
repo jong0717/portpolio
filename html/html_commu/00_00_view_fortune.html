@@ -35,19 +35,19 @@
 	<title>운세서비스 결과보기</title>
 	<link rel="canonical" href="https://m.yeoboya.com">
 
-	<link rel="stylesheet" type="text/css" href="../css/marry/font.css">
-	<link rel="stylesheet" type="text/css" href="../css/marry/community/src/sass/common_community.css">
-	<link rel="stylesheet" type="text/css" href="../css/marry/community/src/fortune.css">
-	<link rel="stylesheet" type="text/css" href="../css/marry/community/src/float_btn.css">
+	<link rel="stylesheet" type="text/css" href="../../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/src/sass/common_community.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/src/fortune.css">
+	<link rel="stylesheet" type="text/css" href="../../css/commu/src/float_btn.css">
 	
-	<script src="../vendors/polyfill.min.js"></script>
-	<script src="../vendors/jquery.min.js"></script>
-	<script src="../vendors/lodash.min.js"></script>
-	<script src="../vendors/axios.min.js"></script>
-    <script src="../vendors/moment.min.js"></script>
-    <script src="../vendors/jquery-mobile.event.min.js"></script>
-	<script src="../vendors/onLoad.bundle.js"></script>
-	<script src="../js/lottie.min.js"></script>
+	<script src="../../vendors/polyfill.min.js"></script>
+	<script src="../../vendors/jquery.min.js"></script>
+	<script src="../../vendors/lodash.min.js"></script>
+	<script src="../../vendors/axios.min.js"></script>
+    <script src="../../vendors/moment.min.js"></script>
+    <script src="../../vendors/jquery-mobile.event.min.js"></script>
+	<script src="../../vendors/onLoad.bundle.js"></script>
+	<script src="../../js/lottie.min.js"></script>
 	<!-- chartjs -->
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -78,7 +78,7 @@
 					<div class="fortune__sub_txt fs18">2022년 10월 7일</div>
 					<div class="fortune__total_score_wrap">
 						<div class="fortune__total_score">종합지수
-							<span class="fortune__total_score_num">-9</span>점
+							<span class="fortune__total_score_num">50</span>점
 						</div>
 						<div class="fortune__total_graph">
 							<div class="fortune__total_graph_fill">
@@ -137,6 +137,26 @@
                 </div>
             </div>
         </div>
+		<div class="pop">
+			<div class="pop__bg"></div>
+			<div class="pop__layer">
+				<div class="pop_alert">
+					<div class="pop_alert__container">
+						<div class="pop_alert__content">
+							<div class="pop_alert__tit mb12">작업사항</div>
+							<div class="pop_alert__txt_box">
+								<p>전체 페이지 작업</p>
+							</div>
+						</div>
+						<div class="pop_alert__btn_wrap">
+							<div class="btn__btn_default">
+								<div class="btn__btn_default_txt">확인</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script>
 		// 바이오리듬 차트
@@ -322,14 +342,14 @@
 			renderer: "svg",
 			loop: false,
 			autoplay: true,
-			path: "../ani/ani_fortune_luck_high.json",
+			path: "../../ani/ani_fortune_luck_high.json",
 		});
 		let fortuneLove = lottie.loadAnimation({
 			container: document.getElementById('fortuneLove'),
 			renderer: "svg",
 			loop: false,
 			autoplay: true,
-			path: "../ani/ani_fortune_love_50.json",
+			path: "../../ani/ani_fortune_love_50.json",
 		});
 		// $(document).ready(function(){
 		// 	let ratioClass = $('.fortune__total_score_num')
@@ -338,9 +358,10 @@
 		// 	console.log(ratioClass)
 		// 	console.log(ratio)
             
-		// })		
+		// })
+				
 	</script>
-	<script src="../js/default.js"></script>
-	<script src="../vendors/siteMap.bundle.js"></script>
+	<script src="../../js/default.js"></script>
+	<script src="../../vendors/siteMap.bundle.js"></script>
 </body>
 </html>
