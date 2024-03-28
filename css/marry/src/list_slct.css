@@ -11,7 +11,8 @@
 /* 리스트 */
 .list_slct__list{display:flex; align-items:center; width:100%; min-height:52px; border-bottom:1px solid #F1F1F1; cursor: pointer;}
 .list_slct__list-bd_none{border: none;}
-.list_slct__list_ico{flex:0 0 auto; display:flex; justify-content: center; align-items: center; width:32px; height:32px;}
+.list_slct__list_ico_wrap{flex:0 0 auto; display:flex; justify-content: center; align-items: center;}
+.list_slct__list_ico{width:32px; height:32px; background-repeat: no-repeat; background-position: center; background-size: 100% auto;}
 .list_slct__list_ico-start{align-self: start; margin-top: 5px;}
 .list_slct__list_content{display:flex; align-items:center; width:100%;}
 .list_slct__list_txt{color:#202020; word-break: break-all;}

@@ -26,6 +26,7 @@
 .card__btn_wrap-center{flex-wrap: wrap;}
 .card__btn{position:relative; width:25%; margin-right:10px;}
 .card__btn-col_3{display: flex; flex-direction: column; justify-content: center; align-items:center; width:33.333%; min-height: 80px; margin-right: 0;}
+.card__btn_ico{width: 32px; height: 32px; background-repeat: no-repeat; background-position: center; background-size: 100% auto;}
 .card__btn_txt{font-size: 14px; margin-top: 4px;}
 .card__btn-disabled{cursor:default;}
 .card__btn-disabled .card__btn_ico{opacity: 0.41;}

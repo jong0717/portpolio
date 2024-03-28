@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="robots" content="ALL">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="1 days">
+	<meta name="Subject" content="여보야">
+	<meta name="description" content="결혼, 재혼, 배우자를 찾는 스마트한 방법, 가입비 주선비 성혼비 무료, 여성결혼대상자 무료, 문의 1522-3379">
+	<meta name="keywords" content="결혼, 재혼, 결혼어플, 소개팅어플, 소개팅">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://image.yeoboya.com/imgs/new_wedding/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://image.yeoboya.com/imgs/new_wedding/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://image.yeoboya.com/imgs/new_wedding/favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://image.yeoboya.com/imgs/new_wedding/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>여보야</title>
+	<link rel="canonical" href="https://m.yeoboya.com">
+	
+	<link rel="stylesheet" type="text/css" href="../../../css/font.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/sass/common_marry.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/m_yby_profile.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/m_yby_popup.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/m_yby_mainlist.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/list_slct.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/list_swipe.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/my_card.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/card.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/photo.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/photo_circle.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/pop_alert.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/badge.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/radio.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/stamp.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/pop_m_certifi.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/float_btn.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/float_pop.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/marry/src/pr_video.css">
+	
+	<script src="../../../vendors/polyfill.min.js"></script>
+	<script src="../../../vendors/jquery.min.js"></script>
+	<script src="../../../vendors/lodash.min.js"></script>
+	<script src="../../../vendors/axios.min.js"></script>
+	<script src="../../../vendors/moment.min.js"></script>
+	<script src="../../../vendors/jquery-mobile.event.min.js"></script>
+	<script src="../../../vendors/onLoad.bundle.js"></script>
+	<script src="../../../js/swiper.min.js"></script>
+	<script src="../../../js/lottie.min.js"></script>
+
+</head>
+<body class="pc__bg">
+	<div class="pc__container">
+		<div class="top top-fix">
+			<header class="header header-marry">
+				<h1 class="header__tit pl20"><span class="header__tit_txt">마이페이지</span></h1>
+				<div class="header__btn_wrap">
+					<a class="header__btn pr8">
+						<span class="header__ico_alarm header__ico_alarm-active mr4"></span>
+						<span class="blind">내소식</span>
+						<span class="header__badge_new"></span>
+					</a>
+				</div>
+			</header>
+		</div>
+		<div class="content">
+			<div class="content__vt_container">
+				<div class="my_card">
+					<div class="my_card__bg"></div>
+					<div class="my_card__container px15">
+						<div class="card">
+							<div class="card__photo_top">
+								<div class="photo_circle">
+									<div class="photo_circle__wrap">
+										<div class="photo_circle__img photo_circle__img-80 photo_circle__img-bd_ff shadow1" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/mobile/img/avata_man_new.jpg');"></div>
+									</div>
+									<div class="photo_circle__badge photo_circle__badge-top_right">
+										<div class="badge">
+											<div class="badge__num_circle">
+												<span class="badge__num_circle_txt">4</span>
+											</div>
+										</div>
+									</div>
+									<div class="photo_circle__badge photo_circle__badge-bot_center">
+										<div class="icon__yby_secret"></div>
+									</div>
+								</div>
+							</div>
+							<div class="card__container px15 pt40">
+								<div class="my_card__profile_wrap pt8">
+									<div class="my_card__name_wrap">
+										<div class="badge">
+											<div class="badge__marry badge__marry-new">
+												<!--
+													일반: badge__marry-default
+													결혼: badge__marry-new
+													재혼: badge__marry-re
+												-->
+												<div class="badge__marry_txt">결혼</div>
+											</div>
+										</div>
+										<div class="my_card__name mx6">
+											<span class="fc20 fwb">내꺼할래요</span>
+										</div>
+										<div class="icon__naver_mini"></div>
+										<!--
+											네이버: icon__naver_mini
+											구글: icon__google_mini
+											카카오: icon__kakao_mini
+											페이스북: icon__facebook_mini
+											애플: icon__apple_mini
+											이메일: icon__email_mini
+										-->
+										<div class="my_card__edit_btn">
+											<div class="my_card__edit_btn_txt">수정</div>
+											<div class="my_card__edit_btn_ico"></div>
+										</div>
+									</div>
+									<div class="my_card__info_wrap fs14">
+										<div class="my_card__info">김아무개</div>
+										<div class="my_card__info">여성</div>
+										<div class="my_card__info">28세</div>
+										<div class="my_card__info">010-1234-5678</div>
+									</div>
+								</div>
+								<div class="my_card__btn_wrap mt12">
+									<a class="my_card__btn my_card__btn-emp">
+										<span class="fs13">본인인증</span>
+										<div class="my_card__btn_badge">1</div>
+									</a>
+									<a class="my_card__btn my_card__btn-emp">
+										<span class="fs13">혼인관계인증</span>
+										<div class="my_card__btn_badge">0</div>
+										<div class="my_card__tooltip">
+											<div class="my_card__tooltip_box">
+												<div class="my_card__tooltip_txt">최초등록하면 <span class="my_card__tooltip_txt_emp">프로필 열람권 3개 지급!!</span></div>
+											</div>
+										</div>
+									</a>
+									<a class="my_card__btn my_card__btn-emp">
+										<span class="fs13">연봉인증</span>
+										<div class="my_card__btn_badge">2</div>
+									</a>
+								</div>
+								<div class="hr my16 mx0"></div>
+								<div class="my_card__coin_wrap">
+									<div class="my_card__header_wrap">
+										<div class="my_card__header">
+											<div class="fc20">여보야 코인</div>
+											<div class="my_card__header_left">
+												<div class="my_card__ico_coin"></div>
+												<div class="fc20 fs17 fwb mr10">105,100</div>
+												<div class="icon__arrow-dark"></div>
+											</div>
+										</div>
+										<div class="my_card__header mt8">
+											<div class="fs14 fc70">마일리지</div>
+											<div class="my_card__header_left">
+												<div class="my_card__ico_mileage"></div>
+												<div class="fs15 fwb fc70 mr10">105,100</div>
+												<div class="icon__arrow-dark"></div>
+											</div>
+										</div>
+									</div>
+									<div class="my_card__coin_btn_wrap mt16 mb8">
+										<div class="my_card__btn_wrap">
+											<a class="my_card__btn my_card__btn-round my_card__btn-ani">
+												<div class="icon__plus-white mr6"></div>
+												<span class="fs14">충전</span>
+											</a>
+											<a class="my_card__btn my_card__btn-round">
+												<span class="fs14">아이템 구매</span>
+											</a>
+											<a class="my_card__btn my_card__btn-round">
+												<span class="fs14">통장관리</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+						</div>
+					</div>
+				</div>
+				<!-- #9373 스탬프 투어 이벤트 -->
+				<!-- <div class="stamp mt15">
+					<div class="stamp__my_bnr my0">
+						<img class="stamp__my_bnr_img" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/evnt/stamp_01/bg_stamp_my_bnr.png" alt="">
+					</div>
+				</div>
+				<div class="space"></div> -->
+				<div>
+					<div class="card__btn_wrap card__btn_wrap-center pt12 px15">
+						<a class="card__btn card__btn-col_3"> 
+							<!-- 프로필 미등록시 -->
+							<!-- <span class="card__btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_pfadd.png');"></span>
+							<span class="card__btn_txt">프로필 등록</span> -->
+							<!-- 프로필 등록시 -->
+							<span class="card__btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_pfset.png');"></span>
+							<span class="card__btn_txt">내프로필<span class="fs12 fcp-50">(위로올리기)</span></span>
+							
+							<div class="card__btn_tooltip"></div>
+						</a>
+						<a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_coupon.png');"></span>
+							<span class="card__btn_new-cnt mt10">99</span>
+							<span class="card__btn_txt">쿠폰함</span>
+						</a>
+						<a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_giftshop.png');"></span>
+							<span class="card__btn_new-cnt mt10">99</span>
+							<span class="card__btn_txt">선물함</span>
+						</a>
+						<a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_block.png');"></span>
+							<span class="card__btn_txt">지인차단</span>
+						</a>
+						<a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_alram.png');"></span>
+							<span class="card__btn_txt">알림 설정</span>
+						</a>
+						<a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_content_set.png');"></span>
+							<span class="card__btn_txt">알림 설정</span>
+						</a>
+						<!-- 비활성화 시 card__btn-disabled 추가 -->
+						<!--<a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico icon__message"></span>
+							<span class="card__btn_txt">메시지</span>
+							<span class="card__btn_new-cnt mt10">1</span>
+						</a>-->
+						<!-- <a class="card__btn card__btn-col_3 card__btn-disabled">
+							<span class="card__btn_ico icon__interest"></span>
+							<span class="card__btn_txt">관심 회원</span>
+							<span class="card__btn_new-cnt mt10 hidden">99</span>
+						</a> -->
+						<!--<a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico icon__videochat"></span>
+							<span class="card__btn_new-cnt mt10">99</span>
+							<span class="card__btn_txt">영상맞선</span>
+						</a>-->
+						
+						<!--<a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico icon__pfview"></span>
+							<span class="card__btn_txt">프로필 열람내역</span>
+							<span class="card__btn_new-cnt mt10">99</span>
+						</a>-->
+						<!-- <a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico icon__secret_list"></span>
+							<span class="card__btn_txt">시크릿 요청내역</span>
+							<span class="card__btn_new-cnt mt10">99</span>
+						</a> -->
+						<!-- <a class="card__btn card__btn-col_3">
+							<span class="card__btn_txt icon__qkmeet"></span>
+							<span class="card__btn_txt">만나고 싶어요</span>
+							<span class="card__btn_new-cnt mt10">99</span>
+						</a> -->
+						<!-- <a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico icon__secret_accept"></span>
+							<span class="card__btn_txt">시크릿 수락내역</span>
+							<span class="card__btn_new-cnt mt10">99</span>
+						</a> -->
+						<!-- <a class="card__btn card__btn-col_3">
+							<span class="card__btn_ico icon__manager"></span>
+							<span class="card__btn_txt">파트너 정보</span>
+						</a> -->
+					</div>
+				</div>
+				
+				<div class="space"></div>
+	
+				<div class="banner px15 mb24 my15">
+					<div class="banner__container">
+						<div class="banner__wrapper">
+							<!-- 상시 배너 종류 -->
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0024.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0027.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0001.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0002.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0003.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0004.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0005.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0006.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0007.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0008.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0009.png')"></a>
+							</div>
+							<div class="banner__slide">
+								<a class="banner__img" style="background-image:url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/banner/banner_180_0010.png')"></a>
+							</div>
+							<!-- // 상시 배너 종류 -->
+						</div>
+						<div class="banner__frac_pagination">
+							<span class="banner__frac_current"></span>
+							<div class="banner__frac_total"></div>
+						</div>
+					</div>
+				</div>
+				<div class="list_slct">
+					<div class="list_slct__container px15">
+						<div class="list_slct__list">
+							<div class="list_slct__list_ico_wrap">
+								<span class="list_slct__list_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_page.png');"></span>
+							</div>
+							<div class="list_slct__list_content">
+								<span class="list_slct__list_txt">계정정보 관리</span>
+							</div>
+							<div class="list_slct__list_arrow"></div>
+						</div>
+						<div class="list_slct__list">
+							<div class="list_slct__list_ico_wrap">
+								<span class="list_slct__list_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_mission.png');"></span>
+							</div>
+							<div class="list_slct__list_content">
+								<span class="list_slct__list_txt">오늘의 미션</span>
+							</div>
+							<div class="list_slct__list_arrow"></div>
+						</div>
+						<div class="list_slct__list">
+							<div class="list_slct__list_ico_wrap">
+								<span class="list_slct__list_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_invite.png');"></span>
+							</div>
+							<div class="list_slct__list_content">
+								<span class="list_slct__list_txt">친구초대</span>
+							</div>
+							<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/invite/img_list_invite_promtion.png" alt="5,000 코인 받기" class="list_slct__img_invite">
+							<div class="list_slct__list_arrow"></div>
+						</div>
+						<div class="list_slct__list">
+							<div class="list_slct__list_ico_wrap">
+								<span class="list_slct__list_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_brand_story.png');"></span>
+							</div>
+							<div class="list_slct__list_content">
+								<span class="list_slct__list_txt">브랜드 스토리</span>
+							</div>
+							<div class="list_slct__list_arrow"></div>
+						</div>
+						<div class="list_slct__list">
+							<div class="list_slct__list_ico_wrap">
+								<span class="list_slct__list_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_call.png');"></span>
+							</div>
+							<div class="list_slct__list_content">
+								<span class="list_slct__list_txt">고객센터 / 1:1 문의</span>
+							</div>
+							<div class="list_slct__list_arrow"></div>
+						</div>
+						<!--<div class="list_slct__list">
+							<div class="list_slct__list_ico_wrap">
+								<span class="list_slct__list_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/new_jsp/common/ico/ico_my_page.png');"></span>
+							</div>
+							<div class="list_slct__list_content">
+								<span class="list_slct__list_txt">탈퇴하기</span>
+							</div>
+							<div class="list_slct__list_arrow"></div>
+						</div>-->
+					</div>
+				</div>
+				<div class="space"></div>
+				<!-- #10581 메뉴 구성 변경 -->
+				<div class="pr_video">
+					<div class="pr_video__container">
+						<div class="pr_video__top">
+							<div class="pr_video__tit">여보야 홍보영상</div>
+							<div class="pr_video__info">영상조회수 : <span class="pr_video__cnt">3,168</span>회</div>
+						</div>
+						<div class="pr_video__area">
+							<iframe class="pr_video__media" type="text/html" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="320" src="https://www.youtube.com/embed/xdQ1NHiGEAc?autoplay=0&amp;controls=1&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fm.yeoboya.com&amp;widgetid=1"></iframe>
+						</div>
+						<div class="pr_video__share">
+							<div class="pr_video__share_btn pr_video__share_btn-kakao">
+								<div class="pr_video__share_btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_pr_video_kakao.png');"></div>
+								<div class="pr_video__share_btn_txt">공유하기</div>
+							</div>
+							<div class="pr_video__share_btn pr_video__share_btn-story">
+								<div class="pr_video__share_btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_pr_video_story.png');"></div>
+								<div class="pr_video__share_btn_txt">공유하기</div>
+							</div>
+							<div class="pr_video__share_btn pr_video__share_btn-facebook">
+								<div class="pr_video__share_btn_ico" style="background-image: url('https://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_pr_video_facebook.png');"></div>
+								<div class="pr_video__share_btn_txt">공유하기</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="space"></div>
+				<!-- #9022 ios 리젝대응 _ 로그아웃 버튼은 비노출 / 계정삭제는 ios만 노출 -->
+				<div class="pt16">
+					<a class="btn__logout">로그아웃</a>
+					<a class="btn__logout">계정을 삭제하고 싶어요</a>
+				</div>
+			</div>
+			<!-- data-test="del" <-- 퍼블테스트용  -->
+			<!-- <div class="tac fs14 fc90 py20" data-test="del">계정을 삭제하고 싶어요</div> -->
+		</div>
+	</div>
+	<div class="bot bot-fix">
+		<!-- 하단 네비게이션바 -->
+		<div class="tab_bar">
+			<div class="tab_bar__container">
+				<a class="tab_bar__btn active">
+					<span class="tab_bar__ico tab_bar__ico-marry"></span>
+					<span class="tab_bar__txt">맞선회원</span>
+				</a>
+				<a class="tab_bar__btn">
+					<span class="tab_bar__ico tab_bar__ico-prf"></span>
+					<span class="tab_bar__txt">열람내역</span>
+				</a>
+				<a class="tab_bar__btn">
+					<span class="tab_bar__ico tab_bar__ico-msg"></span>
+					<span class="tab_bar__txt">메시지함</span>
+					<span class="tab_bar__badge_count">99</span>
+				</a>
+				<a class="tab_bar__btn">
+					<span class="tab_bar__ico tab_bar__ico-my"></span>
+					<span class="tab_bar__txt">마이페이지</span>
+					<span class="tab_bar__badge_new_n"></span>
+				</a>
+				<a class="tab_bar__btn">
+					<span class="tab_bar__ico tab_bar__ico-more"></span>
+					<span class="tab_bar__txt">더보기</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 가입 축하 알림 팝업 -->
+	<div class="pop hidden">
+		<div class="pop__bg"></div>
+		<div class="pop__layer">
+			<div class="pop_alert">
+				<div class="pop_alert__container">
+					<div class="pop_alert__content">
+						<div class="pop_alert__tit mb12">알림</div>
+						<div class="pop_alert__txt_box">
+							<p class="fs15 fwb mb10">여보야 회원가입을 축하드립니다!</p>
+							<p>소중한 인연과 꿈에 그리던 결혼
+								<br>아르르르아르르르님이 평생 간직할 행복한 순간을
+								<br>여보야가 최선을 다해 도와드리겠습니다.
+							</p>
+						</div>
+					</div>
+					<div class="pop_alert__btn_wrap">
+						<a class="btn__btn_default btn__btn_default-m">
+							<span class="btn__btn_default_txt">확인</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // 가입 축하 알림 팝업 -->
+
+	<div class="pop hidden">
+		<div class="pop__bg"></div>
+		<div class="pop__layer">
+			<div class="pop_alert">
+				<div class="pop_alert__container">
+					<div class="pop_alert__content">
+						<div class="pop_alert__tit mb12">지금 <span class="fwb">프로필</span>을 등록하시겠습니까?</div>
+						<div class="pop_alert__txt_box">
+							<p>프로필을 등록해야지만 이용하실 수 있습니다.</p>
+						</div>
+					</div>
+					<div class="pop_alert__btn_wrap">
+						<a class="btn__btn_line btn__btn_line-m mr8">
+							<span class="btn__btn_line_txt">아니오</span>
+						</a>
+						<a class="btn__btn_default btn__btn_default-m">
+							<span class="btn__btn_default_txt">네</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- #9580 혼인관계증명서 등록 팝업 수정 -->
+	<div class="pop hidden">
+		<div class="pop__bg"></div>
+		<div class="pop__layer">
+			<div class="pop_m_certifi">
+				<div class="pop_m_certifi__container">
+					<div class="pop_m_certifi__content">
+						<div class="pop_m_certifi__tit mb12">혼인관계증명서 등록</div>
+						<div class="pop_m_certifi__txt_box">
+							<p>개인정보는 운영자가 확인 후 모자이크 처리하며,<br>등록하신 증명서는 개인정보취급방침에따라<br>안전하게 관리 및 처리합니다.</p>
+							<p class="fs12 fwr mt4">※ 최신 <span class="fcp-50">6개월 이내</span> 발급 문서만 가능합니다.</p>
+						</div>
+					</div>
+					<div class="pop_m_certifi__btn_wrap">
+						<a class="btn__btn_default btn__btn_default-m mr8">
+							<span class="btn__btn_default_txt">앨범에서 가져오기</span>
+						</a>
+						<a class="btn__btn_default btn__btn_default-m">
+							<span class="btn__btn_default_txt">카메라 촬영하기</span>
+						</a>
+					</div>
+					<div class="pop_m_certifi__btn_wrap mt10">
+						<div class="pop_m_certifi__btn">
+							<span class="pop_m_certifi__btn_txt">혼인관계 증명서 간편등록 신청하기</span>
+						</div>
+					</div>
+					<div class="pop_m_certifi__img_wrap">
+						<img class="pop_m_certifi__img" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/pop_img_cert_ex.png" alt="">
+						<div class="pop_m_certifi__img_btn_wrap">
+							<a class="btn__btn_line btn__btn_line-m">
+								<span class="btn__btn_line_txt">증명서 발급방법 보기</span>
+							</a>
+						</div>
+					</div>
+					<a class="pop_m_certifi__btn_cls">
+						<span class="pop_m_certifi__ico_cls"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //#9580 혼인관계증명서 등록 팝업 수정 -->
+
+	<!-- #7667 혼인관계증명서 인터넷발급 방법 안내 팝업 수정 -->
+	<div class="pop hidden">
+		<div class="pop__bg"></div>
+		<div class="pop__layer">
+			<div class="pop_alert">
+				<div class="pop_alert__container pop_alert__container-pt px0 pb0">
+					<div class="pop_alert__content">
+						<div class="pop_alert__tit mb12"><b>인터넷발급</b></div>
+						<div class="fs14 fc20 px15">
+							<p>· 대법원 전자가족관계등록 시스템<span class="fs11">(efamily.scourt.go.kr)</span></p>
+							<p>· <b>반드시 PC</b>로 접속 <b>(모바일 불가능)</b></p>
+							<p>· 본인 공인인증서 필수</p>
+							<p>· 수수료없음</p>
+						</div>
+					</div>
+					<div class="pop_alert__img_box mt15 px15">
+						<img class="pop_alert__img" src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/pop/pop_img_cert_issue_01.png" alt="">
+					</div>
+					<div class="space mt24 mb12"></div>
+					<div class="pop_alert__tit mb12"><b>방문발급</b></div>
+					<div class="fs14 fc20 px15 pb20">
+						<p>· 동/시.구.읍.면 행정기관</p>
+						<p>· 본인 신분증 지참</p>
+						<p>· 증명서 1통당 1천원 수수료</p>
+					</div>
+					<a class="pop_alert__btn_cls">
+						<span class="pop_alert__ico_cls"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //#7667 혼인관계증명서 인터넷발급 방법 안내 팝업 -->	
+
+	
+	<!-- 기존 여보야 팝업 (컴포넌트 도입 이전) -->
+	<!-- #6209 본인인증 불일치 팝업창 --> 
+	<div class="normal_pop_wrap hidden" id="certIncorrectPop">
+		<div class="full_modal full_modal-darker" id="certPhonePopBg"></div>
+		<div class="pf_pop_layer pf_pop_layer-half">
+			<div class="pf_pop__certifi_incorrect">
+				<div class="certifi_incorrect__user_wrap">
+					<div class="certifi_incor__username_wrap">
+						<span class="certifi_incor__username">닉네임최대여덟자</span> 회원님
+						<br><span class="certifi__ftcolor_yellow">본인인증</span>의 핸드폰이 아니신가요?
+					</div>
+					<div class="certifi_incor__phnum">010-1234-5678</div>
+				</div>
+				<div class="certifi_incorrect__content_wrap">
+
+					<div class="certifi_incor__box certifi_incor__info_wrap">
+						<p class="certifi_incor__notice">회원가입 정보와 <span class="certifi__ftcolor_purple">인증정보</span>가 일치하지 않습니다.</p>
+						<div class="certifi_incor__info">
+							<div class="certifi_info__li certifi_info__ex">
+								<span class="certifi_info__ex_li">하대진</span>
+								<span class="certifi_info__ex_li">1997년생</span>
+								<span class="certifi_info__ex_li">남성</span>
+							</div>
+							<div class="certifi_info__li certifi_info__new">
+								<span class="certifi_info__new_li">김다현</span>
+								<span class="certifi_info__new_li">1996년생</span>
+								<span class="certifi_info__new_li">여성</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="pop__space"></div>
+
+					<div class="certifi_incor__box certifi_incor__btn_wrap">
+						<div class="certifi_incor__btn">
+							<!-- case01 - 재가입(성별 불일치) -->
+							<p class="btn__certifi_qu">인증 정보로 서비스 이용을 원하시나요?</p>
+							<a class="btn__certifi btn__certifi-full">여보야 재가입</a>
+							<span class="btn__certifi_warn">※ 재가입 시, 현재 접속하신 계정은 삭제됩니다.</span>
+							<!--								
+							case01 - 수정등록(이름,나이 불일치)
+							<p class="btn__certifi_qu">인증하신 정보로 프로필을 수정하시겠습니까?</p>
+							<a class="btn__certifi btn__certifi-full">프로필 수정등록</a>
+							-->
+						</div>
+
+						<div class="pop__line"></div>
+
+						<div class="certifi_incor__btn">
+							<p class="btn__certifi_qu">다른 방법으로 인증하고 싶으신가요?</p>
+							<a class="btn__certifi btn__certifi-line">문자 인증하기</a>
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+			<button class="pf_slct_clse"><span class="blind">레이어닫기</span></button>
+		</div>
+	</div>
+	<!-- // #6209 본인인증 불일치 팝업창 -->
+
+	<!--본인인증_완료 팝업창-->
+	<div class="normal_pop_wrap hidden" id="certPhoneFinPop">
+		<div class="full_modal" id="certPhonePopBg"></div>
+		<div class="pf_pop_layer pf_pop_pnum pf_phone_certifi_pop">
+			<div class="pf_pop_certifi_phone_fin" style="display:block;">
+				<p class="pop_certifi_fin_txt_cong">축하합니다!</p>
+				<p class="pop_certifi_txt">본인인증이 완료되었습니다.</p>
+				<p class="pop_certifi_txt_des">회원님의 프로필에 신뢰를 높힐 수 있는<br /><span>본인 인증 뱃지</span>가 추가되었습니다<img src="https://image.yeoboya.com/imgs/new_wedding/profile/imo_smile_02.png" alt="웃음이모티콘" /></p>
+				<!--월계관 lottie 애니메이션 이미지-->
+				<div id="test_ani" class="pop_certifi_img"></div>
+				<!---->
+				<p class="pop_certifi_txt_des_02">프로필을 등록 완료하시고<br /><span>여보야</span>를 통해 진실된 <span>사랑♥</span>을 찾아보세요.</p>
+				<div class="btn_certifi_fin_btn" id="btnCertiFin">
+					<a>확인</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--본인 인증 취소 시 토스트메시지-->
+	<div class="toast_box center_toast toast_box_big hidden" id="certPhoneErr">
+		<strong>본인인증이 취소되었습니다.</strong><br>다시 시도해주세요 <img class="imo_smile_01" src="https://image.yeoboya.com/imgs/new_wedding/profile/imo_smile_01.png" alt="웃음이모티콘">
+	</div>
+
+	<!--문자 인증_진행 팝업창-->
+	<div class="normal_pop_wrap hidden" id="certMessagePop">
+		<div class="full_modal" id="certPhonePopBg"></div>
+		<div class="pf_pop_layer pf_pop_pnum pf_phone_certifi_pop">
+			<input type="hidden" id="" value="">
+			<div class="pf_slct_header">
+				<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/profile/ico_slct_pnum.png" width="25" height="25">
+				문자 인증
+			</div>
+			<button class="pf_slct_clse"><span class="blind">레이어닫기</span></button>
+			<div class="pf_pop_certifi_phone" style="display:block;">
+				<p class="pop_message_txt_title"><span>문자</span>로 <span>번호인증</span>을 진행해 주세요.</p>
+				<p class="pop_certifi_txt_p">※전화번호당 1개만 등록(가입)할 수 있어요.</p>
+				<div class="phone_input">
+					<input type="tel" name="phoneNumber" id="phoneNumber" class="phone_number_input" placeholder="휴대폰 번호를 입력해주세요">
+					<label for="phoneNumber" class="hidden">휴대폰 번호 입력</label>
+				</div>
+				<div class="pop_message_txt_service">
+					<div class="pop_txt_box">
+						<p class="pop_message_txt_des">추후에 <span>휴대폰 본인인증</span>을 하시면<br />인증뱃지가 프로필에 자동으로<br />표시되어 신뢰성을 높일 수 있습니다.</p>
+						<div class="pop_certifi_go_link">
+							<a class="go_link" id="phoneCert">휴대폰 본인인증 하기</a>
+						</div>
+					</div>
+				</div>
+				<div class="btn_certifi_go_btn">
+					<a id="messageCertBtn">인증번호 받기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--문자 인증_인증번호 입력 팝업창-->
+	<div class="normal_pop_wrap hidden" id="certMessageInPop">
+		<div class="full_modal" id="certPhonePopBg"></div>
+		<div class="pf_pop_layer pf_pop_pnum pf_phone_certifi_pop">
+			<input type="hidden" id="" value="">
+			<div class="pf_slct_header">
+				<img src="https://image.yeoboya.com/imgs/new_wedding/new_jsp/profile/ico_slct_pnum.png" width="25" height="25">
+				문자 인증
+			</div>
+			<button class="pf_slct_clse"><span class="blind">레이어닫기</span></button>
+			<div class="pf_pop_certifi_phone" style="display:block;">
+				<p class="pop_message_txt_title"><span>문자</span>로 <span>번호인증</span>을 진행중...</p>
+				<p class="pop_certifi_txt_p">※전화번호당 1개만 등록(가입)할 수 있어요.</p>
+				<div class="phone_input">
+					<input type="tel" name="certi_Number" id="phoneNumber" class="phone_number_input" placeholder="인증 번호를 입력해주세요">
+					<label for="phoneNumber" class="hidden">인증 번호 입력</label>
+				</div>
+				<div class="message_send_txt">
+					<p class="send_txt"><span>010-1234-5678로</span><br />인증번호가 전송되었습니다!</p>
+					<p class="">통신사의 사정에 따라 1~2분 정도<br />수신이 소요될 수 있습니다.</p>
+				</div>
+				<div class="btn_certifi_go_btn">
+					<a id="messageConBtn">확인</a>
+				</div>
+				<div class="btn_certifi_re_btn" id="reCert" style="">
+					<a id="reCertBtn">재전송</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--문자 인증_완료 팝업창-->
+	<div class="normal_pop_wrap hidden" id="certMessageFinPop">
+		<div class="full_modal" id="certPhonePopBg"></div>
+		<div class="pf_pop_layer pf_pop_pnum pf_phone_certifi_pop">
+			<div class="pf_pop_certifi_phone_fin" style="display:block;">
+				<p class="pop_message_fin"><span>휴대폰 문자인증</span>이 완료되었습니다.</p>
+				<p class="pop_message_fin_txt">프로필을 등록 완료하시고<br /><span>여보야</span>를 통해 진실된 <span>사랑♥</span>을 찾아보세요<img src="https://image.yeoboya.com/imgs/new_wedding/profile/imo_smile_02.png" alt="웃음이모티콘" /></p>
+				<div class="btn_certifi_fin_btn">
+					<a id="btnMessageFin">확인</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 증명서 등록 툴팁 -->
+	<div class="normal_pop_wrap hidden" id="photoHelpLayer">
+		<div class="full_modal"></div>
+		<div class="pop_wrap certify">
+			<div class="basic_header">발급받은 증명서를 등록하세요 <a class="pop_cls"><span class="blind">닫기</span></a>
+			</div>
+			<div class="basic_container">- 미혼증명용 혼인관계증명서(상세)
+				<div class="btn_how_certify">증명서 발급방법 보기</div> <span class="fc_woman">※ 개인정보는 운영자가 확인 후 모자이크처리 합니다.</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- 연봉인증 -->
+	<div class="normal_pop_wrap hidden">
+		<div class="full_modal"></div>
+		<div class="info_layer">
+			<div class="info_layer_header">
+				<p class="layer_header_txt money_hd">급여명세서,원천징수영수증 등<br>연봉관련 사진을 등록하세요.</p>
+				<p class="layer_header_sub_txt layer_header_blue">※ 개인정보는 운영자가 확인 후 모자이크 처리합니다.</p>
+			</div>
+			<p class="layer_txt">등록가능한 사진수:<span class="possible_content">5장</span><span class="max_content">(최대 5장까지)</span></p>
+			<div class="layer_btn_wrap">
+				<button class="layer_btn">앨범에서 가져오기</button>
+				<button class="layer_btn">카메라 촬영하기</button>
+				<button class="layer_btn">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- 플로팅 버튼 -->
+	<div class="float" style="bottom:72px; z-index: 600;">
+		<div class="float_btn" id="float_test_plus"> <!-- 개발 시 id="floating_test_plus 삭제"-->
+			<div class="float_btn__wrap">
+				<a class="float_btn__btn_marry"></a>
+				<!-- <a class="float_btn__btn_plus float_btn__btn_plus-active"></a> -->
+			</div>
+			<div class="float_btn__bnr_wrap">
+				<!-- 배너 오픈 active, 배너 닫힘 disabled -->
+				<a class="float_btn__bnr hidden">
+					<div class="float_btn__bnr_txt">
+						지금 내 프로필 등록하면<br>
+						<span class="float_btn__bnr_txt_strong">여성회원 프로필 무료 열람 가능<span class="float_btn__bnr_arrow"></span></span>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="float_pop"> <!-- 팝업 활성화 시 "float_pop-active" 클래스 추가 -->
+			<div class="float_pop__bg"></div>
+			<ul class="float_pop__container">
+				<li class="float_pop__list float_pop__list-align_01">
+					<!-- 
+						※ 플로팅 아이콘
+						- 아이템 : float_pop__btn_icon-item
+						- 글쓰기 : float_pop__btn_icon-write
+						- 프로필 꾸미기 : float_pop__btn_icon-deco
+						- 프로필 : float_pop__btn_icon-profile
+						- 1:1 문의 : float_pop__btn_icon-cs
+						- 알림·콘텐츠 설정 : float_pop__btn_icon-setting
+						- 친구 초대 : float_pop__btn_icon-promotion
+						- 노블레스 : float_pop__btn_icon-noble
+						- 마이페이지 : float_pop__btn_icon-mypage
+						- 브랜드스토리 : float_pop__btn_icon-brandstory
+						- YMTI : float_pop__btn_icon-ymti
+						- 영상 공모전 : float_pop__btn_icon-competition
+						- AI : float_pop__btn_icon-ai
+						- 선물하기 : float_pop__btn_icon-gift
+						- 스토리 : float_pop__btn_icon-story
+						- 맞선 : float_pop__btn_icon-marry
+					-->
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">고객센터 / 1:1문의 </div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-cs"></div>
+						</div>
+					</a>
+				</li>
+				<li class="float_pop__list float_pop__list-align_02">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">알림·콘텐츠 설정</div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-setting"></div>
+						</div>
+					</a>
+				</li>
+				<li class="float_pop__list float_pop__list-align_03">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">아이템 구매 / 관리 / 마일리지</div>
+						<div class="float_pop__btn_icon_wrap">
+							
+							<div class="float_pop__btn_icon float_pop__btn_icon-item"></div>
+						</div>
+					</a>
+				</li>
+				<li class="float_pop__list float_pop__list-align_04">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">글쓰기 /<span class="float_pop__txt_blue">&nbsp;자동</span> • 위로 올리기</div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-write"></div>
+						</div>
+					</a>
+				</li>
+				<li class="float_pop__list float_pop__list-align_05">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">내 프로필 / 인증관리<div class="float_pop__badge_new_n"></div></div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-profile"></div>
+						</div>
+					</a>
+				</li>
+				<li class="float_pop__list float_pop__list-align_06">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">친구초대하고 혜택받기<div class="float_pop__badge_new_n"></div></div>
+						<div class="float_pop__btn_icon_wrap">
+							<!-- background 없는 아이콘 float_pop__btn_icon-bg_no 추가 -->
+							<div class="float_pop__btn_icon float_pop__btn_icon-bg_no float_pop__btn_icon-promotion"></div>
+						</div>
+					</a>
+				</li>
+				<li class="float_pop__list float_pop__list-align_07">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt"><span class="float_pop__txt_pink">프로필 등록</span>하고 혜택받기</div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-bg_no float_pop__btn_icon-gift"></div>
+						</div>
+					</a>
+				</li>
+				<!-- <li class="float_pop__list float_pop__list-align_06">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">글쓰기 / <span class="float_pop__txt_blue">자동</span> • 위로 올리기</div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-write"></div>
+						</div>
+					</a>
+				</li> -->
+				<!-- <li class="float_pop__list float_pop__list-align_07">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">프로필 꾸미기 효과 만들기<div class="float_pop__badge_new_theme"></div></div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-deco"></div>
+						</div>
+					</a>
+				</li> -->
+				<!-- 룰렛 기능 -->
+				<!-- <li class="float_pop__list float_pop__list-align_05">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">
+							<div class="float_pop__btn_txt_img float_pop__btn_txt_img-roulette"></div>
+						</div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-bg_no float_pop__btn_icon-roulette"></div>
+						</div>
+					</a>
+				</li> -->
+				<!-- //룰렛 기능 -->
+
+				<!-- 플로팅 이벤트 -->
+				<!-- <li class="float_pop__list float_pop__list-align_08">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt"><span class="float_pop__txt_pink">나를 좋아요</span>한 회원보기</div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-like_list"></div>
+						</div>
+					</a>
+				</li> -->
+				<li class="float_pop__list float_pop__list-align_07 hidden">
+					<a class="float_pop__btn" data-evnt_gift="evnt_sample_candy">
+						<div class="float_pop__btn_txt">
+							<!-- 
+								※ 이벤트 관련 텍스트
+								- 풍등 : float_pop__btn_txt_img-lantern
+								- 달고나 : float_pop__btn_txt_img-dalgona
+								- 트로피 : float_pop__btn_txt_img-trophy
+								- 크리스마스 : float_pop__btn_txt_img-christmas
+								- 복주머니 : float_pop__btn_txt_img-pocket
+								- 스탬프 : float_pop__btn_txt_img-stamp
+								- 초콜릿 : float_pop__btn_txt_img-choco
+								- 좋아요 : float_pop__btn_txt_img-like
+								- 좋아요 리스트 : float_pop__btn_txt_img-like_list
+								- 성혼지수 1차 : float_pop__btn_txt_img-like_gage
+								- 성혼지수 2차 : float_pop__btn_txt_img-like_gage2
+								- 성혼지수 4차 : float_pop__btn_txt_img-like_gage4
+								- 아이스크림 : float_pop__btn_txt_img-icecream
+								- 삼계탕 : float_pop__btn_txt_img-samgye
+								- 파라솔 : float_pop__btn_txt_img-parasol
+								- 가을의 꽃송이 : float_pop__btn_txt_img-flower3
+								- 보름달 : float_pop__btn_txt_img-moon
+								- 단풍잎 : float_pop__btn_txt_img-maple
+								- 감 : float_pop__btn_txt_img-perssimon
+								- 장미 : float_pop__btn_txt_img-rose2
+								- 크리스마스2 : float_pop__btn_txt_img-christmas2
+								- 복2 : float_pop__btn_txt_img-bok2
+							-->
+							<div class="float_pop__btn_txt_img float_pop__btn_txt_img-evnt_gift"></div>
+						</div>
+						<div class="float_pop__btn_icon_wrap">
+							<!-- 
+								※ 이벤트 관련 아이콘
+								- 풍등 : float_pop__btn_icon-lantern
+								- 달고나 : float_pop__btn_icon-dalgona
+								- 트로피 : float_pop__btn_icon-trophy
+								- 크리스마스 : float_pop__btn_icon-christmas
+								- 복주머니 : float_pop__btn_icon-pocket
+								- 스탬프 : float_pop__btn_icon-stamp
+								- 초콜릿 : float_pop__btn_icon-choco
+								- 좋아요 : float_pop__btn_icon-like
+								- 아이스크림 : float_pop__btn_icon-icecream
+								- 삼계탕 : float_pop__btn_icon-samgye
+								- 파라솔 : float_pop__btn_icon-parasol
+								- 가을의 꽃송이 : float_pop__btn_icon-flower3
+								- 보름달 : float_pop__btn_icon-moon
+								- 단풍잎 : float_pop__btn_icon-maple
+								- 감 : float_pop__btn_icon-persimmon
+								- 장미2 : float_pop__btn_icon-rose2
+								- 복2 : float_pop__btn_icon-bok2
+							-->
+							<div class="float_pop__btn_icon float_pop__btn_icon-bg_no float_pop__btn_icon-evnt_gift"></div>
+						</div>
+					</a>
+				</li>
+				<!-- // 플로팅 이벤트 -->
+
+				<!-- 나를 좋아요한 회원 -->
+				<li class="float_pop__list float_pop__list-align_08 hidden">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt"><span class="float_pop__txt_pink">나를 좋아요</span>한 회원보기</div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-like_list"></div>
+						</div>
+					</a>
+				</li>
+				<!-- // 나를 좋아요한 회원 -->
+
+				<!-- 노블레스 이용하기 -->
+				<li class="float_pop__list float_pop__list-align_08 hidden">
+					<a class="float_pop__btn">
+						<div class="float_pop__btn_txt">
+							<div class="float_pop__btn_txt_img float_pop__btn_txt_img-noble"></div>이용하기<span class="float_pop__badge_count">99</span>
+						</div>
+						<div class="float_pop__btn_icon_wrap">
+							<div class="float_pop__btn_icon float_pop__btn_icon-bg_no float_pop__btn_icon-noble"></div>
+						</div>
+					</a>
+				</li>
+				<!-- // 노블레스 이용하기 -->
+
+			</ul>
+		</div>
+	</div>
+		
+	<!-- 기본정보변경 팝업 -->
+	<div class="pop hidden">
+		<div class="pop__bg"></div>
+		<div class="pop__layer">
+			<div class="pop_alert">
+				<div class="pop_alert__container">
+					<div class="pop_alert__content">
+						<div class="pop_alert__tit mb12">기본 정보 변경</div>
+
+						<!-- input 영역 -->
+						<div class="input" data-state="default">
+							<!-- data-state 종류
+								- default, filled, focus, error, disabled
+							-->
+							<label class="input__lb mx4 mb6" for="">
+								<span class="input__lb_txt">대화명</span>
+								<!-- Error Case 문구 -->
+								<!-- <span class="input__lb_info_txt">2~30자 영문, 숫자, (_),(-)만 사용합니다.</span> -->
+							</label>
+							<div class="input__input_wrap">
+								<input class="input__text_input" type="text" placeholder="한글과 숫자로 조합가능 (2~8자)">
+							</div>
+						</div>
+
+						<div class="input mt16" data-state="default">
+							<label class="input__lb" for="">
+								<span class="input__lb_txt">성혼 유형</span>
+							</label>
+							<div class="input__multi_wrap">
+								<div class="radio__box mr8">
+									<input class="radio__input" type="radio" name="marryType">
+									<label class="radio__lb">
+										<div class="radio__btn_wrap">
+											<span class="radio__btn">결혼</span>
+										</div>
+									</label>
+								</div>
+								<div class="radio__box">
+									<input class="radio__input" type="radio" name="marryType">
+									<label class="radio__lb">
+										<div class="radio__btn_wrap">
+											<span class="radio__btn">재혼</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="input mt20" data-state="error">
+							<label class="input__lb" for="">
+								<span class="input__lb_txt">나의 지역</span>
+									<!-- Error Case
+										현재 거주 지역을 선택해주세요
+									-->
+									<span class="input__lb_info_txt">현재 거주 지역을 선택해주세요.</span>
+							</label>
+							<div class="input__input_wrap">
+								<a class="input__slct_input input__slct_input-opts">
+									<!-- placeholder 일때만 input__placeholder 클래스 넣고 일반 텍스트에선 삭제 -->
+									<span class="input__placeholder">현재 거주 지역을 선택해주세요</span>
+									<!-- <span>입력된 내용입니다</span> -->
+								</a>
+							</div>
+						</div>
+						<!-- // input 영역 -->
+
+						<div class="hr mx0 mt12"></div>
+						<div class="pop_alert__info_txt mt12">
+							<p>※ 대화명과 성혼유형은 잘못된 정보에 한하여
+							<br><span class="fcp-50">단 1회만</span> 변경 가능하며, <span class="fcp-50">"재혼"</span>으로 변경 시 추가
+							<br>정보 입력을 위해 프로필 수정 페이지로 이동됩니다.
+							</p>
+						</div>
+					</div>
+					<div class="pop_alert__btn_wrap">
+						<a class="btn__btn_line btn__btn_line-m mr8">
+							<span class="btn__btn_line_txt">취소</span>
+						</a>
+						<a class="btn__btn_default btn__btn_default-m">
+							<span class="btn__btn_default_txt">변경</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //기본정보변경 팝업 -->
+
+	<!-- 지역 선택 팝업 -->
+	<!-- 지역 선택 1차 팝업  -->
+	<div class="bot_pop hidden">
+		<div class="bot_pop__bg"></div>
+		<div class="bot_pop__layer bot_pop__layer-slide_up">
+			<div class="pop_slct">
+				<div class="pop_slct__top">
+					<div class="pop_slct__tit pop_slct__tit-left">
+						<!-- <span class="pop_slct__tit_txt">지역</span> -->
+						<span class="pop_slct__tit_txt">광주</span>
+						<span class="pop_slct__tit_ico"></span>
+						<span class="pop_slct__tit_subtxt">시/군/구</span>
+					</div>
+					<a class="pop_slct__btn_cls">
+						<span class="pop_slct__ico_cls"></span>
+						<span class="blind">닫기</span>
+					</a>
+				</div>
+				<div class="pop_slct__content">
+					<ul class="pop_slct__container pop_slct__container-col_4">
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">서울</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">경기</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">인천</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">대전</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">대구</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">부산</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding selected"><span class="pop_slct__opt_txt">광주</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">세종</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">울산</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">충북</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">충남</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">전북</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">전남</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">경북</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">경남</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">강원</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">제주</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">해외</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 지역 선택 2차 팝업  -->
+	<div class="bot_pop hidden">
+		<div class="bot_pop__bg"></div>
+		<div class="bot_pop__layer">
+			<div class="pop_slct">
+				<div class="pop_slct__top">
+					<div class="pop_slct__tit pop_slct__tit-left">
+						<span class="pop_slct__tit_txt">광주</span>
+						<span class="pop_slct__tit_ico"></span>
+						<!-- <span class="pop_slct__tit_subtxt">시/군/구</span> -->
+						<span class="pop_slct__tit_subtxt">서구</span>
+					</div>
+					<a class="pop_slct__btn_cls">
+						<span class="pop_slct__ico_cls"></span>
+						<span class="blind">닫기</span>
+					</a>
+				</div>
+				<div class="pop_slct__content">
+					<ul class="pop_slct__container pop_slct__container-col_3">
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">광주광역시</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">광산구</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">남구</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">동구</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding"><span class="pop_slct__opt_txt">북구</span></li>
+						<li class="pop_slct__opt pop_slct__opt-wedding selected"><span class="pop_slct__opt_txt">서구</span></li>
+					</ul>
+				</div>
+				<div class="pop_slct__btn_wrap">
+					<a class="btn__btn_line btn__btn_line-3_1">
+						<span class="btn__btn_line_txt">초기화</span>
+					</a>
+					<a class="btn__btn_default">
+						<span class="btn__btn_default_txt">선택</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // 지역 선택 팝업 -->
+	<script>
+		
+		$(document).ready(function(){
+			// 페이지 로드 후 content padding-top, padding-bottom 설정
+			const top =$('.top').outerHeight();
+			const bottom = $('.bot-fix').outerHeight();
+			$('.content').css({'padding-top': `${top}px`})
+			$('.content').css({'padding-bottom': `${bottom  + 60}px`});
+			const pageH = $('.content').height()
+			$('.content__vt_container').css({'min-height': pageH});
+			// 여백값 조정 후 hidden 클래스 제거
+			//$("[data-test=del]").removeClass("hidden")
+
+			// 플로팅버튼
+			$('#float_test_plus').on('click', function(){
+				// 플로팅 배너
+				$('.float_btn__bnr').addClass('hidden')
+
+				$(this).find('a').toggleClass('float_btn__btn_marry float_btn__btn_plus float_btn__btn_plus-active');
+				$(this).siblings('.float_pop').toggleClass('float_pop-active');
+			})
+		});
+
+		//$('.list_slct__container').css({'border-top':'1px solid #F1F1F1'});
+		//$('.list_slct__list').last().css({'border':'none'});
+		
+		// 배너 스와이퍼
+		var swiper0 = new Swiper('.banner__container', {
+			wrapperClass: 'banner__wrapper',
+			slideClass: 'banner__slide',
+			slidesPerView: 'auto',
+			spaceBetween: 8,
+			loop: true,
+			autoplay: true,
+			speed: 600,
+			pagination:{
+				el: '.banner__frac_pagination',
+				type: 'fraction',
+				currentClass: 'banner__frac_current',
+				totalClass: 'banner__frac_total',
+			}
+		});
+
+		// var swiper1 = new Swiper('.banner__container', {
+		// 	wrapperClass: 'banner__wrapper',
+		// 	slideClass: 'banner__slide',
+		// 	slidesPerView: 'auto',
+		// 	spaceBetween: 20,
+		// 	// pagination:{
+		// 	// 	el: '.banner__pagination',
+		// 	// 	type: 'bullets',
+		// 	// 	bulletClass: 'banner__bullet',
+		// 	// 	bulletActiveClass: 'banner__bullet-active',
+		// 	// }
+		// });
+
+		let laurelWreath = lottie.loadAnimation({
+			container: document.getElementById('test_ani'),
+			renderer: "svg",
+			loop:false,
+			autoplay: false,
+			path: "../ani/ani_laurel_wreath.json",
+		});
+
+		// 본인인증
+		$(function(){
+			$('#phoneCertiPop').click(function(){
+				if($('#certPhonePop').css("display")=="none"){
+					$('#certPhonePop').show();
+				}
+			});
+
+			$('#preCertBtn').click(function(){
+				if($('#certPhonePop').css("display") !="none"){
+					$('#certPhonePop').hide();
+				}
+			});
+			$('#preCertBtn').click(function(){
+				if($('#certPhoneFinPop').css("display") =="none"){
+					$('#certPhoneFinPop').show();
+					laurelWreath.play();
+				}
+			});
+
+			$('#btnCertiFin').click(function(){
+				if($('#certPhoneFinPop').css("display") !="none"){
+					$('#certPhoneFinPop').hide();
+					laurelWreath.stop();
+				}
+			});
+
+			$('#messageCert').click(function(){
+				if($('#certPhonePop').css("display") !="none"){
+					$('#certPhonePop').hide();
+				}
+			});
+			$('#messageCert').click(function(){
+				if($('#certMessagePop').css("display") =="none"){
+					$('#certMessagePop').show();
+				}
+			});
+
+			$('#phoneCert').click(function(){
+				if($('#certMessagePop').css("display") !="none"){
+					$('#certMessagePop').hide();
+				}
+			});
+			$('#phoneCert').click(function(){
+				if($('#certPhonePop').css("display") =="none"){
+					$('#certPhonePop').show();
+				}
+			});
+
+			$('#messageCertBtn').click(function(){
+				if($('#certMessagePop').css("display") !="none"){
+					$('#certMessagePop').hide();
+				}
+			});
+			$('#messageCertBtn').click(function(){
+				if($('#certMessageInPop').css("display") =="none"){
+					$('#certMessageInPop').show();
+				}
+			});
+
+			$('#messageConBtn').click(function(){
+				if($('#certMessageInPop').css("display") !="none"){
+					$('#certMessageInPop').hide();
+				}
+			});
+			$('#messageConBtn').click(function(){
+				if($('#certMessageFinPop').css("display") =="none"){
+					$('#certMessageFinPop').show();
+				}
+			});
+			$('#btnMessageFin').click(function(){
+				if($('#certMessageFinPop').css("display") !="none"){
+					$('#certMessageFinPop').hide();
+				}
+			});
+		});
+		
+        // 하단 네비게이션바
+        $(".tab_bar__btn").on('click', function(){
+            $(this).addClass('active');
+			if ($(this).hasClass('active')) {
+				$('.tab_bar__btn').not(this).removeClass('active');
+			}
+        });
+		
+		// 스크롤시 헤더고정
+		const HscrollTop = $('.my_card__name_wrap').offset().top + $('.my_card__name_wrap').outerHeight() 
+		$(window).scroll(function(){
+			if($(window).scrollTop() >= HscrollTop){
+				$('.header-abs').removeClass('hidden');
+				$('.header-abs').removeClass('header-slide_off');
+				$('.header-abs').addClass('header-slide_on');
+			} else {
+				$('.header-abs').removeClass('header-slide_on');
+				$('.header-abs').addClass('header-slide_off');
+			}
+		});
+	</script>
+	<script src="../../../js/default.js"></script>
+	<script src="../../../vendors/siteMap.bundle.js"></script>
+</body>
+</html>

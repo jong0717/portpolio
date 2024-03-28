@@ -334,7 +334,19 @@
 								<div class="fltr__icon_fltr ml2"></div>
 							</div>
 						</div>
-						<div class="temper__info">매너온도</div>
+						<div class="temper mla">
+							<div class="temper__wrap temper__wrap-orange mr6">
+								<div class="temper__img"></div>
+								<div class="temper__txt">78.7°C</div>
+							</div>
+							<div class="temper__info">매너온도</div>
+							<div class="temper__tip">
+								<div class="temper__tip_txt">
+									<span class="temper__tip_txt_emp">매너온도 시스템</span>이 추가되었습니다.
+									<br>본인의 매너온도를 확인해 보세요!
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 	
@@ -594,10 +606,11 @@
 					<div class="pop_alert__content">
 						<div class="pop_alert__tit mb12">작업사항</div>
 						<div class="pop_alert__txt_box">
-							<p>1. 매너온도 설명 팝업 유도 버튼 추가</p>
+							<p>1. 매너온도 설명 팝업 유도 버튼 추가(매너온도 클릭!)</p>
 							<p>2. 매너온도 설명 팝업 추가
 								<br>(svg storke 값으로 애니메이션 효과)
 							</p>
+							<p>3. 매너온도 툴팁 추가</p>
 						</div>
 					</div>
 					<div class="pop_alert__btn_wrap">
@@ -701,6 +714,9 @@
 				'stroke-dashoffset' : totalLength - strokeDashVal
 			}, 800)
 		})
+		$('.temper__tip').animate({
+			'opacity': 0
+		},2000)
 	</script>
 	
 	<script src="../../../js/default.js"></script>

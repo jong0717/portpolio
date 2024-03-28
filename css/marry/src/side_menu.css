@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __side_menu.css
+	설　명 : 메인리스트 사이드메뉴
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+.side_menu{position: fixed; top: 45px; right: 0; width: 100%; height: calc(100vh - 45px); z-index: 900; overflow: hidden;}
+.side_menu__bg{position: absolute; top: 0; right: 0; width: 100%; height: 100%; z-index: 0; background-color: rgba(0,0,0,.8);}
+.side_menu__admin{position: absolute; top: 15px; left: 18px;}
+.side_menu__admin_btn{width: 64px; height: 40px; margin-bottom: 12px; border-radius: 3px; background-color: #CECECE; text-align: center; line-height: 40px; font-size: 13px; color: #FFF; cursor: pointer;}
+.side_menu__admin_btn.active{background-color: #ea3c3c;}
+.side_menu__container{position: absolute; top: 0; right: inherit;  width: 260px; height: 100%;background-color: #FFF;}
+.side_menu__content{display: flex; flex-direction: column;height: 100%; overflow-y: auto;}
+.side_menu__cls{position: absolute; bottom: 40px; left: -62px; width: 50px; height: 50px; padding: 7px; border-radius: 50%; box-sizing: border-box; background:#707070 url("https://image.yeoboya.com/imgs/new_wedding/img/ico_new_floating_2.png") no-repeat center; background-size: 25px; transform: rotate(45deg); cursor: pointer;} 
+/* 슬라이드 */
+.side_menu.side_menu-active .side_menu__container{transform: translateX(-332px); animation-name: sideMenuactive; animation-duration: 0.3s; animation-timing-function: ease-in-out; animation-fill-mode: forwards;}
+.side_menu.side_menu-disabled .side_menu__container{animation-name: sideMenudisabled; animation-duration: 0.3s; animation-timing-function: ease-in-out; animation-fill-mode: forwards;}
+.side_menu__item_wrap{position: relative;}
+.side_menu__item{display: flex; align-items: center; height: 46px; padding: 9px 12px 9px 15px; border-bottom: 1px solid #F1F1F1; box-sizing: border-box; cursor: pointer;}
+.side_menu__item:active{background-color: #F9FAFC;}
+.side_menu__ico{width: 28px; height: 28px; background-repeat: no-repeat; background-position: center; background-size: 100% auto;} 
+.side_menu__txt{margin-left: 6px; line-height: 20px; font-size: 14px;}
+.side_menu__cnt{min-width: 15px; height: 15px;padding: 0 4px; margin-left: 4px; border-radius: 16px;box-sizing: border-box; background-color: #FF5858;text-align: center;line-height: 15px;color: #fff;font-size: 11px;}
+.side_menu__arrow{width: 22px; height: 22px; margin-left: auto; background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 24 24'%3e%3cpath fill='%23909090' d='M9.4 18.5c.2 0 .3-.1.5-.2l4.8-5.5c.2-.2.2-.5 0-.7L9.9 6.7c-.2-.2-.6-.2-.8-.1-.3.2-.3.5-.2.8v.1l4.5 5.1-4.4 5c-.2.2-.2.5 0 .7h.1c.1.2.2.2.3.2'/%3e%3c/svg%3e") no-repeat center; background-size: 22px;}
+.side_menu__bnr_wrap{padding-top: 11px; margin: auto 8px 11px; box-sizing: border-box;}
+.side_menu__bnr_more{text-align: end; font-size: 13px; cursor: pointer;}
+.side_menu__bnr{width: 100%; margin-top: 8px; box-sizing: border-box; cursor: pointer;}
+.side_menu__bnr_img{width: 100%;height: 72px;border-radius: 8px;border: 1px solid #F1F1F1;box-sizing: border-box;background-repeat: no-repeat;background-position: center;background-size: cover;background-origin: border-box;}
+
+
+@keyframes sideMenuactive {
+    0%{transform: translateX(332px);}
+    100%{transform: translateX(0);}
+}
+@keyframes sideMenudisabled {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(332px);}
+}
+
+/* pc 대응 */
+@media (min-width : 460px) {
+	.side_menu{left: 50%; transform: translateX(-50%); width: 100%; max-width: 460px;}
+}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*---------------------------------------------
+	파일명 : __pop_prf_req
+	설　명 : 신고하기 팝업
+	작성순서 : 1. 레이아웃  2.크기/간격  3.박스모양  4.폰트  5.기타
+			position / display / float / width / height / padding / margin / border / background / font / overflow / etc...
+---------------------------------------------*/
+
+.prf_req{position: relative;}
+.prf_req__box{width: 100%; height: 100%; padding: 16px; border: 1px solid #C4D4FF; border-radius: 8px; box-sizing: border-box; background-color: #F9FBFC;}
+.prf_req__content{display: flex; align-items: center;}
+.prf_req__info_wrap{display: flex; flex-direction: column; gap: 4px; margin-left: 12px;}
+.prf_req__info{display: flex; align-items: center;}
+.prf_req__name{margin-left: 4px; line-height: 21px; font-weight: 700; color: #427FCF;}
+.prf_req__txt{font-size: 13px;}
+.prf_req__txt::after{content: "";display: inline-block;width: 1px;height: 10px;margin: 0 4px;background-color: #D4D4D4;}
+.prf_req__txt:last-of-type::after{display: none;}
+.prf_req__bdg{flex: none; display: -webkit-box; width: fit-content; height: 20px; padding: 1px 2px 2px; margin-right: 6px; border-radius: 4px; box-sizing: border-box; background-color: #F1F1F1; text-align: center; line-height: 18px; font-size: 12px; color: #707070; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; word-break: break-all;}
